@@ -285,7 +285,7 @@ fieldset {
 
 
 /* ==========================================================
-13. ELEMENTY N01
+13. ELEMENTY N01 — CZĘSTE KLASY
 ========================================================== */
 
 .comp,
@@ -308,7 +308,7 @@ fieldset {
 
 
 /* ==========================================================
-14. WYNIKI
+14. WYNIKI / PUNKTY / WYNIKI MECZÓW
 ========================================================== */
 
 .score,
@@ -326,7 +326,7 @@ fieldset {
 
 
 /* ==========================================================
-15. DRABINKI
+15. DRABINKI TURNIEJOWE
 ========================================================== */
 
 .bracket,
@@ -416,7 +416,7 @@ footer,
 
 
 /* ==========================================================
-20. MENU / POPUP
+20. MENU KONTEKSTOWE / POPUP
 ========================================================== */
 
 .menu-popup,
@@ -447,7 +447,7 @@ footer,
 
 
 /* ==========================================================
-21. CHECKBOXY / RADIO
+21. CHECKBOXY / RADIO / NATYWNE ELEMENTY
 ========================================================== */
 
 input[type="checkbox"],
@@ -457,7 +457,7 @@ input[type="radio"] {
 
 
 /* ==========================================================
-22. SELEKCJA
+22. SELEKCJA TEKSTU
 ========================================================== */
 
 ::selection {
@@ -467,7 +467,7 @@ input[type="radio"] {
 
 
 /* ==========================================================
-23. SCROLLBAR
+23. SCROLLBAR — DELIKATNY DARK/GOLD
 ========================================================== */
 
 ::-webkit-scrollbar {
@@ -502,7 +502,7 @@ aside {
 
 
 /* ==========================================================
-25. ZŁOTA LINIA
+25. ZŁOTA LINIA AKCENTOWA
 ========================================================== */
 
 .gold-line {
@@ -513,7 +513,7 @@ aside {
 
 
 /* ==========================================================
-26. PRZEGRANY W DRABINIE
+26. PRZEGRANY — ZAWODNIK
 ========================================================== */
 
 .t_name.loser .entry_name,
@@ -528,105 +528,121 @@ aside {
     color: #72B7FF !important;
 }
 
+
+/* ==========================================================
+27. PRZEGRANY — WYNIK LEGÓW
+========================================================== */
+
+.t_name.loser .t_score,
+.t_name.lose .t_score,
+.t_name.lost .t_score,
 .loser .t_score,
 .lose .t_score,
 .lost .t_score,
-.loser .score,
-.lose .score,
-.lost .score {
+[class~="loser"] .t_score,
+[class~="lose"] .t_score,
+[class~="lost"] .t_score {
     color: #72B7FF !important;
 }
 
 
 /* ==========================================================
-27. RANKING LIGI
-   l_stats.html
+28. PRZEGRANY — ELEMENTY WYNIKU
+========================================================== */
+
+.loser .score,
+.lose .score,
+.lost .score,
+.loser .result,
+.lose .result,
+.lost .result,
+.loser .points,
+.lose .points,
+.lost .points,
+[class~="loser"] .score,
+[class~="lose"] .score,
+[class~="lost"] .score,
+[class~="loser"] .result,
+[class~="lose"] .result,
+[class~="lost"] .result,
+[class~="loser"] .points,
+[class~="lose"] .points,
+[class~="lost"] .points {
+    color: #72B7FF !important;
+}
+
+
+/* ==========================================================
+29. RANKING / LEAGUE STATS
 ========================================================== */
 
 /*
-   Ranking N01 jest bardzo szeroką tabelą statystyczną.
-   Tutaj ustawiamy tylko jego wygląd:
-   - czarne tło strony
-   - grafitowy nagłówek
-   - jasny tekst
-   - złote nagłówki
-   - złote wartości rankingowe
+   N01 League Stats / Ranking
+   Ciemne tło całej tabeli.
 */
 
-body:has(table) table {
+body table {
     background-color: #111111 !important;
     color: #F2F2F2 !important;
-    border-color: #383838 !important;
 }
 
-body:has(table) table thead,
-body:has(table) table thead tr,
-body:has(table) table th {
+body table thead,
+body table thead tr,
+body table thead th {
     background-color: #202020 !important;
     color: #F0D675 !important;
     border-color: #383838 !important;
 }
 
-body:has(table) table tbody,
-body:has(table) table tbody tr {
-    background-color: #111111 !important;
-}
-
-body:has(table) table tbody td {
+body table tbody,
+body table tbody tr,
+body table tbody td {
     background-color: #111111 !important;
     color: #F2F2F2 !important;
     border-color: #303030 !important;
 }
 
-body:has(table) table tbody tr:nth-child(even) td {
+body table tbody tr:nth-child(even) td {
     background-color: #151515 !important;
 }
 
-body:has(table) table tbody tr:hover td {
+body table tbody tr:hover td {
     background-color: #202020 !important;
+    color: #F2F2F2 !important;
 }
 
 
 /* ==========================================================
-28. RANKING — NAZWISKA
+30. RANKING — NAZWISKA ZAWODNIKÓW
 ========================================================== */
 
-body:has(table) table a {
-    color: #F0D675 !important;
+body table td a {
+    color: #F2F2F2 !important;
 }
 
-body:has(table) table a:hover {
-    color: #FFFFFF !important;
-}
-
-
-/* ==========================================================
-29. RANKING — WARTOŚCI
-========================================================== */
-
-body:has(table) table .score,
-body:has(table) table .points,
-body:has(table) table .average,
-body:has(table) table .result {
+body table td a:hover {
     color: #F0D675 !important;
 }
 
 
 /* ==========================================================
-30. RANKING — PIERWSZA KOLUMNA
+31. RANKING — PUNKTY
 ========================================================== */
 
-body:has(table) table tbody td:first-child {
+body table td.score,
+body table td.points {
     color: #F0D675 !important;
 }
 
 
 /* ==========================================================
-31. RANKING — WIERSZ AKTYWNY / HOVER
+32. RANKING — OBRAMOWANIA
 ========================================================== */
 
-body:has(table) table tbody tr:hover td {
-    background-color: #202020 !important;
+body table,
+body table th,
+body table td {
+    border-color: #383838 !important;
 }
 
 
