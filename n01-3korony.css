@@ -513,7 +513,7 @@ aside {
 
 
 /* ==========================================================
-26. PRZEGRANY — NAZWA ZAWODNIKA
+26. PRZEGRANY — ZAWODNIK
 ========================================================== */
 
 .t_name.loser .entry_name,
@@ -533,87 +533,69 @@ aside {
 27. PRZEGRANY — WYNIK LEGÓW
 ========================================================== */
 
-/*
-   N01 umieszcza wynik w obrębie tego samego
-   elementu wyniku meczu (#dw_result_*).
-
-   Obejmujemy tutaj elementy tekstowe wyniku,
-   ale tylko w obrębie oznaczonego przegranego.
-*/
-
-.t_name.loser ~ span,
-.t_name.loser ~ div,
-.t_name.lose ~ span,
-.t_name.lose ~ div,
-.t_name.lost ~ span,
-.t_name.lost ~ div {
-    color: #72B7FF !important;
-}
-
-
-/* ==========================================================
-28. PRZEGRANY — ELEMENTY Z WYNIKIEM
-========================================================== */
-
-.loser .result,
-.loser .score,
-.loser .points,
-.loser .leg,
-.loser .legs,
-.loser .t_result,
+.t_name.loser .t_score,
+.t_name.lose .t_score,
+.t_name.lost .t_score,
 .loser .t_score,
-.loser .t_legs,
-
-.lose .result,
-.lose .score,
-.lose .points,
-.lose .leg,
-.lose .legs,
-.lose .t_result,
 .lose .t_score,
-.lose .t_legs,
-
-.lost .result,
-.lost .score,
-.lost .points,
-.lost .leg,
-.lost .legs,
-.lost .t_result,
 .lost .t_score,
-.lost .t_legs {
+[class~="loser"] .t_score,
+[class~="lose"] .t_score,
+[class~="lost"] .t_score {
     color: #72B7FF !important;
 }
 
 
 /* ==========================================================
-29. WYNIK W POLU DRABINKI
+28. PRZEGRANY — CAŁY WIERSZ WYNIKU
 ========================================================== */
 
-/*
-   Nie zmieniamy całego #dw_result_*,
-   ponieważ zawiera również inne elementy.
-   Zmieniamy tylko tekstowe elementy wyniku.
-*/
-
-[id^="dw_result_"] .t_score,
-[id^="dw_result_"] .score,
-[id^="dw_result_"] .result,
-[id^="dw_result_"] .points,
-[id^="dw_result_"] .leg,
-[id^="dw_result_"] .legs {
-    color: inherit;
+.loser,
+.lose,
+.lost,
+[class~="loser"],
+[class~="lose"],
+[class~="lost"] {
+    color: #72B7FF !important;
 }
 
 
 /* ==========================================================
-30. JASNOBŁĘKITNY KOLOR DLA ELEMENTÓW
-   OZNACZONYCH PRZEGRANĄ
+29. PRZEGRANY — ELEMENTY WYNIKU I NUMER MECZU
 ========================================================== */
 
-[aria-label*="lose"] ,
-[aria-label*="Lose"],
-[title*="lose"],
-[title*="Lose"] {
+.loser .score,
+.lose .score,
+.lost .score,
+.loser .result,
+.lose .result,
+.lost .result,
+.loser .points,
+.lose .points,
+.lost .points,
+[class~="loser"] .score,
+[class~="lose"] .score,
+[class~="lost"] .score,
+[class~="loser"] .result,
+[class~="lose"] .result,
+[class~="lost"] .result,
+[class~="loser"] .points,
+[class~="lose"] .points,
+[class~="lost"] .points {
+    color: #72B7FF !important;
+}
+
+
+/* ==========================================================
+30. NUMER MECZU — JASNONIEBIESKI
+========================================================== */
+
+.loser ~ *,
+.lose ~ *,
+.lost ~ *,
+[class~="loser"] ~ *,
+[class~="lose"] ~ *,
+[class~="lost"] ~ * {
     color: #72B7FF !important;
 }
 
