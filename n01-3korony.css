@@ -1,497 +1,215 @@
-# /*
+/* =========================================================
+   N01 - 3 KORONY
+   WERSJA BAZOWA - DZIAŁAJĄCA
+   ========================================================= */
 
-N01 — 3 KORONY
-Custom Theme
-Grand Prix Koszalina 2026-2027
+:root {
+    --back-color: #080808;
+    --surface-color: #111111;
+    --subtle-color: #181818;
+    --hover-color: #222222;
+    --active-color: #2c2c2c;
 
-Kolory:
-Czarny        #080808
-Grafit        #151515
-Grafit 2      #151515
-Złoty         #D4AF37
-Złoty jasny   #F0D675
-Tekst         #F2F2F2
-Tekst muted   #A8A8A8
-Obramowanie   #383838
+    --border-color: #383838;
 
-UWAGA:
-Ten plik jest dodatkiem do standardowego CSS N01.
-Nie zmienia układu strony ani funkcjonalności.
-==============================================
+    --text-color: #eeeeee;
+    --subtle-text-color: #aaaaaa;
 
-*/
-
-/* ==========================================================
-
-1. GŁÓWNE KOLORY N01
-   ========================================================== */
-
-html {
-background-color: #080808 !important;
-color-scheme: dark;
+    --accent-color: #d4af37;
+    --info-color: #72b7ff;
+    --match-color: #006cff;
 }
+
+
+/* =========================================================
+   STRONA
+   ========================================================= */
+
+html,
+body {
+    background-color: #080808 !important;
+    color: #eeeeee !important;
+}
+
+
+/* =========================================================
+   TEKST
+   ========================================================= */
 
 body {
---back-color: #080808;
---surface-color: #151515;
---subtle-color: #151515;
---hover-color: #292929;
---active-color: #353535;
-
-```
---border-color: #383838;
-
---text-color: #F2F2F2;
---subtext-color: #A8A8A8;
-
---accent-color: #D4AF37;
---accent-light-color: #F0D675;
-
---info-color: #3B82C4;
---match-color: #006CFF;
-
-background-color: #080808 !important;
-color: #F2F2F2 !important;
-```
-
+    color: #eeeeee;
 }
 
-/* ==========================================================
-2. GŁÓWNE OBSZARY STRONY
-========================================================== */
 
-body,
-#contents,
-#content,
-#main,
-main,
-.page,
-.container,
-.wrapper {
-background-color: #080808;
-color: #F2F2F2;
-}
-
-/* ==========================================================
-3. NAGŁÓWKI
-========================================================== */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-color: #F0D675;
-}
-
-h1 {
-text-shadow: 0 0 8px rgba(212, 175, 55, 0.18);
-}
-
-/* ==========================================================
-4. LINKI
-========================================================== */
+/* =========================================================
+   LINKI
+   ========================================================= */
 
 a {
-color: #F0D675;
+    color: #d4af37;
 }
 
 a:hover {
-color: #FFFFFF;
+    color: #f0d675;
 }
 
-a:visited {
-color: #D4AF37;
+
+/* =========================================================
+   NAGŁÓWEK
+   ========================================================= */
+
+header {
+    background-color: #080808;
+    color: #eeeeee;
 }
 
-/* ==========================================================
-5. PRZYCISKI
-========================================================== */
+
+/* =========================================================
+   TABELKI
+   ========================================================= */
+
+table {
+    background-color: #111111;
+    color: #eeeeee;
+    border-color: #383838;
+}
+
+th {
+    background-color: #181818;
+    color: #f0d675;
+    border-color: #383838;
+}
+
+td {
+    background-color: #111111;
+    color: #eeeeee;
+    border-color: #383838;
+}
+
+
+/* =========================================================
+   PRZYCISKI
+   ========================================================= */
 
 button,
 input[type="button"],
 input[type="submit"],
-input[type="reset"],
-.btn,
-.button {
-background-color: #151515;
-color: #F2F2F2;
-border: 1px solid #4A4A4A;
+input[type="reset"] {
+    background-color: #181818;
+    color: #eeeeee;
+    border: 1px solid #383838;
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
-input[type="reset"]:hover,
-.btn:hover,
-.button:hover {
-background-color: #292929;
-color: #F0D675;
-border-color: #D4AF37;
+input[type="reset"]:hover {
+    background-color: #222222;
+    color: #f0d675;
+    border-color: #d4af37;
 }
 
-button:active,
-input[type="button"]:active,
-input[type="submit"]:active,
-input[type="reset"]:active,
-.btn:active,
-.button:active {
-background-color: #353535;
-}
 
-/* ==========================================================
-6. POLA FORMULARZY
-========================================================== */
+/* =========================================================
+   POLA
+   ========================================================= */
 
 input,
-textarea,
-select {
-background-color: #151515;
-color: #F2F2F2;
-border: 1px solid #383838;
+select,
+textarea {
+    background-color: #111111;
+    color: #eeeeee;
+    border: 1px solid #383838;
 }
 
 input:focus,
-textarea:focus,
-select:focus {
-border-color: #D4AF37;
-outline: none;
-box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.25);
+select:focus,
+textarea:focus {
+    border-color: #d4af37;
 }
 
-input::placeholder,
-textarea::placeholder {
-color: #777777;
+
+/* =========================================================
+   MENU
+   ========================================================= */
+
+nav {
+    background-color: #080808;
 }
 
-/* ==========================================================
-7. TABELA
-========================================================== */
-
-table {
-background-color: #151515;
-color: #F2F2F2;
-border-color: #383838;
+nav a {
+    color: #eeeeee;
 }
 
-thead,
-th {
-background-color: #151515;
-color: #F0D675;
-border-color: #383838;
+nav a:hover {
+    color: #f0d675;
+    background-color: #181818;
 }
 
-tbody {
-background-color: #151515;
+
+/* =========================================================
+   AKTYWNE ELEMENTY
+   ========================================================= */
+
+.active {
+    background-color: #222222;
 }
 
-td {
-background-color: #151515;
-color: #F2F2F2;
-border-color: #303030;
+.selected {
+    background-color: #222222;
+    color: #f0d675;
 }
 
-tr:hover td {
-background-color: #151515;
+
+/* =========================================================
+   AKCENT 3 KORONY
+   ========================================================= */
+
+.gold,
+.accent {
+    color: #d4af37;
 }
 
-tr:nth-child(even) td {
-background-color: #151515;
+
+/* =========================================================
+   INFORMACJE
+   ========================================================= */
+
+.info,
+.notice,
+.message {
+    background-color: #111111;
+    color: #eeeeee;
+    border-color: #383838;
 }
 
-tr:nth-child(even):hover td {
-background-color: #151515;
+
+/* =========================================================
+   STOPKA
+   ========================================================= */
+
+footer {
+    background-color: #080808;
+    color: #888888;
 }
 
-/* ==========================================================
-8. ELEMENTY AKTYWNE / WYBRANE
-========================================================== */
 
-.active,
-.selected,
-.current,
-[aria-selected="true"] {
-background-color: #292929;
-color: #F0D675;
-border-color: #D4AF37;
+/* =========================================================
+   LIVE / INFORMACJE
+   ========================================================= */
+
+.live,
+.live_score,
+.live-score {
+    color: #72b7ff;
 }
 
-/* ==========================================================
-9. SEKCJE / KARTY / PANELE
-========================================================== */
 
-.card,
-.panel,
-.box,
-.section,
-.content-box {
-background-color: #151515;
-color: #F2F2F2;
-border-color: #383838;
-}
-
-.card:hover,
-.panel:hover {
-border-color: #4A4A4A;
-}
-
-/* ==========================================================
-10. TEKST DRUGORZĘDNY
-========================================================== */
-
-small,
-.muted,
-.subtext,
-.description,
-.secondary {
-color: #A8A8A8;
-}
-
-/* ==========================================================
-11. ZŁOTE AKCENTY
-========================================================== */
-
-.accent,
-.highlight,
-.gold {
-color: #D4AF37;
-}
-
-.accent-bg,
-.gold-bg {
-background-color: #D4AF37;
-color: #080808;
-}
-
-/* ==========================================================
-12. OBRAMOWANIA
-========================================================== */
-
-hr {
-border: 0;
-border-top: 1px solid #383838;
-}
-
-fieldset {
-border: 1px solid #383838;
-}
-
-/* ==========================================================
-13. ELEMENTY N01 — CZĘSTE KLASY
-========================================================== */
-
-.comp,
-.competition,
-.match,
-.game,
-.player,
-.team {
-color: #F2F2F2;
-}
-
-.comp-header,
-.competition-header,
-.match-header,
-.game-header {
-background-color: #151515;
-color: #F0D675;
-border-color: #383838;
-}
-
-/* ==========================================================
-14. WYNIKI / PUNKTY / WYNIKI MECZÓW
-========================================================== */
-
-.score,
-.result,
-.points,
-.average {
-color: #F0D675;
-}
-
-.win,
-.winner,
-.success {
-color: #D4AF37;
-}
-
-/* ==========================================================
-15. DRABINKI TURNIEJOWE
-========================================================== */
-
-.bracket,
-.bracket-container,
-.bracket-item,
-.bracket-match {
-background-color: #151515;
-color: #F2F2F2;
-border-color: #383838;
-}
-
-.bracket-item:hover,
-.bracket-match:hover {
-background-color: #151515;
-border-color: #D4AF37;
-}
-
-/* ==========================================================
-16. STATUSY
-========================================================== */
-
-.status,
-.badge {
-background-color: #151515;
-color: #F2F2F2;
-border-color: #383838;
-}
-
-.status.active,
-.status.current {
-color: #F0D675;
-border-color: #D4AF37;
-}
-
-/* ==========================================================
-17. MENU / NAWIGACJA
-========================================================== */
-
-nav,
-.nav,
-.menu,
-.navigation {
-background-color: #151515;
-color: #F2F2F2;
-}
-
-nav a,
-.nav a,
-.menu a,
-.navigation a {
-color: #D8D8D8;
-}
-
-nav a:hover,
-.nav a:hover,
-.menu a:hover,
-.navigation a:hover {
-color: #F0D675;
-background-color: #151515;
-}
-
-/* ==========================================================
-18. NAGŁÓWEK N01
-========================================================== */
-
-header,
-.header {
-background-color: #0B0B0B;
-color: #F2F2F2;
-border-bottom: 1px solid #383838;
-}
-
-/* ==========================================================
-19. STOPKA
-========================================================== */
-
-footer,
-.footer {
-background-color: #0B0B0B;
-color: #A8A8A8;
-border-top: 1px solid #383838;
-}
-
-/* ==========================================================
-20. MENU KONTEKSTOWE / POPUP
-========================================================== */
-
-.menu-popup,
-.dropdown,
-.dropdown-menu,
-.popup,
-.modal,
-.dialog {
-background-color: #151515;
-color: #F2F2F2;
-border: 1px solid #383838;
-}
-
-.menu-popup a,
-.dropdown a,
-.dropdown-menu a,
-.popup a {
-color: #F2F2F2;
-}
-
-.menu-popup a:hover,
-.dropdown a:hover,
-.dropdown-menu a:hover,
-.popup a:hover {
-background-color: #292929;
-color: #F0D675;
-}
-
-/* ==========================================================
-21. CHECKBOXY / RADIO / NATYWNE ELEMENTY
-========================================================== */
-
-input[type="checkbox"],
-input[type="radio"] {
-accent-color: #D4AF37;
-}
-
-/* ==========================================================
-22. SELEKCJA TEKSTU
-========================================================== */
+/* =========================================================
+   SELEKCJA
+   ========================================================= */
 
 ::selection {
-background-color: #D4AF37;
-color: #080808;
+    background-color: #d4af37;
+    color: #080808;
 }
-
-/* ==========================================================
-23. SCROLLBAR — DELIKATNY DARK/GOLD
-========================================================== */
-
-::-webkit-scrollbar {
-width: 10px;
-height: 10px;
-}
-
-::-webkit-scrollbar-track {
-background: #0B0B0B;
-}
-
-::-webkit-scrollbar-thumb {
-background: #383838;
-border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-background: #D4AF37;
-}
-
-/* ==========================================================
-24. USUNIĘCIE BIAŁYCH TŁEŁ Z TYPOWYCH ELEMENTÓW
-========================================================== */
-
-div,
-section,
-article,
-aside {
-border-color: inherit;
-}
-
-/* ==========================================================
-25. ZŁOTA LINIA AKCENTOWA
-========================================================== */
-
-.gold-line {
-height: 2px;
-background: #D4AF37;
-border: 0;
-}
-
-/* ==========================================================
-KONIEC — 3 KORONY
-============================================================ */
