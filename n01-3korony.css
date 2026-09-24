@@ -563,6 +563,10 @@ aside {
    30. LEAGUE STATS — STATYSTYKI
    ============================================================ */
 
+/* ------------------------------------------------------------
+   WIERSZE DANYCH — WSZYSTKIE KOLUMNY
+   ------------------------------------------------------------ */
+
 #entry_list tr.e_item:nth-of-type(2n+1) td {
     background-color: #202020 !important;
     color: #F2F2F2 !important;
@@ -573,9 +577,32 @@ aside {
     color: #F2F2F2 !important;
 }
 
-/* Pierwsze dwie kolumny */
-#entry_list tr.e_item td.e_no.e_fix,
-#entry_list tr.e_item td.e_name.e_fix {
+
+/* ------------------------------------------------------------
+   KOLUMNA MIEJSCA + ZAWODNIKA
+   ------------------------------------------------------------ */
+
+/* pierwszy wiersz */
+#entry_list tr.e_item:nth-of-type(2n+1) td.e_no.e_fix,
+#entry_list tr.e_item:nth-of-type(2n+1) td.e_name.e_fix {
+    background-color: #202020 !important;
+    color: #F2F2F2 !important;
+}
+
+/* drugi wiersz */
+#entry_list tr.e_item:nth-of-type(2n) td.e_no.e_fix,
+#entry_list tr.e_item:nth-of-type(2n) td.e_name.e_fix {
     background-color: #151515 !important;
     color: #F2F2F2 !important;
+}
+
+
+/* ------------------------------------------------------------
+   NAGŁÓWKI TABELI
+   ------------------------------------------------------------ */
+
+#entry_list thead th {
+    background-color: #202020 !important;
+    color: #F0D675 !important;
+    border-color: #383838 !important;
 }
