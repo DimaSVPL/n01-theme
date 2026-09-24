@@ -583,3 +583,20 @@ aside {
     background-color: #151515 !important;
     color: #F2F2F2 !important;
 }
+/* ============================================================
+   32. LEAGUE STATS — KOLUMNA ZAWODNIKA
+   Nadpisanie N01 --tab1-color
+   ============================================================ */
+
+#entry_list .e_fix {
+    background-color: #151515 !important;
+    color: #F2F2F2 !important;
+}
+/* ============================================================
+   33. LEAGUE STATS — NAGŁÓWEK
+   ============================================================ */
+
+#entry_list thead th {
+    background-color: #202020 !important;
+    color: #F0D675 !important;
+}
