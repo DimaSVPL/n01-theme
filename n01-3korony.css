@@ -1,60 +1,56 @@
-# /*
-
+/*
 N01 — 3 KORONY
 Custom Theme
 Grand Prix Koszalina 2026-2027
 
 Kolory:
-Czarny        #080808
-Grafit        #151515
-Grafit 2      #202020
-Złoty         #D4AF37
-Złoty jasny   #F0D675
-Tekst         #F2F2F2
-Tekst muted   #A8A8A8
-Obramowanie   #383838
+Czarny #080808
+Grafit #151515
+Grafit 2 #202020
+Złoty #D4AF37
+Złoty jasny #F0D675
+Tekst #F2F2F2
+Tekst muted #A8A8A8
+Jasnoniebieski #72B7FF
+Obramowanie #383838
 
 UWAGA:
 Ten plik jest dodatkiem do standardowego CSS N01.
 Nie zmienia układu strony ani funkcjonalności.
-==============================================
-
 */
 
-/* ==========================================================
 
+/* ==========================================================
 1. GŁÓWNE KOLORY N01
-   ========================================================== */
+========================================================== */
 
 html {
-background-color: #080808 !important;
-color-scheme: dark;
+    background-color: #080808 !important;
+    color-scheme: dark;
 }
 
 body {
---back-color: #080808;
---surface-color: #151515;
---subtle-color: #202020;
---hover-color: #292929;
---active-color: #353535;
+    --back-color: #080808;
+    --surface-color: #151515;
+    --subtle-color: #202020;
+    --hover-color: #292929;
+    --active-color: #353535;
 
-```
---border-color: #383838;
+    --border-color: #383838;
 
---text-color: #F2F2F2;
---subtext-color: #A8A8A8;
+    --text-color: #F2F2F2;
+    --subtext-color: #A8A8A8;
 
---accent-color: #D4AF37;
---accent-light-color: #F0D675;
+    --accent-color: #D4AF37;
+    --accent-light-color: #F0D675;
 
---info-color: #3B82C4;
---match-color: #006CFF;
+    --info-color: #3B82C4;
+    --match-color: #006CFF;
 
-background-color: #080808 !important;
-color: #F2F2F2 !important;
-```
-
+    background-color: #080808 !important;
+    color: #F2F2F2 !important;
 }
+
 
 /* ==========================================================
 2. GŁÓWNE OBSZARY STRONY
@@ -68,9 +64,10 @@ main,
 .page,
 .container,
 .wrapper {
-background-color: #080808;
-color: #F2F2F2;
+    background-color: #080808;
+    color: #F2F2F2;
 }
+
 
 /* ==========================================================
 3. NAGŁÓWKI
@@ -82,28 +79,30 @@ h3,
 h4,
 h5,
 h6 {
-color: #F0D675;
+    color: #F0D675;
 }
 
 h1 {
-text-shadow: 0 0 8px rgba(212, 175, 55, 0.18);
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.18);
 }
+
 
 /* ==========================================================
 4. LINKI
 ========================================================== */
 
 a {
-color: #F0D675;
+    color: #F0D675;
 }
 
 a:hover {
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 a:visited {
-color: #D4AF37;
+    color: #D4AF37;
 }
+
 
 /* ==========================================================
 5. PRZYCISKI
@@ -115,9 +114,9 @@ input[type="submit"],
 input[type="reset"],
 .btn,
 .button {
-background-color: #202020;
-color: #F2F2F2;
-border: 1px solid #4A4A4A;
+    background-color: #202020;
+    color: #F2F2F2;
+    border: 1px solid #4A4A4A;
 }
 
 button:hover,
@@ -126,9 +125,9 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 .btn:hover,
 .button:hover {
-background-color: #292929;
-color: #F0D675;
-border-color: #D4AF37;
+    background-color: #292929;
+    color: #F0D675;
+    border-color: #D4AF37;
 }
 
 button:active,
@@ -137,8 +136,9 @@ input[type="submit"]:active,
 input[type="reset"]:active,
 .btn:active,
 .button:active {
-background-color: #353535;
+    background-color: #353535;
 }
+
 
 /* ==========================================================
 6. POLA FORMULARZY
@@ -147,62 +147,64 @@ background-color: #353535;
 input,
 textarea,
 select {
-background-color: #151515;
-color: #F2F2F2;
-border: 1px solid #383838;
+    background-color: #151515;
+    color: #F2F2F2;
+    border: 1px solid #383838;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-border-color: #D4AF37;
-outline: none;
-box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.25);
+    border-color: #D4AF37;
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.25);
 }
 
 input::placeholder,
 textarea::placeholder {
-color: #777777;
+    color: #777777;
 }
+
 
 /* ==========================================================
 7. TABELA
 ========================================================== */
 
 table {
-background-color: #111111;
-color: #F2F2F2;
-border-color: #383838;
+    background-color: #111111;
+    color: #F2F2F2;
+    border-color: #383838;
 }
 
 thead,
 th {
-background-color: #202020;
-color: #F0D675;
-border-color: #383838;
+    background-color: #202020;
+    color: #F0D675;
+    border-color: #383838;
 }
 
 tbody {
-background-color: #111111;
+    background-color: #111111;
 }
 
 td {
-background-color: #111111;
-color: #F2F2F2;
-border-color: #303030;
+    background-color: #111111;
+    color: #F2F2F2;
+    border-color: #303030;
 }
 
 tr:hover td {
-background-color: #202020;
+    background-color: #202020;
 }
 
 tr:nth-child(even) td {
-background-color: #151515;
+    background-color: #151515;
 }
 
 tr:nth-child(even):hover td {
-background-color: #202020;
+    background-color: #202020;
 }
+
 
 /* ==========================================================
 8. ELEMENTY AKTYWNE / WYBRANE
@@ -212,10 +214,11 @@ background-color: #202020;
 .selected,
 .current,
 [aria-selected="true"] {
-background-color: #292929;
-color: #F0D675;
-border-color: #D4AF37;
+    background-color: #292929;
+    color: #F0D675;
+    border-color: #D4AF37;
 }
+
 
 /* ==========================================================
 9. SEKCJE / KARTY / PANELE
@@ -226,15 +229,16 @@ border-color: #D4AF37;
 .box,
 .section,
 .content-box {
-background-color: #151515;
-color: #F2F2F2;
-border-color: #383838;
+    background-color: #151515;
+    color: #F2F2F2;
+    border-color: #383838;
 }
 
 .card:hover,
 .panel:hover {
-border-color: #4A4A4A;
+    border-color: #4A4A4A;
 }
+
 
 /* ==========================================================
 10. TEKST DRUGORZĘDNY
@@ -245,8 +249,9 @@ small,
 .subtext,
 .description,
 .secondary {
-color: #A8A8A8;
+    color: #A8A8A8;
 }
+
 
 /* ==========================================================
 11. ZŁOTE AKCENTY
@@ -255,27 +260,29 @@ color: #A8A8A8;
 .accent,
 .highlight,
 .gold {
-color: #D4AF37;
+    color: #D4AF37;
 }
 
 .accent-bg,
 .gold-bg {
-background-color: #D4AF37;
-color: #080808;
+    background-color: #D4AF37;
+    color: #080808;
 }
+
 
 /* ==========================================================
 12. OBRAMOWANIA
 ========================================================== */
 
 hr {
-border: 0;
-border-top: 1px solid #383838;
+    border: 0;
+    border-top: 1px solid #383838;
 }
 
 fieldset {
-border: 1px solid #383838;
+    border: 1px solid #383838;
 }
+
 
 /* ==========================================================
 13. ELEMENTY N01 — CZĘSTE KLASY
@@ -287,17 +294,18 @@ border: 1px solid #383838;
 .game,
 .player,
 .team {
-color: #F2F2F2;
+    color: #F2F2F2;
 }
 
 .comp-header,
 .competition-header,
 .match-header,
 .game-header {
-background-color: #202020;
-color: #F0D675;
-border-color: #383838;
+    background-color: #202020;
+    color: #F0D675;
+    border-color: #383838;
 }
+
 
 /* ==========================================================
 14. WYNIKI / PUNKTY / WYNIKI MECZÓW
@@ -307,14 +315,15 @@ border-color: #383838;
 .result,
 .points,
 .average {
-color: #F0D675;
+    color: #F0D675;
 }
 
 .win,
 .winner,
 .success {
-color: #D4AF37;
+    color: #D4AF37;
 }
+
 
 /* ==========================================================
 15. DRABINKI TURNIEJOWE
@@ -324,16 +333,17 @@ color: #D4AF37;
 .bracket-container,
 .bracket-item,
 .bracket-match {
-background-color: #151515;
-color: #F2F2F2;
-border-color: #383838;
+    background-color: #151515;
+    color: #F2F2F2;
+    border-color: #383838;
 }
 
 .bracket-item:hover,
 .bracket-match:hover {
-background-color: #202020;
-border-color: #D4AF37;
+    background-color: #202020;
+    border-color: #D4AF37;
 }
+
 
 /* ==========================================================
 16. STATUSY
@@ -341,16 +351,17 @@ border-color: #D4AF37;
 
 .status,
 .badge {
-background-color: #202020;
-color: #F2F2F2;
-border-color: #383838;
+    background-color: #202020;
+    color: #F2F2F2;
+    border-color: #383838;
 }
 
 .status.active,
 .status.current {
-color: #F0D675;
-border-color: #D4AF37;
+    color: #F0D675;
+    border-color: #D4AF37;
 }
+
 
 /* ==========================================================
 17. MENU / NAWIGACJA
@@ -360,24 +371,25 @@ nav,
 .nav,
 .menu,
 .navigation {
-background-color: #111111;
-color: #F2F2F2;
+    background-color: #111111;
+    color: #F2F2F2;
 }
 
 nav a,
 .nav a,
 .menu a,
 .navigation a {
-color: #D8D8D8;
+    color: #D8D8D8;
 }
 
 nav a:hover,
 .nav a:hover,
 .menu a:hover,
 .navigation a:hover {
-color: #F0D675;
-background-color: #202020;
+    color: #F0D675;
+    background-color: #202020;
 }
+
 
 /* ==========================================================
 18. NAGŁÓWEK N01
@@ -385,10 +397,11 @@ background-color: #202020;
 
 header,
 .header {
-background-color: #0B0B0B;
-color: #F2F2F2;
-border-bottom: 1px solid #383838;
+    background-color: #0B0B0B;
+    color: #F2F2F2;
+    border-bottom: 1px solid #383838;
 }
+
 
 /* ==========================================================
 19. STOPKA
@@ -396,10 +409,11 @@ border-bottom: 1px solid #383838;
 
 footer,
 .footer {
-background-color: #0B0B0B;
-color: #A8A8A8;
-border-top: 1px solid #383838;
+    background-color: #0B0B0B;
+    color: #A8A8A8;
+    border-top: 1px solid #383838;
 }
+
 
 /* ==========================================================
 20. MENU KONTEKSTOWE / POPUP
@@ -411,25 +425,26 @@ border-top: 1px solid #383838;
 .popup,
 .modal,
 .dialog {
-background-color: #151515;
-color: #F2F2F2;
-border: 1px solid #383838;
+    background-color: #151515;
+    color: #F2F2F2;
+    border: 1px solid #383838;
 }
 
 .menu-popup a,
 .dropdown a,
 .dropdown-menu a,
 .popup a {
-color: #F2F2F2;
+    color: #F2F2F2;
 }
 
 .menu-popup a:hover,
 .dropdown a:hover,
 .dropdown-menu a:hover,
 .popup a:hover {
-background-color: #292929;
-color: #F0D675;
+    background-color: #292929;
+    color: #F0D675;
 }
+
 
 /* ==========================================================
 21. CHECKBOXY / RADIO / NATYWNE ELEMENTY
@@ -437,39 +452,42 @@ color: #F0D675;
 
 input[type="checkbox"],
 input[type="radio"] {
-accent-color: #D4AF37;
+    accent-color: #D4AF37;
 }
+
 
 /* ==========================================================
 22. SELEKCJA TEKSTU
 ========================================================== */
 
 ::selection {
-background-color: #D4AF37;
-color: #080808;
+    background-color: #D4AF37;
+    color: #080808;
 }
+
 
 /* ==========================================================
 23. SCROLLBAR — DELIKATNY DARK/GOLD
 ========================================================== */
 
 ::-webkit-scrollbar {
-width: 10px;
-height: 10px;
+    width: 10px;
+    height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-background: #0B0B0B;
+    background: #0B0B0B;
 }
 
 ::-webkit-scrollbar-thumb {
-background: #383838;
-border-radius: 5px;
+    background: #383838;
+    border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background: #D4AF37;
+    background: #D4AF37;
 }
+
 
 /* ==========================================================
 24. USUNIĘCIE BIAŁYCH TŁEŁ Z TYPOWYCH ELEMENTÓW
@@ -479,19 +497,82 @@ div,
 section,
 article,
 aside {
-border-color: inherit;
+    border-color: inherit;
 }
+
 
 /* ==========================================================
 25. ZŁOTA LINIA AKCENTOWA
 ========================================================== */
 
 .gold-line {
-height: 2px;
-background: #D4AF37;
-border: 0;
+    height: 2px;
+    background: #D4AF37;
+    border: 0;
 }
+
+
+/* ==========================================================
+26. PRZEGRANY W DRABINIE
+   JASNOBŁĘKITNY
+========================================================== */
+
+/*
+   N01 wykorzystuje elementy .t_name oraz .entry_name
+   do wyświetlania zawodników w drabince.
+
+   Nie zmieniamy tła drabinki.
+   Nie zmieniamy zwycięzcy.
+*/
+
+.t_name.loser .entry_name,
+.t_name.lose .entry_name,
+.t_name.lost .entry_name,
+.loser .t_name .entry_name,
+.lose .t_name .entry_name,
+.lost .t_name .entry_name {
+    color: #72B7FF !important;
+}
+
+
+/* ==========================================================
+27. WYNIK LEGÓW PRZEGRANEGO
+   JASNOBŁĘKITNY
+========================================================== */
+
+.t_name.loser ~ *,
+.t_name.lose ~ *,
+.t_name.lost ~ * {
+    color: #72B7FF !important;
+}
+
+.loser .t_score,
+.lose .t_score,
+.lost .t_score,
+.loser .score,
+.lose .score,
+.lost .score {
+    color: #72B7FF !important;
+}
+
+
+/* ==========================================================
+28. DODATKOWE OZNACZENIA PRZEGRANEGO N01
+========================================================== */
+
+[class~="loser"] .entry_name,
+[class~="lose"] .entry_name,
+[class~="lost"] .entry_name {
+    color: #72B7FF !important;
+}
+
+[class~="loser"] .t_score,
+[class~="lose"] .t_score,
+[class~="lost"] .t_score {
+    color: #72B7FF !important;
+}
+
 
 /* ==========================================================
 KONIEC — 3 KORONY
-============================================================ */
+========================================================== */
