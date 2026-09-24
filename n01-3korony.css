@@ -285,7 +285,7 @@ fieldset {
 
 
 /* ==========================================================
-13. ELEMENTY N01 — CZĘSTE KLASY
+13. ELEMENTY N01
 ========================================================== */
 
 .comp,
@@ -308,7 +308,7 @@ fieldset {
 
 
 /* ==========================================================
-14. WYNIKI / PUNKTY / WYNIKI MECZÓW
+14. WYNIKI
 ========================================================== */
 
 .score,
@@ -326,7 +326,7 @@ fieldset {
 
 
 /* ==========================================================
-15. DRABINKI TURNIEJOWE
+15. DRABINKI
 ========================================================== */
 
 .bracket,
@@ -416,7 +416,7 @@ footer,
 
 
 /* ==========================================================
-20. MENU KONTEKSTOWE / POPUP
+20. MENU / POPUP
 ========================================================== */
 
 .menu-popup,
@@ -447,7 +447,7 @@ footer,
 
 
 /* ==========================================================
-21. CHECKBOXY / RADIO / NATYWNE ELEMENTY
+21. CHECKBOXY / RADIO
 ========================================================== */
 
 input[type="checkbox"],
@@ -457,7 +457,7 @@ input[type="radio"] {
 
 
 /* ==========================================================
-22. SELEKCJA TEKSTU
+22. SELEKCJA
 ========================================================== */
 
 ::selection {
@@ -467,7 +467,7 @@ input[type="radio"] {
 
 
 /* ==========================================================
-23. SCROLLBAR — DELIKATNY DARK/GOLD
+23. SCROLLBAR
 ========================================================== */
 
 ::-webkit-scrollbar {
@@ -490,7 +490,7 @@ input[type="radio"] {
 
 
 /* ==========================================================
-24. USUNIĘCIE BIAŁYCH TŁEŁ Z TYPOWYCH ELEMENTÓW
+24. TYPOWE ELEMENTY
 ========================================================== */
 
 div,
@@ -502,7 +502,7 @@ aside {
 
 
 /* ==========================================================
-25. ZŁOTA LINIA AKCENTOWA
+25. ZŁOTA LINIA
 ========================================================== */
 
 .gold-line {
@@ -513,7 +513,7 @@ aside {
 
 
 /* ==========================================================
-26. PRZEGRANY — ZAWODNIK
+26. PRZEGRANY W DRABINIE
 ========================================================== */
 
 .t_name.loser .entry_name,
@@ -528,75 +528,105 @@ aside {
     color: #72B7FF !important;
 }
 
-
-/* ==========================================================
-27. PRZEGRANY — WYNIK LEGÓW
-========================================================== */
-
-.t_name.loser .t_score,
-.t_name.lose .t_score,
-.t_name.lost .t_score,
 .loser .t_score,
 .lose .t_score,
 .lost .t_score,
-[class~="loser"] .t_score,
-[class~="lose"] .t_score,
-[class~="lost"] .t_score {
-    color: #72B7FF !important;
-}
-
-
-/* ==========================================================
-28. PRZEGRANY — CAŁY WIERSZ WYNIKU
-========================================================== */
-
-.loser,
-.lose,
-.lost,
-[class~="loser"],
-[class~="lose"],
-[class~="lost"] {
-    color: #72B7FF !important;
-}
-
-
-/* ==========================================================
-29. PRZEGRANY — ELEMENTY WYNIKU I NUMER MECZU
-========================================================== */
-
 .loser .score,
 .lose .score,
-.lost .score,
-.loser .result,
-.lose .result,
-.lost .result,
-.loser .points,
-.lose .points,
-.lost .points,
-[class~="loser"] .score,
-[class~="lose"] .score,
-[class~="lost"] .score,
-[class~="loser"] .result,
-[class~="lose"] .result,
-[class~="lost"] .result,
-[class~="loser"] .points,
-[class~="lose"] .points,
-[class~="lost"] .points {
+.lost .score {
     color: #72B7FF !important;
 }
 
 
 /* ==========================================================
-30. NUMER MECZU — JASNONIEBIESKI
+27. RANKING LIGI
+   l_stats.html
 ========================================================== */
 
-.loser ~ *,
-.lose ~ *,
-.lost ~ *,
-[class~="loser"] ~ *,
-[class~="lose"] ~ *,
-[class~="lost"] ~ * {
-    color: #72B7FF !important;
+/*
+   Ranking N01 jest bardzo szeroką tabelą statystyczną.
+   Tutaj ustawiamy tylko jego wygląd:
+   - czarne tło strony
+   - grafitowy nagłówek
+   - jasny tekst
+   - złote nagłówki
+   - złote wartości rankingowe
+*/
+
+body:has(table) table {
+    background-color: #111111 !important;
+    color: #F2F2F2 !important;
+    border-color: #383838 !important;
+}
+
+body:has(table) table thead,
+body:has(table) table thead tr,
+body:has(table) table th {
+    background-color: #202020 !important;
+    color: #F0D675 !important;
+    border-color: #383838 !important;
+}
+
+body:has(table) table tbody,
+body:has(table) table tbody tr {
+    background-color: #111111 !important;
+}
+
+body:has(table) table tbody td {
+    background-color: #111111 !important;
+    color: #F2F2F2 !important;
+    border-color: #303030 !important;
+}
+
+body:has(table) table tbody tr:nth-child(even) td {
+    background-color: #151515 !important;
+}
+
+body:has(table) table tbody tr:hover td {
+    background-color: #202020 !important;
+}
+
+
+/* ==========================================================
+28. RANKING — NAZWISKA
+========================================================== */
+
+body:has(table) table a {
+    color: #F0D675 !important;
+}
+
+body:has(table) table a:hover {
+    color: #FFFFFF !important;
+}
+
+
+/* ==========================================================
+29. RANKING — WARTOŚCI
+========================================================== */
+
+body:has(table) table .score,
+body:has(table) table .points,
+body:has(table) table .average,
+body:has(table) table .result {
+    color: #F0D675 !important;
+}
+
+
+/* ==========================================================
+30. RANKING — PIERWSZA KOLUMNA
+========================================================== */
+
+body:has(table) table tbody td:first-child {
+    color: #F0D675 !important;
+}
+
+
+/* ==========================================================
+31. RANKING — WIERSZ AKTYWNY / HOVER
+========================================================== */
+
+body:has(table) table tbody tr:hover td {
+    background-color: #202020 !important;
 }
 
 
