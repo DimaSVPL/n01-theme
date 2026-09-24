@@ -7,7 +7,7 @@ Grand Prix Koszalina 2026-2027
 Kolory:
 Czarny        #080808
 Grafit        #151515
-Grafit 2      #202020
+Grafit 2      #151515
 Złoty         #D4AF37
 Złoty jasny   #F0D675
 Tekst         #F2F2F2
@@ -34,7 +34,7 @@ color-scheme: dark;
 body {
 --back-color: #080808;
 --surface-color: #151515;
---subtle-color: #202020;
+--subtle-color: #151515;
 --hover-color: #292929;
 --active-color: #353535;
 
@@ -115,7 +115,7 @@ input[type="submit"],
 input[type="reset"],
 .btn,
 .button {
-background-color: #202020;
+background-color: #151515;
 color: #F2F2F2;
 border: 1px solid #4A4A4A;
 }
@@ -177,7 +177,7 @@ border-color: #383838;
 
 thead,
 th {
-background-color: #202020;
+background-color: #151515;
 color: #F0D675;
 border-color: #383838;
 }
@@ -193,7 +193,7 @@ border-color: #303030;
 }
 
 tr:hover td {
-background-color: #202020;
+background-color: #151515;
 }
 
 tr:nth-child(even) td {
@@ -201,7 +201,7 @@ background-color: #151515;
 }
 
 tr:nth-child(even):hover td {
-background-color: #202020;
+background-color: #151515;
 }
 
 /* ==========================================================
@@ -294,7 +294,7 @@ color: #F2F2F2;
 .competition-header,
 .match-header,
 .game-header {
-background-color: #202020;
+background-color: #151515;
 color: #F0D675;
 border-color: #383838;
 }
@@ -331,7 +331,7 @@ border-color: #383838;
 
 .bracket-item:hover,
 .bracket-match:hover {
-background-color: #202020;
+background-color: #151515;
 border-color: #D4AF37;
 }
 
@@ -341,7 +341,7 @@ border-color: #D4AF37;
 
 .status,
 .badge {
-background-color: #202020;
+background-color: #151515;
 color: #F2F2F2;
 border-color: #383838;
 }
@@ -376,7 +376,7 @@ nav a:hover,
 .menu a:hover,
 .navigation a:hover {
 color: #F0D675;
-background-color: #202020;
+background-color: #151515;
 }
 
 /* ==========================================================
