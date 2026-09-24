@@ -249,3 +249,8 @@ option {
     background: #d4af37;
     color: #111111;
 }
+html,
+body {
+    background: #121212 !important;
+    color: #e8eaed !important;
+}
