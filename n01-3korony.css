@@ -560,43 +560,69 @@ aside {
     color: #F0D675 !important;
 }
 /* ============================================================
-   31. LEAGUE STATS — NAGŁÓWEK + KOLUMNA ZAWODNIKA
+   29. LEAGUE STATS — NAPRZEMIENNE WIERSZE RANK
    ============================================================ */
 
-/* Cały nagłówek tabeli */
-#entry_list thead th.th_stats,
-#entry_list thead th.th_no,
-#entry_list thead th.th_name {
+#rank_list tbody tr:nth-child(odd) td {
+    background-color: #202020 !important;
+}
+
+#rank_list tbody tr:nth-child(even) td {
+    background-color: #151515 !important;
+}
+
+
+/* ============================================================
+   30. LEAGUE STATS — STATYSTYKI
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   NAGŁÓWEK TABELI
+   ------------------------------------------------------------ */
+
+#entry_list thead th {
     background-color: #202020 !important;
     color: #F0D675 !important;
     border-color: #383838 !important;
 }
 
-/* Numer zawodnika */
-#entry_list tbody tr.e_item td.e_no.e_fix {
-    background-color: #151515 !important;
-    color: #F2F2F2 !important;
-}
 
-/* Nazwa zawodnika */
-#entry_list tbody tr.e_item td.e_name.e_fix {
-    background-color: #151515 !important;
-    color: #F2F2F2 !important;
-}
-/* ============================================================
-   32. LEAGUE STATS — KOLUMNA ZAWODNIKA
-   Nadpisanie N01 --tab1-color
-   ============================================================ */
+/* ------------------------------------------------------------
+   KOLUMNA NUMER + ZAWODNIK
+   ------------------------------------------------------------ */
 
 #entry_list .e_fix {
     background-color: #151515 !important;
     color: #F2F2F2 !important;
 }
-/* ============================================================
-   33. LEAGUE STATS — NAGŁÓWEK
-   ============================================================ */
 
-#entry_list thead th {
+
+/* ------------------------------------------------------------
+   KOMÓRKI STATYSTYK — BAZA
+   ------------------------------------------------------------ */
+
+#entry_list tr.e_item td.stats,
+#entry_list tr.e_item td.stats.total {
+    background-color: #151515 !important;
+    color: #F2F2F2 !important;
+}
+
+
+/* ------------------------------------------------------------
+   WIERSZE 1, 3, 5...
+   ------------------------------------------------------------ */
+
+#entry_list tr.e_item:nth-of-type(2n+1) td.stats,
+#entry_list tr.e_item:nth-of-type(2n+1) td.stats.total {
     background-color: #202020 !important;
-    color: #F0D675 !important;
+}
+
+
+/* ------------------------------------------------------------
+   WIERSZE 2, 4, 6...
+   ------------------------------------------------------------ */
+
+#entry_list tr.e_item:nth-of-type(2n) td.stats,
+#entry_list tr.e_item:nth-of-type(2n) td.stats.total {
+    background-color: #151515 !important;
 }
