@@ -618,28 +618,35 @@ aside {
     color: #F0D675 !important;
 }
 /* ============================================================
-   31. STATS — KOLUMNA ZAWODNIKA MA KOLOR CAŁEGO WIERSZA
+   31. STATS — NADPISANIE KOLORU KOLUMNY ZAWODNIKA
    ============================================================ */
 
-/* Jasne wiersze */
-#entry_list tbody > tr.e_item:nth-child(even) > td.e_fix,
-#entry_list tbody > tr.e_item:nth-child(even) > td.e_name,
-#entry_list tbody > tr.e_item:nth-child(even) > td.e_no {
+#entry_list.tablesorter-default tbody > tr.e_item > td.e_fix {
+    background: inherit !important;
+    background-color: inherit !important;
+}
+
+#entry_list.tablesorter-default tbody > tr.e_item > td.e_name.e_fix {
+    background: inherit !important;
+    background-color: inherit !important;
+}
+
+#entry_list.tablesorter-default tbody > tr.e_item:nth-child(even) > td.e_fix {
     background: #202020 !important;
     background-color: #202020 !important;
 }
 
-/* Ciemne wiersze */
-#entry_list tbody > tr.e_item:nth-child(odd) > td.e_fix,
-#entry_list tbody > tr.e_item:nth-child(odd) > td.e_name,
-#entry_list tbody > tr.e_item:nth-child(odd) > td.e_no {
+#entry_list.tablesorter-default tbody > tr.e_item:nth-child(odd) > td.e_fix {
     background: #151515 !important;
     background-color: #151515 !important;
 }
 
-/* Tekst */
-#entry_list tbody > tr.e_item > td.e_fix,
-#entry_list tbody > tr.e_item > td.e_name,
-#entry_list tbody > tr.e_item > td.e_no {
-    color: #F2F2F2 !important;
+#entry_list.tablesorter-default tbody > tr.e_item:nth-child(even) > td.e_name.e_fix {
+    background: #202020 !important;
+    background-color: #202020 !important;
+}
+
+#entry_list.tablesorter-default tbody > tr.e_item:nth-child(odd) > td.e_name.e_fix {
+    background: #151515 !important;
+    background-color: #151515 !important;
 }
