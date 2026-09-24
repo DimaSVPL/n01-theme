@@ -560,49 +560,26 @@ aside {
     color: #F0D675 !important;
 }
 /* ============================================================
-   30. LEAGUE STATS — STATYSTYKI
+   31. LEAGUE STATS — NAGŁÓWEK + KOLUMNA ZAWODNIKA
    ============================================================ */
 
-/* ------------------------------------------------------------
-   WIERSZE DANYCH — WSZYSTKIE KOLUMNY
-   ------------------------------------------------------------ */
-
-#entry_list tr.e_item:nth-of-type(2n+1) td {
-    background-color: #202020 !important;
-    color: #F2F2F2 !important;
-}
-
-#entry_list tr.e_item:nth-of-type(2n) td {
-    background-color: #151515 !important;
-    color: #F2F2F2 !important;
-}
-
-
-/* ------------------------------------------------------------
-   KOLUMNA MIEJSCA + ZAWODNIKA
-   ------------------------------------------------------------ */
-
-/* pierwszy wiersz */
-#entry_list tr.e_item:nth-of-type(2n+1) td.e_no.e_fix,
-#entry_list tr.e_item:nth-of-type(2n+1) td.e_name.e_fix {
-    background-color: #202020 !important;
-    color: #F2F2F2 !important;
-}
-
-/* drugi wiersz */
-#entry_list tr.e_item:nth-of-type(2n) td.e_no.e_fix,
-#entry_list tr.e_item:nth-of-type(2n) td.e_name.e_fix {
-    background-color: #151515 !important;
-    color: #F2F2F2 !important;
-}
-
-
-/* ------------------------------------------------------------
-   NAGŁÓWKI TABELI
-   ------------------------------------------------------------ */
-
-#entry_list thead th {
+/* Cały nagłówek tabeli */
+#entry_list thead th.th_stats,
+#entry_list thead th.th_no,
+#entry_list thead th.th_name {
     background-color: #202020 !important;
     color: #F0D675 !important;
     border-color: #383838 !important;
+}
+
+/* Numer zawodnika */
+#entry_list tbody tr.e_item td.e_no.e_fix {
+    background-color: #151515 !important;
+    color: #F2F2F2 !important;
+}
+
+/* Nazwa zawodnika */
+#entry_list tbody tr.e_item td.e_name.e_fix {
+    background-color: #151515 !important;
+    color: #F2F2F2 !important;
 }
