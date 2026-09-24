@@ -491,7 +491,64 @@ height: 2px;
 background: #D4AF37;
 border: 0;
 }
+/* ==========================================================
+   26. DRABINKA — CZYTELNOŚĆ ZAWODNIKÓW
+   ========================================================== */
 
+/* Tło pól drabinki */
+.bracket,
+.bracket-container,
+.bracket-item,
+.bracket-match,
+[class*="bracket"] {
+    background-color: #151515 !important;
+    color: #F2F2F2 !important;
+}
+
+/* Wszystkie teksty wewnątrz drabinki */
+.bracket *,
+.bracket-container *,
+.bracket-item *,
+.bracket-match *,
+[class*="bracket"] * {
+    color: #F2F2F2 !important;
+}
+
+/* Nazwy zawodników */
+.bracket a,
+.bracket-container a,
+.bracket-item a,
+.bracket-match a,
+[class*="bracket"] a {
+    color: #F2F2F2 !important;
+}
+
+/* Zawodnik przegrany — nadal czytelny, ale mniej wyraźny */
+.bracket .loser,
+.bracket-container .loser,
+.bracket-item .loser,
+.bracket-match .loser,
+[class*="bracket"] .loser {
+    color: #A8A8A8 !important;
+}
+
+/* Zwycięzca — złoty */
+.bracket .winner,
+.bracket-container .winner,
+.bracket-item .winner,
+.bracket-match .winner,
+[class*="bracket"] .winner {
+    color: #F0D675 !important;
+}
+
+/* Hover */
+.bracket a:hover,
+.bracket-container a:hover,
+.bracket-item a:hover,
+.bracket-match a:hover,
+[class*="bracket"] a:hover {
+    color: #FFFFFF !important;
+}
 /* ==========================================================
 KONIEC — 3 KORONY
 ============================================================ */
