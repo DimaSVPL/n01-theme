@@ -617,3 +617,29 @@ aside {
     background-color: #202020 !important;
     color: #F0D675 !important;
 }
+/* ============================================================
+   31. STATS — KOLUMNA ZAWODNIKA MA KOLOR CAŁEGO WIERSZA
+   ============================================================ */
+
+/* Jasne wiersze */
+#entry_list tbody > tr.e_item:nth-child(even) > td.e_fix,
+#entry_list tbody > tr.e_item:nth-child(even) > td.e_name,
+#entry_list tbody > tr.e_item:nth-child(even) > td.e_no {
+    background: #202020 !important;
+    background-color: #202020 !important;
+}
+
+/* Ciemne wiersze */
+#entry_list tbody > tr.e_item:nth-child(odd) > td.e_fix,
+#entry_list tbody > tr.e_item:nth-child(odd) > td.e_name,
+#entry_list tbody > tr.e_item:nth-child(odd) > td.e_no {
+    background: #151515 !important;
+    background-color: #151515 !important;
+}
+
+/* Tekst */
+#entry_list tbody > tr.e_item > td.e_fix,
+#entry_list tbody > tr.e_item > td.e_name,
+#entry_list tbody > tr.e_item > td.e_no {
+    color: #F2F2F2 !important;
+}
