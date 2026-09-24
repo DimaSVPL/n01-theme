@@ -1,106 +1,138 @@
-/* 3 KORONY - N01 CUSTOM THEME */
+/* =========================================================
+   3 KORONY — N01 CUSTOM THEME
+   Dark base + gold accents
+   ========================================================= */
 
 body {
-    --back-color: #0b0b0b;
-    --text-color: #f2f2f2;
+    --back-color: #121212;
+    --text-color: #e8eaed;
 
-    --surface-color: #181818;
-    --surface-text: #f2f2f2;
+    --surface-color: #202124;
+    --surface-text: #e8eaed;
 
-    --subtle-color: #242424;
-    --hover-color: #333333;
-    --active-color: #404040;
+    --subtle-color: #2d2e32;
+    --hover-color: #3c3d42;
+    --active-color: #4d4e54;
 
     --border-color: #555555;
     --panel-border-color: #555555;
 
-    --none-color: #333333;
-    --muted-color: #bdbdbd;
-    --faint-color: #bdbdbd;
-    --dim-color: rgba(255,255,255,.35);
-    --guide-color: rgba(255,255,255,.25);
-    --pale-color: #888888;
+    --none-color: #3c3d42;
+    --muted-color: #e0e0e0;
+    --faint-color: #e0e0e0;
 
-    /* ZŁOTO 3 KORONY */
+    --dim-color: rgba(255,255,255,.3);
+    --guide-color: rgba(255,255,255,.3);
+    --pale-color: #6e747a;
+
+    /* =====================================================
+       3 KORONY — GOLD
+       ===================================================== */
+
     --accent-color: #d4af37;
     --accent-hover-color: rgba(212,175,55,.75);
-    --accent-active-color: rgba(212,175,55,.50);
+    --accent-active-color: rgba(212,175,55,.5);
 
-    --info-color: #3b82f6;
-    --info-hover-color: rgba(59,130,246,.75);
-    --info-active-color: rgba(59,130,246,.50);
+    /* =====================================================
+       BLUE / INFORMATION
+       ===================================================== */
 
-    --select-color: #3b82f6;
+    --info-color: #1c65a4;
+    --info-hover-color: rgba(28,101,164,.75);
+    --info-active-color: rgba(28,101,164,.5);
+
+    --select-color: #1c65a4;
     --select-bg-color: rgba(212,175,55,.20);
+
+    /* =====================================================
+       MATCHES
+       ===================================================== */
 
     --match-color: #d4af37;
     --match-hover-color: #e3c45a;
     --match-active-color: #f0d77a;
 
-    --wait-color: #5a4512;
-    --wait-hover-color: #755d18;
-    --wait-active-color: #92751f;
+    /* =====================================================
+       WAIT / JOIN
+       ===================================================== */
 
-    --join-color: #5a4512;
-    --join-hover-color: #755d18;
-    --join-active-color: #92751f;
+    --wait-color: #6d5418;
+    --wait-hover-color: #8c6f20;
+    --wait-active-color: #ad8b2a;
 
-    --in-game-color: #5a4512;
-    --in-game-focus-color: #755d18;
-    --in-game-select-color: #92751f;
+    --join-color: #6d5418;
+    --join-hover-color: #8c6f20;
+    --join-active-color: #ad8b2a;
 
-    --selected-color: #3b3520;
+    /* =====================================================
+       IN GAME
+       ===================================================== */
 
-    --win-color: rgba(212,175,55,.25);
+    --in-game-color: #6d5418;
+    --in-game-focus-color: #8c6f20;
+    --in-game-select-color: #ad8b2a;
 
-    --tab1-color: #263238;
-    --tab2-color: #3d351d;
-    --tab3-color: #38212a;
-    --tab4-color: #203528;
+    --selected-color: #3b3522;
 
-    --tab1-sel-color: #344952;
-    --tab2-sel-color: #5c4d25;
-    --tab3-sel-color: #57303f;
-    --tab4-sel-color: #2d5038;
+    --win-color: rgba(212,175,55,.30);
 
-    --button-text-color: #f2f2f2;
+    /* =====================================================
+       TABS
+       ===================================================== */
 
-    --sort-color: #333333;
-    --sort-hover-color: #484848;
+    --tab1-color: #1b3a4d;
+    --tab2-color: #4a3a1c;
+    --tab3-color: #4a2033;
+    --tab4-color: #1e4023;
 
-    background-color: var(--back-color);
-    color: var(--text-color);
+    --tab1-sel-color: #26536e;
+    --tab2-sel-color: #6a5426;
+    --tab3-sel-color: #6b2e49;
+    --tab4-sel-color: #2c5c34;
+
+    --button-text-color: #e8eaed;
+
+    --sort-color: #3c3d42;
+    --sort-hover-color: #55575e;
+
+    background-color: #121212;
+    color: #e8eaed;
 }
 
-#announce {
-    background-color: #5a4512;
-    color: #fff4c7;
-}
 
-#n_msg {
-    background-color: #3d351d;
-    color: #fff4c7;
-}
+/* =========================================================
+   PANELS
+   ========================================================= */
 
 .details,
 #details {
-    background-color: var(--subtle-color);
-    color: var(--surface-text);
+    background-color: #2d2e32;
+    color: #e8eaed;
 }
 
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
 .g_button {
-    background-color: var(--subtle-color);
-    color: var(--surface-text);
+    background-color: #2d2e32;
+    color: #e8eaed;
 }
 
 .g_button:hover {
-    background-color: var(--hover-color);
+    background-color: #3c3d42;
     border-color: #d4af37;
 }
 
 .g_button:active {
-    background-color: var(--active-color);
+    background-color: #4d4e54;
 }
+
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
 
 input[type="text"],
 input[type="password"],
@@ -111,50 +143,109 @@ input[type="tel"],
 input[type="datetime-local"],
 textarea,
 select {
-    background-color: var(--surface-color);
-    color: var(--surface-text);
-    border-color: var(--border-color);
+    background-color: #202124;
+    color: #e8eaed;
+    border: 1px solid #555555;
 }
 
 option {
-    background-color: var(--surface-color);
-    color: var(--surface-text);
+    background-color: #202124;
+    color: #e8eaed;
 }
 
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
 .details a,
-#details a,
+#details a {
+    color: #80d8ff;
+}
+
 #n_msg a {
     color: #e3c45a;
 }
 
+
+/* =========================================================
+   ANNOUNCEMENTS
+   ========================================================= */
+
+#announce {
+    background-color: #6d5418;
+    color: #fff4c7;
+}
+
+#n_msg {
+    background-color: #4a3d20;
+    color: #fff9c4;
+}
+
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
 .tablesorter-default {
-    background-color: var(--surface-color);
-    color: var(--surface-text);
+    background-color: #202124;
+    color: #e8eaed;
 }
 
 .tablesorter-default th,
 .tablesorter-default thead td,
 .tablesorter-default tfoot th,
 .tablesorter-default tfoot td {
-    background-color: var(--subtle-color);
-    color: var(--surface-text);
-    border-bottom-color: #d4af37;
+    background-color: #2d2e32;
+    color: #e8eaed;
+    border-bottom: 2px solid #555555;
 }
 
 .tablesorter-default td {
-    background-color: var(--surface-color);
-    color: var(--surface-text);
+    background-color: #202124;
+    color: #e8eaed;
+    border-bottom: 1px solid #555555;
 }
 
 .tablesorter-default tr.even > td {
-    background-color: var(--subtle-color);
+    background-color: #2d2e32;
 }
 
-.tablesorter-default tbody > tr:hover > td {
-    background-color: var(--hover-color);
-    color: var(--surface-text);
+.tablesorter-default tr:hover > td {
+    background-color: #3c3d42;
+    color: #e8eaed;
 }
+
+
+/* =========================================================
+   ROUND ROBIN
+   ========================================================= */
 
 .rr_available::after {
     box-shadow: 0 0 10px 4px rgba(212,175,55,.55);
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar-thumb {
+    background: rgba(128,128,128,.8);
+}
+
+
+/* =========================================================
+   3 KORONY — GOLD HIGHLIGHTS
+   ========================================================= */
+
+/* aktywne elementy */
+.g_button:focus {
+    border-color: #d4af37;
+}
+
+/* zaznaczenie tekstu */
+::selection {
+    background: #d4af37;
+    color: #111111;
 }
