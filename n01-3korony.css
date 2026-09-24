@@ -559,3 +559,14 @@ aside {
 #rank_list th {
     color: #F0D675 !important;
 }
+/* ============================================================
+   29. LEAGUE STATS — NAPrzEMIENNE WIERSZE
+   ============================================================ */
+
+#rank_list tbody tr:nth-child(odd) td {
+    background-color: #202020 !important;
+}
+
+#rank_list tbody tr:nth-child(even) td {
+    background-color: #151515 !important;
+}
