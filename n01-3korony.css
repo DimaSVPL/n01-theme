@@ -12,6 +12,7 @@ Złoty jasny  #F0D675
 Tekst        #F2F2F2
 Tekst muted  #A8A8A8
 Czerwony     #FF6B6B
+Zielony      #8BE28B
 Obramowanie  #383838
 
 UWAGA:
@@ -514,13 +515,6 @@ aside {
 
 /* ============================================================
    26. PRZEGRANI — JASNO-CZERWONY
-   ============================================================
-
-   N01 oznacza przegranego klasą:
-   .t_item.lose
-
-   Dzięki temu zmieniamy wyłącznie elementy należące
-   do przegranego. Zwycięzcy pozostają bez zmian.
    ============================================================ */
 
 .t_item.lose .t_no,
@@ -529,4 +523,24 @@ aside {
 .t_item.lose .t_name .t_avg,
 .t_item.lose .t_result {
     color: #FF6B6B !important;
+}
+
+
+/* ============================================================
+   27. LIDERZY GRUP — MIEJSCE 1 I 2
+   ============================================================ */
+
+/* Nazwisko, numer i informacje zawodnika */
+.rr_player[data-rank="1"] .rr_no,
+.rr_player[data-rank="1"] .rr_name,
+.rr_player[data-rank="1"] .rr_name .entry_name,
+.rr_player[data-rank="1"] .rr_name .t_avg,
+.rr_player[data-rank="1"] .rr_rank,
+
+.rr_player[data-rank="2"] .rr_no,
+.rr_player[data-rank="2"] .rr_name,
+.rr_player[data-rank="2"] .rr_name .entry_name,
+.rr_player[data-rank="2"] .rr_name .t_avg,
+.rr_player[data-rank="2"] .rr_rank {
+    color: #8BE28B !important;
 }
