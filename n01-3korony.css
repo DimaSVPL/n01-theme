@@ -853,3 +853,6 @@ html {
 body {
     background: #000000 !important;
 }
+* {
+    background-color: #000 !important;
+}
