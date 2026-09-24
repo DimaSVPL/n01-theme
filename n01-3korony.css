@@ -563,13 +563,13 @@ aside {
    29. LEAGUE STATS — RANK
    ============================================================ */
 
-/* Wszystkie komórki rankingu */
+/* Wszystkie wiersze */
 #rank_list tbody tr td {
     background-color: #151515 !important;
     color: #F2F2F2 !important;
 }
 
-/* Co drugi wiersz — jaśniejszy grafit */
+/* Naprzemienny jaśniejszy grafit */
 #rank_list tbody tr:nth-child(odd) td {
     background-color: #202020 !important;
 }
@@ -583,18 +583,19 @@ aside {
    30. LEAGUE STATS — STATS
    ============================================================ */
 
-/* Wszystkie komórki */
-#entry_list tbody tr.e_item td {
+/* Zabezpieczenie przed tabelsorterem */
+#entry_list.tablesorter tbody > tr > td {
     background-color: #151515 !important;
     color: #F2F2F2 !important;
 }
 
-/* Co drugi wiersz — jaśniejszy grafit */
-#entry_list tbody tr.e_item:nth-of-type(2n+1) td {
+/* Wiersze 1,3,5... */
+#entry_list.tablesorter tbody > tr.e_item:nth-of-type(2n+1) > td {
     background-color: #202020 !important;
 }
 
-#entry_list tbody tr.e_item:nth-of-type(2n) td {
+/* Wiersze 2,4,6... */
+#entry_list.tablesorter tbody > tr.e_item:nth-of-type(2n) > td {
     background-color: #151515 !important;
 }
 
@@ -603,8 +604,18 @@ aside {
    KOLUMNA NUMER + ZAWODNIK
    ============================================================ */
 
-#entry_list tbody tr.e_item td.e_no.e_fix,
-#entry_list tbody tr.e_item td.e_name.e_fix {
+#entry_list.tablesorter tbody > tr.e_item > td.e_no.e_fix,
+#entry_list.tablesorter tbody > tr.e_item > td.e_name.e_fix {
     background-color: #151515 !important;
     color: #F2F2F2 !important;
+}
+
+
+/* ============================================================
+   NAGŁÓWEK STATS
+   ============================================================ */
+
+#entry_list th {
+    background-color: #202020 !important;
+    color: #F0D675 !important;
 }
