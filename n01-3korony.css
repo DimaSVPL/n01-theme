@@ -603,30 +603,3 @@ aside {
 /* ==========================================================
 KONIEC — 3 KORONY
 ========================================================== */
-/* ==========================================================
-   RANKING LIGI — KOREKTA TŁA TABELI
-   ========================================================== */
-
-#rank,
-#rank table,
-#rank thead,
-#rank tbody,
-#rank tr,
-#rank th,
-#rank td {
-    background-color: #151515 !important;
-    color: #F2F2F2;
-}
-
-#rank th {
-    background-color: #202020 !important;
-    color: #F0D675 !important;
-}
-
-#rank tr:nth-child(even) td {
-    background-color: #151515 !important;
-}
-
-#rank tr:nth-child(odd) td {
-    background-color: #111111 !important;
-}
