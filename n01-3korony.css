@@ -846,3 +846,10 @@ body:not(.score_body):not(.stats_body)::-webkit-scrollbar-thumb,
 	background: #d4af37;
 	color: #111111;
 }
+html {
+    background: #000000 !important;
+}
+
+body {
+    background: #000000 !important;
+}
