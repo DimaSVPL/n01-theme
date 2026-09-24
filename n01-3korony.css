@@ -1,858 +1,497 @@
-/*
- * 3 KORONY — N01 CUSTOM THEME
- *
- * Based on N01 Dark Theme
- * Custom colors for 3 Korony
- */
+# /*
 
-/* =========================================================
-   COMPETITION PAGES
-   ========================================================= */
+N01 — 3 KORONY
+Custom Theme
+Grand Prix Koszalina 2026-2027
+
+Kolory:
+Czarny        #080808
+Grafit        #151515
+Grafit 2      #202020
+Złoty         #D4AF37
+Złoty jasny   #F0D675
+Tekst         #F2F2F2
+Tekst muted   #A8A8A8
+Obramowanie   #383838
+
+UWAGA:
+Ten plik jest dodatkiem do standardowego CSS N01.
+Nie zmienia układu strony ani funkcjonalności.
+==============================================
+
+*/
+
+/* ==========================================================
+
+1. GŁÓWNE KOLORY N01
+   ========================================================== */
+
+html {
+background-color: #080808 !important;
+color-scheme: dark;
+}
 
 body {
-	--back-color: #0b0b0b;
-	--text-color: #f2f2f2;
-	--line-color: rgba(242, 242, 242, 0.5);
-	--line-opacity: 0.5;
+--back-color: #080808;
+--surface-color: #151515;
+--subtle-color: #202020;
+--hover-color: #292929;
+--active-color: #353535;
 
-	--surface-color: #181818;
-	--surface-text: #f2f2f2;
-	--subtle-color: #242424;
-	--hover-color: #333333;
-	--active-color: #404040;
-	--border-color: #555555;
-	--none-color: #333333;
-	--muted-color: #d0d0d0;
-	--faint-color: #c0c0c0;
-	--dim-color: rgba(255, 255, 255, 0.3);
-	--guide-color: rgba(255, 255, 255, 0.25);
-	--pale-color: #888888;
-	--subtle-strong-color: #242424;
-	--overlay-hover-color: rgba(255, 255, 255, 0.15);
-	--overlay-active-color: rgba(255, 255, 255, 0.25);
-	--veil-color: rgba(11, 11, 11, 0.92);
-	--info-focus-color: rgba(59, 130, 246, 0.3);
+```
+--border-color: #383838;
 
-	/* =====================================================
-	   3 KORONY — GOLD
-	   ===================================================== */
+--text-color: #F2F2F2;
+--subtext-color: #A8A8A8;
 
-	--accent-color: #d4af37;
-	--accent-hover-color: rgba(212, 175, 55, 0.75);
-	--accent-active-color: rgba(212, 175, 55, 0.5);
+--accent-color: #D4AF37;
+--accent-light-color: #F0D675;
 
-	--info-color: #1c65a4;
-	--info-hover-color: rgba(28, 101, 164, 0.75);
-	--info-active-color: rgba(28, 101, 164, 0.5);
+--info-color: #3B82C4;
+--match-color: #006CFF;
 
-	--select-color: #1c65a4;
-	--select-bg-color: rgba(212, 175, 55, 0.24);
+background-color: #080808 !important;
+color: #F2F2F2 !important;
+```
 
-	--match-color: #d4af37;
-	--match-hover-color: #e3c45a;
-	--match-active-color: #f0d77a;
-
-	--wait-color: #5a4515;
-	--wait-hover-color: #755d1c;
-	--wait-active-color: #92751f;
-
-	--join-color: #5a4515;
-	--in-game-color: #5a4515;
-
-	--selected-color: #3b3520;
-
-	--panel-border-color: #555555;
-	--in-game-focus-color: #755d1c;
-	--in-game-select-color: #92751f;
-	--join-hover-color: #755d1c;
-	--join-active-color: #92751f;
-
-	--win-color: rgba(212, 175, 55, 0.30);
-
-	--tab1-color: #1b3a4d;
-	--tab2-color: #4a3a1c;
-	--tab3-color: #4a2033;
-	--tab4-color: #1e4023;
-
-	--tab1-sel-color: #26536e;
-	--tab2-sel-color: #6a5426;
-	--tab3-sel-color: #6b2e49;
-	--tab4-sel-color: #2c5c34;
-
-	--button-text-color: #f2f2f2;
-	--select-hover-color: rgba(212, 175, 55, 0.25);
-
-	--sort-color: #333333;
-	--sort-hover-color: #505050;
-
-	background-color: var(--back-color);
-	color: var(--text-color);
 }
 
+/* ==========================================================
+2. GŁÓWNE OBSZARY STRONY
+========================================================== */
 
-/* =========================================================
-   ANNOUNCEMENTS
-   ========================================================= */
-
-#announce {
-	background-color: #5a4515;
-	color: #fff4c7;
+body,
+#contents,
+#content,
+#main,
+main,
+.page,
+.container,
+.wrapper {
+background-color: #080808;
+color: #F2F2F2;
 }
 
-#n_msg {
-	background-color: #403719;
-	color: #fff4c7;
+/* ==========================================================
+3. NAGŁÓWKI
+========================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+color: #F0D675;
 }
 
-
-/* =========================================================
-   PANELS
-   ========================================================= */
-
-.details {
-	background-color: var(--subtle-color);
-	color: var(--surface-text);
+h1 {
+text-shadow: 0 0 8px rgba(212, 175, 55, 0.18);
 }
 
-#details {
-	background-color: var(--subtle-color);
-	color: var(--surface-text);
+/* ==========================================================
+4. LINKI
+========================================================== */
+
+a {
+color: #F0D675;
 }
 
-#webcam_button {
-	color: var(--surface-text);
+a:hover {
+color: #FFFFFF;
 }
 
-
-/* =========================================================
-   BUTTONS
-   ========================================================= */
-
-.g_button {
-	background-color: var(--subtle-color);
-	color: var(--surface-text);
-	border-color: var(--border-color);
+a:visited {
+color: #D4AF37;
 }
 
-.g_button:hover {
-	background-color: var(--hover-color);
-	border-color: var(--accent-color);
+/* ==========================================================
+5. PRZYCISKI
+========================================================== */
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.btn,
+.button {
+background-color: #202020;
+color: #F2F2F2;
+border: 1px solid #4A4A4A;
 }
 
-.g_button:active {
-	background-color: var(--active-color);
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.btn:hover,
+.button:hover {
+background-color: #292929;
+color: #F0D675;
+border-color: #D4AF37;
 }
 
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+.btn:active,
+.button:active {
+background-color: #353535;
+}
 
-/* =========================================================
-   INPUTS
-   ========================================================= */
+/* ==========================================================
+6. POLA FORMULARZY
+========================================================== */
 
-input[type="text"],
-input[type="password"],
-input[type="number"],
-input[type="search"],
-input[type="email"],
-input[type="tel"],
-input[type="datetime-local"],
+input,
 textarea,
 select {
-	background-color: var(--surface-color);
-	color: var(--surface-text);
-	border: 1px solid var(--border-color);
+background-color: #151515;
+color: #F2F2F2;
+border: 1px solid #383838;
 }
 
-option {
-	background-color: var(--surface-color);
-	color: var(--surface-text);
+input:focus,
+textarea:focus,
+select:focus {
+border-color: #D4AF37;
+outline: none;
+box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.25);
 }
 
-
-/* =========================================================
-   PLACEHOLDER
-   ========================================================= */
-
-::-webkit-input-placeholder {
-	color: var(--muted-color);
+input::placeholder,
+textarea::placeholder {
+color: #777777;
 }
 
-::placeholder {
-	color: var(--muted-color);
+/* ==========================================================
+7. TABELA
+========================================================== */
+
+table {
+background-color: #111111;
+color: #F2F2F2;
+border-color: #383838;
 }
 
-
-/* =========================================================
-   TABLES
-   ========================================================= */
-
-.tablesorter-default {
-	color: var(--surface-text);
-	background-color: var(--surface-color);
+thead,
+th {
+background-color: #202020;
+color: #F0D675;
+border-color: #383838;
 }
 
-.tablesorter-default th,
-.tablesorter-default thead td,
-.tablesorter-default tfoot th,
-.tablesorter-default tfoot td {
-	background-color: var(--subtle-color);
-	color: var(--surface-text);
-	border-bottom: var(--border-color) 2px solid;
+tbody {
+background-color: #111111;
 }
 
-.tablesorter-default td {
-	background-color: var(--surface-color);
-	color: var(--surface-text);
-	border-bottom: var(--border-color) 1px solid;
+td {
+background-color: #111111;
+color: #F2F2F2;
+border-color: #303030;
 }
 
-.tablesorter-default tr.odd > td {
-	background-color: var(--surface-color);
+tr:hover td {
+background-color: #202020;
 }
 
-.tablesorter-default tr.even > td {
-	background-color: var(--subtle-color);
+tr:nth-child(even) td {
+background-color: #151515;
 }
 
-.tablesorter-default > caption {
-	background-color: var(--surface-color);
+tr:nth-child(even):hover td {
+background-color: #202020;
 }
 
-.tablesorter-default tbody > tr.even:hover > td,
-.tablesorter-default tbody > tr.hover > td,
-.tablesorter-default tbody > tr.odd:hover > td,
-.tablesorter-default tbody > tr:hover > td {
-	background-color: var(--hover-color);
-	color: var(--surface-text);
+/* ==========================================================
+8. ELEMENTY AKTYWNE / WYBRANE
+========================================================== */
+
+.active,
+.selected,
+.current,
+[aria-selected="true"] {
+background-color: #292929;
+color: #F0D675;
+border-color: #D4AF37;
 }
 
+/* ==========================================================
+9. SEKCJE / KARTY / PANELE
+========================================================== */
 
-/* =========================================================
-   LINKS
-   ========================================================= */
-
-#n_msg a {
-	color: #e3c45a;
+.card,
+.panel,
+.box,
+.section,
+.content-box {
+background-color: #151515;
+color: #F2F2F2;
+border-color: #383838;
 }
 
-.details a,
-#details a {
-	color: #e3c45a;
+.card:hover,
+.panel:hover {
+border-color: #4A4A4A;
 }
 
+/* ==========================================================
+10. TEKST DRUGORZĘDNY
+========================================================== */
 
-/* =========================================================
-   ANNOUNCEMENT ICON
-   ========================================================= */
-
-#announce img {
-	-webkit-filter: invert(1);
-	filter: invert(1);
+small,
+.muted,
+.subtext,
+.description,
+.secondary {
+color: #A8A8A8;
 }
 
+/* ==========================================================
+11. ZŁOTE AKCENTY
+========================================================== */
 
-/* =========================================================
-   ROUND ROBIN TABLE
-   ========================================================= */
-
-.rr_table tr:first-child > th,
-.rr_table tr:first-child > td {
-	border-top: 0;
+.accent,
+.highlight,
+.gold {
+color: #D4AF37;
 }
 
-.rr_table tr:last-child > th,
-.rr_table tr:last-child > td {
-	border-bottom: 0;
+.accent-bg,
+.gold-bg {
+background-color: #D4AF37;
+color: #080808;
 }
 
-.rr_table tr > th:first-child,
-.rr_table tr > td:first-child {
-	border-left: 0;
+/* ==========================================================
+12. OBRAMOWANIA
+========================================================== */
+
+hr {
+border: 0;
+border-top: 1px solid #383838;
 }
 
-.rr_table tr > th:last-child,
-.rr_table tr > td:last-child {
-	border-right: 0;
+fieldset {
+border: 1px solid #383838;
 }
 
+/* ==========================================================
+13. ELEMENTY N01 — CZĘSTE KLASY
+========================================================== */
 
-/* =========================================================
-   PRINT
-   ========================================================= */
-
-@media print {
-	.rr_table tr:first-child > th,
-	.rr_table tr:first-child > td {
-		border-top: 1px solid #808080;
-	}
-
-	.rr_table tr:last-child > th,
-	.rr_table tr:last-child > td {
-		border-bottom: 1px solid #808080;
-	}
-
-	.rr_table tr > th:first-child,
-	.rr_table tr > td:first-child {
-		border-left: 1px solid #808080;
-	}
-
-	.rr_table tr > th:last-child,
-	.rr_table tr > td:last-child {
-		border-right: 1px solid #808080;
-	}
+.comp,
+.competition,
+.match,
+.game,
+.player,
+.team {
+color: #F2F2F2;
 }
 
-
-/* =========================================================
-   AVAILABLE
-   ========================================================= */
-
-.rr_available::after {
-	box-shadow: 0px 0px 10px 4px rgba(212, 175, 55, 0.55);
+.comp-header,
+.competition-header,
+.match-header,
+.game-header {
+background-color: #202020;
+color: #F0D675;
+border-color: #383838;
 }
 
+/* ==========================================================
+14. WYNIKI / PUNKTY / WYNIKI MECZÓW
+========================================================== */
 
-/* =========================================================
-   SCROLLBARS
-   ========================================================= */
-
-body:not(.score_body):not(.stats_body)::-webkit-scrollbar,
-#lg_match_container::-webkit-scrollbar,
-#od_match_container::-webkit-scrollbar,
-#el_container::-webkit-scrollbar,
-#tm_match_container::-webkit-scrollbar,
-#detail_container::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
+.score,
+.result,
+.points,
+.average {
+color: #F0D675;
 }
 
-body:not(.score_body):not(.stats_body)::-webkit-scrollbar-thumb,
-#lg_match_container::-webkit-scrollbar-thumb,
-#od_match_container::-webkit-scrollbar-thumb,
-#el_container::-webkit-scrollbar-thumb,
-#tm_match_container::-webkit-scrollbar-thumb,
-#detail_container::-webkit-scrollbar-thumb {
-	border-radius: 10px;
+.win,
+.winner,
+.success {
+color: #D4AF37;
 }
 
+/* ==========================================================
+15. DRABINKI TURNIEJOWE
+========================================================== */
 
-/* =========================================================
-   GAME PAGES
-   ========================================================= */
-
-.score_table {
-	background-color: #181818;
+.bracket,
+.bracket-container,
+.bracket-item,
+.bracket-match {
+background-color: #151515;
+color: #F2F2F2;
+border-color: #383838;
 }
 
-.score_table th {
-	border: 0.2vmin solid #555555;
-	background-color: #242424;
+.bracket-item:hover,
+.bracket-match:hover {
+background-color: #202020;
+border-color: #D4AF37;
 }
 
-.score_table td {
-	border: 0.2vmin solid #555555;
-	border-bottom: 0px;
-	border-top: 0px;
+/* ==========================================================
+16. STATUSY
+========================================================== */
+
+.status,
+.badge {
+background-color: #202020;
+color: #F2F2F2;
+border-color: #383838;
 }
 
-.score_none {
-	background-color: #181818;
+.status.active,
+.status.current {
+color: #F0D675;
+border-color: #D4AF37;
 }
 
-.score_input {
-	background-color: transparent;
+/* ==========================================================
+17. MENU / NAWIGACJA
+========================================================== */
+
+nav,
+.nav,
+.menu,
+.navigation {
+background-color: #111111;
+color: #F2F2F2;
 }
 
-.score_left {
-	background-color: transparent;
+nav a,
+.nav a,
+.menu a,
+.navigation a {
+color: #D8D8D8;
 }
 
-.score_round {
-	background-color: #242424;
+nav a:hover,
+.nav a:hover,
+.menu a:hover,
+.navigation a:hover {
+color: #F0D675;
+background-color: #202020;
 }
 
-.score_round.last3 {
-	color: #f0c060;
+/* ==========================================================
+18. NAGŁÓWEK N01
+========================================================== */
+
+header,
+.header {
+background-color: #0B0B0B;
+color: #F2F2F2;
+border-bottom: 1px solid #383838;
 }
 
-.p1left,
-.p2left {
-	background-color: transparent;
+/* ==========================================================
+19. STOPKA
+========================================================== */
+
+footer,
+.footer {
+background-color: #0B0B0B;
+color: #A8A8A8;
+border-top: 1px solid #383838;
 }
 
-.input_text_score {
-	color: #fff;
+/* ==========================================================
+20. MENU KONTEKSTOWE / POPUP
+========================================================== */
+
+.menu-popup,
+.dropdown,
+.dropdown-menu,
+.popup,
+.modal,
+.dialog {
+background-color: #151515;
+color: #F2F2F2;
+border: 1px solid #383838;
 }
 
-#footer {
-	background-color: var(--back-color);
-	border-top: 0.2vmin solid #000;
+.menu-popup a,
+.dropdown a,
+.dropdown-menu a,
+.popup a {
+color: #F2F2F2;
 }
 
-#left_table {
-	background-color: #181818;
+.menu-popup a:hover,
+.dropdown a:hover,
+.dropdown-menu a:hover,
+.popup a:hover {
+background-color: #292929;
+color: #F0D675;
 }
 
-.score_left_big div {
-	background-color: #181818;
+/* ==========================================================
+21. CHECKBOXY / RADIO / NATYWNE ELEMENTY
+========================================================== */
+
+input[type="checkbox"],
+input[type="radio"] {
+accent-color: #D4AF37;
 }
 
-#popup_webcam .score_left_big div {
-	background-color: #181818;
-	color: #fff;
+/* ==========================================================
+22. SELEKCJA TEKSTU
+========================================================== */
+
+::selection {
+background-color: #D4AF37;
+color: #080808;
 }
 
-.input_area {
-	background-color: #d4af37;
-	color: #111;
-}
-
-.focus_frame {
-	background-color: #d4af37;
-}
-
-.focus_frame div {
-	color: #111;
-}
-
-
-/* =========================================================
-   MENU
-   ========================================================= */
-
-#menu_table td {
-	background-color: var(--back-color);
-}
-
-#menu_table td:active {
-	background-color: #d4af37;
-}
-
-#menu_table #menu_finish_disable {
-	color: rgba(255, 255, 255, 0.31);
-}
-
-#menu_table #menu_finish_disable:active {
-	background-color: #242424;
-}
-
-#key_table td,
-#keyfunc_table td {
-	border: 0.2vmin solid #3b3b3b;
-	background-color: #242424;
-	color: #fff;
-}
-
-#key_table td:active,
-#keyfunc_table td:active {
-	background-color: #d4af37;
-}
-
-.key_active {
-	background-color: #d4af37 !important;
-}
-
-
-/* =========================================================
-   RIGHT MENU
-   ========================================================= */
-
-#right_area {
-	background-color: #242424;
-	border-left: 0.2vmin solid #3b3b3b;
-}
-
-.menu_ul {
-	background-color: #242424;
-}
-
-.menu_ul li {
-	color: #e8eaed;
-	border-top: 0.2vmin solid #555555;
-}
-
-.message_table {
-	background-color: #242424;
-	color: #e8eaed;
-}
-
-.msg_button {
-	background-color: #242424;
-	color: #e8eaed;
-}
-
-
-/* =========================================================
-   VIDEO
-   ========================================================= */
-
-#localVideoWrapper,
-#remoteVideoWrapper {
-	background-color: #181818;
-}
-
-
-/* =========================================================
-   GENERAL SCROLLBAR
-   ========================================================= */
+/* ==========================================================
+23. SCROLLBAR — DELIKATNY DARK/GOLD
+========================================================== */
 
 ::-webkit-scrollbar {
-	width: 1.5vmin;
+width: 10px;
+height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-	background: #181818;
-	border: none;
+background: #0B0B0B;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: rgba(128, 128, 128, 0.8);
-	border-radius: 1.5vmin;
+background: #383838;
+border-radius: 5px;
 }
 
-::-webkit-scrollbar-corner {
-	background: #181818;
+::-webkit-scrollbar-thumb:hover {
+background: #D4AF37;
 }
 
+/* ==========================================================
+24. USUNIĘCIE BIAŁYCH TŁEŁ Z TYPOWYCH ELEMENTÓW
+========================================================== */
 
-/* =========================================================
-   ROUND INFO
-   ========================================================= */
-
-:root {
-	--mark-color: #ffffff;
-}
-
-#round_info {
-	background-color: #242424;
-	color: #e8eaed;
-	border-bottom: 1px solid #555555;
-}
-
-
-/* =========================================================
-   CRICKET
-   ========================================================= */
-
-#cricket_table {
-	background-color: #181818;
-}
-
-.col_btn {
-	background-color: #242424;
-	color: #777777;
-}
-
-.col_num {
-	background-color: #242424;
-}
-
-.col_num:not(.btn_disabled)::before {
-	background: linear-gradient(to bottom, #3a3a3a, #242424);
-	box-shadow:
-		0 2px 4px rgba(0,0,0,0.5),
-		inset 0 1px 0 rgba(255,255,255,0.08);
-}
-
-.col_btn_double {
-	border-left: 1px solid #555555;
-}
-
-.col_btn_triple,
-.col_btn_next {
-	border-right: 1px solid #555555;
-}
-
-.col_btn_next:not(.btn_disabled)::before {
-	background: linear-gradient(to bottom, #3a3a3a, #242424);
-	box-shadow:
-		0 2px 4px rgba(0,0,0,0.5),
-		inset 0 1px 0 rgba(255,255,255,0.08);
-}
-
-.col_btn_next.next_pulse:not(.btn_disabled)::after {
-	-webkit-animation-name: cricket_next_pulse_light;
-	animation-name: cricket_next_pulse_light;
-}
-
-.row_focus .col_num::before,
-.row_focus .col_btn_next::before {
-	background: linear-gradient(to bottom, #4a4020, #302a17);
-}
-
-.next_arrow_img {
-	background-color: #aaaaaa;
-}
-
-.col_btn.btn_disabled,
-.col_num.btn_disabled {
-	color: #555555 !important;
-	background-color: #2d2e32 !important;
-}
-
-.col_num.btn_disabled::before {
-	background: #2d2e32;
-}
-
-.col_num.num_closed {
-	color: #777777;
-	background-color: #3a3a3a;
-}
-
-.col_num.num_closed::before {
-	background: #3a3a3a;
-}
-
-.col_btn.btn_closed {
-	color: #777777;
-	background-color: #2d2d2d;
-}
-
-.col_state {
-	background-color: #181818;
-}
-
-.col_turn {
-	background-color: #181818;
-}
-
-.turn_active {
-	color: #e3c45a;
-}
-
-.turn_dim {
-	color: #666666;
-}
-
-.col_state.removable {
-	--mark-color: #e3c45a;
-}
-
-.undo_mode .col_state.removable {
-	--mark-color: #ff6a4d;
-}
-
-.undo_mode .turn_active {
-	color: #ff6a4d;
-}
-
-.col_turn.side_active,
-.col_state.side_active {
-	background-color: #4a4020;
-}
-
-.undo_mode .col_turn.side_active,
-.undo_mode .col_state.side_active {
-	background-color: #4a2e2e;
-}
-
-.handicap_mode .col_state,
-.handicap_mode .col_turn,
-.handicap_mode .col_state.side_active,
-.handicap_mode .col_turn.side_active {
-	background-color: #2b382b;
-}
-
-
-/* =========================================================
-   BIG SCORE
-   ========================================================= */
-
-#score_big_table {
-	background-color: #181818;
-}
-
-.score_big_cell {
-	background-color: #181818;
-	color: #aaaaaa;
-}
-
-.score_big_cell.score_focus {
-	background-color: #181818;
-	color: #ffffff;
-	box-shadow: inset 0 0 0 1.4vmin #d4af37;
-}
-
-
-/* =========================================================
-   MARK
-   ========================================================= */
-
-#mark_overlay {
-	background-color: rgba(0, 0, 0, 0.5);
+div,
+section,
+article,
+aside {
+border-color: inherit;
 }
 
-#mark_bubble {
-	background: #242424;
-}
-
-.mark_bubble_arrow {
-	border-top: 1.6vmin solid #242424;
-}
-
-#mark_bubble.below .mark_bubble_arrow {
-	border-bottom: 1.6vmin solid #242424;
-}
-
-.mark_opt {
-	background-color: #3a3a3a;
-}
-
-.mark_opt::before {
-	background-color: #e8eaed;
-}
-
-
-/* =========================================================
-   SCORE / STATS
-   ========================================================= */
-
-.score_body,
-.stats_body {
-	background-color: #181818;
-	color: #fff;
-}
-
-.score_body {
-	background-color: #000;
-}
-
-.score_body .title,
-.stats_body .title {
-	color: #fff;
-}
-
-.score_body .name_table a,
-.stats_body .name_table a {
-	color: #fff;
-}
-
-.score_body .stats_table td.center,
-.stats_body .stats_table td.center {
-	color: #ffffff;
-}
-
-.score_body .score_table,
-.stats_body .score_table {
-	background-color: #181818;
-}
-
-.score_body .score_table th,
-.stats_body .score_table th {
-	background-color: #242424;
-}
-
-.score_body .score_none,
-.stats_body .score_none {
-	background-color: #242424;
-}
-
-.score_body .score_round,
-.stats_body .score_round {
-	background-color: #242424;
-}
-
-
-/* =========================================================
-   SCORE SCROLLBAR
-   ========================================================= */
-
-.score_body ::-webkit-scrollbar,
-.stats_body ::-webkit-scrollbar {
-	width: 10px;
-}
-
-.score_body ::-webkit-scrollbar-track,
-.stats_body ::-webkit-scrollbar-track {
-	background: #181818;
-	border: none;
-}
-
-.score_body ::-webkit-scrollbar-thumb,
-.stats_body ::-webkit-scrollbar-thumb {
-	background: rgba(128, 128, 128, 0.8);
-	border-radius: 10px;
-}
-
-.score_body ::-webkit-scrollbar-corner,
-.stats_body ::-webkit-scrollbar-corner {
-	background: #181818;
-}
-
-
-/* =========================================================
-   CRICKET SCORE / STATS
-   ========================================================= */
-
-.score_body .cricket .win,
-.stats_body .cricket .win {
-	color: #ffffff;
-}
-
-.score_body .cricket .lose,
-.stats_body .cricket .lose {
-	color: #888888;
-}
-
-.score_body .cricket .dnum,
-.stats_body .cricket .dnum {
-	color: #aaaaaa;
-}
-
-.score_body .cricket .dmark,
-.stats_body .cricket .dmark {
-	background-color: #e8eaed;
-}
-
-.score_body .cricket .dmark.gray,
-.stats_body .cricket .dmark.gray {
-	background-color: #555555;
-}
+/* ==========================================================
+25. ZŁOTA LINIA AKCENTOWA
+========================================================== */
 
-
-/* =========================================================
-   LIVE SCORE
-   ========================================================= */
-
-#score_view_inset_body .title {
-	color: #aaa;
-}
-
-#score_view_inset_body .name {
-	background-color: #181818;
-	color: #fff;
-	border-right: solid 1px #555555;
-}
-
-#score_view_inset_body .sets,
-#score_view_inset_body .legs {
-	background-color: #d4af37;
-}
-
-#score_view_inset_body .left {
-	background-color: #d4af37;
+.gold-line {
+height: 2px;
+background: #D4AF37;
+border: 0;
 }
 
-#score_view_inset_body .first,
-#score_view_inset_body #current {
-	background-color: #b8941f;
-}
-
-
-/* =========================================================
-   TEXT SELECTION
-   ========================================================= */
-
-::selection {
-	background: #d4af37;
-	color: #111111;
-}
-html {
-    background: #000000 !important;
-}
-
-body {
-    background: #000000 !important;
-}
-* {
-    background-color: #000 !important;
-}
+/* ==========================================================
+KONIEC — 3 KORONY
+============================================================ */
