@@ -522,6 +522,6 @@ KONIEC — 3 KORONY
 .t_item.lose .t_no,
 .t_item.lose .t_name,
 .t_item.lose .t_name .entry_name,
-.t_item.lose .t_name .t_avg {
+.t_item.lose .t_result {
     color: #72B7FF !important;
 }
