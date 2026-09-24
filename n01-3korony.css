@@ -544,3 +544,18 @@ aside {
 .rr_player[data-rank="2"] .rr_rank {
     color: #8BE28B !important;
 }
+/* ============================================================
+   28. LEAGUE STATS — RANK
+   Usunięcie różowego tła
+   ============================================================ */
+
+#rank_list th,
+#rank_list td.e_no,
+#rank_list td.e_name {
+    background-color: #151515 !important;
+    color: #F2F2F2 !important;
+}
+
+#rank_list th {
+    color: #F0D675 !important;
+}
