@@ -170,7 +170,7 @@ color: #777777;
 ========================================================== */
 
 table {
-background-color: #111111;
+background-color: #151515;
 color: #F2F2F2;
 border-color: #383838;
 }
@@ -183,11 +183,11 @@ border-color: #383838;
 }
 
 tbody {
-background-color: #111111;
+background-color: #151515;
 }
 
 td {
-background-color: #111111;
+background-color: #151515;
 color: #F2F2F2;
 border-color: #303030;
 }
@@ -360,7 +360,7 @@ nav,
 .nav,
 .menu,
 .navigation {
-background-color: #111111;
+background-color: #151515;
 color: #F2F2F2;
 }
 
