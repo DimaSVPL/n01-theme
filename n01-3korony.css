@@ -560,9 +560,16 @@ aside {
     color: #F0D675 !important;
 }
 /* ============================================================
-   29. LEAGUE STATS — NAPRZEMIENNE WIERSZE RANK
+   29. LEAGUE STATS — RANK
    ============================================================ */
 
+/* Wszystkie komórki rankingu */
+#rank_list tbody tr td {
+    background-color: #151515 !important;
+    color: #F2F2F2 !important;
+}
+
+/* Co drugi wiersz — jaśniejszy grafit */
 #rank_list tbody tr:nth-child(odd) td {
     background-color: #202020 !important;
 }
@@ -573,56 +580,31 @@ aside {
 
 
 /* ============================================================
-   30. LEAGUE STATS — STATYSTYKI
+   30. LEAGUE STATS — STATS
    ============================================================ */
 
-/* ------------------------------------------------------------
-   NAGŁÓWEK TABELI
-   ------------------------------------------------------------ */
+/* Wszystkie komórki */
+#entry_list tbody tr.e_item td {
+    background-color: #151515 !important;
+    color: #F2F2F2 !important;
+}
 
-#entry_list thead th {
+/* Co drugi wiersz — jaśniejszy grafit */
+#entry_list tbody tr.e_item:nth-of-type(2n+1) td {
     background-color: #202020 !important;
-    color: #F0D675 !important;
-    border-color: #383838 !important;
+}
+
+#entry_list tbody tr.e_item:nth-of-type(2n) td {
+    background-color: #151515 !important;
 }
 
 
-/* ------------------------------------------------------------
+/* ============================================================
    KOLUMNA NUMER + ZAWODNIK
-   ------------------------------------------------------------ */
+   ============================================================ */
 
-#entry_list .e_fix {
+#entry_list tbody tr.e_item td.e_no.e_fix,
+#entry_list tbody tr.e_item td.e_name.e_fix {
     background-color: #151515 !important;
     color: #F2F2F2 !important;
-}
-
-
-/* ------------------------------------------------------------
-   KOMÓRKI STATYSTYK — BAZA
-   ------------------------------------------------------------ */
-
-#entry_list tr.e_item td.stats,
-#entry_list tr.e_item td.stats.total {
-    background-color: #151515 !important;
-    color: #F2F2F2 !important;
-}
-
-
-/* ------------------------------------------------------------
-   WIERSZE 1, 3, 5...
-   ------------------------------------------------------------ */
-
-#entry_list tr.e_item:nth-of-type(2n+1) td.stats,
-#entry_list tr.e_item:nth-of-type(2n+1) td.stats.total {
-    background-color: #202020 !important;
-}
-
-
-/* ------------------------------------------------------------
-   WIERSZE 2, 4, 6...
-   ------------------------------------------------------------ */
-
-#entry_list tr.e_item:nth-of-type(2n) td.stats,
-#entry_list tr.e_item:nth-of-type(2n) td.stats.total {
-    background-color: #151515 !important;
 }
