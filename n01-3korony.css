@@ -570,3 +570,14 @@ aside {
 #rank_list tbody tr:nth-child(even) td {
     background-color: #151515 !important;
 }
+/* ============================================================
+   30. LEAGUE STATS — NAPrzEMIENNE WIERSZE
+   ============================================================ */
+
+#entry_list tbody tr.e_item:nth-child(odd) td {
+    background-color: #202020 !important;
+}
+
+#entry_list tbody tr.e_item:nth-child(even) td {
+    background-color: #151515 !important;
+}
