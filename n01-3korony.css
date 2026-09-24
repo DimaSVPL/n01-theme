@@ -1,358 +1,446 @@
-# /*
+/* ============================================================
+   N01 - 3 KORONY
+   GRAND PRIX KOSZALINA 2026-2027
+   CZYSTA WERSJA BAZOWA
+   ============================================================ */
 
-N01 — 3 KORONY
-Grand Prix Koszalina 2026-2027
-DARK / GOLD / BLUE
-==================
 
-*/
+/* ============================================================
+   1. KOLORY
+   ============================================================ */
+
+:root {
+    --back-color: #080808;
+    --surface-color: #111111;
+    --subtle-color: #181818;
+    --hover-color: #222222;
+    --active-color: #2c2c2c;
+
+    --border-color: #383838;
+
+    --text-color: #eeeeee;
+    --subtle-text-color: #aaaaaa;
+
+    --accent-color: #d4af37;
+    --accent-light: #f0d675;
+
+    --info-color: #72b7ff;
+    --match-color: #006cff;
+}
+
+
+/* ============================================================
+   2. CAŁA STRONA
+   ============================================================ */
 
 html {
-background: #080808 !important;
-color-scheme: dark;
+    background: #080808 !important;
 }
 
 body {
---back-color: #080808;
---surface-color: #151515;
---subtle-color: #202020;
---hover-color: #292929;
---active-color: #353535;
---border-color: #383838;
-
-```
---text-color: #F2F2F2;
---subtext-color: #A8A8A8;
-
---accent-color: #D4AF37;
---info-color: #72B7FF;
---match-color: #72B7FF;
-
-background: #080808 !important;
-background-color: #080808 !important;
-color: #F2F2F2 !important;
-```
-
+    background-color: #080808 !important;
+    color: #eeeeee !important;
 }
 
-/* =========================================================
-GŁÓWNE TŁO
-========================================================= */
 
-html,
-body {
-background-color: #080808 !important;
+/* ============================================================
+   3. GŁÓWNE KONTENERY
+   ============================================================ */
+
+main,
+section,
+article,
+.container,
+.content,
+.page,
+.wrapper {
+    background-color: #080808;
+    color: #eeeeee;
 }
 
-body {
-color: #F2F2F2 !important;
+
+/* ============================================================
+   4. NAGŁÓWEK
+   ============================================================ */
+
+header {
+    background-color: #080808 !important;
+    color: #eeeeee !important;
+    border-bottom: 1px solid #383838;
 }
 
-/* =========================================================
-PODSTAWOWE ELEMENTY
-========================================================= */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-color: #F0D675 !important;
-}
-
-p,
-span,
-label,
-div {
-border-color: #383838;
-}
+/* ============================================================
+   5. LINKI
+   ============================================================ */
 
 a {
-color: #F0D675;
+    color: #d4af37;
 }
 
 a:hover {
-color: #FFFFFF;
+    color: #f0d675;
 }
 
-/* =========================================================
-PRZYCISKI
-========================================================= */
+
+/* ============================================================
+   6. TABELKI
+   ============================================================ */
+
+table {
+    background-color: #111111;
+    color: #eeeeee;
+    border-color: #383838;
+}
+
+th {
+    background-color: #181818;
+    color: #f0d675;
+    border-color: #383838;
+}
+
+td {
+    background-color: #111111;
+    color: #eeeeee;
+    border-color: #383838;
+}
+
+tr:hover td {
+    background-color: #181818;
+}
+
+
+/* ============================================================
+   7. PRZYCISKI
+   ============================================================ */
 
 button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-background: #202020 !important;
-background-color: #202020 !important;
-color: #F2F2F2 !important;
-border: 1px solid #383838 !important;
+    background-color: #181818;
+    color: #eeeeee;
+    border: 1px solid #383838;
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-background: #292929 !important;
-color: #F0D675 !important;
-border-color: #D4AF37 !important;
+    background-color: #222222;
+    color: #f0d675;
+    border-color: #d4af37;
 }
 
-/* =========================================================
-POLA
-========================================================= */
+
+/* ============================================================
+   8. POLA FORMULARZY
+   ============================================================ */
 
 input,
-textarea,
-select {
-background: #151515 !important;
-background-color: #151515 !important;
-color: #F2F2F2 !important;
-border-color: #383838 !important;
+select,
+textarea {
+    background-color: #111111;
+    color: #eeeeee;
+    border: 1px solid #383838;
 }
 
 input:focus,
-textarea:focus,
-select:focus {
-border-color: #D4AF37 !important;
+select:focus,
+textarea:focus {
+    border-color: #d4af37;
+    outline: none;
 }
 
-/* =========================================================
-TABELA
-========================================================= */
-
-table {
-background: #111111 !important;
-background-color: #111111 !important;
-color: #F2F2F2 !important;
-border-color: #383838 !important;
-}
-
-thead,
-th {
-background: #202020 !important;
-background-color: #202020 !important;
-color: #F0D675 !important;
-border-color: #383838 !important;
-}
-
-tbody {
-background: #111111 !important;
-}
-
-td {
-background: #111111 !important;
-background-color: #111111 !important;
-color: #F2F2F2 !important;
-border-color: #303030 !important;
-}
-
-tr:nth-child(even) td {
-background: #151515 !important;
-}
-
-tr:hover td {
-background: #202020 !important;
-}
-
-/* =========================================================
-N01 — OBSZAR KOMPETYCJI
-========================================================= */
-
-/*
-Nie wymuszamy koloru na każdym divie.
-Pozostawiamy strukturę N01, zmieniając tylko powierzchnie.
-*/
-
-#contents,
-#content,
-#main,
-main {
-background-color: #080808 !important;
-color: #F2F2F2 !important;
-}
 
 /* ============================================================
-   DRABINKA - KOREKTA
+   9. ELEMENTY INFORMACYJNE N01
    ============================================================ */
 
-/* TŁO CAŁEGO OBSZARU DRABINKI */
-[class*="bracket"],
-[class*="Bracket"] {
+.info,
+.notice,
+.message {
+    background-color: #111111;
+    color: #eeeeee;
+    border-color: #383838;
+}
+
+
+/* ============================================================
+   10. DRABINKA - GŁÓWNE TŁO
+   ============================================================ */
+
+/*
+   Najważniejsze:
+   NIE ustawiamy tutaj jasnego tła.
+   Drabinka ma być wizualnie częścią czarnej strony.
+*/
+
+#dw,
+#dw_table,
+#dw_container,
+#t_table,
+#tournament,
+.tournament,
+.bracket,
+.brackets {
+    background-color: #080808 !important;
+}
+
+
+/* ============================================================
+   11. ELEMENTY DRABINKI
+   ============================================================ */
+
+/*
+   Nie zmieniamy kolorów zawodników.
+   N01 może sam zarządzać stanem wygrany/przegrany.
+*/
+
+.bracket,
+.brackets,
+.tournament {
+    color: #eeeeee;
+}
+
+
+/* ============================================================
+   12. POLA MECZOWE DRABINKI
+   ============================================================ */
+
+.t_name {
+    background-color: #111111;
+    color: #eeeeee;
+}
+
+.entry_name {
+    color: #eeeeee;
+}
+
+
+/* ============================================================
+   13. WYNIKI DRABINKI
+   ============================================================ */
+
+[id^="dw_result_"],
+[id^="t_result_"] {
+    background-color: #111111;
+}
+
+
+/* ============================================================
+   14. LINIE / ODDZIELENIA DRABINKI
+   ============================================================ */
+
+.bracket svg,
+.brackets svg,
+.tournament svg {
+    background: transparent !important;
+}
+
+.bracket svg line,
+.bracket svg path,
+.bracket svg polyline,
+.brackets svg line,
+.brackets svg path,
+.brackets svg polyline,
+.tournament svg line,
+.tournament svg path,
+.tournament svg polyline {
+    stroke: #383838;
+}
+
+
+/* ============================================================
+   15. AKTYWNY MECZ
+   ============================================================ */
+
+.match.active,
+.match.current,
+.game.active {
+    border-color: #72b7ff;
+}
+
+
+/* ============================================================
+   16. LIVE
+   ============================================================ */
+
+.live,
+.live_score,
+.live-score {
+    color: #72b7ff;
+}
+
+
+/* ============================================================
+   17. STOPKA
+   ============================================================ */
+
+footer {
+    background-color: #080808 !important;
+    color: #888888 !important;
+    border-top: 1px solid #383838;
+}
+
+
+/* ============================================================
+   18. MENU / ELEMENTY NAWIGACJI
+   ============================================================ */
+
+nav {
+    background-color: #080808;
+}
+
+nav a {
+    color: #eeeeee;
+}
+
+nav a:hover {
+    color: #f0d675;
+    background-color: #181818;
+}
+
+
+/* ============================================================
+   19. ELEMENTY AKTYWNE
+   ============================================================ */
+
+.active {
+    background-color: #222222;
+}
+
+.selected {
+    background-color: #222222;
+    color: #f0d675;
+}
+
+
+/* ============================================================
+   20. ZŁOTE ELEMENTY KLUBOWE
+   ============================================================ */
+
+.gold,
+.accent {
+    color: #d4af37;
+}
+
+.gold:hover,
+.accent:hover {
+    color: #f0d675;
+}
+
+
+/* ============================================================
+   21. IKONY / OZNACZENIA
+   ============================================================ */
+
+.icon {
+    color: #d4af37;
+}
+
+
+/* ============================================================
+   22. USUNIĘCIE JASNYCH TŁEŁ Z ELEMENTÓW DRABINKI
+   ============================================================ */
+
+/*
+   Tylko konkretne kontenery.
+   NIE używamy:
+       [class*="win"]
+       [class*="lose"]
+       [class*="winner"]
+       [class*="loser"]
+
+   Dzięki temu nie niszczymy kolorów zawodników.
+*/
+
+#dw,
+#dw_table,
+#dw_container,
+.bracket,
+.brackets,
+.tournament {
     background: #080808 !important;
     background-color: #080808 !important;
 }
 
-/* Wszystkie elementy wewnątrz obszaru drabinki
-   nie mogą dostawać jaśniejszego tła */
-[class*="bracket"] > *,
-[class*="Bracket"] > * {
-    background-color: transparent !important;
-}
-
-/* Komórki / pola meczowe */
-[class*="bracket"] td,
-[class*="bracket"] th,
-[class*="Bracket"] td,
-[class*="Bracket"] th {
-    background-color: #151515 !important;
-}
 
 /* ============================================================
-   KOLORY ZAWODNIKÓW
+   23. TŁO OBSZARU WOKÓŁ MECZÓW
    ============================================================ */
 
-/* Domyślny kolor tekstu zawodników */
-[class*="bracket"] td,
-[class*="bracket"] th,
-[class*="Bracket"] td,
-[class*="Bracket"] th {
-    color: #F2F2F2 !important;
+#dw_result_1_1,
+#dw_result_1_2,
+#dw_result_2_1,
+#dw_result_2_2,
+#dw_result_3_1,
+#dw_result_3_2,
+#dw_result_4_1,
+#dw_result_4_2,
+#dw_result_5_1,
+#dw_result_5_2,
+#dw_result_6_1,
+#dw_result_6_2,
+#dw_result_7_1,
+#dw_result_7_2,
+#dw_result_8_1,
+#dw_result_8_2 {
+    background-color: #111111;
 }
 
-/* PRZEGRANY
-   jasny niebieski */
-[class*="loser"] *,
-[class*="Loser"] *,
-[class*="loser"],
-[class*="Loser"] {
-    color: #72B7FF !important;
-}
-
-/* WYGRANY
-   złoty */
-[class*="winner"] *,
-[class*="Winner"] *,
-[class*="winner"],
-[class*="Winner"] {
-    color: #F0D675 !important;
-}
 
 /* ============================================================
-   LINIE DRABINKI
+   24. NAZWY ZAWODNIKÓW
    ============================================================ */
-
-[class*="bracket"] svg,
-[class*="Bracket"] svg {
-    background: transparent !important;
-}
-
-[class*="bracket"] svg line,
-[class*="bracket"] svg path,
-[class*="bracket"] svg polyline,
-[class*="Bracket"] svg line,
-[class*="Bracket"] svg path,
-[class*="Bracket"] svg polyline {
-    stroke: #383838 !important;
-}
-/* =========================================================
-WYNIKI
-========================================================= */
-
-[class*="score"],
-[class*="Score"],
-[class*="result"],
-[class*="Result"] {
-color: #F2F2F2;
-}
-
-/* =========================================================
-AKTYWNY MECZ
-========================================================= */
-
-[class*="match"],
-[class*="Match"] {
-border-color: #383838;
-}
 
 /*
-Elementy wskazujące mecz gotowy do gry
+   Zostawiamy kolor neutralny.
+   Nie rozróżniamy jeszcze zwycięzcy/przegranego.
 */
 
-[class*="ready"],
-[class*="Ready"],
-[class*="active"],
-[class*="Active"] {
-border-color: #72B7FF !important;
+.t_name > .entry_name {
+    color: #eeeeee;
 }
 
-/* =========================================================
-LINIE DRABINKI
-========================================================= */
 
-[class*="bracket"] svg,
-[class*="Bracket"] svg {
-background: transparent !important;
+/* ============================================================
+   25. ŚREDNIA / STATYSTYKI
+   ============================================================ */
+
+.t_avg {
+    color: #aaaaaa;
 }
 
-[class*="bracket"] line,
-[class*="Bracket"] line {
-stroke: #383838;
+
+/* ============================================================
+   26. DODATKOWE INFORMACJE
+   ============================================================ */
+
+.t_join {
+    color: #72b7ff;
 }
 
-/* =========================================================
-PANELE
-========================================================= */
 
-section,
-article,
-aside {
-border-color: #383838;
+/* ============================================================
+   27. HOVER ZAWODNIKA
+   ============================================================ */
+
+.t_name:hover {
+    background-color: #181818;
 }
 
-/* =========================================================
-MENU
-========================================================= */
 
-nav,
-header,
-footer {
-background-color: #0B0B0B !important;
-color: #F2F2F2 !important;
-border-color: #383838 !important;
-}
-
-/* =========================================================
-ZŁOTE AKCENTY
-========================================================= */
-
-.gold,
-.accent,
-.highlight {
-color: #D4AF37 !important;
-}
-
-/* =========================================================
-SELEKCJA
-========================================================= */
+/* ============================================================
+   28. SELEKCJA TEKSTU
+   ============================================================ */
 
 ::selection {
-background: #D4AF37;
-color: #080808;
+    background-color: #d4af37;
+    color: #080808;
 }
 
-/* =========================================================
-SCROLLBAR
-========================================================= */
 
-::-webkit-scrollbar {
-width: 10px;
-height: 10px;
-}
-
-::-webkit-scrollbar-track {
-background: #0B0B0B;
-}
-
-::-webkit-scrollbar-thumb {
-background: #383838;
-}
-
-::-webkit-scrollbar-thumb:hover {
-background: #D4AF37;
-}
-
-/* =========================================================
-KONIEC — 3 KORONY
-========================================================= */
+/* ============================================================
+   KONIEC
+   ============================================================ */
