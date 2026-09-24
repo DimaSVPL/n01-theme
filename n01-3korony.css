@@ -649,3 +649,56 @@ body table td {
 /* ==========================================================
 KONIEC — 3 KORONY
 ========================================================== */
+/* ==========================================================
+   RANKING LIGI — CIEMNA TABELA
+   Dotyczy wyłącznie strony statystyk ligi
+   ========================================================== */
+
+/* Główna tabela rankingu */
+table {
+    background-color: #111111 !important;
+    color: #F2F2F2 !important;
+}
+
+/* Wszystkie komórki tabeli */
+table th,
+table td {
+    background-color: #111111 !important;
+    color: #F2F2F2 !important;
+    border-color: #383838 !important;
+}
+
+/* Nagłówki kolumn */
+table thead,
+table thead th {
+    background-color: #202020 !important;
+    color: #F0D675 !important;
+}
+
+/* Wiersze zawodników */
+table tbody,
+table tbody tr,
+table tbody tr td {
+    background-color: #111111 !important;
+    color: #F2F2F2 !important;
+}
+
+/* Co drugi wiersz */
+table tbody tr:nth-child(even) td {
+    background-color: #151515 !important;
+}
+
+/* Po najechaniu */
+table tbody tr:hover td {
+    background-color: #202020 !important;
+}
+
+/* Linki / nazwiska zawodników */
+table td a {
+    color: #F0D675 !important;
+}
+
+/* Tekst pomocniczy w rankingu */
+table td small {
+    color: #A8A8A8 !important;
+}
