@@ -173,98 +173,79 @@ background-color: #080808 !important;
 color: #F2F2F2 !important;
 }
 
-/* =========================================================
-N01 — DRABINKA
-========================================================= */
+/* ============================================================
+   DRABINKA - KOREKTA
+   ============================================================ */
 
-/*
-Kluczowa część motywu.
-
-Wszystkie typowe kontenery drabinki dostają
-dokładnie taki sam kolor jak główne tło.
-*/
-
+/* TŁO CAŁEGO OBSZARU DRABINKI */
 [class*="bracket"],
-[class*="Bracket"],
-[class*="tournament"],
-[class*="Tournament"] {
-border-color: #383838;
+[class*="Bracket"] {
+    background: #080808 !important;
+    background-color: #080808 !important;
 }
 
-/*
-Powierzchnie drabinki
-*/
-
-[class*="bracket"] table,
-[class*="Bracket"] table {
-background-color: #080808 !important;
+/* Wszystkie elementy wewnątrz obszaru drabinki
+   nie mogą dostawać jaśniejszego tła */
+[class*="bracket"] > *,
+[class*="Bracket"] > * {
+    background-color: transparent !important;
 }
 
-/*
-Komórki drabinki
-*/
-
+/* Komórki / pola meczowe */
 [class*="bracket"] td,
 [class*="bracket"] th,
 [class*="Bracket"] td,
 [class*="Bracket"] th {
-background-color: #151515 !important;
-color: #F2F2F2 !important;
-border-color: #383838 !important;
+    background-color: #151515 !important;
 }
 
-/*
-Wszystkie teksty znajdujące się wewnątrz drabinki
-*/
+/* ============================================================
+   KOLORY ZAWODNIKÓW
+   ============================================================ */
 
-[class*="bracket"] td *,
-[class*="bracket"] th *,
-[class*="Bracket"] td *,
-[class*="Bracket"] th * {
-color: #F2F2F2;
+/* Domyślny kolor tekstu zawodników */
+[class*="bracket"] td,
+[class*="bracket"] th,
+[class*="Bracket"] td,
+[class*="Bracket"] th {
+    color: #F2F2F2 !important;
 }
 
-/* =========================================================
-PRZEGRANY — JASNY NIEBIESKI
-========================================================= */
-
-/*
-N01 może oznaczać przegranego różnymi klasami.
-Dlatego uwzględniamy kilka wariantów.
-*/
-
-[class*="loser"],
-[class*="Loser"],
-[class*="lose"],
-[class*="Lose"] {
-color: #72B7FF !important;
-}
-
+/* PRZEGRANY
+   jasny niebieski */
 [class*="loser"] *,
 [class*="Loser"] *,
-[class*="lose"] *,
-[class*="Lose"] * {
-color: #72B7FF !important;
+[class*="loser"],
+[class*="Loser"] {
+    color: #72B7FF !important;
 }
 
-/* =========================================================
-ZWYCIĘZCA — ZŁOTY
-========================================================= */
-
-[class*="winner"],
-[class*="Winner"],
-[class*="win"],
-[class*="Win"] {
-color: #F0D675 !important;
-}
-
+/* WYGRANY
+   złoty */
 [class*="winner"] *,
 [class*="Winner"] *,
-[class*="win"] *,
-[class*="Win"] * {
-color: #F0D675 !important;
+[class*="winner"],
+[class*="Winner"] {
+    color: #F0D675 !important;
 }
 
+/* ============================================================
+   LINIE DRABINKI
+   ============================================================ */
+
+[class*="bracket"] svg,
+[class*="Bracket"] svg {
+    background: transparent !important;
+}
+
+[class*="bracket"] svg line,
+[class*="bracket"] svg path,
+[class*="bracket"] svg polyline,
+[class*="Bracket"] svg line,
+[class*="Bracket"] svg path,
+[class*="Bracket"] svg polyline {
+    stroke: #383838 !important;
+}
 /* =========================================================
 WYNIKI
 ========================================================= */
