@@ -560,15 +560,22 @@ aside {
     color: #F0D675 !important;
 }
 /* ============================================================
-   30. LEAGUE STATS — NAPrzEMIENNE WIERSZE
+   30. LEAGUE STATS — STATYSTYKI
    ============================================================ */
 
-#entry_list tr.e_item:nth-of-type(2n) td.stats,
-#entry_list tr.e_item:nth-of-type(2n) td.stats.total {
+#entry_list tr.e_item:nth-of-type(2n+1) td {
     background-color: #202020 !important;
+    color: #F2F2F2 !important;
 }
 
-#entry_list tr.e_item:nth-of-type(2n+1) td.stats,
-#entry_list tr.e_item:nth-of-type(2n+1) td.stats.total {
+#entry_list tr.e_item:nth-of-type(2n) td {
     background-color: #151515 !important;
+    color: #F2F2F2 !important;
+}
+
+/* Pierwsze dwie kolumny */
+#entry_list tr.e_item td.e_no.e_fix,
+#entry_list tr.e_item td.e_name.e_fix {
+    background-color: #151515 !important;
+    color: #F2F2F2 !important;
 }
