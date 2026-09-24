@@ -490,7 +490,7 @@ input[type="radio"] {
 
 
 /* ==========================================================
-24. TYPOWE ELEMENTY
+24. USUNIĘCIE BIAŁYCH TŁEŁ Z TYPOWYCH ELEMENTÓW
 ========================================================== */
 
 div,
@@ -547,7 +547,21 @@ aside {
 
 
 /* ==========================================================
-28. PRZEGRANY — ELEMENTY WYNIKU
+28. PRZEGRANY — CAŁY WIERSZ WYNIKU
+========================================================== */
+
+.loser,
+.lose,
+.lost,
+[class~="loser"],
+[class~="lose"],
+[class~="lost"] {
+    color: #72B7FF !important;
+}
+
+
+/* ==========================================================
+29. PRZEGRANY — ELEMENTY WYNIKU I NUMER MECZU
 ========================================================== */
 
 .loser .score,
@@ -573,76 +587,16 @@ aside {
 
 
 /* ==========================================================
-29. RANKING / LEAGUE STATS
+30. NUMER MECZU — JASNONIEBIESKI
 ========================================================== */
 
-/*
-   N01 League Stats / Ranking
-   Ciemne tło całej tabeli.
-*/
-
-body table {
-    background-color: #111111 !important;
-    color: #F2F2F2 !important;
-}
-
-body table thead,
-body table thead tr,
-body table thead th {
-    background-color: #202020 !important;
-    color: #F0D675 !important;
-    border-color: #383838 !important;
-}
-
-body table tbody,
-body table tbody tr,
-body table tbody td {
-    background-color: #111111 !important;
-    color: #F2F2F2 !important;
-    border-color: #303030 !important;
-}
-
-body table tbody tr:nth-child(even) td {
-    background-color: #151515 !important;
-}
-
-body table tbody tr:hover td {
-    background-color: #202020 !important;
-    color: #F2F2F2 !important;
-}
-
-
-/* ==========================================================
-30. RANKING — NAZWISKA ZAWODNIKÓW
-========================================================== */
-
-body table td a {
-    color: #F2F2F2 !important;
-}
-
-body table td a:hover {
-    color: #F0D675 !important;
-}
-
-
-/* ==========================================================
-31. RANKING — PUNKTY
-========================================================== */
-
-body table td.score,
-body table td.points {
-    color: #F0D675 !important;
-}
-
-
-/* ==========================================================
-32. RANKING — OBRAMOWANIA
-========================================================== */
-
-body table,
-body table th,
-body table td {
-    border-color: #383838 !important;
+.loser ~ *,
+.lose ~ *,
+.lost ~ *,
+[class~="loser"] ~ *,
+[class~="lose"] ~ *,
+[class~="lost"] ~ * {
+    color: #72B7FF !important;
 }
 
 
@@ -650,55 +604,29 @@ body table td {
 KONIEC — 3 KORONY
 ========================================================== */
 /* ==========================================================
-   RANKING LIGI — CIEMNA TABELA
-   Dotyczy wyłącznie strony statystyk ligi
+   RANKING LIGI — KOREKTA TŁA TABELI
    ========================================================== */
 
-/* Główna tabela rankingu */
-table {
-    background-color: #111111 !important;
-    color: #F2F2F2 !important;
+#rank,
+#rank table,
+#rank thead,
+#rank tbody,
+#rank tr,
+#rank th,
+#rank td {
+    background-color: #151515 !important;
+    color: #F2F2F2;
 }
 
-/* Wszystkie komórki tabeli */
-table th,
-table td {
-    background-color: #111111 !important;
-    color: #F2F2F2 !important;
-    border-color: #383838 !important;
-}
-
-/* Nagłówki kolumn */
-table thead,
-table thead th {
+#rank th {
     background-color: #202020 !important;
     color: #F0D675 !important;
 }
 
-/* Wiersze zawodników */
-table tbody,
-table tbody tr,
-table tbody tr td {
-    background-color: #111111 !important;
-    color: #F2F2F2 !important;
-}
-
-/* Co drugi wiersz */
-table tbody tr:nth-child(even) td {
+#rank tr:nth-child(even) td {
     background-color: #151515 !important;
 }
 
-/* Po najechaniu */
-table tbody tr:hover td {
-    background-color: #202020 !important;
-}
-
-/* Linki / nazwiska zawodników */
-table td a {
-    color: #F0D675 !important;
-}
-
-/* Tekst pomocniczy w rankingu */
-table td small {
-    color: #A8A8A8 !important;
+#rank tr:nth-child(odd) td {
+    background-color: #111111 !important;
 }
