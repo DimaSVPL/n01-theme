@@ -577,42 +577,40 @@ aside {
 #rank_list tbody tr:nth-child(even) td {
     background-color: #151515 !important;
 }
-
-
 /* ============================================================
    30. LEAGUE STATS — STATS
    ============================================================ */
 
-/* Zabezpieczenie przed tabelsorterem */
-#entry_list.tablesorter tbody > tr > td {
+/* Domyślnie wszystkie komórki wiersza */
+#entry_list.tablesorter tbody > tr.e_item > td {
     background-color: #151515 !important;
     color: #F2F2F2 !important;
 }
 
-/* Wiersze 1,3,5... */
-#entry_list.tablesorter tbody > tr.e_item:nth-of-type(2n+1) > td {
+/* Wiersz 1 — jasny grafit */
+#entry_list.tablesorter tbody > tr.e_item:nth-child(even) > td {
     background-color: #202020 !important;
 }
 
-/* Wiersze 2,4,6... */
-#entry_list.tablesorter tbody > tr.e_item:nth-of-type(2n) > td {
+/* Wiersz 2 — ciemniejszy grafit */
+#entry_list.tablesorter tbody > tr.e_item:nth-child(odd) > td {
     background-color: #151515 !important;
 }
 
 
 /* ============================================================
-   KOLUMNA NUMER + ZAWODNIK
+   NUMER + ZAWODNIK
+   Kolor identyczny jak reszta wiersza
    ============================================================ */
 
 #entry_list.tablesorter tbody > tr.e_item > td.e_no.e_fix,
 #entry_list.tablesorter tbody > tr.e_item > td.e_name.e_fix {
-    background-color: #151515 !important;
     color: #F2F2F2 !important;
 }
 
 
 /* ============================================================
-   NAGŁÓWEK STATS
+   NAGŁÓWEK
    ============================================================ */
 
 #entry_list th {
