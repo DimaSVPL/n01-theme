@@ -767,3 +767,26 @@ td.score_left_big #p2left_big:hover {
     color: #F2F2F2 !important;
     -webkit-text-fill-color: #F2F2F2 !important;
 }
+/* ============================================================
+   37. WIDOK MECZU — KOMÓRKI WYNIKÓW RUND
+   ============================================================ */
+
+td.score_round,
+td.score_round:nth-child(odd),
+td.score_round:nth-child(even),
+td.score_round.last3 {
+    background: #151515 !important;
+    background-color: #151515 !important;
+    background-image: none !important;
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
+
+/* również przy najechaniu */
+td.score_round:hover,
+td.score_round.last3:hover {
+    background: #151515 !important;
+    background-color: #151515 !important;
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
