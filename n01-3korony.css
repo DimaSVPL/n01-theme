@@ -747,3 +747,23 @@ td.score_left_big #p2left_big:hover {
 #p2left_big * {
     background-image: none !important;
 }
+/* ============================================================
+   36. WIDOK MECZU — WYNIK P1 / P2
+   ============================================================ */
+
+#p1left_big,
+#p2left_big {
+    background-color: #151515 !important;
+    background-image: none !important;
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
+
+/* również podczas hover */
+#p1left_big:hover,
+#p2left_big:hover {
+    background-color: #151515 !important;
+    background-image: none !important;
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
