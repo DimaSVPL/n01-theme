@@ -650,20 +650,8 @@ aside {
 #rank_list tbody > tr.e_item:nth-child(n+9):nth-child(-n+16) > td * {
     color: #F0D675 !important;
 }
-
-
-/* ============================================================
-   STATS — miejsca 1–8 ZIELONY TEKST
-   ============================================================ */
-
-#entry_list tbody > tr.e_item:nth-of-type(n+2):nth-of-type(-n+9) > td,
-#entry_list tbody > tr.e_item:nth-of-type(n+2):nth-of-type(-n+9) > td * {
-    color: #8BE28B !important;
-}
-
-
-/* TEST STATS */
-#entry_list .e_item .e_name,
-#entry_list .e_item .e_name .entry_name {
+/* TEST — bezpośredni kolor nazwiska */
+#entry_list table#entry_list span.entry_name,
+#entry_list .e_name.e_fix span.entry_name {
     color: red !important;
 }
