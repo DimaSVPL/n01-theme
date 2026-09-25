@@ -1129,3 +1129,78 @@ body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody > tr.lg_player:nth-child(n+9
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
 }
+/* =========================================================
+   LIGA 3B
+   1–2   ZIELONY
+   3–5   FIOLETOWY
+   6–8   BRĄZOWY
+   9–16  BIAŁY
+   ========================================================= */
+
+/* TŁO TABELI */
+body:has(a[href*="id=t_pSzc_9867"]) .lg_table {
+    background-color: #151515 !important;
+    background-image: none !important;
+}
+
+/* NAGŁÓWEK */
+body:has(a[href*="id=t_pSzc_9867"]) .lg_table thead,
+body:has(a[href*="id=t_pSzc_9867"]) .lg_table th {
+    background-color: #202020 !important;
+    background-image: none !important;
+    color: #F0D675 !important;
+    -webkit-text-fill-color: #F0D675 !important;
+}
+
+/* WSZYSTKIE KOMÓRKI — CIEMNE TŁO + BIAŁY TEKST BAZOWY */
+body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody td {
+    background-color: #151515 !important;
+    background-image: none !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+/* NAPEMIENNE TŁO */
+body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody tr:nth-child(even) td {
+    background-color: #202020 !important;
+}
+
+/* =========================================================
+   1–2 — ZIELONY
+   ========================================================= */
+
+body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody tr:nth-child(-n+2) td,
+body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody tr:nth-child(-n+2) td * {
+    color: #8BE28B !important;
+    -webkit-text-fill-color: #8BE28B !important;
+}
+
+/* =========================================================
+   3–5 — FIOLETOWY
+   ========================================================= */
+
+body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody tr:nth-child(n+3):nth-child(-n+5) td,
+body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody tr:nth-child(n+3):nth-child(-n+5) td * {
+    color: #B77CFF !important;
+    -webkit-text-fill-color: #B77CFF !important;
+}
+
+/* =========================================================
+   6–8 — BRĄZOWY
+   ========================================================= */
+
+body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody tr:nth-child(n+6):nth-child(-n+8) td,
+body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody tr:nth-child(n+6):nth-child(-n+8) td * {
+    color: #CD7F32 !important;
+    -webkit-text-fill-color: #CD7F32 !important;
+}
+
+/* =========================================================
+   9–16 — BIAŁY
+   ========================================================= */
+
+body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody tr:nth-child(n+9):nth-child(-n+16) td,
+body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody tr:nth-child(n+9):nth-child(-n+16) td * {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
