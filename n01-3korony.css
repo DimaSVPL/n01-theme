@@ -695,3 +695,25 @@ aside {
     color: #F0D675 !important;
     -webkit-text-fill-color: #F0D675 !important;
 }
+/* ============================================================
+   34. WIDOK MECZU — USUNIĘCIE BIAŁEGO PODŚWIETLENIA
+   ============================================================ */
+
+.v_mode,
+.score_left,
+.score_input {
+    background-color: #151515 !important;
+}
+
+/* obramowania */
+.score_left,
+.score_input {
+    border-color: #383838 !important;
+}
+
+/* tekst */
+.v_mode,
+.score_left,
+.score_input {
+    color: #F2F2F2 !important;
+}
