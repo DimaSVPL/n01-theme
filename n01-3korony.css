@@ -851,7 +851,7 @@ body:has(a[href*="id=t_dtr3_7710"]) .lg_table tbody tr:nth-child(n+15):nth-child
 
 
 /* =========================================================
-   LIGA 2
+   LIGA 2 — TEST
    ID: t_LFGF_7361
 
    1–2   ZIELONY
@@ -860,47 +860,87 @@ body:has(a[href*="id=t_dtr3_7710"]) .lg_table tbody tr:nth-child(n+15):nth-child
    13–16 CZERWONY
    ========================================================= */
 
-/* CIEMNE TŁO TABELI */
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table {
+/* TŁO WŁAŚCIWEJ TABELI */
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type {
     background-color: #151515 !important;
     background-image: none !important;
 }
 
-/* CAŁE KOMÓRKI */
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody td {
+/* WSZYSTKIE KOMÓRKI WŁAŚCIWEJ TABELI */
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tbody td {
     background-color: #151515 !important;
     background-image: none !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
 }
 
-/* 1–2 */
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody tr:nth-child(-n+2) td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody tr:nth-child(-n+2) td * {
+
+/* ---------------------------------------------------------
+   1–2 ZIELONY
+   --------------------------------------------------------- */
+
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="1"] td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="1"] td *,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="2"] td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="2"] td * {
     color: #8BE28B !important;
     -webkit-text-fill-color: #8BE28B !important;
 }
 
-/* 3–6 */
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody tr:nth-child(n+3):nth-child(-n+6) td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody tr:nth-child(n+3):nth-child(-n+6) td * {
+
+/* ---------------------------------------------------------
+   3–6 ZŁOTY
+   --------------------------------------------------------- */
+
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="3"] td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="3"] td *,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="4"] td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="4"] td *,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="5"] td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="5"] td *,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="6"] td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="6"] td * {
     color: #F0D675 !important;
     -webkit-text-fill-color: #F0D675 !important;
 }
 
-/* 7–12 */
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody tr:nth-child(n+7):nth-child(-n+12) td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody tr:nth-child(n+7):nth-child(-n+12) td * {
+
+/* ---------------------------------------------------------
+   7–12 FIOLETOWY
+   --------------------------------------------------------- */
+
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="7"] td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="7"] td *,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="8"] td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="8"] td *,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="9"] td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="9"] td *,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="10"] td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="10"] td *,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="11"] td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="11"] td *,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="12"] td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="12"] td * {
     color: #B77CFF !important;
     -webkit-text-fill-color: #B77CFF !important;
 }
 
-/* 13–16 */
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody tr:nth-child(n+13):nth-child(-n+16) td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody tr:nth-child(n+13):nth-child(-n+16) td * {
+
+/* ---------------------------------------------------------
+   13–16 CZERWONY
+   --------------------------------------------------------- */
+
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="13"] td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="13"] td *,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="14"] td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="14"] td *,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="15"] td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="15"] td *,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="16"] td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="16"] td * {
     color: #FF5555 !important;
     -webkit-text-fill-color: #FF5555 !important;
 }
-
-
 /* =========================================================
    LIGA 3A
    ID: t_FHhw_4078
