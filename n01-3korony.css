@@ -631,31 +631,31 @@ aside {
     background-color: #151515 !important;
 }
 /* ============================================================
-   32. STATYSTYKI — TOP 16
+   32. STATS — TOP 16
    ============================================================ */
 
 /* 1–8 — ZIELONY */
-#entry_list tbody > tr.e_item:nth-of-type(2) .entry_name,
-#entry_list tbody > tr.e_item:nth-of-type(3) .entry_name,
-#entry_list tbody > tr.e_item:nth-of-type(4) .entry_name,
-#entry_list tbody > tr.e_item:nth-of-type(5) .entry_name,
-#entry_list tbody > tr.e_item:nth-of-type(6) .entry_name,
-#entry_list tbody > tr.e_item:nth-of-type(7) .entry_name,
-#entry_list tbody > tr.e_item:nth-of-type(8) .entry_name,
-#entry_list tbody > tr.e_item:nth-of-type(9) .entry_name {
+#entry_list tbody > tr.e_item:nth-child(1) .entry_name,
+#entry_list tbody > tr.e_item:nth-child(2) .entry_name,
+#entry_list tbody > tr.e_item:nth-child(3) .entry_name,
+#entry_list tbody > tr.e_item:nth-child(4) .entry_name,
+#entry_list tbody > tr.e_item:nth-child(5) .entry_name,
+#entry_list tbody > tr.e_item:nth-child(6) .entry_name,
+#entry_list tbody > tr.e_item:nth-child(7) .entry_name,
+#entry_list tbody > tr.e_item:nth-child(8) .entry_name {
     color: #8BE28B !important;
     -webkit-text-fill-color: #8BE28B !important;
 }
 
 /* 9–16 — ŻÓŁTY */
-#entry_list tbody > tr.e_item:nth-of-type(10) .entry_name,
-#entry_list tbody > tr.e_item:nth-of-type(11) .entry_name,
-#entry_list tbody > tr.e_item:nth-of-type(12) .entry_name,
-#entry_list tbody > tr.e_item:nth-of-type(13) .entry_name,
-#entry_list tbody > tr.e_item:nth-of-type(14) .entry_name,
-#entry_list tbody > tr.e_item:nth-of-type(15) .entry_name,
-#entry_list tbody > tr.e_item:nth-of-type(16) .entry_name,
-#entry_list tbody > tr.e_item:nth-of-type(17) .entry_name {
+#entry_list tbody > tr.e_item:nth-child(9) .entry_name,
+#entry_list tbody > tr.e_item:nth-child(10) .entry_name,
+#entry_list tbody > tr.e_item:nth-child(11) .entry_name,
+#entry_list tbody > tr.e_item:nth-child(12) .entry_name,
+#entry_list tbody > tr.e_item:nth-child(13) .entry_name,
+#entry_list tbody > tr.e_item:nth-child(14) .entry_name,
+#entry_list tbody > tr.e_item:nth-child(15) .entry_name,
+#entry_list tbody > tr.e_item:nth-child(16) .entry_name {
     color: #F0D675 !important;
     -webkit-text-fill-color: #F0D675 !important;
 }
