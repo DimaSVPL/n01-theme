@@ -630,3 +630,69 @@ aside {
 #entry_list tbody tr.e_item:nth-of-type(2n+1) td.e_name.e_fix {
     background-color: #151515 !important;
 }
+/* ============================================================
+   32. TOP 16 — RANKING + STATS
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   RANKING — miejsca 1–8
+   ------------------------------------------------------------ */
+
+#rank_list tbody tr[data-rank="1"] td,
+#rank_list tbody tr[data-rank="2"] td,
+#rank_list tbody tr[data-rank="3"] td,
+#rank_list tbody tr[data-rank="4"] td,
+#rank_list tbody tr[data-rank="5"] td,
+#rank_list tbody tr[data-rank="6"] td,
+#rank_list tbody tr[data-rank="7"] td,
+#rank_list tbody tr[data-rank="8"] td {
+    background-color: #315F3A !important;
+    color: #FFFFFF !important;
+}
+
+
+/* Ranking — miejsca 9–16 */
+
+#rank_list tbody tr[data-rank="9"] td,
+#rank_list tbody tr[data-rank="10"] td,
+#rank_list tbody tr[data-rank="11"] td,
+#rank_list tbody tr[data-rank="12"] td,
+#rank_list tbody tr[data-rank="13"] td,
+#rank_list tbody tr[data-rank="14"] td,
+#rank_list tbody tr[data-rank="15"] td,
+#rank_list tbody tr[data-rank="16"] td {
+    background-color: #6B5E24 !important;
+    color: #FFFFFF !important;
+}
+
+
+/* ------------------------------------------------------------
+   STATS — miejsca 1–8
+   ------------------------------------------------------------ */
+
+#entry_list tbody tr.e_item:nth-of-type(2) td,
+#entry_list tbody tr.e_item:nth-of-type(3) td,
+#entry_list tbody tr.e_item:nth-of-type(4) td,
+#entry_list tbody tr.e_item:nth-of-type(5) td,
+#entry_list tbody tr.e_item:nth-of-type(6) td,
+#entry_list tbody tr.e_item:nth-of-type(7) td,
+#entry_list tbody tr.e_item:nth-of-type(8) td,
+#entry_list tbody tr.e_item:nth-of-type(9) td {
+    background-color: #315F3A !important;
+    color: #FFFFFF !important;
+}
+
+
+/* Stats — miejsca 9–16 */
+
+#entry_list tbody tr.e_item:nth-of-type(10) td,
+#entry_list tbody tr.e_item:nth-of-type(11) td,
+#entry_list tbody tr.e_item:nth-of-type(12) td,
+#entry_list tbody tr.e_item:nth-of-type(13) td,
+#entry_list tbody tr.e_item:nth-of-type(14) td,
+#entry_list tbody tr.e_item:nth-of-type(15) td,
+#entry_list tbody tr.e_item:nth-of-type(16) td,
+#entry_list tbody tr.e_item:nth-of-type(17) td {
+    background-color: #6B5E24 !important;
+    color: #FFFFFF !important;
+}
