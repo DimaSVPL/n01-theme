@@ -662,13 +662,8 @@ aside {
 }
 
 
-/* Stats — miejsca 9–16 ŻÓŁTY TEKST */
-
-#entry_list tbody > tr.e_item:nth-of-type(n+10):nth-of-type(-n+17) > td,
-#entry_list tbody > tr.e_item:nth-of-type(n+10):nth-of-type(-n+17) > td * {
-    color: #F0D675 !important;
-}
-/* TEST — pierwszy zawodnik w STATS */
-#entry_list tr.e_item:first-of-type td {
+/* TEST STATS */
+#entry_list .e_item .e_name,
+#entry_list .e_item .e_name .entry_name {
     color: red !important;
 }
