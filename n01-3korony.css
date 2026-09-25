@@ -674,3 +674,24 @@ aside {
 #rank_list tbody > tr.e_item:nth-child(n+9):nth-child(-n+16) td * {
     color: #F0D675 !important;
 }
+/* ============================================================
+   33. RANKING — TOP 16
+   ============================================================ */
+
+/* 1–8 — ZIELONY */
+#rank_list tbody tr.e_item:nth-child(-n+8) .e_no,
+#rank_list tbody tr.e_item:nth-child(-n+8) .e_name,
+#rank_list tbody tr.e_item:nth-child(-n+8) .entry_name,
+#rank_list tbody tr.e_item:nth-child(-n+8) .e_fix {
+    color: #8BE28B !important;
+    -webkit-text-fill-color: #8BE28B !important;
+}
+
+/* 9–16 — ŻÓŁTY */
+#rank_list tbody tr.e_item:nth-child(n+9):nth-child(-n+16) .e_no,
+#rank_list tbody tr.e_item:nth-child(n+9):nth-child(-n+16) .e_name,
+#rank_list tbody tr.e_item:nth-child(n+9):nth-child(-n+16) .entry_name,
+#rank_list tbody tr.e_item:nth-child(n+9):nth-child(-n+16) .e_fix {
+    color: #F0D675 !important;
+    -webkit-text-fill-color: #F0D675 !important;
+}
