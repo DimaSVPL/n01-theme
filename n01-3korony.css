@@ -668,3 +668,7 @@ aside {
 #entry_list tbody > tr.e_item:nth-of-type(n+10):nth-of-type(-n+17) > td * {
     color: #F0D675 !important;
 }
+/* TEST — pierwszy zawodnik w STATS */
+#entry_list tr.e_item:first-of-type td {
+    color: red !important;
+}
