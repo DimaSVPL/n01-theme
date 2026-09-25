@@ -813,3 +813,10 @@ td.score_round.last3:hover {
     color: #F2F2F2 !important;
     -webkit-text-fill-color: #F2F2F2 !important;
 }
+/* TEST — LIGA 1 */
+tr.lg_player[data-rank="1"] .lg_name,
+tr.lg_player[data-rank="1"] .entry_name,
+tr.lg_player[data-rank="1"] .lg_rank {
+    color: #8BE28B !important;
+    -webkit-text-fill-color: #8BE28B !important;
+}
