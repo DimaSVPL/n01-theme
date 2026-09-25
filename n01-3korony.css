@@ -717,3 +717,21 @@ aside {
 .score_input {
     color: #F2F2F2 !important;
 }
+/* ============================================================
+   34. WIDOK MECZU — DUŻE POLE WYNIKU
+   ============================================================ */
+
+.score_left_big,
+.score_left_big .left_big,
+.score_left_big .left_big > div,
+#p2left_big {
+    background-color: #151515 !important;
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
+/* Usunięcie białego focus */
+.score_left_big.focus_frame,
+.score_left_big.focus_frame .left_big,
+.score_left_big.focus_frame #p2left_big {
+    background-color: #151515 !important;
+}
