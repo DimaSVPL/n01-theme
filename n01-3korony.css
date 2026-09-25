@@ -1080,3 +1080,30 @@ body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody tr:nth-child(n+9):nth-child(
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
 }
+/* =========================================================
+   3 KORONY — GP — NAZWY TURNIEJÓW
+   ========================================================= */
+
+/* Nazwy turniejów / wydarzeń */
+.t_item .t_name,
+.t_item .t_name a,
+.t_item .t_name .entry_name,
+.t_item .t_no,
+.t_item .t_result {
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
+
+/* Linki nazw turniejów */
+a[href*="t_"] {
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
+
+/* Nazwa turnieju po najechaniu */
+.t_item:hover .t_name,
+.t_item:hover .t_name a,
+.t_item:hover .t_name .entry_name {
+    color: #F0D675 !important;
+    -webkit-text-fill-color: #F0D675 !important;
+}
