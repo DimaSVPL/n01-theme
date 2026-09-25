@@ -784,3 +784,32 @@ td.score_round.last3:hover {
     background-image: none !important;
     color: #F2F2F2 !important;
 }
+/* 41. WYNIKI W STATS_FRAME — USUNIĘCIE BIAŁYCH PÓL */
+
+.score_table,
+.score_table_1,
+.score_table_2,
+.score_table_3 {
+    background-color: #151515 !important;
+    background-image: none !important;
+}
+
+.score_table th.score_round,
+.score_table_1 th.score_round,
+.score_table_2 th.score_round,
+.score_table_3 th.score_round {
+    background-color: #151515 !important;
+    background-image: none !important;
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
+
+.score_table td.score_none,
+.score_table_1 td.score_none,
+.score_table_2 td.score_none,
+.score_table_3 td.score_none {
+    background-color: #151515 !important;
+    background-image: none !important;
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
