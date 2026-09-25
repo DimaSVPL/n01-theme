@@ -851,95 +851,134 @@ body:has(a[href*="id=t_dtr3_7710"]) .lg_table tbody tr:nth-child(n+15):nth-child
 
 
 /* =========================================================
-   LIGA 2 — TEST
-   ID: t_LFGF_7361
-
-   1–2   ZIELONY
-   3–6   ZŁOTY
-   7–12  FIOLETOWY
-   13–16 CZERWONY
+   3 KORONY — LIGA 2 — TEST FINALNY
    ========================================================= */
 
-/* TŁO WŁAŚCIWEJ TABELI */
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type {
+/* Tabela Ligi 2 */
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type {
     background-color: #151515 !important;
     background-image: none !important;
 }
 
-/* WSZYSTKIE KOMÓRKI WŁAŚCIWEJ TABELI */
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tbody td {
-    background-color: #151515 !important;
+/* Nagłówek */
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type thead th {
+    background-color: #202020 !important;
     background-image: none !important;
-    color: #FFFFFF !important;
-    -webkit-text-fill-color: #FFFFFF !important;
-}
-
-
-/* ---------------------------------------------------------
-   1–2 ZIELONY
-   --------------------------------------------------------- */
-
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="1"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="1"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="2"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="2"] td * {
-    color: #8BE28B !important;
-    -webkit-text-fill-color: #8BE28B !important;
-}
-
-
-/* ---------------------------------------------------------
-   3–6 ZŁOTY
-   --------------------------------------------------------- */
-
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="3"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="3"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="4"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="4"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="5"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="5"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="6"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="6"] td * {
     color: #F0D675 !important;
     -webkit-text-fill-color: #F0D675 !important;
 }
 
-
 /* ---------------------------------------------------------
-   7–12 FIOLETOWY
+   1–2 — ZIELONY
    --------------------------------------------------------- */
 
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="7"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="7"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="8"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="8"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="9"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="9"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="10"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="10"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="11"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="11"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="12"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="12"] td * {
-    color: #B77CFF !important;
-    -webkit-text-fill-color: #B77CFF !important;
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(1) td,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(2) td,
+
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(1) td *,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(2) td * {
+    color: #8BE28B !important;
+    -webkit-text-fill-color: #8BE28B !important;
+    background-color: #151515 !important;
+    background-image: none !important;
 }
 
 
 /* ---------------------------------------------------------
-   13–16 CZERWONY
+   3–6 — ZŁOTY
    --------------------------------------------------------- */
 
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="13"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="13"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="14"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="14"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="15"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="15"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="16"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table:first-of-type tr[data-rank="16"] td * {
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(3) td,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(4) td,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(5) td,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(6) td,
+
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(3) td *,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(4) td *,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(5) td *,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(6) td * {
+    color: #F0D675 !important;
+    -webkit-text-fill-color: #F0D675 !important;
+    background-color: #151515 !important;
+    background-image: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   7–12 — FIOLETOWY
+   --------------------------------------------------------- */
+
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(7) td,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(8) td,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(9) td,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(10) td,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(11) td,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(12) td,
+
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(7) td *,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(8) td *,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(9) td *,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(10) td *,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(11) td *,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(12) td * {
+    color: #B77CFF !important;
+    -webkit-text-fill-color: #B77CFF !important;
+    background-color: #151515 !important;
+    background-image: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   13–16 — CZERWONY
+   --------------------------------------------------------- */
+
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(13) td,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(14) td,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(15) td,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(16) td,
+
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(13) td *,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(14) td *,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(15) td *,
+body:has(a[href*="id=t_LFGF_7361"])
+.lg_table:first-of-type tbody .lg_player:nth-child(16) td * {
     color: #FF5555 !important;
     -webkit-text-fill-color: #FF5555 !important;
+    background-color: #151515 !important;
+    background-image: none !important;
 }
 /* =========================================================
    LIGA 3A
