@@ -718,20 +718,32 @@ aside {
     color: #F2F2F2 !important;
 }
 /* ============================================================
-   34. WIDOK MECZU — DUŻE POLE WYNIKU
+   35. WIDOK MECZU — DUŻE POLE WYNIKU
+   WYMUSZENIE CIEMNEGO TŁA W STANIE NORMALNYM I HOVER
    ============================================================ */
 
-.score_left_big,
-.score_left_big .left_big,
-.score_left_big .left_big > div,
-#p2left_big {
+td.score_left_big,
+td.score_left_big.focus_frame,
+td.score_left_big:hover,
+td.score_left_big.focus_frame:hover,
+
+td.score_left_big .left_big,
+td.score_left_big .left_big:hover,
+
+td.score_left_big #p2left_big,
+td.score_left_big #p2left_big:hover {
+    background: #151515 !important;
     background-color: #151515 !important;
+    background-image: none !important;
     color: #F2F2F2 !important;
     -webkit-text-fill-color: #F2F2F2 !important;
 }
-/* Usunięcie białego focus */
-.score_left_big.focus_frame,
-.score_left_big.focus_frame .left_big,
-.score_left_big.focus_frame #p2left_big {
-    background-color: #151515 !important;
+
+/* dodatkowo blokujemy białe podświetlenie wewnętrznych elementów */
+
+.score_left_big .left_big,
+.score_left_big .left_big *,
+#p2left_big,
+#p2left_big * {
+    background-image: none !important;
 }
