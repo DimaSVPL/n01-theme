@@ -631,42 +631,40 @@ aside {
     background-color: #151515 !important;
 }
 /* ============================================================
-   32. TOP 16 — RANKING + STATS
+   32. TOP 16 — KOLOR TEKSTU
    ============================================================ */
 
 /* ============================================================
-   RANKING
-   Pierwsze 8 = ZIELONE
-   Kolejne 8 = ŻÓŁTE
+   RANKING — miejsca 1–8 ZIELONY TEKST
    ============================================================ */
 
-/* Miejsca 1–8 */
-#rank_list tbody > tr.e_item:nth-child(-n+8) > td {
-    background-color: #315F3A !important;
-    color: #FFFFFF !important;
+#rank_list tbody > tr.e_item:nth-child(-n+8) > td,
+#rank_list tbody > tr.e_item:nth-child(-n+8) > td * {
+    color: #8BE28B !important;
 }
 
-/* Miejsca 9–16 */
-#rank_list tbody > tr.e_item:nth-child(n+9):nth-child(-n+16) > td {
-    background-color: #6B5E24 !important;
-    color: #FFFFFF !important;
+
+/* Ranking — miejsca 9–16 ŻÓŁTY TEKST */
+
+#rank_list tbody > tr.e_item:nth-child(n+9):nth-child(-n+16) > td,
+#rank_list tbody > tr.e_item:nth-child(n+9):nth-child(-n+16) > td * {
+    color: #F0D675 !important;
 }
 
 
 /* ============================================================
-   STATS
-   W tabeli Stats pierwszy TR jest nagłówkiem,
-   dlatego zawodnik 1 = nth-of-type(2)
+   STATS — miejsca 1–8 ZIELONY TEKST
    ============================================================ */
 
-/* Miejsca 1–8 */
-#entry_list tbody > tr.e_item:nth-of-type(n+2):nth-of-type(-n+9) > td {
-    background-color: #315F3A !important;
-    color: #FFFFFF !important;
+#entry_list tbody > tr.e_item:nth-of-type(n+2):nth-of-type(-n+9) > td,
+#entry_list tbody > tr.e_item:nth-of-type(n+2):nth-of-type(-n+9) > td * {
+    color: #8BE28B !important;
 }
 
-/* Miejsca 9–16 */
-#entry_list tbody > tr.e_item:nth-of-type(n+10):nth-of-type(-n+17) > td {
-    background-color: #6B5E24 !important;
-    color: #FFFFFF !important;
+
+/* Stats — miejsca 9–16 ŻÓŁTY TEKST */
+
+#entry_list tbody > tr.e_item:nth-of-type(n+10):nth-of-type(-n+17) > td,
+#entry_list tbody > tr.e_item:nth-of-type(n+10):nth-of-type(-n+17) > td * {
+    color: #F0D675 !important;
 }
