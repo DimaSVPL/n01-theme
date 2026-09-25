@@ -813,10 +813,306 @@ td.score_round.last3:hover {
     color: #F2F2F2 !important;
     -webkit-text-fill-color: #F2F2F2 !important;
 }
-/* TEST — LIGA 1 */
+/* =========================================================
+   41. TABELA LIG — KOLORY POZYCJI
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   LIGA 1 — t_dtr3_7710
+
+   1–10  ZIELONY
+   11–14 ŻÓŁTY
+   15–16 CZERWONY
+   --------------------------------------------------------- */
+
+/* 1–10 — ZIELONY */
 tr.lg_player[data-rank="1"] .lg_name,
-tr.lg_player[data-rank="1"] .entry_name,
-tr.lg_player[data-rank="1"] .lg_rank {
+tr.lg_player[data-rank="1"] .lg_name .entry_name,
+tr.lg_player[data-rank="1"] .lg_rank,
+
+tr.lg_player[data-rank="2"] .lg_name,
+tr.lg_player[data-rank="2"] .lg_name .entry_name,
+tr.lg_player[data-rank="2"] .lg_rank,
+
+tr.lg_player[data-rank="3"] .lg_name,
+tr.lg_player[data-rank="3"] .lg_name .entry_name,
+tr.lg_player[data-rank="3"] .lg_rank,
+
+tr.lg_player[data-rank="4"] .lg_name,
+tr.lg_player[data-rank="4"] .lg_name .entry_name,
+tr.lg_player[data-rank="4"] .lg_rank,
+
+tr.lg_player[data-rank="5"] .lg_name,
+tr.lg_player[data-rank="5"] .lg_name .entry_name,
+tr.lg_player[data-rank="5"] .lg_rank,
+
+tr.lg_player[data-rank="6"] .lg_name,
+tr.lg_player[data-rank="6"] .lg_name .entry_name,
+tr.lg_player[data-rank="6"] .lg_rank,
+
+tr.lg_player[data-rank="7"] .lg_name,
+tr.lg_player[data-rank="7"] .lg_name .entry_name,
+tr.lg_player[data-rank="7"] .lg_rank,
+
+tr.lg_player[data-rank="8"] .lg_name,
+tr.lg_player[data-rank="8"] .lg_name .entry_name,
+tr.lg_player[data-rank="8"] .lg_rank,
+
+tr.lg_player[data-rank="9"] .lg_name,
+tr.lg_player[data-rank="9"] .lg_name .entry_name,
+tr.lg_player[data-rank="9"] .lg_rank,
+
+tr.lg_player[data-rank="10"] .lg_name,
+tr.lg_player[data-rank="10"] .lg_name .entry_name,
+tr.lg_player[data-rank="10"] .lg_rank {
     color: #8BE28B !important;
     -webkit-text-fill-color: #8BE28B !important;
+}
+
+
+/* 11–14 — ŻÓŁTY */
+tr.lg_player[data-rank="11"] .lg_name,
+tr.lg_player[data-rank="11"] .lg_name .entry_name,
+tr.lg_player[data-rank="11"] .lg_rank,
+
+tr.lg_player[data-rank="12"] .lg_name,
+tr.lg_player[data-rank="12"] .lg_name .entry_name,
+tr.lg_player[data-rank="12"] .lg_rank,
+
+tr.lg_player[data-rank="13"] .lg_name,
+tr.lg_player[data-rank="13"] .lg_name .entry_name,
+tr.lg_player[data-rank="13"] .lg_rank,
+
+tr.lg_player[data-rank="14"] .lg_name,
+tr.lg_player[data-rank="14"] .lg_name .entry_name,
+tr.lg_player[data-rank="14"] .lg_rank {
+    color: #F0D675 !important;
+    -webkit-text-fill-color: #F0D675 !important;
+}
+
+
+/* 15–16 — CZERWONY */
+tr.lg_player[data-rank="15"] .lg_name,
+tr.lg_player[data-rank="15"] .lg_name .entry_name,
+tr.lg_player[data-rank="15"] .lg_rank,
+
+tr.lg_player[data-rank="16"] .lg_name,
+tr.lg_player[data-rank="16"] .lg_name .entry_name,
+tr.lg_player[data-rank="16"] .lg_rank {
+    color: #FF5555 !important;
+    -webkit-text-fill-color: #FF5555 !important;
+}
+
+
+/* ---------------------------------------------------------
+   LIGA 2 — t_LFGF_7361
+
+   1–2   ZIELONY
+   3–6   ŻÓŁTY
+   7–12  FIOLETOWY
+   13–16 CZERWONY
+
+   TŁO TABELI — CIEMNE
+   --------------------------------------------------------- */
+
+#league_table tr.lg_player td {
+    background-color: #151515 !important;
+    background-image: none !important;
+}
+
+#league_table tr.lg_player:nth-child(even) td {
+    background-color: #202020 !important;
+}
+
+
+/* 1–2 — ZIELONY */
+tr.lg_player[data-rank="1"] .lg_name,
+tr.lg_player[data-rank="1"] .lg_name .entry_name,
+tr.lg_player[data-rank="1"] .lg_rank,
+
+tr.lg_player[data-rank="2"] .lg_name,
+tr.lg_player[data-rank="2"] .lg_name .entry_name,
+tr.lg_player[data-rank="2"] .lg_rank {
+    color: #8BE28B !important;
+    -webkit-text-fill-color: #8BE28B !important;
+}
+
+
+/* 3–6 — ŻÓŁTY */
+tr.lg_player[data-rank="3"] .lg_name,
+tr.lg_player[data-rank="3"] .lg_name .entry_name,
+tr.lg_player[data-rank="3"] .lg_rank,
+
+tr.lg_player[data-rank="4"] .lg_name,
+tr.lg_player[data-rank="4"] .lg_name .entry_name,
+tr.lg_player[data-rank="4"] .lg_rank,
+
+tr.lg_player[data-rank="5"] .lg_name,
+tr.lg_player[data-rank="5"] .lg_name .entry_name,
+tr.lg_player[data-rank="5"] .lg_rank,
+
+tr.lg_player[data-rank="6"] .lg_name,
+tr.lg_player[data-rank="6"] .lg_name .entry_name,
+tr.lg_player[data-rank="6"] .lg_rank {
+    color: #F0D675 !important;
+    -webkit-text-fill-color: #F0D675 !important;
+}
+
+
+/* 7–12 — FIOLETOWY */
+tr.lg_player[data-rank="7"] .lg_name,
+tr.lg_player[data-rank="7"] .lg_name .entry_name,
+tr.lg_player[data-rank="7"] .lg_rank,
+
+tr.lg_player[data-rank="8"] .lg_name,
+tr.lg_player[data-rank="8"] .lg_name .entry_name,
+tr.lg_player[data-rank="8"] .lg_rank,
+
+tr.lg_player[data-rank="9"] .lg_name,
+tr.lg_player[data-rank="9"] .lg_name .entry_name,
+tr.lg_player[data-rank="9"] .lg_rank,
+
+tr.lg_player[data-rank="10"] .lg_name,
+tr.lg_player[data-rank="10"] .lg_name .entry_name,
+tr.lg_player[data-rank="10"] .lg_rank,
+
+tr.lg_player[data-rank="11"] .lg_name,
+tr.lg_player[data-rank="11"] .lg_name .entry_name,
+tr.lg_player[data-rank="11"] .lg_rank,
+
+tr.lg_player[data-rank="12"] .lg_name,
+tr.lg_player[data-rank="12"] .lg_name .entry_name,
+tr.lg_player[data-rank="12"] .lg_rank {
+    color: #B77CFF !important;
+    -webkit-text-fill-color: #B77CFF !important;
+}
+
+
+/* 13–16 — CZERWONY */
+tr.lg_player[data-rank="13"] .lg_name,
+tr.lg_player[data-rank="13"] .lg_name .entry_name,
+tr.lg_player[data-rank="13"] .lg_rank,
+
+tr.lg_player[data-rank="14"] .lg_name,
+tr.lg_player[data-rank="14"] .lg_name .entry_name,
+tr.lg_player[data-rank="14"] .lg_rank,
+
+tr.lg_player[data-rank="15"] .lg_name,
+tr.lg_player[data-rank="15"] .lg_name .entry_name,
+tr.lg_player[data-rank="15"] .lg_rank,
+
+tr.lg_player[data-rank="16"] .lg_name,
+tr.lg_player[data-rank="16"] .lg_name .entry_name,
+tr.lg_player[data-rank="16"] .lg_rank {
+    color: #FF5555 !important;
+    -webkit-text-fill-color: #FF5555 !important;
+}
+
+
+/* ---------------------------------------------------------
+   LIGA 3A + 3B
+   t_FHhw_4078
+   t_pSzc_9867
+
+   1–2   ZIELONY
+   3–5   FIOLETOWY
+   6–8   BRĄZOWY
+   9–16  BIAŁY
+
+   TŁO TABELI — CIEMNE
+   --------------------------------------------------------- */
+
+tr.lg_player td {
+    background-color: #151515 !important;
+    background-image: none !important;
+}
+
+tr.lg_player:nth-child(even) td {
+    background-color: #202020 !important;
+}
+
+
+/* 1–2 — ZIELONY */
+tr.lg_player[data-rank="1"] .lg_name,
+tr.lg_player[data-rank="1"] .lg_name .entry_name,
+tr.lg_player[data-rank="1"] .lg_rank,
+
+tr.lg_player[data-rank="2"] .lg_name,
+tr.lg_player[data-rank="2"] .lg_name .entry_name,
+tr.lg_player[data-rank="2"] .lg_rank {
+    color: #8BE28B !important;
+    -webkit-text-fill-color: #8BE28B !important;
+}
+
+
+/* 3–5 — FIOLETOWY */
+tr.lg_player[data-rank="3"] .lg_name,
+tr.lg_player[data-rank="3"] .lg_name .entry_name,
+tr.lg_player[data-rank="3"] .lg_rank,
+
+tr.lg_player[data-rank="4"] .lg_name,
+tr.lg_player[data-rank="4"] .lg_name .entry_name,
+tr.lg_player[data-rank="4"] .lg_rank,
+
+tr.lg_player[data-rank="5"] .lg_name,
+tr.lg_player[data-rank="5"] .lg_name .entry_name,
+tr.lg_player[data-rank="5"] .lg_rank {
+    color: #B77CFF !important;
+    -webkit-text-fill-color: #B77CFF !important;
+}
+
+
+/* 6–8 — BRĄZOWY */
+tr.lg_player[data-rank="6"] .lg_name,
+tr.lg_player[data-rank="6"] .lg_name .entry_name,
+tr.lg_player[data-rank="6"] .lg_rank,
+
+tr.lg_player[data-rank="7"] .lg_name,
+tr.lg_player[data-rank="7"] .lg_name .entry_name,
+tr.lg_player[data-rank="7"] .lg_rank,
+
+tr.lg_player[data-rank="8"] .lg_name,
+tr.lg_player[data-rank="8"] .lg_name .entry_name,
+tr.lg_player[data-rank="8"] .lg_rank {
+    color: #CD7F32 !important;
+    -webkit-text-fill-color: #CD7F32 !important;
+}
+
+
+/* 9–16 — BIAŁY */
+tr.lg_player[data-rank="9"] .lg_name,
+tr.lg_player[data-rank="9"] .lg_name .entry_name,
+tr.lg_player[data-rank="9"] .lg_rank,
+
+tr.lg_player[data-rank="10"] .lg_name,
+tr.lg_player[data-rank="10"] .lg_name .entry_name,
+tr.lg_player[data-rank="10"] .lg_rank,
+
+tr.lg_player[data-rank="11"] .lg_name,
+tr.lg_player[data-rank="11"] .lg_name .entry_name,
+tr.lg_player[data-rank="11"] .lg_rank,
+
+tr.lg_player[data-rank="12"] .lg_name,
+tr.lg_player[data-rank="12"] .lg_name .entry_name,
+tr.lg_player[data-rank="12"] .lg_rank,
+
+tr.lg_player[data-rank="13"] .lg_name,
+tr.lg_player[data-rank="13"] .lg_name .entry_name,
+tr.lg_player[data-rank="13"] .lg_name .entry_name,
+tr.lg_player[data-rank="13"] .lg_rank,
+
+tr.lg_player[data-rank="14"] .lg_name,
+tr.lg_player[data-rank="14"] .lg_name .entry_name,
+tr.lg_player[data-rank="14"] .lg_rank,
+
+tr.lg_player[data-rank="15"] .lg_name,
+tr.lg_player[data-rank="15"] .lg_name .entry_name,
+tr.lg_player[data-rank="15"] .lg_rank,
+
+tr.lg_player[data-rank="16"] .lg_name,
+tr.lg_player[data-rank="16"] .lg_name .entry_name,
+tr.lg_player[data-rank="16"] .lg_rank {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
 }
