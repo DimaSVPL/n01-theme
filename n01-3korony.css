@@ -631,27 +631,29 @@ aside {
     background-color: #151515 !important;
 }
 /* ============================================================
-   32. TOP 16 — KOLOR TEKSTU
+   32. STATS — TOP 16
    ============================================================ */
 
-/* ============================================================
-   RANKING — miejsca 1–8 ZIELONY TEKST
-   ============================================================ */
-
-#rank_list tbody > tr.e_item:nth-child(-n+8) > td,
-#rank_list tbody > tr.e_item:nth-child(-n+8) > td * {
+/* 1–8 — zielony tekst */
+#entry_list tr.e_item:nth-child(2) .entry_name,
+#entry_list tr.e_item:nth-child(3) .entry_name,
+#entry_list tr.e_item:nth-child(4) .entry_name,
+#entry_list tr.e_item:nth-child(5) .entry_name,
+#entry_list tr.e_item:nth-child(6) .entry_name,
+#entry_list tr.e_item:nth-child(7) .entry_name,
+#entry_list tr.e_item:nth-child(8) .entry_name,
+#entry_list tr.e_item:nth-child(9) .entry_name {
     color: #8BE28B !important;
 }
 
-
-/* Ranking — miejsca 9–16 ŻÓŁTY TEKST */
-
-#rank_list tbody > tr.e_item:nth-child(n+9):nth-child(-n+16) > td,
-#rank_list tbody > tr.e_item:nth-child(n+9):nth-child(-n+16) > td * {
+/* 9–16 — żółty tekst */
+#entry_list tr.e_item:nth-child(10) .entry_name,
+#entry_list tr.e_item:nth-child(11) .entry_name,
+#entry_list tr.e_item:nth-child(12) .entry_name,
+#entry_list tr.e_item:nth-child(13) .entry_name,
+#entry_list tr.e_item:nth-child(14) .entry_name,
+#entry_list tr.e_item:nth-child(15) .entry_name,
+#entry_list tr.e_item:nth-child(16) .entry_name,
+#entry_list tr.e_item:nth-child(17) .entry_name {
     color: #F0D675 !important;
-}
-/* TEST — bezpośredni kolor nazwiska */
-#entry_list table#entry_list span.entry_name,
-#entry_list .e_name.e_fix span.entry_name {
-    color: red !important;
 }
