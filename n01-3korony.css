@@ -1186,3 +1186,56 @@ body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody tr:nth-child(n+9):nth-child(
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
 }
+/* ============================================================
+   53. N01 LIVE — AKTYWNA KOMÓRKA WYNIKU
+   ============================================================ */
+
+/*
+   N01 oznacza aktualnie wybraną komórkę klasą:
+   
+       .score_input.input_area
+
+   Klasa input_area jest automatycznie przenoszona przez N01:
+   - po kliknięciu innej komórki,
+   - po zatwierdzeniu wyniku podejścia.
+
+   Używamy box-shadow zamiast border,
+   aby nie zmieniać wymiarów komórki ani układu tabeli.
+*/
+
+td.score_input.input_area {
+    background-color: #151515 !important;
+    background-image: none !important;
+
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+
+    box-shadow: inset 0 0 0 4px #D4AF37 !important;
+
+    border-color: #D4AF37 !important;
+}
+
+
+/* Tekst wewnątrz aktywnej komórki */
+
+td.score_input.input_area *,
+td.score_input.input_area span {
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
+
+
+/* Aktywna komórka P1 */
+
+td.score_input.p1score.input_area {
+    box-shadow: inset 0 0 0 4px #D4AF37 !important;
+    border-color: #D4AF37 !important;
+}
+
+
+/* Aktywna komórka P2 */
+
+td.score_input.p2score.input_area {
+    box-shadow: inset 0 0 0 4px #D4AF37 !important;
+    border-color: #D4AF37 !important;
+}
