@@ -1239,3 +1239,399 @@ td.score_input.p2score.input_area {
     box-shadow: inset 0 0 0 4px #D4AF37 !important;
     border-color: #D4AF37 !important;
 }
+/* ============================================================
+   54. FORMULARZE — FUNDAMENTALNA WARSTWA DARK THEME
+   ============================================================ */
+
+/*
+   CEL:
+   Wszystkie pola formularzy N01 muszą być czytelne
+   na ciemnym tle.
+
+   ZASADA:
+   - tło pola       #151515
+   - tekst          #F2F2F2
+   - placeholder    #A8A8A8
+   - obramowanie    #383838
+   - focus          #D4AF37
+   - aktywne        #D4AF37
+
+   Ta sekcja jest celowo umieszczona na końcu CSS,
+   aby miała pierwszeństwo przed wcześniejszymi regułami.
+*/
+
+
+/* ------------------------------------------------------------
+   54.1 — PODSTAWOWE POLA
+   ------------------------------------------------------------ */
+
+input,
+textarea,
+select {
+    background-color: #151515 !important;
+    background-image: none !important;
+
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+
+    border-color: #383838 !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.2 — INPUT — WSZYSTKIE TYPY
+   ------------------------------------------------------------ */
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="file"],
+input[type="color"] {
+    background-color: #151515 !important;
+    background-image: none !important;
+
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+
+    border-color: #383838 !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.3 — HASŁA
+   ------------------------------------------------------------ */
+
+/*
+   Szczególnie ważne dla:
+   - Join Password
+   - New password
+   - Confirm new password
+*/
+
+input[type="password"] {
+    background-color: #151515 !important;
+    background-image: none !important;
+
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+
+    border: 1px solid #383838 !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.4 — TEXTAREA
+   ------------------------------------------------------------ */
+
+textarea {
+    background-color: #151515 !important;
+    background-image: none !important;
+
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+
+    border-color: #383838 !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.5 — SELECT
+   ------------------------------------------------------------ */
+
+select {
+    background-color: #151515 !important;
+    background-image: none !important;
+
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+
+    border-color: #383838 !important;
+}
+
+
+/* Lista rozwijana */
+
+select option,
+select optgroup {
+    background-color: #151515 !important;
+    color: #F2F2F2 !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.6 — PLACEHOLDER
+   ------------------------------------------------------------ */
+
+input::placeholder,
+textarea::placeholder {
+    color: #A8A8A8 !important;
+    -webkit-text-fill-color: #A8A8A8 !important;
+    opacity: 1 !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.7 — FOCUS
+   ------------------------------------------------------------ */
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #151515 !important;
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+
+    border-color: #D4AF37 !important;
+
+    outline: none !important;
+
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.25) !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.8 — FOCUS-VISIBLE
+   ------------------------------------------------------------ */
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    border-color: #D4AF37 !important;
+
+    outline: 2px solid #D4AF37 !important;
+    outline-offset: 1px !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.9 — HOVER
+   ------------------------------------------------------------ */
+
+input:hover,
+textarea:hover,
+select:hover {
+    border-color: #555555 !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.10 — DISABLED
+   ------------------------------------------------------------ */
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+    background-color: #101010 !important;
+
+    color: #777777 !important;
+    -webkit-text-fill-color: #777777 !important;
+
+    border-color: #292929 !important;
+
+    opacity: 1 !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.11 — READONLY
+   ------------------------------------------------------------ */
+
+input[readonly],
+textarea[readonly] {
+    background-color: #151515 !important;
+
+    color: #D0D0D0 !important;
+    -webkit-text-fill-color: #D0D0D0 !important;
+
+    border-color: #383838 !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.12 — CHECKBOX / RADIO
+   ------------------------------------------------------------ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    background-color: #151515 !important;
+
+    color: #F2F2F2 !important;
+    accent-color: #D4AF37 !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.13 — FILE
+   ------------------------------------------------------------ */
+
+input[type="file"] {
+    background-color: #151515 !important;
+    color: #F2F2F2 !important;
+
+    border-color: #383838 !important;
+}
+
+
+/* Przycisk "Choose file" w Chrome */
+
+input[type="file"]::file-selector-button {
+    background-color: #202020 !important;
+    color: #F2F2F2 !important;
+
+    border: 1px solid #383838 !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.14 — PRZYCISKI FORMULARZY
+   ------------------------------------------------------------ */
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    background-color: #202020 !important;
+
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+
+    border-color: #383838 !important;
+}
+
+
+/* Hover */
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #292929 !important;
+
+    color: #F0D675 !important;
+    -webkit-text-fill-color: #F0D675 !important;
+
+    border-color: #D4AF37 !important;
+}
+
+
+/* Focus */
+
+button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus {
+    color: #F0D675 !important;
+    -webkit-text-fill-color: #F0D675 !important;
+
+    border-color: #D4AF37 !important;
+
+    outline: none !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.15 — TEKST WEWNĄTRZ ELEMENTÓW FORMULARZY
+   ------------------------------------------------------------ */
+
+input *,
+textarea *,
+select * {
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.16 — CHROME AUTOFILL
+   ------------------------------------------------------------ */
+
+/*
+   Chrome potrafi samodzielnie nadać polu jasne tło
+   i ciemny tekst podczas autofill.
+*/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-text-fill-color: #F2F2F2 !important;
+
+    -webkit-box-shadow:
+        0 0 0 1000px #151515 inset !important;
+
+    box-shadow:
+        0 0 0 1000px #151515 inset !important;
+
+    background-color: #151515 !important;
+    background-image: none !important;
+
+    caret-color: #F2F2F2 !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.17 — KURSOR
+   ------------------------------------------------------------ */
+
+input,
+textarea,
+select {
+    caret-color: #F0D675 !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.18 — LABEL
+   ------------------------------------------------------------ */
+
+label {
+    color: #F2F2F2 !important;
+}
+
+
+/* Tekst pomocniczy */
+
+label *,
+.form-label *,
+.help-text *,
+.form-help * {
+    color: #A8A8A8 !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.19 — WALIDACJA
+   ------------------------------------------------------------ */
+
+input:invalid,
+textarea:invalid,
+select:invalid {
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
+
+
+/* ------------------------------------------------------------
+   54.20 — SELEKCJA TEKSTU W POLACH
+   ------------------------------------------------------------ */
+
+input::selection,
+textarea::selection,
+select::selection {
+    background-color: #D4AF37 !important;
+    color: #080808 !important;
+}
+
+
+/* ============================================================
+   KONIEC — FORMULARZE
+   ============================================================ */
