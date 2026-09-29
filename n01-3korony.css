@@ -1829,6 +1829,27 @@ select::selection {
 /* ============================================================
    KONIEC 55.10
    ============================================================ */
+
+/* ============================================================
+   56. LIVE — NAZWY ZAWODNIKÓW
+   ============================================================ */
+
+/* Nazwy zawodników w LIVE */
+#score_view_inset_body #result_table td.name,
+#score_view_inset_body #result_table td.name > div,
+#score_view_inset_body #result_table #p1_name,
+#score_view_inset_body #result_table #p2_name {
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
+
+/* Statystyki zawodników */
+#score_view_inset_body #result_table #p1_stats,
+#score_view_inset_body #result_table #p2_stats {
+    color: #AAAAAA !important;
+    -webkit-text-fill-color: #AAAAAA !important;
+}
+
 /* ============================================================
    KONIEC — MECZE LIGOWE
    ============================================================ */
