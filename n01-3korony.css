@@ -1772,20 +1772,63 @@ select::selection {
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
 }
+/* ============================================================
+   55.10 — MECZE ZAKOŃCZONE REMISEM
+   ============================================================ */
+
+/*
+ * JS dodaje do meczu klasę:
+ *
+ * .mf_draw
+ *
+ * Remis:
+ * zawodnik lewy  = NIEBIESKI
+ * zawodnik prawy = NIEBIESKI
+ *
+ * Wynik meczu pozostaje bez zmian.
+ */
+
+
 /* ------------------------------------------------------------
-   55.10 — REMIS
+   55.10.1 — LEWY ZAWODNIK
    ------------------------------------------------------------ */
 
-.lg_match_item.mf_draw .lg_set_name,
-.lg_match_item.mf_draw .lg_set_name *,
-.lg_match_item.mf_draw .lg_set_name .entry_name,
-.lg_match_item.mf_draw .lg_set_name .t_avg,
-.lg_match_item.mf_draw .lg_set_result,
-.lg_match_item.mf_draw .lg_set_result *,
-.lg_match_item.mf_draw .lg_box {
+.lg_match_item.mf_draw .lg_set_name .lg_left,
+.lg_match_item.mf_draw .lg_set_name .lg_left *,
+.lg_match_item.mf_draw .lg_set_name .lg_left .entry_name,
+.lg_match_item.mf_draw .lg_set_name .lg_left .t_avg {
     color: #4DA3FF !important;
     -webkit-text-fill-color: #4DA3FF !important;
 }
+
+
+/* ------------------------------------------------------------
+   55.10.2 — PRAWY ZAWODNIK
+   ------------------------------------------------------------ */
+
+.lg_match_item.mf_draw .lg_set_name .lg_right,
+.lg_match_item.mf_draw .lg_set_name .lg_right *,
+.lg_match_item.mf_draw .lg_set_name .lg_right .entry_name,
+.lg_match_item.mf_draw .lg_set_name .lg_right .t_avg {
+    color: #4DA3FF !important;
+    -webkit-text-fill-color: #4DA3FF !important;
+}
+
+
+/* ------------------------------------------------------------
+   55.10.3 — DODATKOWE WYMUSZENIE KOLORU TEKSTU
+   ------------------------------------------------------------ */
+
+.lg_match_item.mf_draw .lg_set_name .entry_name,
+.lg_match_item.mf_draw .lg_set_name .t_avg {
+    color: #4DA3FF !important;
+    -webkit-text-fill-color: #4DA3FF !important;
+}
+
+
+/* ============================================================
+   KONIEC — REMISY
+   ============================================================ */
 /* ============================================================
    KONIEC — MECZE LIGOWE
    ============================================================ */
