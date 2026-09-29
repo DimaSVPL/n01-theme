@@ -1733,9 +1733,18 @@ select::selection {
     -webkit-text-fill-color: #FFFFFF !important;
 }
 
-/* ------------------------------------------------------------
-   55.9 — NIERozGRANY MECZ GRACZA, KTÓREGO TABELA JEST OTWARTA
-   ------------------------------------------------------------ */
+/* ============================================================
+   55.9 MECZE NIERozGRANE — AKTUALNY GRACZ
+   ============================================================ */
+
+/*
+ * W nierozgranym meczu:
+ * .lg_sel = aktualnie oglądany zawodnik
+ *
+ * Kolor:
+ * aktualny zawodnik = zielony
+ * przeciwnik = biały
+ */
 
 .lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
 .lg_set_name.lg_sel,
@@ -1747,6 +1756,21 @@ select::selection {
 .lg_set_name.lg_sel .t_avg {
     color: #8BE28B !important;
     -webkit-text-fill-color: #8BE28B !important;
+}
+
+
+/* Przeciwnik pozostaje biały */
+
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name:not(.lg_sel),
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name:not(.lg_sel) *,
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name:not(.lg_sel) .entry_name,
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name:not(.lg_sel) .t_avg {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
 }
 
 /* ============================================================
