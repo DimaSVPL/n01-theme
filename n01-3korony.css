@@ -1834,16 +1834,25 @@ select::selection {
    56. LIVE — NAZWY ZAWODNIKÓW
    ============================================================ */
 
-/* Nazwy zawodników w LIVE */
-#score_view_inset_body #result_table td.name,
-#score_view_inset_body #result_table td.name > div,
-#score_view_inset_body #result_table #p1_name,
-#score_view_inset_body #result_table #p2_name {
+/* Zwykły zawodnik — ciemne tło */
+#score_view_inset_body #result_table tr:not(.current_player) td.name,
+#score_view_inset_body #result_table tr:not(.current_player) td.name > div,
+#score_view_inset_body #result_table tr:not(.current_player) #p1_name,
+#score_view_inset_body #result_table tr:not(.current_player) #p2_name {
     color: #F2F2F2 !important;
     -webkit-text-fill-color: #F2F2F2 !important;
 }
 
-/* Statystyki zawodników */
+/* Aktualny zawodnik — jasne tło */
+#score_view_inset_body #result_table tr.current_player td.name,
+#score_view_inset_body #result_table tr.current_player td.name > div,
+#score_view_inset_body #result_table tr.current_player #p1_name,
+#score_view_inset_body #result_table tr.current_player #p2_name {
+    color: #080808 !important;
+    -webkit-text-fill-color: #080808 !important;
+}
+
+/* Statystyki — zawsze szare */
 #score_view_inset_body #result_table #p1_stats,
 #score_view_inset_body #result_table #p2_stats {
     color: #AAAAAA !important;
