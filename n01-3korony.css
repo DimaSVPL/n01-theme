@@ -1733,6 +1733,21 @@ select::selection {
     -webkit-text-fill-color: #FFFFFF !important;
 }
 
+/* ------------------------------------------------------------
+   55.9 — NIERozGRANY MECZ GRACZA, KTÓREGO TABELA JEST OTWARTA
+   ------------------------------------------------------------ */
+
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name.lg_sel,
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name.lg_sel *,
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name.lg_sel .entry_name,
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name.lg_sel .t_avg {
+    color: #8BE28B !important;
+    -webkit-text-fill-color: #8BE28B !important;
+}
 
 /* ============================================================
    KONIEC — MECZE LIGOWE
