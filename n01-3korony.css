@@ -1831,60 +1831,28 @@ select::selection {
    ============================================================ */
 
 /* ============================================================
-   56. LIVE — NAZWY ZAWODNIKÓW
+   56. LIVE — NAZWY ZAWODNIKÓW — ZŁOTE
    ============================================================ */
 
-/* Zwykły zawodnik — ciemne tło */
-#score_view_inset_body #result_table tr:not(.current_player) td.name,
-#score_view_inset_body #result_table tr:not(.current_player) td.name > div,
-#score_view_inset_body #result_table tr:not(.current_player) #p1_name,
-#score_view_inset_body #result_table tr:not(.current_player) #p2_name {
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
+#score_view_inset_body #result_table td.name,
+#score_view_inset_body #result_table td.name > div,
+#score_view_inset_body #result_table #p1_name,
+#score_view_inset_body #result_table #p2_name,
+#score_view_inset_body #result_table tr:hover td.name,
+#score_view_inset_body #result_table tr:hover td.name > div,
+#score_view_inset_body #result_table tr:hover #p1_name,
+#score_view_inset_body #result_table tr:hover #p2_name {
+    color: #F0D675 !important;
+    -webkit-text-fill-color: #F0D675 !important;
 }
 
-/* Aktualny zawodnik — jasne tło */
-#score_view_inset_body #result_table tr.current_player td.name,
-#score_view_inset_body #result_table tr.current_player td.name > div,
-#score_view_inset_body #result_table tr.current_player #p1_name,
-#score_view_inset_body #result_table tr.current_player #p2_name {
-    color: #080808 !important;
-    -webkit-text-fill-color: #080808 !important;
-}
-
-/* Statystyki — zawsze szare */
+/* Statystyki pozostają szare */
 #score_view_inset_body #result_table #p1_stats,
-#score_view_inset_body #result_table #p2_stats {
-    color: #AAAAAA !important;
-    -webkit-text-fill-color: #AAAAAA !important;
-}
-/* ============================================================
-   56.1 LIVE — KOLOR NA HOVER
-   ============================================================ */
-
-/* Zwykły zawodnik — również po najechaniu */
-#score_view_inset_body #result_table tr:not(.current_player):hover td.name,
-#score_view_inset_body #result_table tr:not(.current_player):hover td.name > div,
-#score_view_inset_body #result_table tr:not(.current_player):hover #p1_name,
-#score_view_inset_body #result_table tr:not(.current_player):hover #p2_name {
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-}
-
-/* Aktualny zawodnik — również po najechaniu */
-#score_view_inset_body #result_table tr.current_player:hover td.name,
-#score_view_inset_body #result_table tr.current_player:hover td.name > div,
-#score_view_inset_body #result_table tr.current_player:hover #p1_name,
-#score_view_inset_body #result_table tr.current_player:hover #p2_name {
-    color: #080808 !important;
-    -webkit-text-fill-color: #080808 !important;
-}
-
-/* Statystyki — również po najechaniu */
+#score_view_inset_body #result_table #p2_stats,
 #score_view_inset_body #result_table tr:hover #p1_stats,
 #score_view_inset_body #result_table tr:hover #p2_stats {
-    color: #666666 !important;
-    -webkit-text-fill-color: #666666 !important;
+    color: #AAAAAA !important;
+    -webkit-text-fill-color: #AAAAAA !important;
 }
 /* ============================================================
    KONIEC — MECZE LIGOWE
