@@ -1635,3 +1635,92 @@ select::selection {
 /* ============================================================
    KONIEC — FORMULARZE
    ============================================================ */
+/* ============================================================
+   55. MECZE LIGOWE — KOLOR WYNIKU
+   ============================================================ */
+
+
+/* ------------------------------------------------------------
+   55.1 — DOMYŚLNIE: MECZ NIERozGRANY
+   ------------------------------------------------------------ */
+
+.lg_match_item .lg_set_name,
+.lg_match_item .lg_set_name *,
+.lg_match_item .lg_set_result,
+.lg_match_item .lg_set_result * {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+
+/* ------------------------------------------------------------
+   55.2 — WYGRANY LEWY
+   ------------------------------------------------------------ */
+
+.lg_match_item:has(.lg_box_l.win) .lg_set_name.lg_sel,
+.lg_match_item:has(.lg_box_l.win) .lg_set_name.lg_sel *,
+.lg_match_item:has(.lg_box_l.win) .lg_box_l.win {
+    color: #D4AF37 !important;
+    -webkit-text-fill-color: #D4AF37 !important;
+}
+
+
+/* ------------------------------------------------------------
+   55.3 — PRZEGRANY PRAWY
+   ------------------------------------------------------------ */
+
+.lg_match_item:has(.lg_box_l.win) .lg_set_name:not(.lg_sel),
+.lg_match_item:has(.lg_box_l.win) .lg_set_name:not(.lg_sel) *,
+.lg_match_item:has(.lg_box_l.win) .lg_box_r {
+    color: #FF5555 !important;
+    -webkit-text-fill-color: #FF5555 !important;
+}
+
+
+/* ------------------------------------------------------------
+   55.4 — WYGRANY PRAWY
+   ------------------------------------------------------------ */
+
+.lg_match_item:has(.lg_box_r.win) .lg_set_name.lg_sel,
+.lg_match_item:has(.lg_box_r.win) .lg_set_name.lg_sel *,
+.lg_match_item:has(.lg_box_r.win) .lg_box_r.win {
+    color: #D4AF37 !important;
+    -webkit-text-fill-color: #D4AF37 !important;
+}
+
+
+/* ------------------------------------------------------------
+   55.5 — PRZEGRANY LEWY
+   ------------------------------------------------------------ */
+
+.lg_match_item:has(.lg_box_r.win) .lg_set_name:not(.lg_sel),
+.lg_match_item:has(.lg_box_r.win) .lg_set_name:not(.lg_sel) *,
+.lg_match_item:has(.lg_box_r.win) .lg_box_l {
+    color: #FF5555 !important;
+    -webkit-text-fill-color: #FF5555 !important;
+}
+
+
+/* ------------------------------------------------------------
+   55.6 — NUMER MECZU
+   ------------------------------------------------------------ */
+
+.lg_match_item .lg_set_no {
+    color: #A8A8A8 !important;
+    -webkit-text-fill-color: #A8A8A8 !important;
+}
+
+
+/* ------------------------------------------------------------
+   55.7 — WYNIK
+   ------------------------------------------------------------ */
+
+.lg_match_item .lg_set_result {
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
+
+
+/* ============================================================
+   KONIEC — MECZE LIGOWE
+   ============================================================ */
