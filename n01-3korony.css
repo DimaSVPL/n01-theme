@@ -1641,35 +1641,24 @@ select::selection {
 
 
 /* ------------------------------------------------------------
-   55.1 — DOMYŚLNIE: MECZ NIERozGRANY
+   55.1 — DOMYŚLNIE: WSZYSCY ZAWODNICY BIALI
    ------------------------------------------------------------ */
 
-.lg_match_item td.lg_set_name,
-.lg_match_item td.lg_set_name .lg_name_c,
-.lg_match_item td.lg_set_name .entry_name,
-.lg_match_item td.lg_set_name .t_avg {
+.lg_match_item .lg_set_name,
+.lg_match_item .lg_set_name .lg_name_c,
+.lg_match_item .lg_set_name .entry_name,
+.lg_match_item .lg_set_name .t_avg {
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
 }
 
 
 /* ------------------------------------------------------------
-   55.2 — DOMYŚLNY WYNIK
+   55.2 — LEWY ZAWODNIK WYGRYWA
    ------------------------------------------------------------ */
 
-.lg_match_item .lg_set_result,
-.lg_match_item .lg_set_result .lg_box {
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-}
-
-
-/* ------------------------------------------------------------
-   55.3 — LEWY WYGRYWA
-   ------------------------------------------------------------ */
-
-.lg_match_item:has(.lg_box_l.win) td.lg_set_name:first-child,
-.lg_match_item:has(.lg_box_l.win) td.lg_set_name:first-child *,
+.lg_match_item:has(.lg_box_l.win) .lg_set_name .lg_left,
+.lg_match_item:has(.lg_box_l.win) .lg_set_name .lg_left *,
 .lg_match_item:has(.lg_box_l.win) .lg_box_l.win {
     color: #D4AF37 !important;
     -webkit-text-fill-color: #D4AF37 !important;
@@ -1677,35 +1666,11 @@ select::selection {
 
 
 /* ------------------------------------------------------------
-   55.4 — LEWY PRZEGRYWA
+   55.3 — LEWY ZAWODNIK PRZEGRYWA
    ------------------------------------------------------------ */
 
-.lg_match_item:has(.lg_box_l.win) td.lg_set_name:last-child,
-.lg_match_item:has(.lg_box_l.win) td.lg_set_name:last-child *,
-.lg_match_item:has(.lg_box_l.win) .lg_box_r {
-    color: #FF5555 !important;
-    -webkit-text-fill-color: #FF5555 !important;
-}
-
-
-/* ------------------------------------------------------------
-   55.5 — PRAWY WYGRYWA
-   ------------------------------------------------------------ */
-
-.lg_match_item:has(.lg_box_r.win) td.lg_set_name:last-child,
-.lg_match_item:has(.lg_box_r.win) td.lg_set_name:last-child *,
-.lg_match_item:has(.lg_box_r.win) .lg_box_r.win {
-    color: #D4AF37 !important;
-    -webkit-text-fill-color: #D4AF37 !important;
-}
-
-
-/* ------------------------------------------------------------
-   55.6 — PRAWY PRZEGRYWA
-   ------------------------------------------------------------ */
-
-.lg_match_item:has(.lg_box_r.win) td.lg_set_name:first-child,
-.lg_match_item:has(.lg_box_r.win) td.lg_set_name:first-child *,
+.lg_match_item:has(.lg_box_r.win) .lg_set_name .lg_left,
+.lg_match_item:has(.lg_box_r.win) .lg_set_name .lg_left *,
 .lg_match_item:has(.lg_box_r.win) .lg_box_l {
     color: #FF5555 !important;
     -webkit-text-fill-color: #FF5555 !important;
@@ -1713,7 +1678,31 @@ select::selection {
 
 
 /* ------------------------------------------------------------
-   55.7 — NUMER MECZU
+   55.4 — PRAWY ZAWODNIK WYGRYWA
+   ------------------------------------------------------------ */
+
+.lg_match_item:has(.lg_box_r.win) .lg_set_name .lg_right,
+.lg_match_item:has(.lg_box_r.win) .lg_set_name .lg_right *,
+.lg_match_item:has(.lg_box_r.win) .lg_box_r.win {
+    color: #D4AF37 !important;
+    -webkit-text-fill-color: #D4AF37 !important;
+}
+
+
+/* ------------------------------------------------------------
+   55.5 — PRAWY ZAWODNIK PRZEGRYWA
+   ------------------------------------------------------------ */
+
+.lg_match_item:has(.lg_box_l.win) .lg_set_name .lg_right,
+.lg_match_item:has(.lg_box_l.win) .lg_set_name .lg_right *,
+.lg_match_item:has(.lg_box_l.win) .lg_box_r {
+    color: #FF5555 !important;
+    -webkit-text-fill-color: #FF5555 !important;
+}
+
+
+/* ------------------------------------------------------------
+   55.6 — NUMER MECZU
    ------------------------------------------------------------ */
 
 .lg_match_item .lg_set_no {
@@ -1723,13 +1712,23 @@ select::selection {
 
 
 /* ------------------------------------------------------------
-   55.8 — NIERozGRANY — OBAJ BIALI
+   55.7 — WYNIK
+   ------------------------------------------------------------ */
+
+.lg_match_item .lg_set_result {
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
+
+
+/* ------------------------------------------------------------
+   55.8 — NIERozGRANY
    ------------------------------------------------------------ */
 
 .lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
-td.lg_set_name,
+.lg_set_name,
 .lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
-td.lg_set_name * {
+.lg_set_name * {
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
 }
