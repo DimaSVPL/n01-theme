@@ -1805,23 +1805,29 @@ select::selection {
 }
 
 
-/* ------------------------------------------------------------
-   55.10.3 — WYNIK REMISU
-   ------------------------------------------------------------ */
+/* ============================================================
+   55.10 — REMIS — WYKRYWANY PRZEZ JS
+   ============================================================ */
 
-.lg_match_item:has(.lg_box_l.sd_draw) .lg_set_result,
-.lg_match_item:has(.lg_box_r.sd_draw) .lg_set_result,
-.lg_match_item:has(.lg_box_l.sd_draw) .lg_box_l,
-.lg_match_item:has(.lg_box_l.sd_draw) .lg_box_r,
-.lg_match_item:has(.lg_box_r.sd_draw) .lg_box_l,
-.lg_match_item:has(.lg_box_r.sd_draw) .lg_box_r {
+/*
+ * JS dodaje klasę .is_draw do całego meczu.
+ *
+ * Remis:
+ * obaj zawodnicy = niebieski
+ * wynik pozostaje w swoim standardowym kolorze
+ */
+
+.lg_match_item.is_draw .lg_set_name,
+.lg_match_item.is_draw .lg_set_name *,
+.lg_match_item.is_draw .lg_set_name .entry_name,
+.lg_match_item.is_draw .lg_set_name .t_avg {
     color: #4DA3FF !important;
     -webkit-text-fill-color: #4DA3FF !important;
 }
 
 
 /* ============================================================
-   KONIEC — REMIS
+   KONIEC 55.10
    ============================================================ */
 /* ============================================================
    KONIEC — MECZE LIGOWE
