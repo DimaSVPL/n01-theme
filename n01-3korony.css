@@ -1773,54 +1773,50 @@ select::selection {
     -webkit-text-fill-color: #FFFFFF !important;
 }
 /* ============================================================
-   55.10 — MECZE ZAKOŃCZONE REMISEM
+   55.10 — REMISY
    ============================================================ */
 
 /*
- * JS dodaje do meczu klasę:
+ * REMIS W N01:
  *
- * .mf_draw
+ * - brak .win
+ * - .lg_box_l zawiera wynik
+ * - .lg_box_r zawiera wynik
  *
- * Remis:
- * zawodnik lewy  = NIEBIESKI
- * zawodnik prawy = NIEBIESKI
+ * NIERozGRANY:
  *
- * Wynik meczu pozostaje bez zmian.
+ * - brak .win
+ * - oba .lg_box zawierają &nbsp;
  */
 
 
 /* ------------------------------------------------------------
-   55.10.1 — LEWY ZAWODNIK
+   REMIS — LEWY ZAWODNIK
    ------------------------------------------------------------ */
 
-.lg_match_item.mf_draw .lg_set_name .lg_left,
-.lg_match_item.mf_draw .lg_set_name .lg_left *,
-.lg_match_item.mf_draw .lg_set_name .lg_left .entry_name,
-.lg_match_item.mf_draw .lg_set_name .lg_left .t_avg {
+.lg_match_item:not(:has(.lg_box.win))
+:has(.lg_box_l:not(:empty))
+.lg_left,
+
+.lg_match_item:not(:has(.lg_box.win))
+:has(.lg_box_l:not(:empty))
+.lg_left * {
     color: #4DA3FF !important;
     -webkit-text-fill-color: #4DA3FF !important;
 }
 
 
 /* ------------------------------------------------------------
-   55.10.2 — PRAWY ZAWODNIK
+   REMIS — PRAWY ZAWODNIK
    ------------------------------------------------------------ */
 
-.lg_match_item.mf_draw .lg_set_name .lg_right,
-.lg_match_item.mf_draw .lg_set_name .lg_right *,
-.lg_match_item.mf_draw .lg_set_name .lg_right .entry_name,
-.lg_match_item.mf_draw .lg_set_name .lg_right .t_avg {
-    color: #4DA3FF !important;
-    -webkit-text-fill-color: #4DA3FF !important;
-}
+.lg_match_item:not(:has(.lg_box.win))
+:has(.lg_box_r:not(:empty))
+.lg_right,
 
-
-/* ------------------------------------------------------------
-   55.10.3 — DODATKOWE WYMUSZENIE KOLORU TEKSTU
-   ------------------------------------------------------------ */
-
-.lg_match_item.mf_draw .lg_set_name .entry_name,
-.lg_match_item.mf_draw .lg_set_name .t_avg {
+.lg_match_item:not(:has(.lg_box.win))
+:has(.lg_box_r:not(:empty))
+.lg_right * {
     color: #4DA3FF !important;
     -webkit-text-fill-color: #4DA3FF !important;
 }
