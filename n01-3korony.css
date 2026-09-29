@@ -1772,7 +1772,20 @@ select::selection {
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
 }
+/* ------------------------------------------------------------
+   55.10 — REMIS
+   ------------------------------------------------------------ */
 
+.lg_match_item.mf_draw .lg_set_name,
+.lg_match_item.mf_draw .lg_set_name *,
+.lg_match_item.mf_draw .lg_set_name .entry_name,
+.lg_match_item.mf_draw .lg_set_name .t_avg,
+.lg_match_item.mf_draw .lg_set_result,
+.lg_match_item.mf_draw .lg_set_result *,
+.lg_match_item.mf_draw .lg_box {
+    color: #4DA3FF !important;
+    -webkit-text-fill-color: #4DA3FF !important;
+}
 /* ============================================================
    KONIEC — MECZE LIGOWE
    ============================================================ */
