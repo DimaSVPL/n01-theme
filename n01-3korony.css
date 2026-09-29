@@ -1773,57 +1773,55 @@ select::selection {
     -webkit-text-fill-color: #FFFFFF !important;
 }
 /* ============================================================
-   55.10 — REMISY
+   55.10 — REMIS — N01 NATYWNE sd_draw
    ============================================================ */
-
-/*
- * REMIS W N01:
- *
- * - brak .win
- * - .lg_box_l zawiera wynik
- * - .lg_box_r zawiera wynik
- *
- * NIERozGRANY:
- *
- * - brak .win
- * - oba .lg_box zawierają &nbsp;
- */
 
 
 /* ------------------------------------------------------------
-   REMIS — LEWY ZAWODNIK
+   55.10.1 — OBAJ ZAWODNICY NA NIEBIESKO
    ------------------------------------------------------------ */
 
-.lg_match_item:not(:has(.lg_box.win))
-:has(.lg_box_l:not(:empty))
-.lg_left,
-
-.lg_match_item:not(:has(.lg_box.win))
-:has(.lg_box_l:not(:empty))
-.lg_left * {
+.lg_match_item:has(.lg_box_l.sd_draw),
+.lg_match_item:has(.lg_box_r.sd_draw) .lg_set_name,
+.lg_match_item:has(.lg_box_l.sd_draw) .lg_set_name,
+.lg_match_item:has(.lg_box_r.sd_draw) .lg_set_name {
     color: #4DA3FF !important;
     -webkit-text-fill-color: #4DA3FF !important;
 }
 
 
 /* ------------------------------------------------------------
-   REMIS — PRAWY ZAWODNIK
+   55.10.2 — WSZYSTKIE ELEMENTY NAZWY ZAWODNIKA
    ------------------------------------------------------------ */
 
-.lg_match_item:not(:has(.lg_box.win))
-:has(.lg_box_r:not(:empty))
-.lg_right,
+.lg_match_item:has(.lg_box_l.sd_draw) .lg_set_name *,
+.lg_match_item:has(.lg_box_r.sd_draw) .lg_set_name *,
+.lg_match_item:has(.lg_box_l.sd_draw) .lg_set_name .entry_name,
+.lg_match_item:has(.lg_box_r.sd_draw) .lg_set_name .entry_name,
+.lg_match_item:has(.lg_box_l.sd_draw) .lg_set_name .t_avg,
+.lg_match_item:has(.lg_box_r.sd_draw) .lg_set_name .t_avg {
+    color: #4DA3FF !important;
+    -webkit-text-fill-color: #4DA3FF !important;
+}
 
-.lg_match_item:not(:has(.lg_box.win))
-:has(.lg_box_r:not(:empty))
-.lg_right * {
+
+/* ------------------------------------------------------------
+   55.10.3 — WYNIK REMISU
+   ------------------------------------------------------------ */
+
+.lg_match_item:has(.lg_box_l.sd_draw) .lg_set_result,
+.lg_match_item:has(.lg_box_r.sd_draw) .lg_set_result,
+.lg_match_item:has(.lg_box_l.sd_draw) .lg_box_l,
+.lg_match_item:has(.lg_box_l.sd_draw) .lg_box_r,
+.lg_match_item:has(.lg_box_r.sd_draw) .lg_box_l,
+.lg_match_item:has(.lg_box_r.sd_draw) .lg_box_r {
     color: #4DA3FF !important;
     -webkit-text-fill-color: #4DA3FF !important;
 }
 
 
 /* ============================================================
-   KONIEC — REMISY
+   KONIEC — REMIS
    ============================================================ */
 /* ============================================================
    KONIEC — MECZE LIGOWE
