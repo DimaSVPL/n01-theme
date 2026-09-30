@@ -1933,3 +1933,24 @@ select::selection {
     background: #202020 !important;
     color: #FFFFFF !important;
 }
+/* =========================================================
+   59. NASTĘPNY MECZ – TABELA GRUP
+   ========================================================= */
+
+.rr_result.rr_available {
+    background: #D4AF37 !important;
+    color: #080808 !important;
+    border: 2px solid #F0D675 !important;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.45) !important;
+    font-weight: 700 !important;
+}
+
+.rr_result.rr_available .rr_idx {
+    color: #080808 !important;
+    font-weight: 700 !important;
+}
+
+.rr_result.rr_available:hover {
+    background: #F0D675 !important;
+    color: #080808 !important;
+}
