@@ -1934,23 +1934,37 @@ select::selection {
     color: #FFFFFF !important;
 }
 /* =========================================================
-   59. GRUPY RR — wygląd komórek wyników
+   59. TABELE GRUP — WYNIKI I AKTYWNY MECZ
    ========================================================= */
 
-/* Zwykłe komórki wyników grup */
+/* Wszystkie komórki wyników grup */
 td.rr_result.match_button {
     background: #202020 !important;
     background-color: #202020 !important;
     color: #F2F2F2 !important;
 }
 
-/* Aktywny mecz — wyróżnienie */
-td.rr_result.match_button.live,
-td.rr_result.match_button.active,
-td.rr_result.match_button.is_active,
-td.rr_result.match_button.live_active,
-td.rr_result.match_button.selected {
-    background: #D4AF37 !important;
-    background-color: #D4AF37 !important;
-    color: #080808 !important;
+/* ---------------------------------------------------------
+   AKTYWNY / TOCZĄCY SIĘ MECZ
+   N01 oznacza aktywną komórkę klasą .input_area
+   --------------------------------------------------------- */
+
+td.rr_result.match_button.input_area {
+    background: #202020 !important;
+    background-color: #202020 !important;
+    color: #F0D675 !important;
+
+    box-shadow: inset 0 0 0 4px #D4AF37 !important;
+    border-color: #D4AF37 !important;
+}
+
+/* Aktywna komórka — również gdy N01 dodaje input_area
+   do wariantu klasy rr_result */
+td.rr_result.input_area {
+    background: #202020 !important;
+    background-color: #202020 !important;
+    color: #F0D675 !important;
+
+    box-shadow: inset 0 0 0 4px #D4AF37 !important;
+    border-color: #D4AF37 !important;
 }
