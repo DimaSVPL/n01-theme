@@ -1934,37 +1934,60 @@ select::selection {
     color: #FFFFFF !important;
 }
 /* =========================================================
-   59. TABELE GRUP — WYNIKI I AKTYWNY MECZ
+   59. TABELE GRUP — WYNIKI + NASTĘPNY MECZ
    ========================================================= */
 
-/* Wszystkie komórki wyników grup */
+/* ---------------------------------------------------------
+   ZWYKŁE KOMÓRKI WYNIKÓW
+   --------------------------------------------------------- */
+
 td.rr_result.match_button {
     background: #202020 !important;
     background-color: #202020 !important;
     color: #F2F2F2 !important;
 }
 
+
 /* ---------------------------------------------------------
-   AKTYWNY / TOCZĄCY SIĘ MECZ
-   N01 oznacza aktywną komórkę klasą .input_area
+   NASTĘPNY / DOSTĘPNY MECZ
+   N01 oznacza go klasą .rr_available
    --------------------------------------------------------- */
 
-td.rr_result.match_button.input_area {
+td.rr_result.match_button.rr_available {
     background: #202020 !important;
     background-color: #202020 !important;
     color: #F0D675 !important;
-
-    box-shadow: inset 0 0 0 4px #D4AF37 !important;
-    border-color: #D4AF37 !important;
 }
 
-/* Aktywna komórka — również gdy N01 dodaje input_area
-   do wariantu klasy rr_result */
-td.rr_result.input_area {
-    background: #202020 !important;
-    background-color: #202020 !important;
-    color: #F0D675 !important;
 
-    box-shadow: inset 0 0 0 4px #D4AF37 !important;
-    border-color: #D4AF37 !important;
+/* ---------------------------------------------------------
+   NUMER NASTĘPNEGO MECZU — ZŁOTE KÓŁKO
+   --------------------------------------------------------- */
+
+td.rr_result.match_button.rr_available .rr_idx {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
+    border: 2px solid #D4AF37;
+    border-radius: 50%;
+
+    color: #F0D675;
+    font-weight: 700;
+    line-height: 1;
+    box-sizing: border-box;
+
+    background: #080808;
+}
+
+
+/* ---------------------------------------------------------
+   DELIKATNE WYRÓŻNIENIE CAŁEJ KOMÓRKI
+   --------------------------------------------------------- */
+
+td.rr_result.match_button.rr_available {
+    box-shadow: inset 0 0 0 1px #D4AF37 !important;
 }
