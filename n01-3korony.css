@@ -1901,206 +1901,35 @@ select::selection {
     border: 1px solid #383838 !important;
     border-radius: 4px !important;
 }
-/* ============================================================
-   58. TABELE GRUP — 3 KORONY
-   ============================================================ */
+/* =========================================================
+   58. TABELA GRUP – DARK/GOLD
+   Tylko komórki wyników tabel Round Robin
+   ========================================================= */
 
-/*
- * TYLKO TABELE ROUND ROBIN / GRUP
- *
- * Cel:
- * - usunięcie niebieskich teł N01
- * - ciemny, spójny wygląd
- * - zachowanie kolorów zawodników
- *
- * NIE DOTYCZY:
- * - Rankingu
- * - Stats
- * - Entry List
- * - bracketów
- * - meczów ligowych
- */
-
-
-/* ------------------------------------------------------------
-   58.1 — GŁÓWNE TŁO TABELI
-   ------------------------------------------------------------ */
-
-.rr_table {
-    background-color: #151515 !important;
-    background-image: none !important;
+.rr_result {
+    background: #151515 !important;
     color: #F2F2F2 !important;
-}
-
-
-/* ------------------------------------------------------------
-   58.2 — NAGŁÓWKI
-   ------------------------------------------------------------ */
-
-.rr_table th {
-    background-color: #202020 !important;
-    background-image: none !important;
-
-    color: #F0D675 !important;
-    -webkit-text-fill-color: #F0D675 !important;
-
     border-color: #383838 !important;
 }
 
-
-/* ------------------------------------------------------------
-   58.3 — KOMÓRKI
-   ------------------------------------------------------------ */
-
-.rr_table td {
-    background-color: #151515 !important;
-    background-image: none !important;
-
+.rr_result span {
     color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-
-    border-color: #303030 !important;
 }
 
-
-/* ------------------------------------------------------------
-   58.4 — WIERSZE PARZYSTE
-   ------------------------------------------------------------ */
-
-.rr_table tbody tr:nth-child(even) td {
-    background-color: #202020 !important;
-    background-image: none !important;
-}
-
-
-/* ------------------------------------------------------------
-   58.5 — WIERSZE NIEPARZYSTE
-   ------------------------------------------------------------ */
-
-.rr_table tbody tr:nth-child(odd) td {
-    background-color: #151515 !important;
-    background-image: none !important;
-}
-
-
-/* ------------------------------------------------------------
-   58.6 — USUNIĘCIE NIEBIESKIEGO TŁA N01
-   ------------------------------------------------------------ */
-
-.rr_table td,
-.rr_table td[class],
-.rr_table tr[class] td,
-.rr_table .rr_player td {
-    background-image: none !important;
-}
-
-
-/* ------------------------------------------------------------
-   58.7 — HOVER
-   ------------------------------------------------------------ */
-
-.rr_table tbody tr:hover td {
-    background-color: #292929 !important;
-    background-image: none !important;
-}
-
-
-/* ------------------------------------------------------------
-   58.8 — NAZWY ZAWODNIKÓW
-   ------------------------------------------------------------ */
-
-.rr_table .rr_name,
-.rr_table .rr_name a,
-.rr_table .entry_name {
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-}
-
-
-/* Hover zawodnika */
-
-.rr_table .rr_name a:hover,
-.rr_table .entry_name:hover {
+/* Numer wyniku w komórce */
+.rr_result .rr_idx {
     color: #F0D675 !important;
-    -webkit-text-fill-color: #F0D675 !important;
 }
 
-
-/* ------------------------------------------------------------
-   58.9 — MIEJSCE 1–2
-   ------------------------------------------------------------ */
-
-.rr_table .rr_player[data-rank="1"] td,
-.rr_table .rr_player[data-rank="2"] td {
-    background-image: none !important;
+/* Komórka po najechaniu */
+.rr_result:hover {
+    background: #202020 !important;
+    color: #FFFFFF !important;
 }
 
-
-/* Kolor tekstu — miejsce 1 */
-
-.rr_table .rr_player[data-rank="1"] .rr_no,
-.rr_table .rr_player[data-rank="1"] .rr_name,
-.rr_table .rr_player[data-rank="1"] .rr_name a,
-.rr_table .rr_player[data-rank="1"] .entry_name,
-.rr_table .rr_player[data-rank="1"] .t_avg,
-.rr_table .rr_player[data-rank="1"] .rr_rank {
-    color: #8BE28B !important;
-    -webkit-text-fill-color: #8BE28B !important;
+/* Aktywna / wybrana komórka */
+.rr_result:focus,
+.rr_result:active {
+    background: #202020 !important;
+    color: #FFFFFF !important;
 }
-
-
-/* Kolor tekstu — miejsce 2 */
-
-.rr_table .rr_player[data-rank="2"] .rr_no,
-.rr_table .rr_player[data-rank="2"] .rr_name,
-.rr_table .rr_player[data-rank="2"] .rr_name a,
-.rr_table .rr_player[data-rank="2"] .entry_name,
-.rr_table .rr_player[data-rank="2"] .t_avg,
-.rr_table .rr_player[data-rank="2"] .rr_rank {
-    color: #8BE28B !important;
-    -webkit-text-fill-color: #8BE28B !important;
-}
-
-
-/* ------------------------------------------------------------
-   58.10 — KOMÓRKI WYNIKÓW / STATYSTYK
-   ------------------------------------------------------------ */
-
-.rr_table .rr_player td {
-    border-color: #303030 !important;
-}
-
-
-/* ------------------------------------------------------------
-   58.11 — WYMUSZENIE CIEMNEGO TŁA NA ELEMENTACH N01
-   ------------------------------------------------------------ */
-
-.rr_table .rr_player,
-.rr_table .rr_player > td,
-.rr_table .rr_player td,
-.rr_table .rr_player td > div {
-    background-image: none !important;
-}
-
-
-/* ------------------------------------------------------------
-   58.12 — AKTYWNA / WYBRANA KOMÓRKA
-   ------------------------------------------------------------ */
-
-.rr_table td.active,
-.rr_table td.selected,
-.rr_table td.current,
-.rr_table td[aria-selected="true"] {
-    background-color: #292929 !important;
-    background-image: none !important;
-
-    color: #F0D675 !important;
-    -webkit-text-fill-color: #F0D675 !important;
-
-    border-color: #D4AF37 !important;
-}
-
-
-/* ============================================================
-   KONIEC — TABELE GRUP
-   ============================================================ */
