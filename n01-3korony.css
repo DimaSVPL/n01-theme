@@ -1857,3 +1857,47 @@ select::selection {
 /* ============================================================
    KONIEC — MECZE LIGOWE
    ============================================================ */
+/* ============================================================
+   57. PORTAL — SZCZEGÓŁY LIGI
+   ============================================================ */
+
+/* Nagłówek "Szczegóły" */
+#lg_details_container #title_lg_details {
+    color: #F0D675 !important;
+    -webkit-text-fill-color: #F0D675 !important;
+
+    background-color: #151515 !important;
+    border-color: #383838 !important;
+
+    font-weight: 700 !important;
+}
+
+/* Kontener szczegółów */
+#lg_details_container .accordion-content {
+    background-color: #151515 !important;
+    color: #F2F2F2 !important;
+}
+
+/* Właściwa tabela tekstowa */
+#lg_details_container #lg_details {
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+
+    background-color: #151515 !important;
+
+    font-family: Consolas, "Courier New", monospace !important;
+    font-size: 15px !important;
+    line-height: 1.45 !important;
+
+    white-space: pre !important;
+    word-spacing: 0 !important;
+    letter-spacing: 0 !important;
+
+    overflow-x: auto !important;
+
+    padding: 12px !important;
+    margin: 10px 0 !important;
+
+    border: 1px solid #383838 !important;
+    border-radius: 4px !important;
+}
