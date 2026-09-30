@@ -1946,3 +1946,13 @@ select::selection {
 .rr_result.match_button:hover {
     background: #202020 !important;
 }
+/* =========================================================
+   GRUPY RR — usunięcie niebieskiego tła komórek wyników
+   TYLKO dla tabel grupowych
+   ========================================================= */
+
+td.rr_result.match_button {
+    background: #202020 !important;
+    background-color: #202020 !important;
+    color: #F2F2F2 !important;
+}
