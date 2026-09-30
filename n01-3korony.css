@@ -1934,23 +1934,25 @@ select::selection {
     color: #FFFFFF !important;
 }
 /* =========================================================
-   59. NASTĘPNY MECZ – TABELA GRUP
+   59. NASTĘPNY MECZ – KÓŁKO WOKÓŁ NUMERU
    ========================================================= */
 
-.rr_result.rr_available {
-    background: #D4AF37 !important;
-    color: #080808 !important;
-    border: 2px solid #F0D675 !important;
-    box-shadow: 0 0 8px rgba(212, 175, 55, 0.45) !important;
-    font-weight: 700 !important;
-}
-
 .rr_result.rr_available .rr_idx {
-    color: #080808 !important;
-    font-weight: 700 !important;
-}
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 
-.rr_result.rr_available:hover {
-    background: #F0D675 !important;
-    color: #080808 !important;
+    width: 26px !important;
+    height: 26px !important;
+
+    border: 2px solid #D4AF37 !important;
+    border-radius: 50% !important;
+
+    background: #151515 !important;
+    color: #F0D675 !important;
+
+    font-weight: 700 !important;
+    box-sizing: border-box !important;
+
+    box-shadow: 0 0 7px rgba(212, 175, 55, 0.45) !important;
 }
