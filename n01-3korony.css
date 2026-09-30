@@ -1934,33 +1934,15 @@ select::selection {
     color: #FFFFFF !important;
 }
 /* =========================================================
-   59. NASTĘPNY / DOSTĘPNY MECZ – TYLKO KÓŁKO
+   59. TABELA GRUP – AKTYWNE POLA
    ========================================================= */
 
-/* Przywrócenie ciemnego tła komórki */
-.rr_result.rr_available {
+.rr_result.match_button {
     background: #151515 !important;
     color: #F2F2F2 !important;
     border-color: #383838 !important;
 }
 
-/* Tylko numer meczu */
-.rr_result.rr_available .rr_idx {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    width: 26px !important;
-    height: 26px !important;
-
-    border: 2px solid #D4AF37 !important;
-    border-radius: 50% !important;
-
-    background: #151515 !important;
-    color: #F0D675 !important;
-
-    font-weight: 700 !important;
-    box-sizing: border-box !important;
-
-    box-shadow: 0 0 7px rgba(212, 175, 55, 0.45) !important;
+.rr_result.match_button:hover {
+    background: #202020 !important;
 }
