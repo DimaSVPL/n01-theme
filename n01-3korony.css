@@ -1934,25 +1934,23 @@ select::selection {
     color: #FFFFFF !important;
 }
 /* =========================================================
-   59. TABELA GRUP – AKTYWNE POLA
+   59. GRUPY RR — wygląd komórek wyników
    ========================================================= */
 
-.rr_result.match_button {
-    background: #151515 !important;
-    color: #F2F2F2 !important;
-    border-color: #383838 !important;
-}
-
-.rr_result.match_button:hover {
-    background: #202020 !important;
-}
-/* =========================================================
-   GRUPY RR — usunięcie niebieskiego tła komórek wyników
-   TYLKO dla tabel grupowych
-   ========================================================= */
-
+/* Zwykłe komórki wyników grup */
 td.rr_result.match_button {
     background: #202020 !important;
     background-color: #202020 !important;
     color: #F2F2F2 !important;
+}
+
+/* Aktywny mecz — wyróżnienie */
+td.rr_result.match_button.live,
+td.rr_result.match_button.active,
+td.rr_result.match_button.is_active,
+td.rr_result.match_button.live_active,
+td.rr_result.match_button.selected {
+    background: #D4AF37 !important;
+    background-color: #D4AF37 !important;
+    color: #080808 !important;
 }
