@@ -1934,9 +1934,17 @@ select::selection {
     color: #FFFFFF !important;
 }
 /* =========================================================
-   59. NASTĘPNY MECZ – KÓŁKO WOKÓŁ NUMERU
+   59. NASTĘPNY / DOSTĘPNY MECZ – TYLKO KÓŁKO
    ========================================================= */
 
+/* Przywrócenie ciemnego tła komórki */
+.rr_result.rr_available {
+    background: #151515 !important;
+    color: #F2F2F2 !important;
+    border-color: #383838 !important;
+}
+
+/* Tylko numer meczu */
 .rr_result.rr_available .rr_idx {
     display: inline-flex !important;
     align-items: center !important;
