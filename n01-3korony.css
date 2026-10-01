@@ -2054,7 +2054,7 @@ td.rr_result.match_button.rr_available {
     color: #F2F2F2 !important;
 
     /* JAŚNIEJSZE OBRAMOWANIE */
-    border-color: #E0E0E0 !important;
+    border-color: #D0D0D0 !important;
 
     box-sizing: border-box !important;
 }
@@ -2099,20 +2099,19 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   60.7. NUMER KOLEJKI — 3, 6, 9, 12...
+   60.7. NUMER KOLEJKI — 3, 6, 9...
    NIEBIESKI
    --------------------------------------------------------- */
 
 #score_table td.score_round {
     position: relative !important;
 
-    color: #4DA3FF !important;
-    font-weight: 800 !important;
+    color: #3FA9FF !important;
+    font-weight: 700 !important;
 
     background: #151515 !important;
 
-    border-left-color: #E0E0E0 !important;
-    border-right-color: #E0E0E0 !important;
+    border-color: #D0D0D0 !important;
 }
 
 
@@ -2121,14 +2120,17 @@ td.rr_result.match_button.rr_available {
    --------------------------------------------------------- */
 
 #score_table tr:has(td.input_area) td.score_round {
-    color: #4DA3FF !important;
+    color: #3FA9FF !important;
 
     background: #202020 !important;
 
     font-weight: 800 !important;
 
-    box-shadow:
-        inset 0 0 0 2px #4DA3FF !important;
+    border-width: 3px !important;
+    border-style: solid !important;
+    border-color: #D4AF37 !important;
+
+    box-shadow: none !important;
 }
 
 
@@ -2149,7 +2151,7 @@ td.rr_result.match_button.rr_available {
 
     transform: translate(-50%, -50%);
 
-    border: 3px solid #4DA3FF;
+    border: 3px solid #D4AF37;
     border-radius: 50%;
 
     box-sizing: border-box;
@@ -2160,6 +2162,7 @@ td.rr_result.match_button.rr_available {
 
 /* ---------------------------------------------------------
    60.10. AKTYWNE POLE WPISYWANIA WYNIKU
+   GRUBA RAMKA
    --------------------------------------------------------- */
 
 #score_table td.score_input.input_area {
@@ -2169,8 +2172,9 @@ td.rr_result.match_button.rr_available {
 
     font-weight: 800 !important;
 
-    box-shadow:
-        inset 0 0 0 3px #D4AF37 !important;
+    border: 5px solid #D4AF37 !important;
+
+    box-shadow: none !important;
 }
 
 
@@ -2181,8 +2185,7 @@ td.rr_result.match_button.rr_available {
 #score_table td.p1score.input_area {
     color: #FFD95A !important;
 
-    box-shadow:
-        inset 0 0 0 3px #D4AF37 !important;
+    border: 5px solid #D4AF37 !important;
 }
 
 
@@ -2193,8 +2196,7 @@ td.rr_result.match_button.rr_available {
 #score_table td.p2score.input_area {
     color: #FFD95A !important;
 
-    box-shadow:
-        inset 0 0 0 3px #D4AF37 !important;
+    border: 5px solid #D4AF37 !important;
 }
 
 
@@ -2203,8 +2205,8 @@ td.rr_result.match_button.rr_available {
    --------------------------------------------------------- */
 
 #score_table tr:has(td.input_area) td {
-    border-top-color: #F0F0F0 !important;
-    border-bottom-color: #F0F0F0 !important;
+    border-top-color: #D0D0D0 !important;
+    border-bottom-color: #D0D0D0 !important;
 }
 
 
@@ -2216,13 +2218,17 @@ td.rr_result.match_button.rr_available {
 #score_table td.score_left,
 #score_table td.score_round {
     background-color: #181818 !important;
+
+    border-color: #D0D0D0 !important;
 }
 
 
-/* Aktywne pole */
+/* Aktywne pole ma pierwszeństwo */
 
 #score_table td.score_input.input_area {
     background-color: #202020 !important;
+
+    border: 5px solid #D4AF37 !important;
 }
 
 
@@ -2230,6 +2236,10 @@ td.rr_result.match_button.rr_available {
 
 #score_table tr:has(td.input_area) td.score_round {
     background-color: #202020 !important;
+
+    color: #3FA9FF !important;
+
+    border: 3px solid #D4AF37 !important;
 }
 
 
@@ -2248,7 +2258,7 @@ td.rr_result.match_button.rr_available {
 
     font-weight: 800 !important;
 
-    border-color: #E0E0E0 !important;
+    border-color: #D0D0D0 !important;
 }
 
 
@@ -2261,8 +2271,9 @@ td.rr_result.match_button.rr_available {
 
     color: #FFD95A !important;
 
-    box-shadow:
-        inset 0 0 0 3px #D4AF37 !important;
+    border: 5px solid #D4AF37 !important;
+
+    box-shadow: none !important;
 }
 
 
@@ -2272,12 +2283,12 @@ td.rr_result.match_button.rr_available {
 
 #score_table td.p1score,
 #score_table td.p1left {
-    border-right-color: #E0E0E0 !important;
+    border-right-color: #D0D0D0 !important;
 }
 
 #score_table td.p2score,
 #score_table td.p2left {
-    border-left-color: #E0E0E0 !important;
+    border-left-color: #D0D0D0 !important;
 }
 
 
@@ -2286,49 +2297,65 @@ td.rr_result.match_button.rr_available {
    --------------------------------------------------------- */
 
 #score_table td.score_round.last3 {
-    color: #4DA3FF !important;
+    color: #3FA9FF !important;
     font-weight: 800 !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.19. WARTOŚCI 100+
-   OKRĄG JAK W STANDARDOWYM N01
+   60.19. WYNIKI 100+
+   OKRĄG WOKÓŁ WARTOŚCI
    --------------------------------------------------------- */
 
 /*
-   N01 wpisuje wynik do pola .score_input.
-   Poniższa reguła przygotowuje wartości 3-cyfrowe
-   do wyglądu w stylu standardowego N01.
+   N01 wpisuje wynik jako tekst wewnątrz:
+   td.score_input > span
 
-   Samo CSS nie potrafi sprawdzić wartości liczbowej
-   wewnątrz <td>, dlatego wykorzystujemy istniejące
-   klasy / strukturę N01.
+   Nie zmieniamy wyglądu cyfry.
+   Dodajemy jedynie okrąg.
 */
 
+#score_table td.score_input span {
+    display: inline-flex !important;
 
-#score_table td.score_input {
-    position: relative !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    min-width: 1.35em !important;
+    min-height: 1.35em !important;
+
+    box-sizing: border-box !important;
 }
 
 
 /*
-   Wyniki 100+ — element tekstowy / span.
+   Wartości 100+:
+   JS dodaje klasę .score_100_plus,
+   jeśli jest dostępna w N01.
 */
 
-#score_table td.score_input span {
-    position: relative !important;
-    z-index: 2 !important;
+#score_table td.score_input.score_100_plus span,
+#score_table td.score_input.high_score span,
+#score_table td.score_input.score_100 span {
+    border: 3px solid #F0D675 !important;
+
+    border-radius: 50% !important;
+
+    padding: 0.12em 0.20em !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.20. OBRAMOWANIA KOMÓREK — BARDZO JASNE
+   60.20. ALTERNATYWNE WYKRYWANIE 100+
+   PRZEZ ATRYBUTY / KLASY N01
    --------------------------------------------------------- */
 
-#score_table td,
-#score_table th {
-    border-color: #E8E8E8 !important;
+#score_table td.score_input[data-score="100"] span,
+#score_table td.score_input[data-score="140"] span,
+#score_table td.score_input[data-score="180"] span {
+    border: 3px solid #F0D675 !important;
+
+    border-radius: 50% !important;
 }
 
 
@@ -2345,7 +2372,7 @@ td.rr_result.match_button.rr_available {
 
     color: #A8A8A8 !important;
 
-    border-color: #E0E0E0 !important;
+    border-color: #D0D0D0 !important;
 }
 
 #menu_table td:hover {
