@@ -1998,7 +1998,7 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   60.1. GŁÓWNY EKRAN LIVE
+   60.1. GŁÓWNE TABELA LIVE
    --------------------------------------------------------- */
 
 #score_table,
@@ -2051,26 +2051,27 @@ td.rr_result.match_button.rr_available {
 
 #score_table td,
 #score_table th {
+    box-sizing: border-box !important;
+
     background: #181818 !important;
 
     color: #F2F2F2 !important;
 
     /* JAŚNIEJSZE OBRAMOWANIE */
-    border-color: #D0D0D0 !important;
-
-    box-sizing: border-box !important;
+    border-color: #D8D8D8 !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.4. NAGŁÓWKI TABELI
+   60.4. NAGŁÓWKI
    --------------------------------------------------------- */
 
 #score_table th {
-    color: #D0D0D0 !important;
+    color: #D8D8D8 !important;
+
     font-weight: 700 !important;
 
-    border-color: #D0D0D0 !important;
+    border-color: #D8D8D8 !important;
 }
 
 #score_table th.score_input {
@@ -2078,12 +2079,12 @@ td.rr_result.match_button.rr_available {
 }
 
 #score_table th.score_left {
-    color: #D0D0D0 !important;
+    color: #D8D8D8 !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.5. POLA "ZDOBYTE"
+   60.5. ZDOBYTE
    --------------------------------------------------------- */
 
 #score_table td.score_input {
@@ -2091,26 +2092,26 @@ td.rr_result.match_button.rr_available {
 
     font-weight: 700 !important;
 
-    border-color: #D0D0D0 !important;
+    border-color: #D8D8D8 !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.6. POLA "POZOSTAŁO"
+   60.6. POZOSTAŁO
    --------------------------------------------------------- */
 
 #score_table td.score_left {
-    color: #E0E0E0 !important;
+    color: #E5E5E5 !important;
 
     font-weight: 600 !important;
 
-    border-color: #D0D0D0 !important;
+    border-color: #D8D8D8 !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.7. NUMER KOLEJKI
-   3, 6, 9, 12...
+   60.7. NUMERY KOLEJEK
+   3, 6, 9, 12, 15...
    --------------------------------------------------------- */
 
 #score_table td.score_round {
@@ -2118,11 +2119,11 @@ td.rr_result.match_button.rr_available {
 
     color: #2196F3 !important;
 
-    font-weight: 800 !important;
-
     background: #151515 !important;
 
-    border-color: #D0D0D0 !important;
+    font-weight: 800 !important;
+
+    border-color: #D8D8D8 !important;
 }
 
 
@@ -2135,7 +2136,7 @@ td.rr_result.match_button.rr_available {
 
     background: #202020 !important;
 
-    font-weight: 800 !important;
+    font-weight: 900 !important;
 
     border-top-color: #2196F3 !important;
     border-bottom-color: #2196F3 !important;
@@ -2146,7 +2147,7 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   60.9. KÓŁKO WOKÓŁ NUMERU AKTYWNEJ KOLEJKI
+   60.9. KÓŁKO NA AKTYWNYM NUMERZE KOLEJKI
    --------------------------------------------------------- */
 
 #score_table tr:has(td.input_area) td.score_round::after {
@@ -2173,53 +2174,50 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   60.10. AKTYWNE POLE WPISYWANIA WYNIKU
+   60.10. AKTYWNE POLE
    --------------------------------------------------------- */
 
 #score_table td.score_input.input_area {
-    background: #303030 !important;
+
+    background: #383838 !important;
 
     color: #FFFFFF !important;
 
-    font-weight: 800 !important;
+    font-weight: 900 !important;
 
-    /* GRUBA NIEBIESKA RAMKA */
-    box-shadow:
-        inset 0 0 0 4px #2196F3 !important;
+    border: 5px solid #2196F3 !important;
 
-    border-color: #2196F3 !important;
+    box-shadow: none !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.11. AKTYWNY ZAWODNIK — P1
+   60.11. AKTYWNY P1
    --------------------------------------------------------- */
 
 #score_table td.p1score.input_area {
-    background: #303030 !important;
+
+    background: #383838 !important;
 
     color: #FFFFFF !important;
 
-    box-shadow:
-        inset 0 0 0 4px #2196F3 !important;
+    border: 5px solid #2196F3 !important;
 
-    border-color: #2196F3 !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.12. AKTYWNY ZAWODNIK — P2
+   60.12. AKTYWNY P2
    --------------------------------------------------------- */
 
 #score_table td.p2score.input_area {
-    background: #303030 !important;
+
+    background: #383838 !important;
 
     color: #FFFFFF !important;
 
-    box-shadow:
-        inset 0 0 0 4px #2196F3 !important;
+    border: 5px solid #2196F3 !important;
 
-    border-color: #2196F3 !important;
 }
 
 
@@ -2228,39 +2226,42 @@ td.rr_result.match_button.rr_available {
    --------------------------------------------------------- */
 
 #score_table tr:has(td.input_area) td {
-    border-top-color: #D0D0D0 !important;
-    border-bottom-color: #D0D0D0 !important;
+    border-top-color: #D8D8D8 !important;
+
+    border-bottom-color: #D8D8D8 !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.14. OCHRONA PRZED NIEBIESKIM / BIAŁYM TŁEM
+   60.14. OCHRONA TŁA
    --------------------------------------------------------- */
 
 #score_table td.score_input,
 #score_table td.score_left,
 #score_table td.score_round {
+
     background-color: #181818 !important;
 
-    border-color: #D0D0D0 !important;
+    border-color: #D8D8D8 !important;
 }
 
 
-/* Aktywne pole — priorytet */
+/* AKTYWNE POLE — MUSI WYGRAĆ Z REGUŁĄ POWYŻEJ */
 
 #score_table td.score_input.input_area {
-    background-color: #303030 !important;
 
-    border-color: #2196F3 !important;
+    background-color: #383838 !important;
 
-    box-shadow:
-        inset 0 0 0 4px #2196F3 !important;
+    border: 5px solid #2196F3 !important;
+
+    color: #FFFFFF !important;
 }
 
 
-/* Aktywny numer kolejki */
+/* AKTYWNY NUMER KOLEJKI */
 
 #score_table tr:has(td.input_area) td.score_round {
+
     background-color: #202020 !important;
 
     border-color: #2196F3 !important;
@@ -2268,83 +2269,160 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   60.15. DUŻE WYNIKI "POZOSTAŁO"
+   60.15. WYNIKI 100+
+   N01 OZNACZA JE KLASĄ .ton
+   --------------------------------------------------------- */
+
+#score_table td.score_input.ton {
+
+    position: relative !important;
+
+    display: table-cell !important;
+
+    background: #181818 !important;
+
+    color: #F0D675 !important;
+
+    font-weight: 800 !important;
+
+}
+
+
+/* ---------------------------------------------------------
+   60.16. KÓŁKO DLA 100+
+   --------------------------------------------------------- */
+
+#score_table td.score_input.ton span {
+
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    width: 1.35em !important;
+
+    height: 1.35em !important;
+
+    border: 3px solid #D4AF37 !important;
+
+    border-radius: 50% !important;
+
+    box-sizing: border-box !important;
+
+    line-height: 1 !important;
+
+}
+
+
+/* ---------------------------------------------------------
+   60.17. 100+ W AKTYWNEJ KOMÓRCE
+   NIEBIESKA RAMKA MA PRIORYTET
+   --------------------------------------------------------- */
+
+#score_table td.score_input.ton.input_area {
+
+    background: #383838 !important;
+
+    border: 5px solid #2196F3 !important;
+
+    color: #FFFFFF !important;
+}
+
+#score_table td.score_input.ton.input_area span {
+
+    border-color: #2196F3 !important;
+
+    color: #FFFFFF !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.18. DUŻE "POZOSTAŁO"
    --------------------------------------------------------- */
 
 #left_table {
+
     background: #101010 !important;
 }
 
 #left_table td.score_left_big {
+
     background: #181818 !important;
 
     color: #F0D675 !important;
 
     font-weight: 800 !important;
 
-    border-color: #D0D0D0 !important;
+    border-color: #D8D8D8 !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.16. AKTUALNY GRACZ — DUŻE POZOSTAŁO
+   60.19. AKTUALNY GRACZ — DUŻE POZOSTAŁO
    --------------------------------------------------------- */
 
 #left_table td.score_left_big.focus_frame {
-    background: #303030 !important;
+
+    background: #383838 !important;
 
     color: #FFFFFF !important;
 
-    box-shadow:
-        inset 0 0 0 4px #2196F3 !important;
+    border: 5px solid #2196F3 !important;
 
-    border-color: #2196F3 !important;
+    box-shadow: none !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.17. ODDZIELENIE P1 / P2
+   60.20. ODDZIELENIE P1 / P2
    --------------------------------------------------------- */
 
 #score_table td.p1score,
 #score_table td.p1left {
-    border-right-color: #D0D0D0 !important;
+
+    border-right-color: #D8D8D8 !important;
 }
 
 #score_table td.p2score,
 #score_table td.p2left {
-    border-left-color: #D0D0D0 !important;
+
+    border-left-color: #D8D8D8 !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.18. OSTATNIE 3 DARTY
+   60.21. OSTATNIE 3 KOLEJKI
    --------------------------------------------------------- */
 
 #score_table td.score_round.last3 {
+
     color: #2196F3 !important;
 
-    font-weight: 800 !important;
+    font-weight: 900 !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.19. MENU LIVE
+   60.22. MENU LIVE
    --------------------------------------------------------- */
 
 #menu_table {
+
     background: #101010 !important;
 }
 
 #menu_table td {
+
     background: #181818 !important;
 
-    color: #D0D0D0 !important;
+    color: #D8D8D8 !important;
 
-    border-color: #D0D0D0 !important;
+    border-color: #D8D8D8 !important;
 }
 
 #menu_table td:hover {
+
     background: #303030 !important;
 
     color: #F0D675 !important;
@@ -2352,17 +2430,19 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   60.20. RESPONSYWNOŚĆ
+   60.23. RESPONSYWNOŚĆ
    --------------------------------------------------------- */
 
 @media (max-width: 700px) {
 
     #score_table td,
     #score_table th {
+
         padding: 9px 8px !important;
     }
 
     #header_table #title {
+
         letter-spacing: 0.5px !important;
     }
 
