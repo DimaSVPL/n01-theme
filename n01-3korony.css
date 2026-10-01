@@ -2495,129 +2495,155 @@ td.rr_result.match_button.rr_available {
     font-weight: 900 !important;
 }
 /* ============================================================
-   61. DRABINKI — TŁO / MECZE / OBRAMOWANIA / ŁĄCZNIKI
-   GRAND PRIX KOSZALINA 2026-2027
+   61. DRABINKA — 3 KORONY
+   TŁO + OBRAMOWANIA MECZÓW + NIEBIESKIE ŁĄCZNIKI
    ============================================================ */
 
+
 /* ------------------------------------------------------------
-   61.1 — TŁO POD DRABINKĄ
+   61.1 — TŁO CAŁEJ DRABINKI
    ------------------------------------------------------------ */
 
 .bracket,
-.bracket-container {
-    background: #080808 !important;
+.bracket-container,
+.bracket-wrapper,
+.bracket-content,
+.tournament-bracket,
+.tournament-container {
     background-color: #080808 !important;
     background-image: none !important;
 }
 
 
 /* ------------------------------------------------------------
-   61.2 — TŁO KAŻDEGO MECZU
+   61.2 — POJEDYNCZY MECZ
    ------------------------------------------------------------ */
 
+.bracket-item,
+.bracket-match,
+.t_match,
 .t_item {
-    background: #151515 !important;
+    background-color: #151515 !important;
+    background-image: none !important;
+
+    border-color: #E8E8E8 !important;
+}
+
+
+/* ------------------------------------------------------------
+   61.3 — ZEWNĘTRZNA RAMKA MECZU
+   ------------------------------------------------------------ */
+
+/*
+   Nie zmieniamy wymiarów elementu.
+   Używamy box-shadow zamiast border,
+   żeby nie przesuwać elementów drabinki.
+*/
+
+.t_item {
+    box-shadow: 0 0 0 1px #E8E8E8 !important;
+}
+
+
+/* ------------------------------------------------------------
+   61.4 — WEWNĘTRZNE ELEMENTY MECZU
+   ------------------------------------------------------------ */
+
+.t_item .t_item,
+.t_item .t_match,
+.bracket-match .t_item {
     background-color: #151515 !important;
     background-image: none !important;
 }
 
 
 /* ------------------------------------------------------------
-   61.3 — ZEWNĘTRZNE OBRAMOWANIE MECZU
-   prawie białe
+   61.5 — HOVER MECZU
    ------------------------------------------------------------ */
 
-.t_item {
-    border: 1px solid #F2F2F2 !important;
-    box-sizing: border-box !important;
-}
-
-
-/* ------------------------------------------------------------
-   61.4 — NIE ZMIENIAMY WEWNĘTRZNEGO UKŁADU MECZU
-   ------------------------------------------------------------ */
-
-.t_item > * {
-    border-color: transparent !important;
-}
-
-
-/* ------------------------------------------------------------
-   61.5 — HOVER
-   ------------------------------------------------------------ */
-
-.t_item:hover {
+.t_item:hover,
+.bracket-item:hover,
+.bracket-match:hover,
+.t_match:hover {
     background-color: #202020 !important;
-    border-color: #FFFFFF !important;
+    box-shadow: 0 0 0 1px #FFFFFF !important;
 }
 
 
 /* ------------------------------------------------------------
-   61.6 — ŁĄCZNIKI DRABINKI — NIEBIESKIE
+   61.6 — ŁĄCZNIKI DRABINKI
    ------------------------------------------------------------ */
 
-.bracket,
-.bracket-container {
-    --bracket-line-color: #2196F3 !important;
-}
+/*
+   Niebieski kolor linii łączących mecze.
+*/
 
-
-/* ------------------------------------------------------------
-   61.7 — POTENCJALNE ELEMENTY ŁĄCZNIKÓW
-   ------------------------------------------------------------ */
-
-.bracket .connector,
-.bracket .connector-line,
-.bracket .line,
-.bracket .t_line,
-.bracket [class*="connector"],
-.bracket [class*="line"],
-.bracket-container .connector,
-.bracket-container .connector-line,
-.bracket-container .line,
-.bracket-container .t_line,
-.bracket-container [class*="connector"],
-.bracket-container [class*="line"] {
-    background-color: #2196F3 !important;
+.bracket::before,
+.bracket::after,
+.bracket-container::before,
+.bracket-container::after,
+.bracket-item::before,
+.bracket-item::after,
+.bracket-match::before,
+.bracket-match::after,
+.t_match::before,
+.t_match::after,
+.t_item::before,
+.t_item::after {
     border-color: #2196F3 !important;
 }
 
 
 /* ------------------------------------------------------------
-   61.8 — ŁĄCZNIKI TWORZONE PRZEZ ::before / ::after
+   61.7 — ŁĄCZNIKI POZIOME
    ------------------------------------------------------------ */
 
-.bracket .connector::before,
-.bracket .connector::after,
-.bracket .connector-line::before,
-.bracket .connector-line::after,
-.bracket .line::before,
-.bracket .line::after,
-.bracket .t_line::before,
-.bracket .t_line::after,
-.bracket-container .connector::before,
-.bracket-container .connector::after,
-.bracket-container .connector-line::before,
-.bracket-container .connector-line::after,
-.bracket-container .line::before,
-.bracket-container .line::after,
-.bracket-container .t_line::before,
-.bracket-container .t_line::after {
-    background-color: #2196F3 !important;
+.t_item::before,
+.t_item::after {
     border-color: #2196F3 !important;
 }
 
 
 /* ------------------------------------------------------------
-   61.9 — ZAWODNIK WYGRYWAJĄCY
-   złoty — zachowujemy dotychczasowy wygląd
+   61.8 — ŁĄCZNIKI — LINIE BEZ TŁA
    ------------------------------------------------------------ */
 
-.t_item:not(.lose) .t_no,
+.t_item::before,
+.t_item::after,
+.t_match::before,
+.t_match::after {
+    background-color: transparent !important;
+}
+
+
+/* ------------------------------------------------------------
+   61.9 — NUMER MECZU
+   ------------------------------------------------------------ */
+
+.t_item .t_no {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+
+/* ------------------------------------------------------------
+   61.10 — DELIKATNA SEPARACJA ZAWODNIKÓW
+   ------------------------------------------------------------ */
+
+.t_item .t_name,
+.t_item .t_result,
+.t_item .t_score,
+.t_item .t_avg {
+    border-color: #E8E8E8 !important;
+}
+
+
+/* ------------------------------------------------------------
+   61.11 — ZWYCIĘZCA
+   ------------------------------------------------------------ */
+
 .t_item:not(.lose) .t_name,
 .t_item:not(.lose) .t_name a,
-.t_item:not(.lose) .t_name .entry_name,
-.t_item:not(.lose) .t_name .t_avg,
 .t_item:not(.lose) .t_result,
 .t_item:not(.lose) .t_score {
     color: #D4AF37 !important;
@@ -2626,17 +2652,11 @@ td.rr_result.match_button.rr_available {
 
 
 /* ------------------------------------------------------------
-   61.10 — ZAWODNIK PRZEGRYWAJĄCY
-   biały — zachowujemy dotychczasowy wygląd
+   61.12 — PRZEGRANY
    ------------------------------------------------------------ */
 
-.t_item.lose,
-.t_item.lose *,
-.t_item.lose a,
-.t_item.lose .t_no,
 .t_item.lose .t_name,
-.t_item.lose .t_name *,
-.t_item.lose .t_avg,
+.t_item.lose .t_name a,
 .t_item.lose .t_result,
 .t_item.lose .t_score {
     color: #FFFFFF !important;
@@ -2645,9 +2665,15 @@ td.rr_result.match_button.rr_available {
 
 
 /* ------------------------------------------------------------
-   61.11 — NIE ZMIENIAMY ROZMIARÓW ANI UKŁADU DRABINKI
+   61.13 — TŁO POD CAŁĄ DRABINKĄ
    ------------------------------------------------------------ */
 
-.t_item {
-    box-sizing: border-box !important;
+body {
+    background-color: #080808 !important;
+}
+
+#contents,
+#content,
+#main {
+    background-color: #080808 !important;
 }
