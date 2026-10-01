@@ -1994,9 +1994,6 @@ td.rr_result.match_button.rr_available {
 /* =========================================================
    60. N01 LIVE — PROFESSIONAL 3 KORONY
    DARK + GOLD
-   ZMIANA:
-   - NUMERY KOLEJEK 3,6,9... = NIEBIESKIE
-   - JAŚNIEJSZE / BIAŁAWE OBRAMOWANIA
    ========================================================= */
 
 
@@ -2056,7 +2053,8 @@ td.rr_result.match_button.rr_available {
     background: #181818 !important;
     color: #F2F2F2 !important;
 
-    border-color: #D0D0D0 !important;
+    /* JAŚNIEJSZE OBRAMOWANIE */
+    border-color: #E0E0E0 !important;
 
     box-sizing: border-box !important;
 }
@@ -2101,8 +2099,8 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   60.7. NUMER KOLEJKI
-   3, 6, 9, 12, 15...
+   60.7. NUMER KOLEJKI — 3, 6, 9, 12...
+   NIEBIESKI
    --------------------------------------------------------- */
 
 #score_table td.score_round {
@@ -2113,7 +2111,8 @@ td.rr_result.match_button.rr_available {
 
     background: #151515 !important;
 
-    border-color: #D0D0D0 !important;
+    border-left-color: #E0E0E0 !important;
+    border-right-color: #E0E0E0 !important;
 }
 
 
@@ -2129,7 +2128,7 @@ td.rr_result.match_button.rr_available {
     font-weight: 800 !important;
 
     box-shadow:
-        inset 0 0 0 2px #D4AF37 !important;
+        inset 0 0 0 2px #4DA3FF !important;
 }
 
 
@@ -2150,7 +2149,7 @@ td.rr_result.match_button.rr_available {
 
     transform: translate(-50%, -50%);
 
-    border: 3px solid #D4AF37;
+    border: 3px solid #4DA3FF;
     border-radius: 50%;
 
     box-sizing: border-box;
@@ -2204,8 +2203,8 @@ td.rr_result.match_button.rr_available {
    --------------------------------------------------------- */
 
 #score_table tr:has(td.input_area) td {
-    border-top-color: #D0D0D0 !important;
-    border-bottom-color: #D0D0D0 !important;
+    border-top-color: #F0F0F0 !important;
+    border-bottom-color: #F0F0F0 !important;
 }
 
 
@@ -2220,7 +2219,7 @@ td.rr_result.match_button.rr_available {
 }
 
 
-/* Aktywne pole musi mieć priorytet */
+/* Aktywne pole */
 
 #score_table td.score_input.input_area {
     background-color: #202020 !important;
@@ -2249,7 +2248,7 @@ td.rr_result.match_button.rr_available {
 
     font-weight: 800 !important;
 
-    border-color: #D0D0D0 !important;
+    border-color: #E0E0E0 !important;
 }
 
 
@@ -2273,12 +2272,12 @@ td.rr_result.match_button.rr_available {
 
 #score_table td.p1score,
 #score_table td.p1left {
-    border-right-color: #D0D0D0 !important;
+    border-right-color: #E0E0E0 !important;
 }
 
 #score_table td.p2score,
 #score_table td.p2left {
-    border-left-color: #D0D0D0 !important;
+    border-left-color: #E0E0E0 !important;
 }
 
 
@@ -2293,7 +2292,48 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   60.19. MENU LIVE
+   60.19. WARTOŚCI 100+
+   OKRĄG JAK W STANDARDOWYM N01
+   --------------------------------------------------------- */
+
+/*
+   N01 wpisuje wynik do pola .score_input.
+   Poniższa reguła przygotowuje wartości 3-cyfrowe
+   do wyglądu w stylu standardowego N01.
+
+   Samo CSS nie potrafi sprawdzić wartości liczbowej
+   wewnątrz <td>, dlatego wykorzystujemy istniejące
+   klasy / strukturę N01.
+*/
+
+
+#score_table td.score_input {
+    position: relative !important;
+}
+
+
+/*
+   Wyniki 100+ — element tekstowy / span.
+*/
+
+#score_table td.score_input span {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.20. OBRAMOWANIA KOMÓREK — BARDZO JASNE
+   --------------------------------------------------------- */
+
+#score_table td,
+#score_table th {
+    border-color: #E8E8E8 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.21. MENU LIVE
    --------------------------------------------------------- */
 
 #menu_table {
@@ -2305,7 +2345,7 @@ td.rr_result.match_button.rr_available {
 
     color: #A8A8A8 !important;
 
-    border-color: #D0D0D0 !important;
+    border-color: #E0E0E0 !important;
 }
 
 #menu_table td:hover {
@@ -2315,7 +2355,7 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   60.20. RESPONSYWNOŚĆ
+   60.22. RESPONSYWNOŚĆ
    --------------------------------------------------------- */
 
 @media (max-width: 700px) {
