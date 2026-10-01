@@ -2471,12 +2471,11 @@ td.rr_result.match_button.rr_available {
 }
 /* =========================================================
    60.30. NUMERY KOLEJEK — FINAL
-   100% CSS — BEZ JAVASCRIPT
    ========================================================= */
 
 
 /* ---------------------------------------------------------
-   1. UKRYCIE ORYGINALNEGO TEKSTU N01
+   ORYGINALNY TEKST N01 — UKRYTY
    --------------------------------------------------------- */
 
 #score_table td.score_round {
@@ -2488,24 +2487,34 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   2. WSPÓLNY STYL NUMERÓW
+   NUMER WYŚWIETLANY PRZEZ CSS
+   IDEALNIE NA ŚRODKU KOMÓRKI
    --------------------------------------------------------- */
 
 #score_table td.score_round::after {
-    display: block !important;
+    display: flex !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    box-sizing: border-box !important;
 
     color: #2196F3 !important;
     -webkit-text-fill-color: #2196F3 !important;
 
     font-weight: 400 !important;
-    text-shadow: none !important;
-
     line-height: 1 !important;
+
+    text-shadow: none !important;
 }
 
 
 /* ---------------------------------------------------------
-   3. NUMERY KOLEJEK
+   NUMERY 3–36
+   NIEBIESKIE + CIENKIE
    --------------------------------------------------------- */
 
 #score_table #round_1 td.score_round::after {
@@ -2553,48 +2562,61 @@ td.rr_result.match_button.rr_available {
 }
 
 #score_table #round_12 td.score_round::after {
-    content: "36" !important;
-}
-
-#score_table #round_13 td.score_round::after {
     content: "39" !important;
 }
 
-#score_table #round_14 td.score_round::after {
-    content: "45" !important;
+
+/* ---------------------------------------------------------
+   39 + 42
+   POMARAŃCZOWE + GRUBE
+   --------------------------------------------------------- */
+
+#score_table #round_12 td.score_round::after,
+#score_table #round_13 td.score_round::after {
+
+    color: #FF9800 !important;
+    -webkit-text-fill-color: #FF9800 !important;
+
+    font-weight: 900 !important;
 }
 
 
 /* ---------------------------------------------------------
-   4. OD KOLEJKI 39
-   39 I 45 — CZERWONE
+   42
    --------------------------------------------------------- */
 
-/* aktywna kolejka 39 */
-#score_table:has(#round_13 td.input_area)
-#round_13 td.score_round::after,
+#score_table #round_13 td.score_round::after {
+    content: "42" !important;
+}
 
-#score_table:has(#round_13 td.input_area)
-#round_14 td.score_round::after,
 
-/* aktywna kolejka 45 */
-#score_table:has(#round_14 td.input_area)
-#round_13 td.score_round::after,
+/* ---------------------------------------------------------
+   45
+   CZERWONE + GRUBE
+   --------------------------------------------------------- */
 
-#score_table:has(#round_14 td.input_area)
-#round_14 td.score_round::after {
+#score_table #round_14 td.score_round::after {
+
+    content: "45" !important;
 
     color: #FF3B30 !important;
     -webkit-text-fill-color: #FF3B30 !important;
+
+    font-weight: 900 !important;
 }
 
 
 /* ---------------------------------------------------------
-   5. ZABEZPIECZENIE — CIENKA CZCIONKA
+   DODATKOWE WYRÓWNANIE
    --------------------------------------------------------- */
 
-#score_table td.score_round::after {
-    font-weight: 400 !important;
+#score_table #round_12 td.score_round::after,
+#score_table #round_13 td.score_round::after,
+#score_table #round_14 td.score_round::after {
+
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
 }
 
 
