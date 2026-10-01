@@ -1991,3 +1991,315 @@ td.rr_result.match_button.rr_available .rr_idx {
 td.rr_result.match_button.rr_available {
     box-shadow: inset 0 0 0 1px #D4AF37 !important;
 }
+/* =========================================================
+   60. N01 LIVE — PROFESSIONAL 3 KORONY
+   Dark + Gold
+   TYLKO EKRAN LIVE / TABELA WYNIKU
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   60.1. GŁÓWNY KONTENER WYNIKU
+   --------------------------------------------------------- */
+
+#score_view_inset_body #result_table {
+    background: #101010 !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    color: #F2F2F2 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.2. KOMÓRKI TABELI
+   --------------------------------------------------------- */
+
+#score_view_inset_body #result_table td,
+#score_view_inset_body #result_table th {
+    background: #181818 !important;
+    color: #F2F2F2 !important;
+
+    border-color: #303030 !important;
+
+    padding: 12px 14px !important;
+
+    vertical-align: middle !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.3. WIERSZE ZAWODNIKÓW
+   --------------------------------------------------------- */
+
+#score_view_inset_body #result_table tr {
+    background: #181818 !important;
+    border-color: #303030 !important;
+}
+
+
+/* Delikatny efekt hover */
+
+#score_view_inset_body #result_table tr:hover td {
+    background: #202020 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.4. NAZWISKA ZAWODNIKÓW
+   --------------------------------------------------------- */
+
+#score_view_inset_body #result_table td.name,
+#score_view_inset_body #result_table td.name > div,
+#score_view_inset_body #result_table #p1_name,
+#score_view_inset_body #result_table #p2_name {
+
+    color: #F0D675 !important;
+    -webkit-text-fill-color: #F0D675 !important;
+
+    font-size: 20px !important;
+    font-weight: 700 !important;
+
+    line-height: 1.2 !important;
+
+    text-shadow: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.5. STATYSTYKI POD NAZWISKIEM
+   --------------------------------------------------------- */
+
+#score_view_inset_body #result_table #p1_stats,
+#score_view_inset_body #result_table #p2_stats {
+
+    color: #A8A8A8 !important;
+    -webkit-text-fill-color: #A8A8A8 !important;
+
+    font-size: 13px !important;
+    font-weight: 500 !important;
+
+    line-height: 1.3 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.6. WYNIK — SCORED
+   --------------------------------------------------------- */
+
+#score_view_inset_body #result_table td.scored,
+#score_view_inset_body #result_table .scored,
+#score_view_inset_body #result_table [id*="scored"] {
+
+    color: #F0D675 !important;
+    -webkit-text-fill-color: #F0D675 !important;
+
+    font-size: 30px !important;
+    font-weight: 800 !important;
+
+    line-height: 1 !important;
+
+    text-align: center !important;
+
+    text-shadow: 0 0 8px rgba(212,175,55,0.15) !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.7. TO GO
+   --------------------------------------------------------- */
+
+#score_view_inset_body #result_table td.to_go,
+#score_view_inset_body #result_table .to_go,
+#score_view_inset_body #result_table [id*="to_go"] {
+
+    color: #D0D0D0 !important;
+    -webkit-text-fill-color: #D0D0D0 !important;
+
+    font-size: 21px !important;
+    font-weight: 700 !important;
+
+    line-height: 1 !important;
+
+    text-align: center !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.8. AKTYWNY ZAWODNIK
+   --------------------------------------------------------- */
+
+/*
+   N01 wykorzystuje aktywny stan w swoim ekranie LIVE.
+   Poniższe selektory wzmacniają złoty akcent.
+*/
+
+#score_view_inset_body #result_table tr.active td,
+#score_view_inset_body #result_table tr.current td,
+#score_view_inset_body #result_table tr.live td,
+#score_view_inset_body #result_table tr.selected td {
+
+    background: #1D1D1D !important;
+
+    border-top-color: #D4AF37 !important;
+    border-bottom-color: #D4AF37 !important;
+}
+
+
+/* Aktywny zawodnik — nazwisko */
+
+#score_view_inset_body #result_table tr.active td.name,
+#score_view_inset_body #result_table tr.current td.name,
+#score_view_inset_body #result_table tr.live td.name,
+#score_view_inset_body #result_table tr.selected td.name {
+
+    color: #FFD95A !important;
+    -webkit-text-fill-color: #FFD95A !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.9. ZŁOTY AKCENT PRZY AKTYWNYM WIERSZU
+   --------------------------------------------------------- */
+
+#score_view_inset_body #result_table tr.active td:first-child,
+#score_view_inset_body #result_table tr.current td:first-child,
+#score_view_inset_body #result_table tr.live td:first-child,
+#score_view_inset_body #result_table tr.selected td:first-child {
+
+    border-left: 4px solid #D4AF37 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.10. LINIE PODZIAŁU
+   --------------------------------------------------------- */
+
+#score_view_inset_body #result_table td {
+    border-top: 1px solid #2C2C2C !important;
+    border-bottom: 1px solid #2C2C2C !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.11. PIERWSZA KOLUMNA — ZAWODNIK
+   --------------------------------------------------------- */
+
+#score_view_inset_body #result_table td.name {
+    text-align: left !important;
+
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.12. KOLUMNY Z WYNIKAMI
+   --------------------------------------------------------- */
+
+#score_view_inset_body #result_table td:not(.name) {
+    text-align: center !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.13. HOVER NA WYNIKU
+   --------------------------------------------------------- */
+
+#score_view_inset_body #result_table td:hover {
+    background: #242424 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.14. WYRAŹNIEJSZY AKTUALNY WYNIK
+   --------------------------------------------------------- */
+
+#score_view_inset_body #result_table #p1_name,
+#score_view_inset_body #result_table #p2_name {
+
+    letter-spacing: 0.2px !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.15. TEKST POMOCNICZY / ETYKIETY
+   --------------------------------------------------------- */
+
+#score_view_inset_body #result_table .label,
+#score_view_inset_body #result_table .title,
+#score_view_inset_body #result_table th {
+
+    color: #AAAAAA !important;
+    -webkit-text-fill-color: #AAAAAA !important;
+
+    font-size: 12px !important;
+    font-weight: 600 !important;
+
+    text-transform: uppercase !important;
+    letter-spacing: 0.6px !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.16. OCHRONA PRZED BIAŁYM TŁEM N01
+   --------------------------------------------------------- */
+
+#score_view_inset_body #result_table,
+#score_view_inset_body #result_table tbody,
+#score_view_inset_body #result_table thead,
+#score_view_inset_body #result_table tr,
+#score_view_inset_body #result_table td,
+#score_view_inset_body #result_table th {
+
+    background-color: #181818 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.17. OCHRONA KOLORU TEKSTU
+   --------------------------------------------------------- */
+
+#score_view_inset_body #result_table *,
+#score_view_inset_body #result_table td *,
+#score_view_inset_body #result_table td > div {
+
+    text-shadow: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.18. RESPONSYWNOŚĆ — MNIEJSZY EKRAN
+   --------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    #score_view_inset_body #result_table td,
+    #score_view_inset_body #result_table th {
+        padding: 9px 8px !important;
+    }
+
+    #score_view_inset_body #result_table td.name,
+    #score_view_inset_body #result_table td.name > div,
+    #score_view_inset_body #result_table #p1_name,
+    #score_view_inset_body #result_table #p2_name {
+
+        font-size: 17px !important;
+    }
+
+    #score_view_inset_body #result_table td.scored,
+    #score_view_inset_body #result_table .scored {
+
+        font-size: 25px !important;
+    }
+
+    #score_view_inset_body #result_table td.to_go,
+    #score_view_inset_body #result_table .to_go {
+
+        font-size: 18px !important;
+    }
+}
+
+
+/* =========================================================
+   KONIEC — SEKCJA 60
+   ========================================================= */
