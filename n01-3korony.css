@@ -2471,28 +2471,58 @@ td.rr_result.match_button.rr_available {
 }
 /* =========================================================
    60.30. NUMERY KOLEJEK — FINAL
+   BEZ JAVASCRIPT
    ========================================================= */
 
 
 /* ---------------------------------------------------------
-   ORYGINALNY TEKST N01 — UKRYTY
+   1. NORMALNE NUMERY — NIEBIESKIE I CIENKIE
    --------------------------------------------------------- */
 
 #score_table td.score_round {
-    color: transparent !important;
-    -webkit-text-fill-color: transparent !important;
+    color: #2196F3 !important;
+    -webkit-text-fill-color: #2196F3 !important;
     font-weight: 400 !important;
     text-shadow: none !important;
 }
 
 
 /* ---------------------------------------------------------
-   NUMER WYŚWIETLANY PRZEZ CSS
-   IDEALNIE NA ŚRODKU KOMÓRKI
+   2. 39 / 42 / 45
+   UKRYWAMY ORYGINALNY TEKST N01
    --------------------------------------------------------- */
 
-#score_table td.score_round::after {
+#score_table #round_12 td.score_round.last3,
+#score_table #round_13 td.score_round.last3,
+#score_table #round_14 td.score_round.last3 {
+
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
+
+    font-weight: 400 !important;
+    text-shadow: none !important;
+
+    position: relative !important;
+}
+
+
+/* ---------------------------------------------------------
+   3. WSPÓLNE USTAWIENIE NOWEGO NUMERU
+   IDEALNIE NA ŚRODKU
+   --------------------------------------------------------- */
+
+#score_table #round_12 td.score_round.last3::after,
+#score_table #round_13 td.score_round.last3::after,
+#score_table #round_14 td.score_round.last3::after {
+
     display: flex !important;
+
+    position: absolute !important;
+
+    left: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
 
     width: 100% !important;
     height: 100% !important;
@@ -2502,77 +2532,22 @@ td.rr_result.match_button.rr_available {
 
     box-sizing: border-box !important;
 
-    color: #2196F3 !important;
-    -webkit-text-fill-color: #2196F3 !important;
-
-    font-weight: 400 !important;
     line-height: 1 !important;
+
+    text-align: center !important;
 
     text-shadow: none !important;
 }
 
 
 /* ---------------------------------------------------------
-   NUMERY 3–36
-   NIEBIESKIE + CIENKIE
-   --------------------------------------------------------- */
-
-#score_table #round_1 td.score_round::after {
-    content: "3" !important;
-}
-
-#score_table #round_2 td.score_round::after {
-    content: "6" !important;
-}
-
-#score_table #round_3 td.score_round::after {
-    content: "9" !important;
-}
-
-#score_table #round_4 td.score_round::after {
-    content: "12" !important;
-}
-
-#score_table #round_5 td.score_round::after {
-    content: "15" !important;
-}
-
-#score_table #round_6 td.score_round::after {
-    content: "18" !important;
-}
-
-#score_table #round_7 td.score_round::after {
-    content: "21" !important;
-}
-
-#score_table #round_8 td.score_round::after {
-    content: "24" !important;
-}
-
-#score_table #round_9 td.score_round::after {
-    content: "27" !important;
-}
-
-#score_table #round_10 td.score_round::after {
-    content: "30" !important;
-}
-
-#score_table #round_11 td.score_round::after {
-    content: "33" !important;
-}
-
-#score_table #round_12 td.score_round::after {
-    content: "39" !important;
-}
-
-
-/* ---------------------------------------------------------
-   39 + 42
+   4. 39
    POMARAŃCZOWE + GRUBE
    --------------------------------------------------------- */
 
-#score_table #round_12 td.score_round::after,
-#score_table #round_13 td.score_round::after {
+#score_table #round_12 td.score_round.last3::after {
+
+    content: "39" !important;
 
     color: #FF9800 !important;
     -webkit-text-fill-color: #FF9800 !important;
@@ -2582,20 +2557,27 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   42
+   5. 42
+   POMARAŃCZOWE + GRUBE
    --------------------------------------------------------- */
 
-#score_table #round_13 td.score_round::after {
+#score_table #round_13 td.score_round.last3::after {
+
     content: "42" !important;
+
+    color: #FF9800 !important;
+    -webkit-text-fill-color: #FF9800 !important;
+
+    font-weight: 900 !important;
 }
 
 
 /* ---------------------------------------------------------
-   45
+   6. 45
    CZERWONE + GRUBE
    --------------------------------------------------------- */
 
-#score_table #round_14 td.score_round::after {
+#score_table #round_14 td.score_round.last3::after {
 
     content: "45" !important;
 
@@ -2603,20 +2585,6 @@ td.rr_result.match_button.rr_available {
     -webkit-text-fill-color: #FF3B30 !important;
 
     font-weight: 900 !important;
-}
-
-
-/* ---------------------------------------------------------
-   DODATKOWE WYRÓWNANIE
-   --------------------------------------------------------- */
-
-#score_table #round_12 td.score_round::after,
-#score_table #round_13 td.score_round::after,
-#score_table #round_14 td.score_round::after {
-
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
 }
 
 
