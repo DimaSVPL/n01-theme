@@ -2495,14 +2495,26 @@ td.rr_result.match_button.rr_available {
     font-weight: 900 !important;
 }
 /* ============================================================
-   61. DRABINKA — 3 KORONY
-   TŁO + OBRAMOWANIA MECZÓW + NIEBIESKIE ŁĄCZNIKI
+   61. DRABINKA — FINAL
+   TŁO + NIEBIESKIE ŁĄCZNIKI + PEŁNE RAMKI MECZÓW
    ============================================================ */
 
-
 /* ------------------------------------------------------------
-   61.1 — TŁO CAŁEJ DRABINKI
+   61.1 — TŁO CAŁEGO OBSZARU DRABINKI
    ------------------------------------------------------------ */
+
+body {
+    background: #080808 !important;
+}
+
+#contents,
+#content,
+#main,
+.content,
+.page-content {
+    background: #080808 !important;
+    background-color: #080808 !important;
+}
 
 .bracket,
 .bracket-container,
@@ -2510,63 +2522,83 @@ td.rr_result.match_button.rr_available {
 .bracket-content,
 .tournament-bracket,
 .tournament-container {
+    background: #080808 !important;
     background-color: #080808 !important;
     background-image: none !important;
 }
 
 
 /* ------------------------------------------------------------
-   61.2 — POJEDYNCZY MECZ
+   61.2 — KAŻDY MECZ
+   ------------------------------------------------------------ */
+
+/*
+   NIE używamy tutaj border na .t_item.
+   .t_item jest pojedynczym zawodnikiem/wierszem.
+
+   Ramkę robimy przez box-shadow, dzięki czemu N01
+   nie będzie "zjadał" lewej/prawej krawędzi.
+*/
+
+.bracket-item,
+.bracket-match,
+.t_match {
+    background: #151515 !important;
+    background-color: #151515 !important;
+    background-image: none !important;
+
+    border: 0 !important;
+
+    box-shadow:
+        inset 1px 0 0 #E8E8E8,
+        inset -1px 0 0 #E8E8E8,
+        inset 0 1px 0 #E8E8E8,
+        inset 0 -1px 0 #E8E8E8 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ------------------------------------------------------------
+   61.3 — DODATKOWE WYMUSZENIE LEWEJ/PRAWEJ GRANICY
    ------------------------------------------------------------ */
 
 .bracket-item,
 .bracket-match,
-.t_match,
-.t_item {
+.t_match {
+    outline: 1px solid #E8E8E8 !important;
+    outline-offset: -1px !important;
+}
+
+
+/* ------------------------------------------------------------
+   61.4 — WNĘTRZE MECZU
+   ------------------------------------------------------------ */
+
+.bracket-item .t_item,
+.bracket-match .t_item,
+.t_match .t_item {
+    background: #151515 !important;
     background-color: #151515 !important;
     background-image: none !important;
 
-    border-color: #E8E8E8 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
 }
 
 
 /* ------------------------------------------------------------
-   61.3 — ZEWNĘTRZNA RAMKA MECZU
+   61.5 — HOVER
    ------------------------------------------------------------ */
 
-/*
-   Nie zmieniamy wymiarów elementu.
-   Używamy box-shadow zamiast border,
-   żeby nie przesuwać elementów drabinki.
-*/
-
-.t_item {
-    box-shadow: 0 0 0 1px #E8E8E8 !important;
-}
-
-
-/* ------------------------------------------------------------
-   61.4 — WEWNĘTRZNE ELEMENTY MECZU
-   ------------------------------------------------------------ */
-
-.t_item .t_item,
-.t_item .t_match,
-.bracket-match .t_item {
-    background-color: #151515 !important;
-    background-image: none !important;
-}
-
-
-/* ------------------------------------------------------------
-   61.5 — HOVER MECZU
-   ------------------------------------------------------------ */
-
-.t_item:hover,
 .bracket-item:hover,
 .bracket-match:hover,
 .t_match:hover {
+    background: #202020 !important;
     background-color: #202020 !important;
-    box-shadow: 0 0 0 1px #FFFFFF !important;
+
+    outline: 1px solid #FFFFFF !important;
+    outline-offset: -1px !important;
 }
 
 
@@ -2575,71 +2607,56 @@ td.rr_result.match_button.rr_available {
    ------------------------------------------------------------ */
 
 /*
-   Niebieski kolor linii łączących mecze.
+   Wszystkie pseudo-elementy wykorzystywane przez N01
+   jako linie łączące dostają NIEBIESKI kolor.
 */
 
 .bracket::before,
 .bracket::after,
 .bracket-container::before,
 .bracket-container::after,
+.bracket-wrapper::before,
+.bracket-wrapper::after,
 .bracket-item::before,
 .bracket-item::after,
 .bracket-match::before,
 .bracket-match::after,
 .t_match::before,
-.t_match::after,
-.t_item::before,
-.t_item::after {
+.t_match::after {
     border-color: #2196F3 !important;
 }
 
 
 /* ------------------------------------------------------------
-   61.7 — ŁĄCZNIKI POZIOME
+   61.7 — JEŻELI ŁĄCZNIK JEST RYSOWANY JAKO BORDER
    ------------------------------------------------------------ */
 
-.t_item::before,
-.t_item::after {
-    border-color: #2196F3 !important;
+.bracket-item,
+.bracket-match,
+.t_match {
+    --bracket-line-color: #2196F3 !important;
 }
 
 
 /* ------------------------------------------------------------
-   61.8 — ŁĄCZNIKI — LINIE BEZ TŁA
+   61.8 — NIEBIESKIE LINIE NA ELEMENTACH ŁĄCZĄCYCH
    ------------------------------------------------------------ */
 
-.t_item::before,
-.t_item::after,
+.bracket-item::before,
+.bracket-item::after,
+.bracket-match::before,
+.bracket-match::after,
 .t_match::before,
 .t_match::after {
-    background-color: transparent !important;
+    border-top-color: #2196F3 !important;
+    border-right-color: #2196F3 !important;
+    border-bottom-color: #2196F3 !important;
+    border-left-color: #2196F3 !important;
 }
 
 
 /* ------------------------------------------------------------
-   61.9 — NUMER MECZU
-   ------------------------------------------------------------ */
-
-.t_item .t_no {
-    color: #FFFFFF !important;
-    -webkit-text-fill-color: #FFFFFF !important;
-}
-
-
-/* ------------------------------------------------------------
-   61.10 — DELIKATNA SEPARACJA ZAWODNIKÓW
-   ------------------------------------------------------------ */
-
-.t_item .t_name,
-.t_item .t_result,
-.t_item .t_score,
-.t_item .t_avg {
-    border-color: #E8E8E8 !important;
-}
-
-
-/* ------------------------------------------------------------
-   61.11 — ZWYCIĘZCA
+   61.9 — TEKST ZAWODNIKÓW — ZACHOWUJEMY NASZE KOLORY
    ------------------------------------------------------------ */
 
 .t_item:not(.lose) .t_name,
@@ -2650,30 +2667,10 @@ td.rr_result.match_button.rr_available {
     -webkit-text-fill-color: #D4AF37 !important;
 }
 
-
-/* ------------------------------------------------------------
-   61.12 — PRZEGRANY
-   ------------------------------------------------------------ */
-
 .t_item.lose .t_name,
 .t_item.lose .t_name a,
 .t_item.lose .t_result,
 .t_item.lose .t_score {
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
-}
-
-
-/* ------------------------------------------------------------
-   61.13 — TŁO POD CAŁĄ DRABINKĄ
-   ------------------------------------------------------------ */
-
-body {
-    background-color: #080808 !important;
-}
-
-#contents,
-#content,
-#main {
-    background-color: #080808 !important;
 }
