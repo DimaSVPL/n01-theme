@@ -1992,15 +1992,53 @@ td.rr_result.match_button.rr_available {
     box-shadow: inset 0 0 0 1px #D4AF37 !important;
 }
 /* =========================================================
-   60. N01 LIVE — PROFESSIONAL 3 KORONY
-   TYLKO:
-   - aktywna komórka wpisywania wyniku
-   - wyniki 100+ w owalu
+   60. N01 LIVE — 3 KORONY
+   DARK + GOLD + BLUE
    ========================================================= */
 
 
 /* ---------------------------------------------------------
-   60.1. PODSTAWOWA TABELA
+   60.1. KOLOR TEKSTU TABELI
+   --------------------------------------------------------- */
+
+#score_table,
+#header_table,
+#left_table {
+    color: #F2F2F2 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.2. NAGŁÓWEK MECZU
+   --------------------------------------------------------- */
+
+#header_table {
+    background: #101010 !important;
+    color: #F2F2F2 !important;
+}
+
+#header_table #title {
+    color: #D4AF37 !important;
+    font-weight: 800 !important;
+}
+
+#header_table .player_name {
+    color: #F0D675 !important;
+    font-weight: 700 !important;
+}
+
+#header_table .name_text {
+    color: #F0D675 !important;
+}
+
+#header_table #legs {
+    color: #FFFFFF !important;
+    font-weight: 800 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.3. TABELA WYNIKÓW
    --------------------------------------------------------- */
 
 #score_table {
@@ -2012,19 +2050,111 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   60.2. ZACHOWANIE STANDARDOWYCH KOMÓREK
+   60.4. OBRAMOWANIA KOMÓREK
+   JAŚNIEJSZE / PRAWIE BIAŁE
    --------------------------------------------------------- */
 
 #score_table td,
 #score_table th {
+
+    border-color: #D8D8D8 !important;
+
     box-sizing: border-box !important;
+
+    font-weight: 700 !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.3. AKTYWNA KOMÓRKA DO WPISYWANIA WYNIKU
-   N01 oznacza ją klasą:
-   .input_area
+   60.5. NAGŁÓWKI
+   --------------------------------------------------------- */
+
+#score_table th {
+
+    background: #181818 !important;
+
+    color: #D8D8D8 !important;
+
+    font-weight: 700 !important;
+
+    border-color: #D8D8D8 !important;
+}
+
+#score_table th.score_input {
+    color: #D4AF37 !important;
+}
+
+#score_table th.score_left {
+    color: #D8D8D8 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.6. KOMÓRKI "ZDOBYTE"
+   --------------------------------------------------------- */
+
+#score_table td.score_input {
+
+    background: #181818 !important;
+
+    color: #F0D675 !important;
+
+    font-weight: 700 !important;
+
+    border-color: #D8D8D8 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.7. KOMÓRKI "POZOSTAŁO"
+   --------------------------------------------------------- */
+
+#score_table td.score_left {
+
+    background: #181818 !important;
+
+    color: #E5E5E5 !important;
+
+    font-weight: 700 !important;
+
+    border-color: #D8D8D8 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.8. NUMERY KOLEJEK
+   3 / 6 / 9 / 12 / 15...
+   
+   TYLKO NIEBIESKI KOLOR.
+   BEZ KÓŁKA.
+   --------------------------------------------------------- */
+
+#score_table td.score_round {
+
+    background: #151515 !important;
+
+    color: #2196F3 !important;
+
+    font-weight: 700 !important;
+
+    border-color: #D8D8D8 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.9. USUNIĘCIE KÓŁKA Z NUMERU KOLEJKI
+   --------------------------------------------------------- */
+
+#score_table td.score_round::after {
+
+    content: none !important;
+
+    display: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.10. AKTYWNA KOMÓRKA DO WPISYWANIA WYNIKU
    --------------------------------------------------------- */
 
 #score_table td.score_input.input_area {
@@ -2033,9 +2163,10 @@ td.rr_result.match_button.rr_available {
 
     color: #FFFFFF !important;
 
-    font-weight: 900 !important;
+    font-weight: 700 !important;
 
     /*
+       TYLKO AKTYWNA KOMÓRKA
        GRUBA NIEBIESKA RAMKA
     */
 
@@ -2046,7 +2177,7 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   60.4. AKTYWNY P1
+   60.11. AKTYWNA KOMÓRKA P1
    --------------------------------------------------------- */
 
 #score_table td.p1score.input_area {
@@ -2062,7 +2193,7 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   60.5. AKTYWNY P2
+   60.12. AKTYWNA KOMÓRKA P2
    --------------------------------------------------------- */
 
 #score_table td.p2score.input_area {
@@ -2078,38 +2209,37 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   60.6. WYNIKI 100+
-   
-   N01 automatycznie dodaje klasę:
-   .ton
-   
-   Przykład:
-   <td class="score_input p1score ton">
-       <span>100</span>
-   </td>
+   60.13. WIERSZ AKTYWNEJ KOLEJKI
+   NIE ZMIENIAMY JEGO OBRAMOWANIA
    --------------------------------------------------------- */
 
-#score_table td.score_input.ton {
+#score_table tr:has(td.input_area) td {
 
-    background: inherit !important;
+    border-top-color: #D8D8D8 !important;
 
-    color: inherit !important;
-
-    font-weight: 800 !important;
-
+    border-bottom-color: #D8D8D8 !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.7. OWAL DLA 100+
+   60.14. 100+ — N01 KLASA .ton
+   --------------------------------------------------------- */
+
+#score_table td.score_input.ton {
+
+    background: #181818 !important;
+
+    color: #F0D675 !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.15. OBRĘCZ / OWAL DLA 100+
    
-   Zamiast koła używamy owalu, ponieważ:
-   
-   100
-   140
-   180
-   
-   są szersze niż pojedyncza cyfra.
+   NIE USTALAMY SZTYWNEJ SZEROKOŚCI.
+   OVAL DOPASOWUJE SIĘ DO LICZBY.
    --------------------------------------------------------- */
 
 #score_table td.score_input.ton span {
@@ -2121,45 +2251,36 @@ td.rr_result.match_button.rr_available {
     justify-content: center !important;
 
     /*
-       wysokość
+       AUTO SZEROKOŚĆ — DOPASOWANA DO TEKSTU
     */
 
-    height: 1.18em !important;
+    width: auto !important;
 
-    /*
-       szerokość większa od wysokości
-    */
+    min-width: 1.35em !important;
 
-    min-width: 2.05em !important;
+    height: 1.35em !important;
 
     padding-left: 0.18em !important;
+
     padding-right: 0.18em !important;
-
-    box-sizing: border-box !important;
-
-    /*
-       ZŁOTA RAMKA
-    */
 
     border: 3px solid #D4AF37 !important;
 
     border-radius: 50% !important;
 
-    color: #F0D675 !important;
+    box-sizing: border-box !important;
 
     line-height: 1 !important;
 
+    font-weight: 700 !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.8. 100+ W AKTYWNEJ KOMÓRCE
+   60.16. 100+ W AKTYWNEJ KOMÓRCE
    
-   Aktywna komórka ma mieć:
-   
-   NIEBIESKĄ GRUBĄ RAMKĘ
-   
-   a owal pozostaje złoty.
+   NIEBIESKA RAMKA KOMÓRKI MA PRIORYTET,
+   ALE OWAL 100+ POZOSTAJE ZŁOTY.
    --------------------------------------------------------- */
 
 #score_table td.score_input.ton.input_area {
@@ -2169,42 +2290,123 @@ td.rr_result.match_button.rr_available {
     color: #FFFFFF !important;
 
     border: 5px solid #2196F3 !important;
-
 }
-
-
-/* Owal wewnątrz aktywnej komórki */
 
 #score_table td.score_input.ton.input_area span {
 
     border-color: #D4AF37 !important;
 
     color: #FFFFFF !important;
-
 }
 
 
 /* ---------------------------------------------------------
-   60.9. DUŻE WARTOŚCI "POZOSTAŁO"
-   
-   NIE MODYFIKUJEMY ICH.
+   60.17. DUŻE "POZOSTAŁO"
+   --------------------------------------------------------- */
+
+#left_table {
+
+    background: #101010 !important;
+}
+
+#left_table td.score_left_big {
+
+    background: #181818 !important;
+
+    color: #F0D675 !important;
+
+    font-weight: 700 !important;
+
+    border-color: #D8D8D8 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.18. AKTUALNY GRACZ — DUŻE "POZOSTAŁO"
    --------------------------------------------------------- */
 
 #left_table td.score_left_big.focus_frame {
 
-    /*
-       TYLKO zachowujemy istniejące zachowanie N01.
-       Bez dodatkowej ramki / koloru.
-    */
+    background: #383838 !important;
 
+    color: #FFFFFF !important;
+
+    border: 5px solid #2196F3 !important;
+
+    box-shadow: none !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.10. MENU
-   
-   NIE MODYFIKUJEMY.
+   60.19. ODDZIELENIE P1 / P2
    --------------------------------------------------------- */
+
+#score_table td.p1score,
+#score_table td.p1left {
+
+    border-right-color: #D8D8D8 !important;
+}
+
+#score_table td.p2score,
+#score_table td.p2left {
+
+    border-left-color: #D8D8D8 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.20. OSTATNIE 3 KOLEJKI
+   --------------------------------------------------------- */
+
+#score_table td.score_round.last3 {
+
+    color: #2196F3 !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.21. MENU LIVE
+   --------------------------------------------------------- */
+
+#menu_table {
+
+    background: #101010 !important;
+}
+
+#menu_table td {
+
+    background: #181818 !important;
+
+    color: #D8D8D8 !important;
+
+    border-color: #D8D8D8 !important;
+
+    font-weight: 700 !important;
+}
+
+#menu_table td:hover {
+
+    background: #303030 !important;
+
+    color: #F0D675 !important;
+}
+
+
+/* ---------------------------------------------------------
+   60.22. RESPONSYWNOŚĆ
+   --------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    #score_table td,
+    #score_table th {
+
+        padding: 9px 8px !important;
+    }
+
+}
 
 
 /* =========================================================
