@@ -2538,5 +2538,38 @@ td.rr_result.match_button.rr_available {
     text-shadow: none !important;
 }
 /* =========================================================
+   60.30. NUMERY KOLEJEK — 3 KORONY
+   ========================================================= */
+
+/* Wszystkie numery kolejek */
+#score_table td.score_round {
+    color: #2196F3 !important;
+    -webkit-text-fill-color: #2196F3 !important;
+    font-weight: 400 !important;
+    text-shadow: none !important;
+}
+
+/* Aktywna kolejka */
+#score_table tr:has(td.input_area) td.score_round {
+    color: #2196F3 !important;
+    -webkit-text-fill-color: #2196F3 !important;
+    font-weight: 400 !important;
+    text-shadow: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   KOLEJKI 39 / 42 / 45
+   --------------------------------------------------------- */
+
+#score_table td.score_round[data-round="39"],
+#score_table td.score_round[data-round="42"],
+#score_table td.score_round[data-round="45"] {
+    color: #FF3B30 !important;
+    -webkit-text-fill-color: #FF3B30 !important;
+    font-weight: 400 !important;
+    text-shadow: none !important;
+}
+/* =========================================================
    KONIEC — SEKCJA 60
    ========================================================= */
