@@ -1993,53 +1993,14 @@ td.rr_result.match_button.rr_available {
 }
 /* =========================================================
    60. N01 LIVE — PROFESSIONAL 3 KORONY
-   DARK + GOLD + BLUE
+   TYLKO:
+   - aktywna komórka wpisywania wyniku
+   - wyniki 100+ w owalu
    ========================================================= */
 
 
 /* ---------------------------------------------------------
-   60.1. GŁÓWNE TABELA LIVE
-   --------------------------------------------------------- */
-
-#score_table,
-#header_table,
-#left_table {
-    color: #F2F2F2 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.2. NAGŁÓWEK MECZU
-   --------------------------------------------------------- */
-
-#header_table {
-    background: #101010 !important;
-    color: #F2F2F2 !important;
-}
-
-#header_table #title {
-    color: #D4AF37 !important;
-    font-weight: 800 !important;
-    letter-spacing: 1px !important;
-}
-
-#header_table .player_name {
-    color: #F0D675 !important;
-    font-weight: 700 !important;
-}
-
-#header_table .name_text {
-    color: #F0D675 !important;
-}
-
-#header_table #legs {
-    color: #FFFFFF !important;
-    font-weight: 800 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.3. TABELA WYNIKU
+   60.1. PODSTAWOWA TABELA
    --------------------------------------------------------- */
 
 #score_table {
@@ -2049,132 +2010,21 @@ td.rr_result.match_button.rr_available {
     border-spacing: 0 !important;
 }
 
+
+/* ---------------------------------------------------------
+   60.2. ZACHOWANIE STANDARDOWYCH KOMÓREK
+   --------------------------------------------------------- */
+
 #score_table td,
 #score_table th {
     box-sizing: border-box !important;
-
-    background: #181818 !important;
-
-    color: #F2F2F2 !important;
-
-    /* JAŚNIEJSZE OBRAMOWANIE */
-    border-color: #D8D8D8 !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.4. NAGŁÓWKI
-   --------------------------------------------------------- */
-
-#score_table th {
-    color: #D8D8D8 !important;
-
-    font-weight: 700 !important;
-
-    border-color: #D8D8D8 !important;
-}
-
-#score_table th.score_input {
-    color: #D4AF37 !important;
-}
-
-#score_table th.score_left {
-    color: #D8D8D8 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.5. ZDOBYTE
-   --------------------------------------------------------- */
-
-#score_table td.score_input {
-    color: #F0D675 !important;
-
-    font-weight: 700 !important;
-
-    border-color: #D8D8D8 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.6. POZOSTAŁO
-   --------------------------------------------------------- */
-
-#score_table td.score_left {
-    color: #E5E5E5 !important;
-
-    font-weight: 600 !important;
-
-    border-color: #D8D8D8 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.7. NUMERY KOLEJEK
-   3, 6, 9, 12, 15...
-   --------------------------------------------------------- */
-
-#score_table td.score_round {
-    position: relative !important;
-
-    color: #2196F3 !important;
-
-    background: #151515 !important;
-
-    font-weight: 800 !important;
-
-    border-color: #D8D8D8 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.8. AKTYWNA KOLEJKA
-   --------------------------------------------------------- */
-
-#score_table tr:has(td.input_area) td.score_round {
-    color: #2196F3 !important;
-
-    background: #202020 !important;
-
-    font-weight: 900 !important;
-
-    border-top-color: #2196F3 !important;
-    border-bottom-color: #2196F3 !important;
-
-    box-shadow:
-        inset 0 0 0 3px #2196F3 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.9. KÓŁKO NA AKTYWNYM NUMERZE KOLEJKI
-   --------------------------------------------------------- */
-
-#score_table tr:has(td.input_area) td.score_round::after {
-    content: "";
-
-    position: absolute;
-
-    left: 50%;
-    top: 50%;
-
-    width: 1.35em;
-    height: 1.35em;
-
-    transform: translate(-50%, -50%);
-
-    border: 3px solid #2196F3;
-
-    border-radius: 50%;
-
-    box-sizing: border-box;
-
-    pointer-events: none;
-}
-
-
-/* ---------------------------------------------------------
-   60.10. AKTYWNE POLE
+   60.3. AKTYWNA KOMÓRKA DO WPISYWANIA WYNIKU
+   N01 oznacza ją klasą:
+   .input_area
    --------------------------------------------------------- */
 
 #score_table td.score_input.input_area {
@@ -2185,6 +2035,10 @@ td.rr_result.match_button.rr_available {
 
     font-weight: 900 !important;
 
+    /*
+       GRUBA NIEBIESKA RAMKA
+    */
+
     border: 5px solid #2196F3 !important;
 
     box-shadow: none !important;
@@ -2192,7 +2046,7 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   60.11. AKTYWNY P1
+   60.4. AKTYWNY P1
    --------------------------------------------------------- */
 
 #score_table td.p1score.input_area {
@@ -2203,166 +2057,15 @@ td.rr_result.match_button.rr_available {
 
     border: 5px solid #2196F3 !important;
 
+    box-shadow: none !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.12. AKTYWNY P2
+   60.5. AKTYWNY P2
    --------------------------------------------------------- */
 
 #score_table td.p2score.input_area {
-
-    background: #383838 !important;
-
-    color: #FFFFFF !important;
-
-    border: 5px solid #2196F3 !important;
-
-}
-
-
-/* ---------------------------------------------------------
-   60.13. WIERSZ AKTYWNEJ KOLEJKI
-   --------------------------------------------------------- */
-
-#score_table tr:has(td.input_area) td {
-    border-top-color: #D8D8D8 !important;
-
-    border-bottom-color: #D8D8D8 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.14. OCHRONA TŁA
-   --------------------------------------------------------- */
-
-#score_table td.score_input,
-#score_table td.score_left,
-#score_table td.score_round {
-
-    background-color: #181818 !important;
-
-    border-color: #D8D8D8 !important;
-}
-
-
-/* AKTYWNE POLE — MUSI WYGRAĆ Z REGUŁĄ POWYŻEJ */
-
-#score_table td.score_input.input_area {
-
-    background-color: #383838 !important;
-
-    border: 5px solid #2196F3 !important;
-
-    color: #FFFFFF !important;
-}
-
-
-/* AKTYWNY NUMER KOLEJKI */
-
-#score_table tr:has(td.input_area) td.score_round {
-
-    background-color: #202020 !important;
-
-    border-color: #2196F3 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.15. WYNIKI 100+
-   N01 OZNACZA JE KLASĄ .ton
-   --------------------------------------------------------- */
-
-#score_table td.score_input.ton {
-
-    position: relative !important;
-
-    display: table-cell !important;
-
-    background: #181818 !important;
-
-    color: #F0D675 !important;
-
-    font-weight: 800 !important;
-
-}
-
-
-/* ---------------------------------------------------------
-   60.16. KÓŁKO DLA 100+
-   --------------------------------------------------------- */
-
-#score_table td.score_input.ton span {
-
-    display: inline-flex !important;
-
-    align-items: center !important;
-
-    justify-content: center !important;
-
-    width: 1.35em !important;
-
-    height: 1.35em !important;
-
-    border: 3px solid #D4AF37 !important;
-
-    border-radius: 50% !important;
-
-    box-sizing: border-box !important;
-
-    line-height: 1 !important;
-
-}
-
-
-/* ---------------------------------------------------------
-   60.17. 100+ W AKTYWNEJ KOMÓRCE
-   NIEBIESKA RAMKA MA PRIORYTET
-   --------------------------------------------------------- */
-
-#score_table td.score_input.ton.input_area {
-
-    background: #383838 !important;
-
-    border: 5px solid #2196F3 !important;
-
-    color: #FFFFFF !important;
-}
-
-#score_table td.score_input.ton.input_area span {
-
-    border-color: #2196F3 !important;
-
-    color: #FFFFFF !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.18. DUŻE "POZOSTAŁO"
-   --------------------------------------------------------- */
-
-#left_table {
-
-    background: #101010 !important;
-}
-
-#left_table td.score_left_big {
-
-    background: #181818 !important;
-
-    color: #F0D675 !important;
-
-    font-weight: 800 !important;
-
-    border-color: #D8D8D8 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.19. AKTUALNY GRACZ — DUŻE POZOSTAŁO
-   --------------------------------------------------------- */
-
-#left_table td.score_left_big.focus_frame {
 
     background: #383838 !important;
 
@@ -2375,78 +2078,133 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   60.20. ODDZIELENIE P1 / P2
+   60.6. WYNIKI 100+
+   
+   N01 automatycznie dodaje klasę:
+   .ton
+   
+   Przykład:
+   <td class="score_input p1score ton">
+       <span>100</span>
+   </td>
    --------------------------------------------------------- */
 
-#score_table td.p1score,
-#score_table td.p1left {
+#score_table td.score_input.ton {
 
-    border-right-color: #D8D8D8 !important;
-}
+    background: inherit !important;
 
-#score_table td.p2score,
-#score_table td.p2left {
+    color: inherit !important;
 
-    border-left-color: #D8D8D8 !important;
+    font-weight: 800 !important;
+
 }
 
 
 /* ---------------------------------------------------------
-   60.21. OSTATNIE 3 KOLEJKI
+   60.7. OWAL DLA 100+
+   
+   Zamiast koła używamy owalu, ponieważ:
+   
+   100
+   140
+   180
+   
+   są szersze niż pojedyncza cyfra.
    --------------------------------------------------------- */
 
-#score_table td.score_round.last3 {
+#score_table td.score_input.ton span {
 
-    color: #2196F3 !important;
+    display: inline-flex !important;
 
-    font-weight: 900 !important;
-}
+    align-items: center !important;
 
+    justify-content: center !important;
 
-/* ---------------------------------------------------------
-   60.22. MENU LIVE
-   --------------------------------------------------------- */
+    /*
+       wysokość
+    */
 
-#menu_table {
+    height: 1.18em !important;
 
-    background: #101010 !important;
-}
+    /*
+       szerokość większa od wysokości
+    */
 
-#menu_table td {
+    min-width: 2.05em !important;
 
-    background: #181818 !important;
+    padding-left: 0.18em !important;
+    padding-right: 0.18em !important;
 
-    color: #D8D8D8 !important;
+    box-sizing: border-box !important;
 
-    border-color: #D8D8D8 !important;
-}
+    /*
+       ZŁOTA RAMKA
+    */
 
-#menu_table td:hover {
+    border: 3px solid #D4AF37 !important;
 
-    background: #303030 !important;
+    border-radius: 50% !important;
 
     color: #F0D675 !important;
+
+    line-height: 1 !important;
+
 }
 
 
 /* ---------------------------------------------------------
-   60.23. RESPONSYWNOŚĆ
+   60.8. 100+ W AKTYWNEJ KOMÓRCE
+   
+   Aktywna komórka ma mieć:
+   
+   NIEBIESKĄ GRUBĄ RAMKĘ
+   
+   a owal pozostaje złoty.
    --------------------------------------------------------- */
 
-@media (max-width: 700px) {
+#score_table td.score_input.ton.input_area {
 
-    #score_table td,
-    #score_table th {
+    background: #383838 !important;
 
-        padding: 9px 8px !important;
-    }
+    color: #FFFFFF !important;
 
-    #header_table #title {
-
-        letter-spacing: 0.5px !important;
-    }
+    border: 5px solid #2196F3 !important;
 
 }
+
+
+/* Owal wewnątrz aktywnej komórki */
+
+#score_table td.score_input.ton.input_area span {
+
+    border-color: #D4AF37 !important;
+
+    color: #FFFFFF !important;
+
+}
+
+
+/* ---------------------------------------------------------
+   60.9. DUŻE WARTOŚCI "POZOSTAŁO"
+   
+   NIE MODYFIKUJEMY ICH.
+   --------------------------------------------------------- */
+
+#left_table td.score_left_big.focus_frame {
+
+    /*
+       TYLKO zachowujemy istniejące zachowanie N01.
+       Bez dodatkowej ramki / koloru.
+    */
+
+}
+
+
+/* ---------------------------------------------------------
+   60.10. MENU
+   
+   NIE MODYFIKUJEMY.
+   --------------------------------------------------------- */
 
 
 /* =========================================================
