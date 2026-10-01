@@ -2470,117 +2470,134 @@ td.rr_result.match_button.rr_available {
 
 }
 /* =========================================================
-   60.30. NUMERY KOLEJEK — 3 KORONY
+   60.30. NUMERY KOLEJEK — FINAL
+   100% CSS — BEZ JAVASCRIPT
    ========================================================= */
 
-/* Wszystkie numery kolejek */
-#score_table td.score_round {
-    color: #2196F3 !important;
-    -webkit-text-fill-color: #2196F3 !important;
-    font-weight: 400 !important;
-    text-shadow: none !important;
-}
 
-/* Aktywna kolejka */
-#score_table tr:has(td.input_area) td.score_round {
-    color: #2196F3 !important;
-    -webkit-text-fill-color: #2196F3 !important;
+/* ---------------------------------------------------------
+   1. UKRYCIE ORYGINALNEGO TEKSTU N01
+   --------------------------------------------------------- */
+
+#score_table td.score_round {
+    color: transparent !important;
+    -webkit-text-fill-color: transparent !important;
     font-weight: 400 !important;
     text-shadow: none !important;
 }
 
 
 /* ---------------------------------------------------------
-   KOLEJKI 39 / 42 / 45
+   2. WSPÓLNY STYL NUMERÓW
    --------------------------------------------------------- */
 
-#score_table td.score_round[data-round="39"],
-#score_table td.score_round[data-round="42"],
-#score_table td.score_round[data-round="45"] {
-    color: #FF3B30 !important;
-    -webkit-text-fill-color: #FF3B30 !important;
-    font-weight: 400 !important;
-    text-shadow: none !important;
-}
-/* =========================================================
-   60.31. NUMERY KOLEJEK — DYNAMICZNY KOLOR
-   BEZ JAVASCRIPT
-   ========================================================= */
+#score_table td.score_round::after {
+    display: block !important;
 
-/* -----------------------------------------
-   STANDARD — NIEBIESKIE I CIENKIE
-   ----------------------------------------- */
-
-#score_table td.score_round {
     color: #2196F3 !important;
     -webkit-text-fill-color: #2196F3 !important;
+
     font-weight: 400 !important;
     text-shadow: none !important;
+
+    line-height: 1 !important;
 }
 
 
-/* -----------------------------------------
-   OD KOLEJKI 39
-   39 / 42 / 45 = CZERWONE
-   ----------------------------------------- */
+/* ---------------------------------------------------------
+   3. NUMERY KOLEJEK
+   --------------------------------------------------------- */
 
-/* aktywna kolejka 39 lub późniejsza */
-#score_table:has(#round_12 td.input_area)
-#round_12 td.score_round,
-
-#score_table:has(#round_12 td.input_area)
-#round_13 td.score_round,
-
-#score_table:has(#round_12 td.input_area)
-#round_14 td.score_round {
-
-    color: #FF3B30 !important;
-    -webkit-text-fill-color: #FF3B30 !important;
-    font-weight: 400 !important;
-    text-shadow: none !important;
+#score_table #round_1 td.score_round::after {
+    content: "3" !important;
 }
 
-
-/* -----------------------------------------
-   ZABEZPIECZENIE — AKTYWNA KOLEJKA
-   ----------------------------------------- */
-
-#score_table:has(#round_12 td.input_area)
-#round_12 td.score_round,
-#score_table:has(#round_13 td.input_area)
-#round_12 td.score_round,
-#score_table:has(#round_14 td.input_area)
-#round_12 td.score_round,
-
-#score_table:has(#round_13 td.input_area)
-#round_13 td.score_round,
-#score_table:has(#round_14 td.input_area)
-#round_13 td.score_round,
-
-#score_table:has(#round_14 td.input_area)
-#round_14 td.score_round {
-
-    color: #FF3B30 !important;
-    -webkit-text-fill-color: #FF3B30 !important;
-    font-weight: 400 !important;
-    text-shadow: none !important;
+#score_table #round_2 td.score_round::after {
+    content: "6" !important;
 }
-/* =========================================================
-   KONIEC — SEKCJA 60
-   ========================================================= */
-/* TEST — KOLEJKA 45 */
-#score_table #round_14 td.score_round {
-    color: transparent !important;
-    -webkit-text-fill-color: transparent !important;
+
+#score_table #round_3 td.score_round::after {
+    content: "9" !important;
+}
+
+#score_table #round_4 td.score_round::after {
+    content: "12" !important;
+}
+
+#score_table #round_5 td.score_round::after {
+    content: "15" !important;
+}
+
+#score_table #round_6 td.score_round::after {
+    content: "18" !important;
+}
+
+#score_table #round_7 td.score_round::after {
+    content: "21" !important;
+}
+
+#score_table #round_8 td.score_round::after {
+    content: "24" !important;
+}
+
+#score_table #round_9 td.score_round::after {
+    content: "27" !important;
+}
+
+#score_table #round_10 td.score_round::after {
+    content: "30" !important;
+}
+
+#score_table #round_11 td.score_round::after {
+    content: "33" !important;
+}
+
+#score_table #round_12 td.score_round::after {
+    content: "36" !important;
+}
+
+#score_table #round_13 td.score_round::after {
+    content: "39" !important;
 }
 
 #score_table #round_14 td.score_round::after {
     content: "45" !important;
-    display: block !important;
+}
+
+
+/* ---------------------------------------------------------
+   4. OD KOLEJKI 39
+   39 I 45 — CZERWONE
+   --------------------------------------------------------- */
+
+/* aktywna kolejka 39 */
+#score_table:has(#round_13 td.input_area)
+#round_13 td.score_round::after,
+
+#score_table:has(#round_13 td.input_area)
+#round_14 td.score_round::after,
+
+/* aktywna kolejka 45 */
+#score_table:has(#round_14 td.input_area)
+#round_13 td.score_round::after,
+
+#score_table:has(#round_14 td.input_area)
+#round_14 td.score_round::after {
 
     color: #FF3B30 !important;
     -webkit-text-fill-color: #FF3B30 !important;
-
-    font-weight: 400 !important;
-    text-shadow: none !important;
 }
+
+
+/* ---------------------------------------------------------
+   5. ZABEZPIECZENIE — CIENKA CZCIONKA
+   --------------------------------------------------------- */
+
+#score_table td.score_round::after {
+    font-weight: 400 !important;
+}
+
+
+/* =========================================================
+   KONIEC 60.30
+   ========================================================= */
