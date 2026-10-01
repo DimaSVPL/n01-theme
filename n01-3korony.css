@@ -2503,5 +2503,68 @@ td.rr_result.match_button.rr_available {
     text-shadow: none !important;
 }
 /* =========================================================
+   60.31. NUMERY KOLEJEK — DYNAMICZNY KOLOR
+   BEZ JAVASCRIPT
+   ========================================================= */
+
+/* -----------------------------------------
+   STANDARD — NIEBIESKIE I CIENKIE
+   ----------------------------------------- */
+
+#score_table td.score_round {
+    color: #2196F3 !important;
+    -webkit-text-fill-color: #2196F3 !important;
+    font-weight: 400 !important;
+    text-shadow: none !important;
+}
+
+
+/* -----------------------------------------
+   OD KOLEJKI 39
+   39 / 42 / 45 = CZERWONE
+   ----------------------------------------- */
+
+/* aktywna kolejka 39 lub późniejsza */
+#score_table:has(#round_12 td.input_area)
+#round_12 td.score_round,
+
+#score_table:has(#round_12 td.input_area)
+#round_13 td.score_round,
+
+#score_table:has(#round_12 td.input_area)
+#round_14 td.score_round {
+
+    color: #FF3B30 !important;
+    -webkit-text-fill-color: #FF3B30 !important;
+    font-weight: 400 !important;
+    text-shadow: none !important;
+}
+
+
+/* -----------------------------------------
+   ZABEZPIECZENIE — AKTYWNA KOLEJKA
+   ----------------------------------------- */
+
+#score_table:has(#round_12 td.input_area)
+#round_12 td.score_round,
+#score_table:has(#round_13 td.input_area)
+#round_12 td.score_round,
+#score_table:has(#round_14 td.input_area)
+#round_12 td.score_round,
+
+#score_table:has(#round_13 td.input_area)
+#round_13 td.score_round,
+#score_table:has(#round_14 td.input_area)
+#round_13 td.score_round,
+
+#score_table:has(#round_14 td.input_area)
+#round_14 td.score_round {
+
+    color: #FF3B30 !important;
+    -webkit-text-fill-color: #FF3B30 !important;
+    font-weight: 400 !important;
+    text-shadow: none !important;
+}
+/* =========================================================
    KONIEC — SEKCJA 60
    ========================================================= */
