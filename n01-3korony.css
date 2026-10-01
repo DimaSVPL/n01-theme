@@ -1993,7 +1993,7 @@ td.rr_result.match_button.rr_available {
 }
 /* =========================================================
    60. N01 LIVE — PROFESSIONAL 3 KORONY
-   DARK + GOLD
+   DARK + GOLD + BLUE
    ========================================================= */
 
 
@@ -2053,8 +2053,8 @@ td.rr_result.match_button.rr_available {
     background: #181818 !important;
     color: #F2F2F2 !important;
 
-    /* JAŚNIEJSZE OBRAMOWANIE */
-    border-color: #D0D0D0 !important;
+    /* JAŚNIEJSZE OBRAMOWANIA */
+    border-color: #D8D8D8 !important;
 
     box-sizing: border-box !important;
 }
@@ -2074,7 +2074,7 @@ td.rr_result.match_button.rr_available {
 }
 
 #score_table th.score_left {
-    color: #A8A8A8 !important;
+    color: #D0D0D0 !important;
 }
 
 
@@ -2099,38 +2099,40 @@ td.rr_result.match_button.rr_available {
 
 
 /* ---------------------------------------------------------
-   60.7. NUMER KOLEJKI — 3, 6, 9...
-   NIEBIESKI
+   60.7. NUMER KOLEJKI — 3, 6, 9, 12...
    --------------------------------------------------------- */
 
 #score_table td.score_round {
     position: relative !important;
 
-    color: #3FA9FF !important;
-    font-weight: 700 !important;
+    /* NIEBIESKI */
+    color: #2F8CFF !important;
+
+    font-weight: 800 !important;
 
     background: #151515 !important;
 
-    border-color: #D0D0D0 !important;
+    /* BIAŁA LINIA */
+    border-color: #D8D8D8 !important;
 }
 
 
 /* ---------------------------------------------------------
    60.8. AKTYWNA KOLEJKA
+   N01 oznacza ją klasą input_area
    --------------------------------------------------------- */
 
 #score_table tr:has(td.input_area) td.score_round {
-    color: #3FA9FF !important;
+    color: #4FA3FF !important;
 
     background: #202020 !important;
 
     font-weight: 800 !important;
 
-    border-width: 3px !important;
-    border-style: solid !important;
-    border-color: #D4AF37 !important;
+    border-color: #D8D8D8 !important;
 
-    box-shadow: none !important;
+    box-shadow:
+        inset 0 0 0 3px #2F8CFF !important;
 }
 
 
@@ -2151,7 +2153,7 @@ td.rr_result.match_button.rr_available {
 
     transform: translate(-50%, -50%);
 
-    border: 3px solid #D4AF37;
+    border: 3px solid #2F8CFF;
     border-radius: 50%;
 
     box-sizing: border-box;
@@ -2162,7 +2164,6 @@ td.rr_result.match_button.rr_available {
 
 /* ---------------------------------------------------------
    60.10. AKTYWNE POLE WPISYWANIA WYNIKU
-   GRUBA RAMKA
    --------------------------------------------------------- */
 
 #score_table td.score_input.input_area {
@@ -2172,9 +2173,11 @@ td.rr_result.match_button.rr_available {
 
     font-weight: 800 !important;
 
-    border: 5px solid #D4AF37 !important;
+    /* GRUBA NIEBIESKA RAMKA */
+    box-shadow:
+        inset 0 0 0 5px #2F8CFF !important;
 
-    box-shadow: none !important;
+    border-color: #FFFFFF !important;
 }
 
 
@@ -2185,7 +2188,10 @@ td.rr_result.match_button.rr_available {
 #score_table td.p1score.input_area {
     color: #FFD95A !important;
 
-    border: 5px solid #D4AF37 !important;
+    box-shadow:
+        inset 0 0 0 5px #2F8CFF !important;
+
+    border-color: #FFFFFF !important;
 }
 
 
@@ -2196,7 +2202,10 @@ td.rr_result.match_button.rr_available {
 #score_table td.p2score.input_area {
     color: #FFD95A !important;
 
-    border: 5px solid #D4AF37 !important;
+    box-shadow:
+        inset 0 0 0 5px #2F8CFF !important;
+
+    border-color: #FFFFFF !important;
 }
 
 
@@ -2205,21 +2214,19 @@ td.rr_result.match_button.rr_available {
    --------------------------------------------------------- */
 
 #score_table tr:has(td.input_area) td {
-    border-top-color: #D0D0D0 !important;
-    border-bottom-color: #D0D0D0 !important;
+    border-top-color: #D8D8D8 !important;
+    border-bottom-color: #D8D8D8 !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.14. OCHRONA PRZED NIEBIESKIM / BIAŁYM TŁEM
+   60.14. OCHRONA TŁA
    --------------------------------------------------------- */
 
 #score_table td.score_input,
 #score_table td.score_left,
 #score_table td.score_round {
     background-color: #181818 !important;
-
-    border-color: #D0D0D0 !important;
 }
 
 
@@ -2227,8 +2234,6 @@ td.rr_result.match_button.rr_available {
 
 #score_table td.score_input.input_area {
     background-color: #202020 !important;
-
-    border: 5px solid #D4AF37 !important;
 }
 
 
@@ -2236,10 +2241,6 @@ td.rr_result.match_button.rr_available {
 
 #score_table tr:has(td.input_area) td.score_round {
     background-color: #202020 !important;
-
-    color: #3FA9FF !important;
-
-    border: 3px solid #D4AF37 !important;
 }
 
 
@@ -2258,7 +2259,7 @@ td.rr_result.match_button.rr_available {
 
     font-weight: 800 !important;
 
-    border-color: #D0D0D0 !important;
+    border-color: #D8D8D8 !important;
 }
 
 
@@ -2271,9 +2272,10 @@ td.rr_result.match_button.rr_available {
 
     color: #FFD95A !important;
 
-    border: 5px solid #D4AF37 !important;
+    box-shadow:
+        inset 0 0 0 5px #2F8CFF !important;
 
-    box-shadow: none !important;
+    border-color: #FFFFFF !important;
 }
 
 
@@ -2283,12 +2285,12 @@ td.rr_result.match_button.rr_available {
 
 #score_table td.p1score,
 #score_table td.p1left {
-    border-right-color: #D0D0D0 !important;
+    border-right-color: #D8D8D8 !important;
 }
 
 #score_table td.p2score,
 #score_table td.p2left {
-    border-left-color: #D0D0D0 !important;
+    border-left-color: #D8D8D8 !important;
 }
 
 
@@ -2297,65 +2299,55 @@ td.rr_result.match_button.rr_available {
    --------------------------------------------------------- */
 
 #score_table td.score_round.last3 {
-    color: #3FA9FF !important;
+    color: #4FA3FF !important;
     font-weight: 800 !important;
 }
 
 
-/* ---------------------------------------------------------
-   60.19. WYNIKI 100+
-   OKRĄG WOKÓŁ WARTOŚCI
-   --------------------------------------------------------- */
+/* =========================================================
+   60.19. WARTOŚCI 100+ — KÓŁKO
+   ========================================================= */
 
 /*
-   N01 wpisuje wynik jako tekst wewnątrz:
-   td.score_input > span
-
-   Nie zmieniamy wyglądu cyfry.
-   Dodajemy jedynie okrąg.
+   N01 zapisuje aktualną wartość w <span>.
+   JavaScript automatycznie dodaje klasę:
+   value_100_plus
+   do wartości >= 100.
 */
 
-#score_table td.score_input span {
+
+#score_table td.score_left.value_100_plus span {
     display: inline-flex !important;
 
     align-items: center !important;
     justify-content: center !important;
 
-    min-width: 1.35em !important;
-    min-height: 1.35em !important;
+    min-width: 1.55em !important;
+    height: 1.55em !important;
 
-    box-sizing: border-box !important;
-}
+    padding: 0.05em 0.18em !important;
 
-
-/*
-   Wartości 100+:
-   JS dodaje klasę .score_100_plus,
-   jeśli jest dostępna w N01.
-*/
-
-#score_table td.score_input.score_100_plus span,
-#score_table td.score_input.high_score span,
-#score_table td.score_input.score_100 span {
-    border: 3px solid #F0D675 !important;
-
+    border: 2px solid #D4AF37 !important;
     border-radius: 50% !important;
 
-    padding: 0.12em 0.20em !important;
+    box-sizing: border-box !important;
+
+    color: #F0D675 !important;
+    background: #181818 !important;
 }
 
 
 /* ---------------------------------------------------------
-   60.20. ALTERNATYWNE WYKRYWANIE 100+
-   PRZEZ ATRYBUTY / KLASY N01
+   60.20. DUŻE WARTOŚCI 100+ — SZEROKIE KÓŁKO
    --------------------------------------------------------- */
 
-#score_table td.score_input[data-score="100"] span,
-#score_table td.score_input[data-score="140"] span,
-#score_table td.score_input[data-score="180"] span {
-    border: 3px solid #F0D675 !important;
+#score_table td.score_left.value_100_plus span {
+    min-width: 1.7em !important;
+    height: 1.7em !important;
 
-    border-radius: 50% !important;
+    border-width: 3px !important;
+
+    font-weight: 800 !important;
 }
 
 
@@ -2372,7 +2364,7 @@ td.rr_result.match_button.rr_available {
 
     color: #A8A8A8 !important;
 
-    border-color: #D0D0D0 !important;
+    border-color: #D8D8D8 !important;
 }
 
 #menu_table td:hover {
