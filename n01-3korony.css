@@ -2469,7 +2469,39 @@ td.rr_result.match_button.rr_available {
     }
 
 }
+/* =========================================================
+   60.27. NUMERY KOLEJEK — FINALNE NADPISANIE
+   3, 6, 9, 12, 15...
+   
+   NIEBIESKIE + NORMALNA GRUBOŚĆ
+   BEZ KÓŁKA
+   ========================================================= */
 
+#score_table td.score_round,
+#score_table td.score_round.last3,
+#score_table tr:has(td.input_area) td.score_round {
+
+    color: #2196F3 !important;
+
+    font-weight: 400 !important;
+
+    text-shadow: none !important;
+
+    box-shadow: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   USUNIĘCIE EWENTUALNEGO KÓŁKA
+   --------------------------------------------------------- */
+
+#score_table td.score_round::before,
+#score_table td.score_round::after {
+
+    content: none !important;
+
+    display: none !important;
+}
 
 /* =========================================================
    KONIEC — SEKCJA 60
