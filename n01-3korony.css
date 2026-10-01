@@ -2495,5 +2495,22 @@ td.rr_result.match_button.rr_available {
     text-shadow: none !important;
 }
 /* =========================================================
+   60.28. NUMERY KOLEJEK — OSTATECZNY OVERRIDE
+   N01 używa -webkit-text-fill-color
+   ========================================================= */
+
+#score_table td.score_round,
+#score_table tr:has(td.input_area) td.score_round,
+#score_table td.score_round.last3 {
+
+    color: #2196F3 !important;
+
+    -webkit-text-fill-color: #2196F3 !important;
+
+    font-weight: 400 !important;
+
+    text-shadow: none !important;
+}
+/* =========================================================
    KONIEC — SEKCJA 60
    ========================================================= */
