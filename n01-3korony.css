@@ -2686,19 +2686,21 @@ td.rr_result.match_button.rr_available {
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
 }
-/* ------------------------------------------------------------
-   62 — NAGŁÓWKI NAD DRABINKAMI
-   ------------------------------------------------------------
-   Stałe czarne tło.
-   Bez hover / bez rozjaśniania.
-   Nie zmieniamy układu ani zawartości.
-   ------------------------------------------------------------ */
+/* =========================================================
+   N01 LIVE — AKTYWNY GRACZ
+   Podświetlenie komórki „Pozostało”
+   ========================================================= */
 
-#bracket_container .t_header,
-#bracket_container .t_header:hover,
-#bracket_container .t_title,
-#bracket_container .t_title:hover {
-    background: #080808 !important;
-    background-color: #080808 !important;
-    background-image: none !important;
+/* Aktywny gracz 0 */
+#score_table tr:has(td.score_input.input_area.p1score)
+td.score_left.p1left {
+    background: #DCEEFF !important;
+    background-color: #DCEEFF !important;
+}
+
+/* Aktywny gracz 1 */
+#score_table tr:has(td.score_input.input_area.p2score)
+td.score_left.p2left {
+    background: #DCEEFF !important;
+    background-color: #DCEEFF !important;
 }
