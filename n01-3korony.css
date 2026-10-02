@@ -1,32 +1,38 @@
 /*
-N01 — 3 KORONY
-Custom Theme
-Grand Prix Koszalina 2026-2027
+================================================================
+ N01 — 3 KORONY
+ Custom Theme
+ Grand Prix Koszalina 2026-2027
 
-Kolory:
-Czarny       #080808
-Grafit       #151515
-Grafit 2     #202020
-Złoty        #D4AF37
-Złoty jasny  #F0D675
-Tekst        #F2F2F2
-Tekst muted  #A8A8A8
-Czerwony     #FF6B6B
-Zielony      #8BE28B
-Fioletowy    #B77CFF
-Brązowy      #CD7F32
-Biały        #FFFFFF
-Obramowanie  #383838
+ PALETA
+ ---------------------------------------------------------------
+ Czarny       #080808
+ Grafit       #151515
+ Grafit 2     #202020
+ Złoty        #D4AF37
+ Złoty jasny  #F0D675
+ Tekst        #F2F2F2
+ Muted        #A8A8A8
+ Czerwony     #FF6B6B
+ Zielony      #8BE28B
+ Fioletowy    #B77CFF
+ Brązowy      #CD7F32
+ Biały        #FFFFFF
+ Obramowanie  #383838
+ LIVE blue    #2196F3
 
-UWAGA:
-Ten plik jest dodatkiem do standardowego CSS N01.
-Nie zmienia układu strony ani funkcjonalności.
+ UWAGA
+ ---------------------------------------------------------------
+ Ten CSS jest dodatkiem do standardowego CSS N01.
+ Nie zmienia układu ani funkcjonalności N01.
+ Reguły są ograniczone do konkretnych elementów.
+================================================================
 */
 
 
-/* ============================================================
-   1. GŁÓWNE TŁO
-   ============================================================ */
+/* ==============================================================
+   1. FUNDAMENT — TŁO I ZMIENNE
+   ============================================================== */
 
 html {
     background-color: #080808 !important;
@@ -39,7 +45,6 @@ body {
     --subtle-color: #202020;
     --hover-color: #292929;
     --active-color: #353535;
-
     --border-color: #383838;
 
     --text-color: #F2F2F2;
@@ -56,9 +61,9 @@ body {
 }
 
 
-/* ============================================================
+/* ==============================================================
    2. GŁÓWNE ELEMENTY STRONY
-   ============================================================ */
+   ============================================================== */
 
 body,
 #contents,
@@ -73,9 +78,9 @@ main,
 }
 
 
-/* ============================================================
+/* ==============================================================
    3. NAGŁÓWKI
-   ============================================================ */
+   ============================================================== */
 
 h1,
 h2,
@@ -91,9 +96,9 @@ h1 {
 }
 
 
-/* ============================================================
+/* ==============================================================
    4. LINKI
-   ============================================================ */
+   ============================================================== */
 
 a {
     color: #F0D675;
@@ -108,9 +113,9 @@ a:visited {
 }
 
 
-/* ============================================================
+/* ==============================================================
    5. PRZYCISKI
-   ============================================================ */
+   ============================================================== */
 
 button,
 input[type="button"],
@@ -144,9 +149,9 @@ input[type="reset"]:active,
 }
 
 
-/* ============================================================
-   6. POLA FORMULARZY
-   ============================================================ */
+/* ==============================================================
+   6. PODSTAWOWE FORMULARZE
+   ============================================================== */
 
 input,
 textarea,
@@ -170,9 +175,9 @@ textarea::placeholder {
 }
 
 
-/* ============================================================
-   7. TABELE
-   ============================================================ */
+/* ==============================================================
+   7. TABELA — GLOBALNE TŁO
+   ============================================================== */
 
 table {
     background-color: #111111;
@@ -210,9 +215,9 @@ tr:nth-child(even):hover td {
 }
 
 
-/* ============================================================
+/* ==============================================================
    8. ELEMENTY AKTYWNE
-   ============================================================ */
+   ============================================================== */
 
 .active,
 .selected,
@@ -224,9 +229,9 @@ tr:nth-child(even):hover td {
 }
 
 
-/* ============================================================
+/* ==============================================================
    9. KARTY / PANELE
-   ============================================================ */
+   ============================================================== */
 
 .card,
 .panel,
@@ -244,9 +249,9 @@ tr:nth-child(even):hover td {
 }
 
 
-/* ============================================================
+/* ==============================================================
    10. TEKST DRUGORZĘDNY
-   ============================================================ */
+   ============================================================== */
 
 small,
 .muted,
@@ -257,9 +262,9 @@ small,
 }
 
 
-/* ============================================================
-   11. ZŁOTE AKCENTY
-   ============================================================ */
+/* ==============================================================
+   11. ZŁOTY AKCENT
+   ============================================================== */
 
 .accent,
 .highlight,
@@ -274,9 +279,9 @@ small,
 }
 
 
-/* ============================================================
-   12. LINIE I OBRAMOWANIA
-   ============================================================ */
+/* ==============================================================
+   12. LINIE / FIELDSET
+   ============================================================== */
 
 hr {
     border: 0;
@@ -288,9 +293,9 @@ fieldset {
 }
 
 
-/* ============================================================
+/* ==============================================================
    13. MECZE / ZAWODNICY / DRUŻYNY
-   ============================================================ */
+   ============================================================== */
 
 .comp,
 .competition,
@@ -311,9 +316,9 @@ fieldset {
 }
 
 
-/* ============================================================
+/* ==============================================================
    14. WYNIKI
-   ============================================================ */
+   ============================================================== */
 
 .score,
 .result,
@@ -329,9 +334,9 @@ fieldset {
 }
 
 
-/* ============================================================
-   15. DRABINKA — TŁO
-   ============================================================ */
+/* ==============================================================
+   15. DRABINKA — PODSTAWOWE TŁO
+   ============================================================== */
 
 .bracket,
 .bracket-container,
@@ -349,9 +354,9 @@ fieldset {
 }
 
 
-/* ============================================================
+/* ==============================================================
    16. STATUS / BADGE
-   ============================================================ */
+   ============================================================== */
 
 .status,
 .badge {
@@ -367,9 +372,9 @@ fieldset {
 }
 
 
-/* ============================================================
-   17. NAWIGACJA
-   ============================================================ */
+/* ==============================================================
+   17. MENU / NAWIGACJA
+   ============================================================== */
 
 nav,
 .nav,
@@ -395,9 +400,9 @@ nav a:hover,
 }
 
 
-/* ============================================================
+/* ==============================================================
    18. HEADER
-   ============================================================ */
+   ============================================================== */
 
 header,
 .header {
@@ -407,9 +412,9 @@ header,
 }
 
 
-/* ============================================================
+/* ==============================================================
    19. FOOTER
-   ============================================================ */
+   ============================================================== */
 
 footer,
 .footer {
@@ -419,9 +424,9 @@ footer,
 }
 
 
-/* ============================================================
-   20. MENU / POPUP / MODAL
-   ============================================================ */
+/* ==============================================================
+   20. MENU POPUP / MODAL
+   ============================================================== */
 
 .menu-popup,
 .dropdown,
@@ -450,9 +455,9 @@ footer,
 }
 
 
-/* ============================================================
+/* ==============================================================
    21. CHECKBOX / RADIO
-   ============================================================ */
+   ============================================================== */
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -460,9 +465,9 @@ input[type="radio"] {
 }
 
 
-/* ============================================================
-   22. ZAZNACZENIE TEKSTU
-   ============================================================ */
+/* ==============================================================
+   22. ZAZNACZENIE
+   ============================================================== */
 
 ::selection {
     background-color: #D4AF37;
@@ -470,9 +475,9 @@ input[type="radio"] {
 }
 
 
-/* ============================================================
+/* ==============================================================
    23. SCROLLBAR
-   ============================================================ */
+   ============================================================== */
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -493,9 +498,9 @@ input[type="radio"] {
 }
 
 
-/* ============================================================
-   24. OBRAMOWANIA ELEMENTÓW
-   ============================================================ */
+/* ==============================================================
+   24. ELEMENTY KONTENERÓW
+   ============================================================== */
 
 div,
 section,
@@ -505,9 +510,9 @@ aside {
 }
 
 
-/* ============================================================
+/* ==============================================================
    25. ZŁOTA LINIA
-   ============================================================ */
+   ============================================================== */
 
 .gold-line {
     height: 2px;
@@ -516,76 +521,31 @@ aside {
 }
 
 
-/* ============================================================
-   26. DRABINKA — PRZEGRANI
-   ============================================================ */
-
-/*
-   N01:
-   .t_item.lose = zawodnik przegrany
-
-   Wymuszamy biały kolor na CAŁEJ zawartości:
-   - numer meczu
-   - nazwę zawodnika
-   - średnią
-   - wynik
-   - liczbę legów
-   - linki
-   - wszystkie elementy wewnętrzne
-*/
+/* ==============================================================
+   26. DRABINKA — PRZEGRANY
+   ============================================================== */
 
 .t_item.lose,
 .t_item.lose *,
 .t_item.lose a,
-.t_item.lose span,
-.t_item.lose div,
-.t_item.lose td,
-.t_item.lose th,
-.t_item.lose .t_no,
-.t_item.lose .t_name,
-.t_item.lose .t_name a,
-.t_item.lose .t_name .entry_name,
-.t_item.lose .t_name .t_avg,
-.t_item.lose .t_result,
-.t_item.lose .t_score,
-.t_item.lose .score,
-.t_item.lose .result,
-.t_item.lose .points,
-.t_item.lose .average {
-    color: #FFFFFF !important;
-    -webkit-text-fill-color: #FFFFFF !important;
-}
-
-
-/* ============================================================
-   27. DRABINKA — PRZEGRANI — LINKI
-   ============================================================ */
-
-.t_item.lose a,
 .t_item.lose a:link,
 .t_item.lose a:visited,
 .t_item.lose a:hover,
-.t_item.lose a:active {
+.t_item.lose a:active,
+.t_item.lose .t_no,
+.t_item.lose [class*="no"],
+.t_item.lose [class*="score"],
+.t_item.lose [class*="result"],
+.t_item.lose [class*="leg"],
+.t_item.lose .entry_name {
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
 }
 
 
-/* ============================================================
-   28. DRABINKA — PRZEGRANI — PSEUDOELEMENTY
-   ============================================================ */
-
-.t_item.lose::before,
-.t_item.lose::after,
-.t_item.lose *::before,
-.t_item.lose *::after {
-    color: #FFFFFF !important;
-}
-
-
-/* ============================================================
-   29. DRABINKA — ZWYCIĘZCY
-   ============================================================ */
+/* ==============================================================
+   27. DRABINKA — ZWYCIĘZCA
+   ============================================================== */
 
 .t_item:not(.lose) .t_no,
 .t_item:not(.lose) .t_name,
@@ -599,16 +559,15 @@ aside {
 }
 
 
-/* ============================================================
-   30. LIDERZY GRUP — MIEJSCE 1 I 2
-   ============================================================ */
+/* ==============================================================
+   28. TABELA GRUP — LIDERZY
+   ============================================================== */
 
 .rr_player[data-rank="1"] .rr_no,
 .rr_player[data-rank="1"] .rr_name,
 .rr_player[data-rank="1"] .rr_name .entry_name,
 .rr_player[data-rank="1"] .rr_name .t_avg,
 .rr_player[data-rank="1"] .rr_rank,
-
 .rr_player[data-rank="2"] .rr_no,
 .rr_player[data-rank="2"] .rr_name,
 .rr_player[data-rank="2"] .rr_name .entry_name,
@@ -619,29 +578,20 @@ aside {
 }
 
 
-/* ============================================================
-   31. LEAGUE STATS — RANK
-   ============================================================ */
+/* ==============================================================
+   29. RANKING — TŁO
+   ============================================================== */
 
 #rank_list th,
 #rank_list td.e_no,
-#rank_list td.e_name {
+#rank_list td.e_name,
+#rank_list tbody tr td {
     background-color: #151515 !important;
     color: #F2F2F2 !important;
 }
 
 #rank_list th {
     color: #F0D675 !important;
-}
-
-
-/* ============================================================
-   32. LEAGUE STATS — RANKING — WIERSZE
-   ============================================================ */
-
-#rank_list tbody tr td {
-    background-color: #151515 !important;
-    color: #F2F2F2 !important;
 }
 
 #rank_list tbody tr:nth-child(odd) td {
@@ -653,9 +603,9 @@ aside {
 }
 
 
-/* ============================================================
-   33. LEAGUE STATS — STATS — WIERSZE
-   ============================================================ */
+/* ==============================================================
+   30. STATYSTYKI — ENTRY LIST
+   ============================================================== */
 
 #entry_list.tablesorter tbody > tr.e_item > td {
     background-color: #151515 !important;
@@ -670,20 +620,10 @@ aside {
     background-color: #151515 !important;
 }
 
-
-/* ============================================================
-   34. STATS — NUMER + ZAWODNIK
-   ============================================================ */
-
 #entry_list.tablesorter tbody > tr.e_item > td.e_no.e_fix,
 #entry_list.tablesorter tbody > tr.e_item > td.e_name.e_fix {
     color: #F2F2F2 !important;
 }
-
-
-/* ============================================================
-   35. STATS — KOLOR TŁA KOLUMNY ZAWODNIKA
-   ============================================================ */
 
 #entry_list tbody tr.e_item:nth-of-type(2n) td.e_name.e_fix {
     background-color: #202020 !important;
@@ -694,45 +634,29 @@ aside {
 }
 
 
-/* ============================================================
-   36. STATS — TOP 16
-   ============================================================ */
+/* ==============================================================
+   31. STATYSTYKI — TOP 1–8
+   ============================================================== */
 
-/* 1–8 — ZIELONY */
-
-#entry_list tbody > tr.e_item:nth-child(1) .entry_name,
-#entry_list tbody > tr.e_item:nth-child(2) .entry_name,
-#entry_list tbody > tr.e_item:nth-child(3) .entry_name,
-#entry_list tbody > tr.e_item:nth-child(4) .entry_name,
-#entry_list tbody > tr.e_item:nth-child(5) .entry_name,
-#entry_list tbody > tr.e_item:nth-child(6) .entry_name,
-#entry_list tbody > tr.e_item:nth-child(7) .entry_name,
-#entry_list tbody > tr.e_item:nth-child(8) .entry_name {
+#entry_list tbody > tr.e_item:nth-child(-n+8) .entry_name {
     color: #8BE28B !important;
     -webkit-text-fill-color: #8BE28B !important;
 }
 
 
-/* 9–16 — ŻÓŁTY */
+/* ==============================================================
+   32. STATYSTYKI — MIEJSCA 9–16
+   ============================================================== */
 
-#entry_list tbody > tr.e_item:nth-child(9) .entry_name,
-#entry_list tbody > tr.e_item:nth-child(10) .entry_name,
-#entry_list tbody > tr.e_item:nth-child(11) .entry_name,
-#entry_list tbody > tr.e_item:nth-child(12) .entry_name,
-#entry_list tbody > tr.e_item:nth-child(13) .entry_name,
-#entry_list tbody > tr.e_item:nth-child(14) .entry_name,
-#entry_list tbody > tr.e_item:nth-child(15) .entry_name,
-#entry_list tbody > tr.e_item:nth-child(16) .entry_name {
+#entry_list tbody > tr.e_item:nth-child(n+9):nth-child(-n+16) .entry_name {
     color: #F0D675 !important;
     -webkit-text-fill-color: #F0D675 !important;
 }
 
 
-/* ============================================================
-   37. RANKING — TOP 16
-   ============================================================ */
-
-/* 1–8 — ZIELONY */
+/* ==============================================================
+   33. RANKING — MIEJSCA 1–8
+   ============================================================== */
 
 #rank_list tbody tr.e_item:nth-child(-n+8) .e_no,
 #rank_list tbody tr.e_item:nth-child(-n+8) .e_name,
@@ -743,7 +667,9 @@ aside {
 }
 
 
-/* 9–16 — ŻÓŁTY */
+/* ==============================================================
+   34. RANKING — MIEJSCA 9–16
+   ============================================================== */
 
 #rank_list tbody tr.e_item:nth-child(n+9):nth-child(-n+16) .e_no,
 #rank_list tbody tr.e_item:nth-child(n+9):nth-child(-n+16) .e_name,
@@ -754,272 +680,84 @@ aside {
 }
 
 
-/* ============================================================
-   38. WIDOK MECZU — PODSTAWOWE POLA WYNIKU
-   ============================================================ */
-
-.v_mode,
-.score_left,
-.score_input {
-    background-color: #151515 !important;
-    color: #F2F2F2 !important;
-}
-
-.score_left,
-.score_input {
-    border-color: #383838 !important;
-}
-
-
-/* ============================================================
-   39. WIDOK MECZU — DUŻE POLE WYNIKU
-   ============================================================ */
-
-td.score_left_big,
-td.score_left_big.focus_frame,
-td.score_left_big:hover,
-td.score_left_big.focus_frame:hover,
-
-td.score_left_big .left_big,
-td.score_left_big .left_big:hover,
-
-td.score_left_big #p2left_big,
-td.score_left_big #p2left_big:hover {
-    background: #151515 !important;
-    background-color: #151515 !important;
-    background-image: none !important;
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-}
-
-
-/* ============================================================
-   40. WIDOK MECZU — WYNIK P1 / P2
-   ============================================================ */
-
-#p1left_big,
-#p2left_big {
-    background-color: #151515 !important;
-    background-image: none !important;
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-}
-
-#p1left_big:hover,
-#p2left_big:hover {
-    background-color: #151515 !important;
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-}
-
-
-/* ============================================================
-   41. WIDOK MECZU — KOMÓRKI WYNIKÓW RUND
-   ============================================================ */
-
-td.score_round,
-td.score_round:nth-child(odd),
-td.score_round:nth-child(even),
-td.score_round.last3 {
-    background: #151515 !important;
-    background-color: #151515 !important;
-    background-image: none !important;
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-}
-
-td.score_round:hover,
-td.score_round.last3:hover {
-    background: #151515 !important;
-    background-color: #151515 !important;
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-}
-
-
-/* ============================================================
-   42. WIDOK MECZU — PUSTE POLA
-   ============================================================ */
-
-#score_table td.score_none {
-    background-color: #151515 !important;
-    background-image: none !important;
-}
-
-
-/* ============================================================
-   43. WIDOK MECZU — NAGŁÓWKI
-   ============================================================ */
-
-#score_table th.score_round {
-    background-color: #151515 !important;
-    background-image: none !important;
-    color: #F2F2F2 !important;
-}
-
-
-/* ============================================================
-   44. WYNIKI W STATS_FRAME
-   ============================================================ */
-
-.score_table,
-.score_table_1,
-.score_table_2,
-.score_table_3 {
-    background-color: #151515 !important;
-    background-image: none !important;
-}
-
-.score_table th.score_round,
-.score_table_1 th.score_round,
-.score_table_2 th.score_round,
-.score_table_3 th.score_round {
-    background-color: #151515 !important;
-    background-image: none !important;
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-}
-
-.score_table td.score_none,
-.score_table_1 td.score_none,
-.score_table_2 td.score_none,
-.score_table_3 td.score_none {
-    background-color: #151515 !important;
-    background-image: none !important;
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-}
-
-
-/* ============================================================
-   45. LIGA 1
+/* ==============================================================
+   35. LIGA 1 — POZYCJE
    ID: t_dtr3_7710
 
-   1–10  ZIELONY
-   11–14 ZŁOTY
-   15–16 CZERWONY
-   ============================================================ */
+   1–10   zielone
+   11–14  złote
+   15–16  czerwone
+   ============================================================== */
 
-body:has(a[href*="id=t_dtr3_7710"]) .lg_table tbody tr:nth-child(-n+10) td,
-body:has(a[href*="id=t_dtr3_7710"]) .lg_table tbody tr:nth-child(-n+10) td * {
+body:has(a[href*="id=t_dtr3_7710"])
+.lg_table tbody tr:nth-child(-n+10) td,
+body:has(a[href*="id=t_dtr3_7710"])
+.lg_table tbody tr:nth-child(-n+10) td * {
     color: #8BE28B !important;
     -webkit-text-fill-color: #8BE28B !important;
 }
 
-body:has(a[href*="id=t_dtr3_7710"]) .lg_table tbody tr:nth-child(n+11):nth-child(-n+14) td,
-body:has(a[href*="id=t_dtr3_7710"]) .lg_table tbody tr:nth-child(n+11):nth-child(-n+14) td * {
+body:has(a[href*="id=t_dtr3_7710"])
+.lg_table tbody tr:nth-child(n+11):nth-child(-n+14) td,
+body:has(a[href*="id=t_dtr3_7710"])
+.lg_table tbody tr:nth-child(n+11):nth-child(-n+14) td * {
     color: #F0D675 !important;
     -webkit-text-fill-color: #F0D675 !important;
 }
 
-body:has(a[href*="id=t_dtr3_7710"]) .lg_table tbody tr:nth-child(n+15):nth-child(-n+16) td,
-body:has(a[href*="id=t_dtr3_7710"]) .lg_table tbody tr:nth-child(n+15):nth-child(-n+16) td * {
+body:has(a[href*="id=t_dtr3_7710"])
+.lg_table tbody tr:nth-child(n+15):nth-child(-n+16) td,
+body:has(a[href*="id=t_dtr3_7710"])
+.lg_table tbody tr:nth-child(n+15):nth-child(-n+16) td * {
     color: #FF5555 !important;
     -webkit-text-fill-color: #FF5555 !important;
 }
 
 
-/* ============================================================
-   46. LIGA 2
+/* ==============================================================
+   36. LIGA 2 — POZYCJE
    ID: t_LFGF_7361
 
-   1–2   ZIELONY
-   3–6   ZŁOTY
-   7–12  FIOLETOWY
-   13–16 CZERWONY
-   ============================================================ */
+   1–2    zielone
+   3–6    złote
+   7–12   fioletowe
+   13–16  czerwone
+   ============================================================== */
 
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table {
-    background-color: #151515 !important;
-    background-image: none !important;
-}
-
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table thead th {
-    background-color: #202020 !important;
-    background-image: none !important;
-    color: #F0D675 !important;
-    -webkit-text-fill-color: #F0D675 !important;
-}
-
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody td {
-    background-color: #151515 !important;
-    background-image: none !important;
-}
-
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="1"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="1"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="2"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="2"] td * {
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody tr:nth-child(-n+2) td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody tr:nth-child(-n+2) td * {
     color: #8BE28B !important;
     -webkit-text-fill-color: #8BE28B !important;
 }
 
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="3"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="3"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="4"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="4"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="5"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="5"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="6"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="6"] td * {
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody tr:nth-child(n+3):nth-child(-n+6) td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody tr:nth-child(n+3):nth-child(-n+6) td * {
     color: #F0D675 !important;
     -webkit-text-fill-color: #F0D675 !important;
 }
 
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="7"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="7"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="8"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="8"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="9"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="9"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="10"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="10"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="11"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="11"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="12"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="12"] td * {
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody tr:nth-child(n+7):nth-child(-n+12) td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody tr:nth-child(n+7):nth-child(-n+12) td * {
     color: #B77CFF !important;
     -webkit-text-fill-color: #B77CFF !important;
 }
 
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="13"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="13"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="14"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="14"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="15"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="15"] td *,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="16"] td,
-body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody .lg_player[data-rank="16"] td * {
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody tr:nth-child(n+13):nth-child(-n+16) td,
+body:has(a[href*="id=t_LFGF_7361"]) .lg_table tbody tr:nth-child(n+13):nth-child(-n+16) td * {
     color: #FF5555 !important;
     -webkit-text-fill-color: #FF5555 !important;
 }
 
 
-/* ============================================================
-   47. LIGA 3A
+/* ==============================================================
+   37. LIGA 3A — POZYCJE
    ID: t_FHhw_4078
 
-   1–2   ZIELONY
-   3–5   FIOLETOWY
-   6–8   BRĄZOWY
-   9–16  BIAŁY
-   ============================================================ */
-
-body:has(a[href*="id=t_FHhw_4078"]) .lg_table {
-    background-color: #151515 !important;
-    background-image: none !important;
-}
-
-body:has(a[href*="id=t_FHhw_4078"]) .lg_table thead th {
-    background-color: #202020 !important;
-    color: #F0D675 !important;
-    -webkit-text-fill-color: #F0D675 !important;
-}
-
-body:has(a[href*="id=t_FHhw_4078"]) .lg_table tbody td {
-    background-color: #151515 !important;
-    background-image: none !important;
-}
+   1–2    zielone
+   3–5    fioletowe
+   6–8    brązowe
+   9–16   białe
+   ============================================================== */
 
 body:has(a[href*="id=t_FHhw_4078"]) .lg_table tbody tr:nth-child(-n+2) td,
 body:has(a[href*="id=t_FHhw_4078"]) .lg_table tbody tr:nth-child(-n+2) td * {
@@ -1046,31 +784,15 @@ body:has(a[href*="id=t_FHhw_4078"]) .lg_table tbody tr:nth-child(n+9):nth-child(
 }
 
 
-/* ============================================================
-   48. LIGA 3B
+/* ==============================================================
+   38. LIGA 3B — POZYCJE
    ID: t_pSzc_9867
 
-   1–2   ZIELONY
-   3–5   FIOLETOWY
-   6–8   BRĄZOWY
-   9–16  BIAŁY
-   ============================================================ */
-
-body:has(a[href*="id=t_pSzc_9867"]) .lg_table {
-    background-color: #151515 !important;
-    background-image: none !important;
-}
-
-body:has(a[href*="id=t_pSzc_9867"]) .lg_table thead th {
-    background-color: #202020 !important;
-    color: #F0D675 !important;
-    -webkit-text-fill-color: #F0D675 !important;
-}
-
-body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody td {
-    background-color: #151515 !important;
-    background-image: none !important;
-}
+   1–2    zielone
+   3–5    fioletowe
+   6–8    brązowe
+   9–16   białe
+   ============================================================== */
 
 body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody tr:nth-child(-n+2) td,
 body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody tr:nth-child(-n+2) td * {
@@ -1097,9 +819,9 @@ body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody tr:nth-child(n+9):nth-child(
 }
 
 
-/* ============================================================
-   49. NAZWY TURNIEJÓW NA STRONIE GP
-   ============================================================ */
+/* ==============================================================
+   39. TURNIEJ — NAZWY ZAWODNIKÓW
+   ============================================================== */
 
 .t_item .t_name,
 .t_item .t_name .entry_name {
@@ -1120,150 +842,709 @@ body:has(a[href*="id=t_pSzc_9867"]) .lg_table tbody tr:nth-child(n+9):nth-child(
 }
 
 
-/* ============================================================
-   50. OSTATECZNE WYMUSZENIE KOLORU PRZEGRANYCH
-   ============================================================ */
+/* ==============================================================
+   40. MECZE LIGOWE — KOLOR ZAWODNIKÓW
+   ============================================================== */
 
-/*
-   Ta sekcja znajduje się CELOWO NA SAMYM KOŃCU.
-   Ma pierwszeństwo nad ogólnymi regułami:
-   .score
-   .result
-   .points
-   .winner
-   .success
-   itd.
-*/
-
-.t_item.lose,
-.t_item.lose *,
-.t_item.lose a,
-.t_item.lose a:link,
-.t_item.lose a:visited,
-.t_item.lose a:hover,
-.t_item.lose a:active,
-.t_item.lose span,
-.t_item.lose div,
-.t_item.lose .t_no,
-.t_item.lose .t_name,
-.t_item.lose .t_name *,
-.t_item.lose .t_avg,
-.t_item.lose .t_result,
-.t_item.lose .t_score,
-.t_item.lose .score,
-.t_item.lose .result,
-.t_item.lose .points,
-.t_item.lose .average,
-.t_item.lose .entry_name {
+.lg_match_item .lg_set_name,
+.lg_match_item .lg_set_name .lg_name_c,
+.lg_match_item .lg_set_name .entry_name,
+.lg_match_item .lg_set_name .t_avg {
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
 }
 
 
-/* ============================================================
-   51. PRZEGRANY — NUMER MECZU
-   ============================================================ */
+/* LEWY WYGRYWA */
 
-.t_item.lose .t_no,
-.t_item.lose .t_no *,
-.t_item.lose [class*="no"],
-.t_item.lose [class*="no"] * {
+.lg_match_item:has(.lg_box_l.win) .lg_set_name .lg_left,
+.lg_match_item:has(.lg_box_l.win) .lg_set_name .lg_left *,
+.lg_match_item:has(.lg_box_l.win) .lg_box_l.win {
+    color: #D4AF37 !important;
+    -webkit-text-fill-color: #D4AF37 !important;
+}
+
+
+/* LEWY PRZEGRYWA */
+
+.lg_match_item:has(.lg_box_r.win) .lg_set_name .lg_left,
+.lg_match_item:has(.lg_box_r.win) .lg_set_name .lg_left *,
+.lg_match_item:has(.lg_box_r.win) .lg_box_l {
+    color: #FF5555 !important;
+    -webkit-text-fill-color: #FF5555 !important;
+}
+
+
+/* PRAWY WYGRYWA */
+
+.lg_match_item:has(.lg_box_r.win) .lg_set_name .lg_right,
+.lg_match_item:has(.lg_box_r.win) .lg_set_name .lg_right *,
+.lg_match_item:has(.lg_box_r.win) .lg_box_r.win {
+    color: #D4AF37 !important;
+    -webkit-text-fill-color: #D4AF37 !important;
+}
+
+
+/* PRAWY PRZEGRYWA */
+
+.lg_match_item:has(.lg_box_l.win) .lg_set_name .lg_right,
+.lg_match_item:has(.lg_box_l.win) .lg_set_name .lg_right *,
+.lg_match_item:has(.lg_box_l.win) .lg_box_r {
+    color: #FF5555 !important;
+    -webkit-text-fill-color: #FF5555 !important;
+}
+
+
+/* NUMER MECZU */
+
+.lg_match_item .lg_set_no {
+    color: #A8A8A8 !important;
+    -webkit-text-fill-color: #A8A8A8 !important;
+}
+
+
+/* WYNIK */
+
+.lg_match_item .lg_set_result {
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+}
+
+
+/* NIERozGRANY */
+
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name,
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name * {
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
 }
 
 
-/* ============================================================
-   52. PRZEGRANY — WYNIK LEGÓW
-   ============================================================ */
+/* NIERozGRANY — AKTUALNY GRACZ */
 
-.t_item.lose [class*="score"],
-.t_item.lose [class*="score"] *,
-.t_item.lose [class*="result"],
-.t_item.lose [class*="result"] *,
-.t_item.lose [class*="leg"],
-.t_item.lose [class*="leg"] * {
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name.lg_sel,
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name.lg_sel *,
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name.lg_sel .entry_name,
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name.lg_sel .t_avg {
+    color: #8BE28B !important;
+    -webkit-text-fill-color: #8BE28B !important;
+}
+
+
+/* NIERozGRANY — PRZECIWNIK */
+
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name:not(.lg_sel),
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name:not(.lg_sel) *,
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name:not(.lg_sel) .entry_name,
+.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
+.lg_set_name:not(.lg_sel) .t_avg {
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
 }
-/* ============================================================
-   53. N01 LIVE — AKTYWNA KOMÓRKA WYNIKU
-   ============================================================ */
 
-/*
-   N01 oznacza aktualnie wybraną komórkę klasą:
-   
+
+/* REMIS — NATYWNE sd_draw */
+
+.lg_match_item:has(.lg_box_l.sd_draw) .lg_set_name,
+.lg_match_item:has(.lg_box_r.sd_draw) .lg_set_name,
+.lg_match_item:has(.lg_box_l.sd_draw) .lg_set_name *,
+.lg_match_item:has(.lg_box_r.sd_draw) .lg_set_name *,
+.lg_match_item:has(.lg_box_l.sd_draw) .lg_set_name .entry_name,
+.lg_match_item:has(.lg_box_r.sd_draw) .lg_set_name .entry_name,
+.lg_match_item:has(.lg_box_l.sd_draw) .lg_set_name .t_avg,
+.lg_match_item:has(.lg_box_r.sd_draw) .lg_set_name .t_avg {
+    color: #4DA3FF !important;
+    -webkit-text-fill-color: #4DA3FF !important;
+}
+
+
+/* REMIS — KLASA DODAWANA PRZEZ JS */
+
+.lg_match_item.is_draw .lg_set_name,
+.lg_match_item.is_draw .lg_set_name *,
+.lg_match_item.is_draw .lg_set_name .entry_name,
+.lg_match_item.is_draw .lg_set_name .t_avg {
+    color: #4DA3FF !important;
+    -webkit-text-fill-color: #4DA3FF !important;
+}
+
+
+/* ==============================================================
+   41. LIVE — NAZWY ZAWODNIKÓW
+   ============================================================== */
+
+#score_view_inset_body #result_table td.name,
+#score_view_inset_body #result_table td.name > div,
+#score_view_inset_body #result_table #p1_name,
+#score_view_inset_body #result_table #p2_name,
+#score_view_inset_body #result_table tr:hover td.name,
+#score_view_inset_body #result_table tr:hover td.name > div,
+#score_view_inset_body #result_table tr:hover #p1_name,
+#score_view_inset_body #result_table tr:hover #p2_name {
+    color: #F0D675 !important;
+    -webkit-text-fill-color: #F0D675 !important;
+}
+
+#score_view_inset_body #result_table #p1_stats,
+#score_view_inset_body #result_table #p2_stats,
+#score_view_inset_body #result_table tr:hover #p1_stats,
+#score_view_inset_body #result_table tr:hover #p2_stats {
+    color: #AAAAAA !important;
+    -webkit-text-fill-color: #AAAAAA !important;
+}
+
+
+/* ==============================================================
+   42. PORTAL — SZCZEGÓŁY LIGI
+   ============================================================== */
+
+#lg_details_container #title_lg_details {
+    color: #F0D675 !important;
+    -webkit-text-fill-color: #F0D675 !important;
+
+    background-color: #151515 !important;
+    border-color: #383838 !important;
+
+    font-weight: 700 !important;
+}
+
+#lg_details_container .accordion-content {
+    background-color: #151515 !important;
+    color: #F2F2F2 !important;
+}
+
+#lg_details_container #lg_details {
+    color: #F2F2F2 !important;
+    -webkit-text-fill-color: #F2F2F2 !important;
+
+    background-color: #151515 !important;
+
+    font-family: Consolas, "Courier New", monospace !important;
+    font-size: 15px !important;
+    line-height: 1.45 !important;
+
+    white-space: pre !important;
+    word-spacing: 0 !important;
+    letter-spacing: 0 !important;
+
+    overflow-x: auto !important;
+
+    padding: 12px !important;
+    margin: 10px 0 !important;
+
+    border: 1px solid #383838 !important;
+    border-radius: 4px !important;
+}
+
+
+/* ==============================================================
+   43. TABELE GRUP — WYNIKI
+   ============================================================== */
+
+.rr_result {
+    background: #151515 !important;
+    color: #F2F2F2 !important;
+    border-color: #383838 !important;
+}
+
+.rr_result span {
+    color: #F2F2F2 !important;
+}
+
+.rr_result .rr_idx {
+    color: #F0D675 !important;
+}
+
+.rr_result:hover {
+    background: #202020 !important;
+    color: #FFFFFF !important;
+}
+
+.rr_result:focus,
+.rr_result:active {
+    background: #202020 !important;
+    color: #FFFFFF !important;
+}
+
+
+/* ==============================================================
+   44. TABELE GRUP — NASTĘPNY MECZ
+   ============================================================== */
+
+td.rr_result.match_button {
+    background: #202020 !important;
+    background-color: #202020 !important;
+    color: #F2F2F2 !important;
+}
+
+td.rr_result.match_button.rr_available {
+    background: #202020 !important;
+    background-color: #202020 !important;
+    color: #F0D675 !important;
+
+    box-shadow: inset 0 0 0 1px #D4AF37 !important;
+}
+
+td.rr_result.match_button.rr_available .rr_idx {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
+    border: 2px solid #D4AF37;
+    border-radius: 50%;
+
+    color: #F0D675;
+    font-weight: 700;
+    line-height: 1;
+
+    box-sizing: border-box;
+
+    background: #080808;
+}
+
+
+/* ==============================================================
+   45. LIVE — GŁÓWNA TABELA
+   ============================================================== */
+
+#score_table,
+#header_table,
+#left_table {
+    color: #F2F2F2 !important;
+}
+
+
+/* --------------------------------------------------------------
+   45.1 HEADER LIVE
+   -------------------------------------------------------------- */
+
+#header_table {
+    background: #101010 !important;
+    color: #F2F2F2 !important;
+}
+
+#header_table #title {
+    color: #D4AF37 !important;
+    font-weight: 800 !important;
+    letter-spacing: 1px !important;
+}
+
+#header_table .player_name,
+#header_table .name_text {
+    color: #F0D675 !important;
+    font-weight: 700 !important;
+}
+
+#header_table #legs {
+    color: #FFFFFF !important;
+    font-weight: 800 !important;
+}
+
+
+/* --------------------------------------------------------------
+   45.2 TABELA WYNIKU
+   -------------------------------------------------------------- */
+
+#score_table {
+    background: #101010 !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+}
+
+#score_table td,
+#score_table th {
+    box-sizing: border-box !important;
+    background: #181818 !important;
+    color: #F2F2F2 !important;
+    border-color: #D8D8D8 !important;
+}
+
+
+/* --------------------------------------------------------------
+   45.3 NAGŁÓWKI
+   -------------------------------------------------------------- */
+
+#score_table th {
+    color: #D8D8D8 !important;
+    font-weight: 700 !important;
+    border-color: #D8D8D8 !important;
+}
+
+#score_table th.score_input {
+    color: #FFFFFF !important;
+}
+
+#score_table th.score_left {
+    color: #D4AF37 !important;
+}
+
+
+/* --------------------------------------------------------------
+   45.4 ZDOBYTO
+   -------------------------------------------------------------- */
+
+#score_table td.score_input {
+    color: #FFFFFF !important;
+    font-weight: 900 !important;
+    border-color: #D8D8D8 !important;
+}
+
+
+/* --------------------------------------------------------------
+   45.5 POZOSTAŁO
+   -------------------------------------------------------------- */
+
+#score_table td.score_left {
+    color: #F0D675 !important;
+    font-weight: 900 !important;
+    border-color: #D8D8D8 !important;
+}
+
+
+/* --------------------------------------------------------------
+   45.6 NUMERY KOLEJEK
+   -------------------------------------------------------------- */
+
+#score_table td.score_round {
+    position: relative !important;
+
+    color: #2196F3 !important;
+    -webkit-text-fill-color: #2196F3 !important;
+
+    background: #151515 !important;
+    background-color: #151515 !important;
+
+    font-weight: 400 !important;
+
+    border-color: #D8D8D8 !important;
+}
+
+
+/* Aktywna kolejka */
+
+#score_table tr:has(td.input_area) td.score_round {
+    color: #2196F3 !important;
+    -webkit-text-fill-color: #2196F3 !important;
+
+    background: #202020 !important;
+    background-color: #202020 !important;
+
+    font-weight: 900 !important;
+
+    border-top-color: #D8D8D8 !important;
+    border-bottom-color: #D8D8D8 !important;
+
+    box-shadow: none !important;
+}
+
+
+/* Ostatnie 3 kolejki */
+
+#score_table td.score_round.last3 {
+    color: #2196F3 !important;
+    -webkit-text-fill-color: #2196F3 !important;
+    font-weight: 900 !important;
+}
+
+
+/* Usunięcie ewentualnego kółka */
+
+#score_table tr:has(td.input_area) td.score_round::after {
+    content: none !important;
+    display: none !important;
+}
+
+
+/* --------------------------------------------------------------
+   45.7 AKTYWNA KOMÓRKA WYNIKU
+   -------------------------------------------------------------- */
+
+#score_table td.score_input.input_area,
+#score_table td.p1score.input_area,
+#score_table td.p2score.input_area {
+    background: #383838 !important;
+    background-color: #383838 !important;
+
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+
+    font-weight: 900 !important;
+
+    border: 5px solid #2196F3 !important;
+
+    box-shadow: none !important;
+}
+
+
+/* Tekst aktywnego pola */
+
+#score_table td.score_input.input_area *,
+#score_table td.score_input.input_area span {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+
+/* --------------------------------------------------------------
+   45.8 WIERSZ AKTYWNEJ KOLEJKI
+   -------------------------------------------------------------- */
+
+#score_table tr:has(td.input_area) td {
+    border-top-color: #D8D8D8 !important;
+    border-bottom-color: #D8D8D8 !important;
+}
+
+
+/* --------------------------------------------------------------
+   45.9 PODSTAWOWE KOMÓRKI LIVE
+   -------------------------------------------------------------- */
+
+#score_table td.score_input,
+#score_table td.score_left,
+#score_table td.score_round {
+    background-color: #181818 !important;
+    border-color: #D8D8D8 !important;
+}
+
+
+/* Przywrócenie tła aktywnego pola po regule powyżej */
+
+#score_table td.score_input.input_area {
+    background-color: #383838 !important;
+    border: 5px solid #2196F3 !important;
+    color: #FFFFFF !important;
+}
+
+
+/* Przywrócenie numeru aktywnej kolejki */
+
+#score_table tr:has(td.input_area) td.score_round {
+    background-color: #202020 !important;
+    color: #2196F3 !important;
+    border-color: #D8D8D8 !important;
+    box-shadow: none !important;
+}
+
+
+/* --------------------------------------------------------------
+   45.10 — POZOSTAŁO AKTYWNEGO GRACZA
+   --------------------------------------------------------------
+
+   N01 oznacza aktywne pole:
        .score_input.input_area
 
-   Klasa input_area jest automatycznie przenoszona przez N01:
-   - po kliknięciu innej komórki,
-   - po zatwierdzeniu wyniku podejścia.
+   P1:
+       .p1score.input_area
+       odpowiada .p1left
 
-   Używamy box-shadow zamiast border,
-   aby nie zmieniać wymiarów komórki ani układu tabeli.
-*/
+   P2:
+       .p2score.input_area
+       odpowiada .p2left
 
-td.score_input.input_area {
-    background-color: #151515 !important;
+   Tylko komórka "Pozostało" aktywnego gracza
+   otrzymuje jasnoniebieskie tło.
+   -------------------------------------------------------------- */
+
+#score_table tr:has(td.score_input.input_area.p1score)
+    > td.score_left.p1left,
+
+#score_table tr:has(td.score_input.input_area.p2score)
+    > td.score_left.p2left {
+    background: #DCEEFF !important;
+    background-color: #DCEEFF !important;
     background-image: none !important;
+}
 
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
 
-    box-shadow: inset 0 0 0 4px #D4AF37 !important;
+/* --------------------------------------------------------------
+   45.11 — WYNIKI 100+
+   -------------------------------------------------------------- */
 
+#score_table td.score_input.ton {
+    position: relative !important;
+
+    background: #181818 !important;
+
+    color: #FFFFFF !important;
+
+    font-weight: 900 !important;
+}
+
+
+/* 100+ — kapsuła */
+
+#score_table td.score_input.ton span {
+    display: inline-flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    min-width: 1.65em !important;
+    height: 1.35em !important;
+
+    padding: 0 0.18em !important;
+
+    border: 3px solid #D4AF37 !important;
+    border-radius: 999px !important;
+
+    box-sizing: border-box !important;
+
+    line-height: 1 !important;
+
+    color: #FFFFFF !important;
+    font-weight: 900 !important;
+}
+
+
+/* 100+ w aktywnej komórce */
+
+#score_table td.score_input.ton.input_area {
+    background: #383838 !important;
+    border: 5px solid #2196F3 !important;
+    color: #FFFFFF !important;
+}
+
+#score_table td.score_input.ton.input_area span {
     border-color: #D4AF37 !important;
+    color: #FFFFFF !important;
 }
 
 
-/* Tekst wewnątrz aktywnej komórki */
+/* --------------------------------------------------------------
+   45.12 — DUŻE "POZOSTAŁO"
+   -------------------------------------------------------------- */
 
-td.score_input.input_area *,
-td.score_input.input_area span {
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
+#left_table {
+    background: #101010 !important;
+}
+
+#left_table td.score_left_big {
+    background: #181818 !important;
+    color: #F0D675 !important;
+    font-weight: 900 !important;
+    border-color: #D8D8D8 !important;
 }
 
 
-/* Aktywna komórka P1 */
+/* Aktywny gracz */
 
-td.score_input.p1score.input_area {
-    box-shadow: inset 0 0 0 4px #D4AF37 !important;
-    border-color: #D4AF37 !important;
+#left_table td.score_left_big.focus_frame {
+    background: #303030 !important;
+    color: #F0D675 !important;
+
+    font-weight: 900 !important;
+
+    border: 5px solid #D4AF37 !important;
+
+    box-shadow: none !important;
+}
+
+#left_table td.score_left_big.focus_frame div {
+    color: #F0D675 !important;
+    font-weight: 900 !important;
 }
 
 
-/* Aktywna komórka P2 */
+/* --------------------------------------------------------------
+   45.13 — ODDZIELENIE P1 / P2
+   -------------------------------------------------------------- */
 
-td.score_input.p2score.input_area {
-    box-shadow: inset 0 0 0 4px #D4AF37 !important;
-    border-color: #D4AF37 !important;
+#score_table td.p1score,
+#score_table td.p1left {
+    border-right-color: #D8D8D8 !important;
 }
-/* ============================================================
-   54. FORMULARZE — FUNDAMENTALNA WARSTWA DARK THEME
-   ============================================================ */
 
-/*
-   CEL:
-   Wszystkie pola formularzy N01 muszą być czytelne
-   na ciemnym tle.
-
-   ZASADA:
-   - tło pola       #151515
-   - tekst          #F2F2F2
-   - placeholder    #A8A8A8
-   - obramowanie    #383838
-   - focus          #D4AF37
-   - aktywne        #D4AF37
-
-   Ta sekcja jest celowo umieszczona na końcu CSS,
-   aby miała pierwszeństwo przed wcześniejszymi regułami.
-*/
+#score_table td.p2score,
+#score_table td.p2left {
+    border-left-color: #D8D8D8 !important;
+}
 
 
-/* ------------------------------------------------------------
-   54.1 — PODSTAWOWE POLA
-   ------------------------------------------------------------ */
+/* --------------------------------------------------------------
+   45.14 — MENU LIVE
+   -------------------------------------------------------------- */
+
+#menu_table {
+    background: #101010 !important;
+}
+
+#menu_table td {
+    background: #181818 !important;
+    color: #D8D8D8 !important;
+    border-color: #D8D8D8 !important;
+}
+
+#menu_table td:hover {
+    background: #303030 !important;
+    color: #F0D675 !important;
+}
+
+
+/* --------------------------------------------------------------
+   45.15 — KOŃCOWE RUNDY
+   -------------------------------------------------------------- */
+
+/* Normalne rundy */
+
+#score_table td.score_round {
+    color: #2196F3 !important;
+    -webkit-text-fill-color: #2196F3 !important;
+    font-weight: 400 !important;
+}
+
+/* Rundy 39 i 42 */
+
+#score_table #round_12 td.score_round,
+#score_table #round_13 td.score_round {
+    color: #FF9800 !important;
+    -webkit-text-fill-color: #FF9800 !important;
+    font-weight: 900 !important;
+}
+
+/* Runda 45 */
+
+#score_table #round_14 td.score_round {
+    color: #FF3B30 !important;
+    -webkit-text-fill-color: #FF3B30 !important;
+    font-weight: 900 !important;
+}
+
+
+/* --------------------------------------------------------------
+   45.16 — RESPONSYWNOŚĆ LIVE
+   -------------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    #score_table td,
+    #score_table th {
+        padding: 9px 8px !important;
+    }
+
+    #header_table #title {
+        letter-spacing: 0.5px !important;
+    }
+}
+
+
+/* ==============================================================
+   46. FORMULARZE — DARK THEME
+   ============================================================== */
+
+
+/* Podstawowe pola */
 
 input,
 textarea,
@@ -1275,12 +1556,12 @@ select {
     -webkit-text-fill-color: #F2F2F2 !important;
 
     border-color: #383838 !important;
+
+    caret-color: #F0D675 !important;
 }
 
 
-/* ------------------------------------------------------------
-   54.2 — INPUT — WSZYSTKIE TYPY
-   ------------------------------------------------------------ */
+/* Typowe inputy */
 
 input[type="text"],
 input[type="password"],
@@ -1306,59 +1587,14 @@ input[type="color"] {
 }
 
 
-/* ------------------------------------------------------------
-   54.3 — HASŁA
-   ------------------------------------------------------------ */
-
-/*
-   Szczególnie ważne dla:
-   - Join Password
-   - New password
-   - Confirm new password
-*/
+/* Password */
 
 input[type="password"] {
-    background-color: #151515 !important;
-    background-image: none !important;
-
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-
     border: 1px solid #383838 !important;
 }
 
 
-/* ------------------------------------------------------------
-   54.4 — TEXTAREA
-   ------------------------------------------------------------ */
-
-textarea {
-    background-color: #151515 !important;
-    background-image: none !important;
-
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-
-    border-color: #383838 !important;
-}
-
-
-/* ------------------------------------------------------------
-   54.5 — SELECT
-   ------------------------------------------------------------ */
-
-select {
-    background-color: #151515 !important;
-    background-image: none !important;
-
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-
-    border-color: #383838 !important;
-}
-
-
-/* Lista rozwijana */
+/* Select */
 
 select option,
 select optgroup {
@@ -1367,9 +1603,7 @@ select optgroup {
 }
 
 
-/* ------------------------------------------------------------
-   54.6 — PLACEHOLDER
-   ------------------------------------------------------------ */
+/* Placeholder */
 
 input::placeholder,
 textarea::placeholder {
@@ -1379,14 +1613,13 @@ textarea::placeholder {
 }
 
 
-/* ------------------------------------------------------------
-   54.7 — FOCUS
-   ------------------------------------------------------------ */
+/* Focus */
 
 input:focus,
 textarea:focus,
 select:focus {
     background-color: #151515 !important;
+
     color: #F2F2F2 !important;
     -webkit-text-fill-color: #F2F2F2 !important;
 
@@ -1394,13 +1627,12 @@ select:focus {
 
     outline: none !important;
 
-    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.25) !important;
+    box-shadow:
+        0 0 0 2px rgba(212,175,55,0.25) !important;
 }
 
 
-/* ------------------------------------------------------------
-   54.8 — FOCUS-VISIBLE
-   ------------------------------------------------------------ */
+/* Focus visible */
 
 input:focus-visible,
 textarea:focus-visible,
@@ -1412,9 +1644,7 @@ select:focus-visible {
 }
 
 
-/* ------------------------------------------------------------
-   54.9 — HOVER
-   ------------------------------------------------------------ */
+/* Hover */
 
 input:hover,
 textarea:hover,
@@ -1423,9 +1653,7 @@ select:hover {
 }
 
 
-/* ------------------------------------------------------------
-   54.10 — DISABLED
-   ------------------------------------------------------------ */
+/* Disabled */
 
 input:disabled,
 textarea:disabled,
@@ -1441,9 +1669,7 @@ select:disabled {
 }
 
 
-/* ------------------------------------------------------------
-   54.11 — READONLY
-   ------------------------------------------------------------ */
+/* Readonly */
 
 input[readonly],
 textarea[readonly] {
@@ -1456,44 +1682,32 @@ textarea[readonly] {
 }
 
 
-/* ------------------------------------------------------------
-   54.12 — CHECKBOX / RADIO
-   ------------------------------------------------------------ */
+/* Checkbox / radio */
 
 input[type="checkbox"],
 input[type="radio"] {
     background-color: #151515 !important;
-
     color: #F2F2F2 !important;
     accent-color: #D4AF37 !important;
 }
 
 
-/* ------------------------------------------------------------
-   54.13 — FILE
-   ------------------------------------------------------------ */
+/* File */
 
 input[type="file"] {
     background-color: #151515 !important;
     color: #F2F2F2 !important;
-
     border-color: #383838 !important;
 }
-
-
-/* Przycisk "Choose file" w Chrome */
 
 input[type="file"]::file-selector-button {
     background-color: #202020 !important;
     color: #F2F2F2 !important;
-
     border: 1px solid #383838 !important;
 }
 
 
-/* ------------------------------------------------------------
-   54.14 — PRZYCISKI FORMULARZY
-   ------------------------------------------------------------ */
+/* Przyciski formularzy */
 
 button,
 input[type="button"],
@@ -1507,9 +1721,6 @@ input[type="reset"] {
     border-color: #383838 !important;
 }
 
-
-/* Hover */
-
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
@@ -1521,9 +1732,6 @@ input[type="reset"]:hover {
 
     border-color: #D4AF37 !important;
 }
-
-
-/* Focus */
 
 button:focus,
 input[type="button"]:focus,
@@ -1538,26 +1746,41 @@ input[type="reset"]:focus {
 }
 
 
-/* ------------------------------------------------------------
-   54.15 — TEKST WEWNĄTRZ ELEMENTÓW FORMULARZY
-   ------------------------------------------------------------ */
+/* Label */
 
-input *,
-textarea *,
-select * {
+label {
+    color: #F2F2F2 !important;
+}
+
+label *,
+.form-label *,
+.help-text *,
+.form-help * {
+    color: #A8A8A8 !important;
+}
+
+
+/* Walidacja */
+
+input:invalid,
+textarea:invalid,
+select:invalid {
     color: #F2F2F2 !important;
     -webkit-text-fill-color: #F2F2F2 !important;
 }
 
 
-/* ------------------------------------------------------------
-   54.16 — CHROME AUTOFILL
-   ------------------------------------------------------------ */
+/* Selekcja tekstu */
 
-/*
-   Chrome potrafi samodzielnie nadać polu jasne tło
-   i ciemny tekst podczas autofill.
-*/
+input::selection,
+textarea::selection,
+select::selection {
+    background-color: #D4AF37 !important;
+    color: #080808 !important;
+}
+
+
+/* Autofill Chrome */
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -1578,943 +1801,15 @@ input:-webkit-autofill:active {
 }
 
 
-/* ------------------------------------------------------------
-   54.17 — KURSOR
-   ------------------------------------------------------------ */
-
-input,
-textarea,
-select {
-    caret-color: #F0D675 !important;
-}
-
-
-/* ------------------------------------------------------------
-   54.18 — LABEL
-   ------------------------------------------------------------ */
-
-label {
-    color: #F2F2F2 !important;
-}
-
-
-/* Tekst pomocniczy */
-
-label *,
-.form-label *,
-.help-text *,
-.form-help * {
-    color: #A8A8A8 !important;
-}
-
-
-/* ------------------------------------------------------------
-   54.19 — WALIDACJA
-   ------------------------------------------------------------ */
-
-input:invalid,
-textarea:invalid,
-select:invalid {
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-}
-
-
-/* ------------------------------------------------------------
-   54.20 — SELEKCJA TEKSTU W POLACH
-   ------------------------------------------------------------ */
-
-input::selection,
-textarea::selection,
-select::selection {
-    background-color: #D4AF37 !important;
-    color: #080808 !important;
-}
-
-
-/* ============================================================
-   KONIEC — FORMULARZE
-   ============================================================ */
-/* ============================================================
-   55. MECZE LIGOWE — KOLOR WYNIKU
-   ============================================================ */
-
-
-/* ------------------------------------------------------------
-   55.1 — DOMYŚLNIE: WSZYSCY ZAWODNICY BIALI
-   ------------------------------------------------------------ */
-
-.lg_match_item .lg_set_name,
-.lg_match_item .lg_set_name .lg_name_c,
-.lg_match_item .lg_set_name .entry_name,
-.lg_match_item .lg_set_name .t_avg {
-    color: #FFFFFF !important;
-    -webkit-text-fill-color: #FFFFFF !important;
-}
-
-
-/* ------------------------------------------------------------
-   55.2 — LEWY ZAWODNIK WYGRYWA
-   ------------------------------------------------------------ */
-
-.lg_match_item:has(.lg_box_l.win) .lg_set_name .lg_left,
-.lg_match_item:has(.lg_box_l.win) .lg_set_name .lg_left *,
-.lg_match_item:has(.lg_box_l.win) .lg_box_l.win {
-    color: #D4AF37 !important;
-    -webkit-text-fill-color: #D4AF37 !important;
-}
-
-
-/* ------------------------------------------------------------
-   55.3 — LEWY ZAWODNIK PRZEGRYWA
-   ------------------------------------------------------------ */
-
-.lg_match_item:has(.lg_box_r.win) .lg_set_name .lg_left,
-.lg_match_item:has(.lg_box_r.win) .lg_set_name .lg_left *,
-.lg_match_item:has(.lg_box_r.win) .lg_box_l {
-    color: #FF5555 !important;
-    -webkit-text-fill-color: #FF5555 !important;
-}
-
-
-/* ------------------------------------------------------------
-   55.4 — PRAWY ZAWODNIK WYGRYWA
-   ------------------------------------------------------------ */
-
-.lg_match_item:has(.lg_box_r.win) .lg_set_name .lg_right,
-.lg_match_item:has(.lg_box_r.win) .lg_set_name .lg_right *,
-.lg_match_item:has(.lg_box_r.win) .lg_box_r.win {
-    color: #D4AF37 !important;
-    -webkit-text-fill-color: #D4AF37 !important;
-}
-
-
-/* ------------------------------------------------------------
-   55.5 — PRAWY ZAWODNIK PRZEGRYWA
-   ------------------------------------------------------------ */
-
-.lg_match_item:has(.lg_box_l.win) .lg_set_name .lg_right,
-.lg_match_item:has(.lg_box_l.win) .lg_set_name .lg_right *,
-.lg_match_item:has(.lg_box_l.win) .lg_box_r {
-    color: #FF5555 !important;
-    -webkit-text-fill-color: #FF5555 !important;
-}
-
-
-/* ------------------------------------------------------------
-   55.6 — NUMER MECZU
-   ------------------------------------------------------------ */
-
-.lg_match_item .lg_set_no {
-    color: #A8A8A8 !important;
-    -webkit-text-fill-color: #A8A8A8 !important;
-}
-
-
-/* ------------------------------------------------------------
-   55.7 — WYNIK
-   ------------------------------------------------------------ */
-
-.lg_match_item .lg_set_result {
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-}
-
-
-/* ------------------------------------------------------------
-   55.8 — NIERozGRANY
-   ------------------------------------------------------------ */
-
-.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
-.lg_set_name,
-.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
-.lg_set_name * {
-    color: #FFFFFF !important;
-    -webkit-text-fill-color: #FFFFFF !important;
-}
-
-/* ============================================================
-   55.9 MECZE NIERozGRANE — AKTUALNY GRACZ
-   ============================================================ */
-
-/*
- * W nierozgranym meczu:
- * .lg_sel = aktualnie oglądany zawodnik
- *
- * Kolor:
- * aktualny zawodnik = zielony
- * przeciwnik = biały
- */
-
-.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
-.lg_set_name.lg_sel,
-.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
-.lg_set_name.lg_sel *,
-.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
-.lg_set_name.lg_sel .entry_name,
-.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
-.lg_set_name.lg_sel .t_avg {
-    color: #8BE28B !important;
-    -webkit-text-fill-color: #8BE28B !important;
-}
-
-
-/* Przeciwnik pozostaje biały */
-
-.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
-.lg_set_name:not(.lg_sel),
-.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
-.lg_set_name:not(.lg_sel) *,
-.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
-.lg_set_name:not(.lg_sel) .entry_name,
-.lg_match_item:not(:has(.lg_box_l.win)):not(:has(.lg_box_r.win))
-.lg_set_name:not(.lg_sel) .t_avg {
-    color: #FFFFFF !important;
-    -webkit-text-fill-color: #FFFFFF !important;
-}
-/* ============================================================
-   55.10 — REMIS — N01 NATYWNE sd_draw
-   ============================================================ */
-
-
-/* ------------------------------------------------------------
-   55.10.1 — OBAJ ZAWODNICY NA NIEBIESKO
-   ------------------------------------------------------------ */
-
-.lg_match_item:has(.lg_box_l.sd_draw),
-.lg_match_item:has(.lg_box_r.sd_draw) .lg_set_name,
-.lg_match_item:has(.lg_box_l.sd_draw) .lg_set_name,
-.lg_match_item:has(.lg_box_r.sd_draw) .lg_set_name {
-    color: #4DA3FF !important;
-    -webkit-text-fill-color: #4DA3FF !important;
-}
-
-
-/* ------------------------------------------------------------
-   55.10.2 — WSZYSTKIE ELEMENTY NAZWY ZAWODNIKA
-   ------------------------------------------------------------ */
-
-.lg_match_item:has(.lg_box_l.sd_draw) .lg_set_name *,
-.lg_match_item:has(.lg_box_r.sd_draw) .lg_set_name *,
-.lg_match_item:has(.lg_box_l.sd_draw) .lg_set_name .entry_name,
-.lg_match_item:has(.lg_box_r.sd_draw) .lg_set_name .entry_name,
-.lg_match_item:has(.lg_box_l.sd_draw) .lg_set_name .t_avg,
-.lg_match_item:has(.lg_box_r.sd_draw) .lg_set_name .t_avg {
-    color: #4DA3FF !important;
-    -webkit-text-fill-color: #4DA3FF !important;
-}
-
-
-/* ============================================================
-   55.10 — REMIS — WYKRYWANY PRZEZ JS
-   ============================================================ */
-
-/*
- * JS dodaje klasę .is_draw do całego meczu.
- *
- * Remis:
- * obaj zawodnicy = niebieski
- * wynik pozostaje w swoim standardowym kolorze
- */
-
-.lg_match_item.is_draw .lg_set_name,
-.lg_match_item.is_draw .lg_set_name *,
-.lg_match_item.is_draw .lg_set_name .entry_name,
-.lg_match_item.is_draw .lg_set_name .t_avg {
-    color: #4DA3FF !important;
-    -webkit-text-fill-color: #4DA3FF !important;
-}
-
-
-/* ============================================================
-   KONIEC 55.10
-   ============================================================ */
-
-/* ============================================================
-   56. LIVE — NAZWY ZAWODNIKÓW — ZŁOTE
-   ============================================================ */
-
-#score_view_inset_body #result_table td.name,
-#score_view_inset_body #result_table td.name > div,
-#score_view_inset_body #result_table #p1_name,
-#score_view_inset_body #result_table #p2_name,
-#score_view_inset_body #result_table tr:hover td.name,
-#score_view_inset_body #result_table tr:hover td.name > div,
-#score_view_inset_body #result_table tr:hover #p1_name,
-#score_view_inset_body #result_table tr:hover #p2_name {
-    color: #F0D675 !important;
-    -webkit-text-fill-color: #F0D675 !important;
-}
-
-/* Statystyki pozostają szare */
-#score_view_inset_body #result_table #p1_stats,
-#score_view_inset_body #result_table #p2_stats,
-#score_view_inset_body #result_table tr:hover #p1_stats,
-#score_view_inset_body #result_table tr:hover #p2_stats {
-    color: #AAAAAA !important;
-    -webkit-text-fill-color: #AAAAAA !important;
-}
-/* ============================================================
-   KONIEC — MECZE LIGOWE
-   ============================================================ */
-/* ============================================================
-   57. PORTAL — SZCZEGÓŁY LIGI
-   ============================================================ */
-
-/* Nagłówek "Szczegóły" */
-#lg_details_container #title_lg_details {
-    color: #F0D675 !important;
-    -webkit-text-fill-color: #F0D675 !important;
-
-    background-color: #151515 !important;
-    border-color: #383838 !important;
-
-    font-weight: 700 !important;
-}
-
-/* Kontener szczegółów */
-#lg_details_container .accordion-content {
-    background-color: #151515 !important;
-    color: #F2F2F2 !important;
-}
-
-/* Właściwa tabela tekstowa */
-#lg_details_container #lg_details {
-    color: #F2F2F2 !important;
-    -webkit-text-fill-color: #F2F2F2 !important;
-
-    background-color: #151515 !important;
-
-    font-family: Consolas, "Courier New", monospace !important;
-    font-size: 15px !important;
-    line-height: 1.45 !important;
-
-    white-space: pre !important;
-    word-spacing: 0 !important;
-    letter-spacing: 0 !important;
-
-    overflow-x: auto !important;
-
-    padding: 12px !important;
-    margin: 10px 0 !important;
-
-    border: 1px solid #383838 !important;
-    border-radius: 4px !important;
-}
-/* =========================================================
-   58. TABELA GRUP – DARK/GOLD
-   Tylko komórki wyników tabel Round Robin
-   ========================================================= */
-
-.rr_result {
-    background: #151515 !important;
-    color: #F2F2F2 !important;
-    border-color: #383838 !important;
-}
-
-.rr_result span {
-    color: #F2F2F2 !important;
-}
-
-/* Numer wyniku w komórce */
-.rr_result .rr_idx {
-    color: #F0D675 !important;
-}
-
-/* Komórka po najechaniu */
-.rr_result:hover {
-    background: #202020 !important;
-    color: #FFFFFF !important;
-}
-
-/* Aktywna / wybrana komórka */
-.rr_result:focus,
-.rr_result:active {
-    background: #202020 !important;
-    color: #FFFFFF !important;
-}
-/* =========================================================
-   59. TABELE GRUP — WYNIKI + NASTĘPNY MECZ
-   ========================================================= */
-
-/* ---------------------------------------------------------
-   ZWYKŁE KOMÓRKI WYNIKÓW
-   --------------------------------------------------------- */
-
-td.rr_result.match_button {
-    background: #202020 !important;
-    background-color: #202020 !important;
-    color: #F2F2F2 !important;
-}
-
-
-/* ---------------------------------------------------------
-   NASTĘPNY / DOSTĘPNY MECZ
-   N01 oznacza go klasą .rr_available
-   --------------------------------------------------------- */
-
-td.rr_result.match_button.rr_available {
-    background: #202020 !important;
-    background-color: #202020 !important;
-    color: #F0D675 !important;
-}
-
-
-/* ---------------------------------------------------------
-   NUMER NASTĘPNEGO MECZU — ZŁOTE KÓŁKO
-   --------------------------------------------------------- */
-
-td.rr_result.match_button.rr_available .rr_idx {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 28px;
-    height: 28px;
-
-    border: 2px solid #D4AF37;
-    border-radius: 50%;
-
-    color: #F0D675;
-    font-weight: 700;
-    line-height: 1;
-    box-sizing: border-box;
-
-    background: #080808;
-}
-
-
-/* ---------------------------------------------------------
-   DELIKATNE WYRÓŻNIENIE CAŁEJ KOMÓRKI
-   --------------------------------------------------------- */
-
-td.rr_result.match_button.rr_available {
-    box-shadow: inset 0 0 0 1px #D4AF37 !important;
-}
-/* =========================================================
-   60. N01 LIVE — PROFESSIONAL 3 KORONY
-   DARK + GOLD + BLUE
-   ========================================================= */
-
-
-/* ---------------------------------------------------------
-   60.1. GŁÓWNE TABELA LIVE
-   --------------------------------------------------------- */
-
-#score_table,
-#header_table,
-#left_table {
-    color: #F2F2F2 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.2. NAGŁÓWEK MECZU
-   --------------------------------------------------------- */
-
-#header_table {
-    background: #101010 !important;
-    color: #F2F2F2 !important;
-}
-
-#header_table #title {
-    color: #D4AF37 !important;
-    font-weight: 800 !important;
-    letter-spacing: 1px !important;
-}
-
-#header_table .player_name {
-    color: #F0D675 !important;
-    font-weight: 700 !important;
-}
-
-#header_table .name_text {
-    color: #F0D675 !important;
-}
-
-#header_table #legs {
-    color: #FFFFFF !important;
-    font-weight: 800 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.3. TABELA WYNIKU
-   --------------------------------------------------------- */
-
-#score_table {
-    background: #101010 !important;
-
-    border-collapse: separate !important;
-    border-spacing: 0 !important;
-}
-
-#score_table td,
-#score_table th {
-    box-sizing: border-box !important;
-
-    background: #181818 !important;
-
-    color: #F2F2F2 !important;
-
-    /* JAŚNIEJSZE OBRAMOWANIE */
-    border-color: #D8D8D8 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.4. NAGŁÓWKI
-   --------------------------------------------------------- */
-
-#score_table th {
-    color: #D8D8D8 !important;
-
-    font-weight: 700 !important;
-
-    border-color: #D8D8D8 !important;
-}
-
-#score_table th.score_input {
-    color: #FFFFFF !important;
-}
-
-#score_table th.score_left {
-    color: #D4AF37 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.5. ZDOBYTO
-   BIAŁE + GRUBE
-   --------------------------------------------------------- */
-
-#score_table td.score_input {
-    color: #FFFFFF !important;
-
-    font-weight: 900 !important;
-
-    border-color: #D8D8D8 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.6. POZOSTAŁO
-   ZŁOTE + GRUBE
-   --------------------------------------------------------- */
-
-#score_table td.score_left {
-    color: #F0D675 !important;
-
-    font-weight: 900 !important;
-
-    border-color: #D8D8D8 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.7. NUMERY KOLEJEK
-   3, 6, 9, 12, 15...
-   
-   TYLKO NIEBIESKIE.
-   BEZ KÓŁKA.
-   --------------------------------------------------------- */
-
-#score_table td.score_round {
-    position: relative !important;
-
-    color: #2196F3 !important;
-
-    background: #151515 !important;
-
-    font-weight: 800 !important;
-
-    border-color: #D8D8D8 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.8. AKTYWNA KOLEJKA
-   --------------------------------------------------------- */
-
-#score_table tr:has(td.input_area) td.score_round {
-
-    color: #2196F3 !important;
-
-    background: #202020 !important;
-
-    font-weight: 900 !important;
-
-    border-top-color: #D8D8D8 !important;
-    border-bottom-color: #D8D8D8 !important;
-
-    box-shadow: none !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.9. USUNIĘCIE KÓŁKA Z NUMERU KOLEJKI
-   --------------------------------------------------------- */
-
-#score_table tr:has(td.input_area) td.score_round::after {
-
-    content: none !important;
-
-    display: none !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.10. AKTYWNA KOMÓRKA DO WPISANIA WYNIKU
-   NIEBIESKA GRUBA RAMKA
-   --------------------------------------------------------- */
-
-#score_table td.score_input.input_area {
-
-    background: #383838 !important;
-
-    color: #FFFFFF !important;
-
-    font-weight: 900 !important;
-
-    border: 5px solid #2196F3 !important;
-
-    box-shadow: none !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.11. AKTYWNE POLE P1
-   --------------------------------------------------------- */
-
-#score_table td.p1score.input_area {
-
-    background: #383838 !important;
-
-    color: #FFFFFF !important;
-
-    font-weight: 900 !important;
-
-    border: 5px solid #2196F3 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.12. AKTYWNE POLE P2
-   --------------------------------------------------------- */
-
-#score_table td.p2score.input_area {
-
-    background: #383838 !important;
-
-    color: #FFFFFF !important;
-
-    font-weight: 900 !important;
-
-    border: 5px solid #2196F3 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.13. WIERSZ AKTYWNEJ KOLEJKI
-   --------------------------------------------------------- */
-
-#score_table tr:has(td.input_area) td {
-
-    border-top-color: #D8D8D8 !important;
-
-    border-bottom-color: #D8D8D8 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.14. PODSTAWOWE TŁA
-   --------------------------------------------------------- */
-
-#score_table td.score_input,
-#score_table td.score_left,
-#score_table td.score_round {
-
-    background-color: #181818 !important;
-
-    border-color: #D8D8D8 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.15. PONOWNE WYMUSZENIE AKTYWNEGO POLA
-   --------------------------------------------------------- */
-
-#score_table td.score_input.input_area {
-
-    background-color: #383838 !important;
-
-    border: 5px solid #2196F3 !important;
-
-    color: #FFFFFF !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.16. AKTYWNY NUMER KOLEJKI
-   TYLKO NIEBIESKI
-   --------------------------------------------------------- */
-
-#score_table tr:has(td.input_area) td.score_round {
-
-    background-color: #202020 !important;
-
-    color: #2196F3 !important;
-
-    border-color: #D8D8D8 !important;
-
-    box-shadow: none !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.17. WYNIKI 100+
-   N01 OZNACZA JE KLASĄ .ton
-   --------------------------------------------------------- */
-
-#score_table td.score_input.ton {
-
-    position: relative !important;
-
-    background: #181818 !important;
-
-    color: #FFFFFF !important;
-
-    font-weight: 900 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.18. 100+ — OWAL / KAPSUŁA
-   --------------------------------------------------------- */
-
-#score_table td.score_input.ton span {
-
-    display: inline-flex !important;
-
-    align-items: center !important;
-
-    justify-content: center !important;
-
-    min-width: 1.65em !important;
-
-    height: 1.35em !important;
-
-    padding: 0 0.18em !important;
-
-    border: 3px solid #D4AF37 !important;
-
-    border-radius: 999px !important;
-
-    box-sizing: border-box !important;
-
-    line-height: 1 !important;
-
-    color: #FFFFFF !important;
-
-    font-weight: 900 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.19. 100+ W AKTYWNEJ KOMÓRCE
-   NIEBIESKA RAMKA KOMÓRKI MA PRIORYTET
-   --------------------------------------------------------- */
-
-#score_table td.score_input.ton.input_area {
-
-    background: #383838 !important;
-
-    border: 5px solid #2196F3 !important;
-
-    color: #FFFFFF !important;
-}
-
-#score_table td.score_input.ton.input_area span {
-
-    border-color: #D4AF37 !important;
-
-    color: #FFFFFF !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.20. DUŻE "POZOSTAŁO" NA DOLE
-   --------------------------------------------------------- */
-
-#left_table {
-
-    background: #101010 !important;
-}
-
-#left_table td.score_left_big {
-
-    background: #181818 !important;
-
-    color: #F0D675 !important;
-
-    font-weight: 900 !important;
-
-    border-color: #D8D8D8 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.21. AKTYWNY GRACZ — DUŻE "POZOSTAŁO"
-   
-   ZŁOTE CYFRY
-   GRUBA ZŁOTA RAMKA
-   --------------------------------------------------------- */
-
-#left_table td.score_left_big.focus_frame {
-
-    background: #303030 !important;
-
-    color: #F0D675 !important;
-
-    font-weight: 900 !important;
-
-    border: 5px solid #D4AF37 !important;
-
-    box-shadow: none !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.22. AKTYWNY GRACZ — WYMUSZENIE KOLORU
-   --------------------------------------------------------- */
-
-#left_table td.score_left_big.focus_frame div {
-
-    color: #F0D675 !important;
-
-    font-weight: 900 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.23. ODDZIELENIE P1 / P2
-   --------------------------------------------------------- */
-
-#score_table td.p1score,
-#score_table td.p1left {
-
-    border-right-color: #D8D8D8 !important;
-}
-
-#score_table td.p2score,
-#score_table td.p2left {
-
-    border-left-color: #D8D8D8 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.24. OSTATNIE 3 KOLEJKI
-   --------------------------------------------------------- */
-
-#score_table td.score_round.last3 {
-
-    color: #2196F3 !important;
-
-    font-weight: 900 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.25. MENU LIVE
-   --------------------------------------------------------- */
-
-#menu_table {
-
-    background: #101010 !important;
-}
-
-#menu_table td {
-
-    background: #181818 !important;
-
-    color: #D8D8D8 !important;
-
-    border-color: #D8D8D8 !important;
-}
-
-#menu_table td:hover {
-
-    background: #303030 !important;
-
-    color: #F0D675 !important;
-}
-
-
-/* ---------------------------------------------------------
-   60.26. RESPONSYWNOŚĆ
-   --------------------------------------------------------- */
-
-@media (max-width: 700px) {
-
-    #score_table td,
-    #score_table th {
-
-        padding: 9px 8px !important;
-    }
-
-    #header_table #title {
-
-        letter-spacing: 0.5px !important;
-    }
-
-}
-/* =========================================================
-   60.30 — N01 LIVE — KOLORY KOŃCOWYCH RUND
-   ========================================================= */
-
-/* NORMALNE RUNDY — 3 do 36 */
-#score_table td.score_round {
-    color: #2196F3 !important;
-    -webkit-text-fill-color: #2196F3 !important;
-    font-weight: 400 !important;
-}
-
-/* RUNDY 39 i 42 — POMARAŃCZOWE + GRUBE */
-#score_table #round_12 td.score_round,
-#score_table #round_13 td.score_round {
-    color: #FF9800 !important;
-    -webkit-text-fill-color: #FF9800 !important;
-    font-weight: 900 !important;
-}
-
-/* RUNDA 45 — CZERWONA + GRUBA */
-#score_table #round_14 td.score_round {
-    color: #FF3B30 !important;
-    -webkit-text-fill-color: #FF3B30 !important;
-    font-weight: 900 !important;
-}
-/* ============================================================
-   61. DRABINKA — FINAL
-   TŁO + NIEBIESKIE ŁĄCZNIKI + PEŁNE RAMKI MECZÓW
-   ============================================================ */
-
-/* ------------------------------------------------------------
-   61 — N01 DRABINKA
-   ------------------------------------------------------------
-   Cel:
-   - czarne tło obszaru drabinki
-   - ciemne pola meczów
-   - jasna, cienka ramka meczu
-   - białe, cienkie łączniki
-   - zachowanie kolorów zwycięzca/przegrany
-   - bez zmian układu i funkcjonalności N01
-   ------------------------------------------------------------ */
-
-
-/* ------------------------------------------------------------
-   61.1 — TŁO OBSZARU DRABINKI
-   ------------------------------------------------------------ */
+/* ==============================================================
+   47. DRABINKA — FINAL
+   TŁO + ŁĄCZNIKI + MECZE
+   ============================================================== */
+
+
+/* --------------------------------------------------------------
+   47.1 — TŁO OBSZARU
+   -------------------------------------------------------------- */
 
 #bracket_container,
 #bracket_container .t_block,
@@ -2527,19 +1822,9 @@ td.rr_result.match_button.rr_available {
 }
 
 
-/* ------------------------------------------------------------
-   61.2 — KOLUMNY ŁĄCZNIKÓW
-   ------------------------------------------------------------ */
-
-/*
-   N01 wykorzystuje .t_line jako komórkę tabeli
-   zawierającą właściwe elementy łączników.
-
-   Ważne:
-   Nie nadajemy border wszystkim elementom .t_line,
-   ponieważ powoduje to powstawanie dodatkowych słupków
-   i niepotrzebnych linii.
-*/
+/* --------------------------------------------------------------
+   47.2 — KOLUMNY ŁĄCZNIKÓW
+   -------------------------------------------------------------- */
 
 #bracket_container .t_line,
 #bracket_container .t_line:hover,
@@ -2567,21 +1852,9 @@ td.rr_result.match_button.rr_available {
 }
 
 
-/* ------------------------------------------------------------
-   61.3 — WŁAŚCIWE ŁĄCZNIKI DRABINKI
-   ------------------------------------------------------------ */
-
-/*
-   LEWA STRONA:
-   .t_l3 = górny odcinek poziomy + pion
-   .t_l4 = dolny odcinek poziomy
-
-   PRAWA STRONA:
-   .t_r1 = pion + dolny odcinek poziomy
-
-   Nie stylujemy .t_l1/.t_l2/.t_r2/.t_r3/.t_r4,
-   ponieważ nie są właściwymi liniami łączącymi.
-*/
+/* --------------------------------------------------------------
+   47.3 — WŁAŚCIWE ŁĄCZNIKI
+   -------------------------------------------------------------- */
 
 #bracket_container .t_l3 {
     border-top: 1.5px solid #F2F2F2 !important;
@@ -2607,9 +1880,7 @@ td.rr_result.match_button.rr_available {
 }
 
 
-/* ------------------------------------------------------------
-   61.4 — USUNIĘCIE NIEPOTRZEBNYCH BORDERÓW ŁĄCZNIKÓW
-   ------------------------------------------------------------ */
+/* Elementy, które NIE są właściwymi łącznikami */
 
 #bracket_container .t_l1,
 #bracket_container .t_l2,
@@ -2620,9 +1891,9 @@ td.rr_result.match_button.rr_available {
 }
 
 
-/* ------------------------------------------------------------
-   61.5 — POJEDYNCZY MECZ
-   ------------------------------------------------------------ */
+/* --------------------------------------------------------------
+   47.4 — POJEDYNCZY MECZ
+   -------------------------------------------------------------- */
 
 #bracket_container .t_item_container {
     background: #151515 !important;
@@ -2633,9 +1904,6 @@ td.rr_result.match_button.rr_available {
 
     box-sizing: border-box !important;
 }
-/* ------------------------------------------------------------
-   61.6 — WNĘTRZE MECZU
-   ------------------------------------------------------------ */
 
 #bracket_container .t_item {
     background: #151515 !important;
@@ -2645,14 +1913,11 @@ td.rr_result.match_button.rr_available {
     border-left: 0 !important;
     border-right: 0 !important;
 }
-/* ------------------------------------------------------------
-   61.7 — HOVER MECZU
-   ------------------------------------------------------------ */
 
-/*
-   Nie zmieniamy wyglądu całego meczu przy najechaniu.
-   Dzięki temu drabinka nie "rozjaśnia się" przypadkowo.
-*/
+
+/* --------------------------------------------------------------
+   47.5 — HOVER MECZU
+   -------------------------------------------------------------- */
 
 #bracket_container .t_item_container:hover,
 #bracket_container .t_item_container:hover .t_item {
@@ -2662,9 +1927,9 @@ td.rr_result.match_button.rr_available {
 }
 
 
-/* ------------------------------------------------------------
-   61.8 — KOLOR ZWYCIĘZCY
-   ------------------------------------------------------------ */
+/* --------------------------------------------------------------
+   47.6 — ZWYCIĘZCA
+   -------------------------------------------------------------- */
 
 #bracket_container .t_item:not(.lose) .t_name,
 #bracket_container .t_item:not(.lose) .t_name a,
@@ -2675,9 +1940,9 @@ td.rr_result.match_button.rr_available {
 }
 
 
-/* ------------------------------------------------------------
-   61.9 — KOLOR PRZEGRANEGO
-   ------------------------------------------------------------ */
+/* --------------------------------------------------------------
+   47.7 — PRZEGRANY
+   -------------------------------------------------------------- */
 
 #bracket_container .t_item.lose .t_name,
 #bracket_container .t_item.lose .t_name a,
@@ -2686,21 +1951,8 @@ td.rr_result.match_button.rr_available {
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
 }
-/* =========================================================
-   N01 LIVE — AKTYWNY GRACZ
-   Podświetlenie komórki „Pozostało”
-   ========================================================= */
 
-/* Aktywny gracz 0 */
-#score_table tr:has(td.score_input.input_area.p1score)
-td.score_left.p1left {
-    background: #DCEEFF !important;
-    background-color: #DCEEFF !important;
-}
 
-/* Aktywny gracz 1 */
-#score_table tr:has(td.score_input.input_area.p2score)
-td.score_left.p2left {
-    background: #DCEEFF !important;
-    background-color: #DCEEFF !important;
-}
+/* ==============================================================
+   KONIEC CSS — 3 KORONY
+   ============================================================== */
