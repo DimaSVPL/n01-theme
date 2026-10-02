@@ -2500,28 +2500,27 @@ td.rr_result.match_button.rr_available {
    ============================================================ */
 
 /* ------------------------------------------------------------
-   61.1 — TŁO CAŁEGO OBSZARU DRABINKI
+   61 — N01 DRABINKA
+   ------------------------------------------------------------
+   Cel:
+   - czarne tło obszaru drabinki
+   - ciemne pola meczów
+   - jasna, cienka ramka meczu
+   - białe, cienkie łączniki
+   - zachowanie kolorów zwycięzca/przegrany
+   - bez zmian układu i funkcjonalności N01
    ------------------------------------------------------------ */
 
-body {
-    background: #080808 !important;
-}
 
-#contents,
-#content,
-#main,
-.content,
-.page-content {
-    background: #080808 !important;
-    background-color: #080808 !important;
-}
+/* ------------------------------------------------------------
+   61.1 — TŁO OBSZARU DRABINKI
+   ------------------------------------------------------------ */
 
-.bracket,
-.bracket-container,
-.bracket-wrapper,
-.bracket-content,
-.tournament-bracket,
-.tournament-container {
+#bracket_container,
+#bracket_container .t_block,
+#bracket_container .t_left,
+#bracket_container .t_right,
+#bracket_container .t_winner {
     background: #080808 !important;
     background-color: #080808 !important;
     background-image: none !important;
@@ -2529,55 +2528,129 @@ body {
 
 
 /* ------------------------------------------------------------
-   61.2 — KAŻDY MECZ
+   61.2 — KOLUMNY ŁĄCZNIKÓW
    ------------------------------------------------------------ */
 
 /*
-   NIE używamy tutaj border na .t_item.
-   .t_item jest pojedynczym zawodnikiem/wierszem.
+   N01 wykorzystuje .t_line jako komórkę tabeli
+   zawierającą właściwe elementy łączników.
 
-   Ramkę robimy przez box-shadow, dzięki czemu N01
-   nie będzie "zjadał" lewej/prawej krawędzi.
+   Ważne:
+   Nie nadajemy border wszystkim elementom .t_line,
+   ponieważ powoduje to powstawanie dodatkowych słupków
+   i niepotrzebnych linii.
 */
 
-.bracket-item,
-.bracket-match,
-.t_match {
+#bracket_container .t_line,
+#bracket_container .t_line:hover,
+#bracket_container .t_l,
+#bracket_container .t_l:hover,
+#bracket_container .t_c,
+#bracket_container .t_c:hover {
+    background: #080808 !important;
+    background-color: #080808 !important;
+    background-image: none !important;
+}
+
+#bracket_container .t_line td,
+#bracket_container .t_line td:hover {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+#bracket_container .t_line:hover *,
+#bracket_container .t_line *:hover {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+
+/* ------------------------------------------------------------
+   61.3 — WŁAŚCIWE ŁĄCZNIKI DRABINKI
+   ------------------------------------------------------------ */
+
+/*
+   LEWA STRONA:
+   .t_l3 = górny odcinek poziomy + pion
+   .t_l4 = dolny odcinek poziomy
+
+   PRAWA STRONA:
+   .t_r1 = pion + dolny odcinek poziomy
+
+   Nie stylujemy .t_l1/.t_l2/.t_r2/.t_r3/.t_r4,
+   ponieważ nie są właściwymi liniami łączącymi.
+*/
+
+#bracket_container .t_l3 {
+    border-top: 1.5px solid #F2F2F2 !important;
+    border-right: 1.5px solid #F2F2F2 !important;
+
+    box-shadow:
+        inset 0 1.5px 0 #F2F2F2 !important;
+}
+
+#bracket_container .t_l4 {
+    border-bottom: 1.5px solid #F2F2F2 !important;
+
+    box-shadow:
+        inset 0 -1.5px 0 #F2F2F2 !important;
+}
+
+#bracket_container .t_r1 {
+    border-right: 1.5px solid #F2F2F2 !important;
+    border-bottom: 1.5px solid #F2F2F2 !important;
+
+    box-shadow:
+        inset 0 -1.5px 0 #F2F2F2 !important;
+}
+
+
+/* ------------------------------------------------------------
+   61.4 — USUNIĘCIE NIEPOTRZEBNYCH BORDERÓW ŁĄCZNIKÓW
+   ------------------------------------------------------------ */
+
+#bracket_container .t_l1,
+#bracket_container .t_l2,
+#bracket_container .t_r2,
+#bracket_container .t_r3,
+#bracket_container .t_r4 {
+    border: 0 !important;
+}
+
+
+/* ------------------------------------------------------------
+   61.5 — POJEDYNCZY MECZ
+   ------------------------------------------------------------ */
+
+/*
+   .t_item_container = CAŁY mecz
+   .t_item           = pojedynczy zawodnik / wiersz
+
+   Dlatego ramkę robimy na .t_item_container,
+   a nie na .t_item.
+*/
+
+#bracket_container .t_item_container {
     background: #151515 !important;
     background-color: #151515 !important;
     background-image: none !important;
 
-    border: 0 !important;
+    box-shadow: none !important;
 
-    box-shadow:
-        inset 1px 0 0 #E8E8E8,
-        inset -1px 0 0 #E8E8E8,
-        inset 0 1px 0 #E8E8E8,
-        inset 0 -1px 0 #E8E8E8 !important;
+    outline: 1px solid #F2F2F2 !important;
+    outline-offset: 0 !important;
 
     box-sizing: border-box !important;
 }
 
 
 /* ------------------------------------------------------------
-   61.3 — DODATKOWE WYMUSZENIE LEWEJ/PRAWEJ GRANICY
+   61.6 — WNĘTRZE MECZU
    ------------------------------------------------------------ */
 
-.bracket-item,
-.bracket-match,
-.t_match {
-    outline: 1px solid #E8E8E8 !important;
-    outline-offset: -1px !important;
-}
-
-
-/* ------------------------------------------------------------
-   61.4 — WNĘTRZE MECZU
-   ------------------------------------------------------------ */
-
-.bracket-item .t_item,
-.bracket-match .t_item,
-.t_match .t_item {
+#bracket_container .t_item {
     background: #151515 !important;
     background-color: #151515 !important;
     background-image: none !important;
@@ -2588,89 +2661,43 @@ body {
 
 
 /* ------------------------------------------------------------
-   61.5 — HOVER
-   ------------------------------------------------------------ */
-
-.bracket-item:hover,
-.bracket-match:hover,
-.t_match:hover {
-    background: #202020 !important;
-    background-color: #202020 !important;
-
-    outline: 1px solid #FFFFFF !important;
-    outline-offset: -1px !important;
-}
-
-
-/* ------------------------------------------------------------
-   61.6 — ŁĄCZNIKI DRABINKI
+   61.7 — HOVER MECZU
    ------------------------------------------------------------ */
 
 /*
-   Wszystkie pseudo-elementy wykorzystywane przez N01
-   jako linie łączące dostają NIEBIESKI kolor.
+   Nie zmieniamy wyglądu całego meczu przy najechaniu.
+   Dzięki temu drabinka nie "rozjaśnia się" przypadkowo.
 */
 
-.bracket::before,
-.bracket::after,
-.bracket-container::before,
-.bracket-container::after,
-.bracket-wrapper::before,
-.bracket-wrapper::after,
-.bracket-item::before,
-.bracket-item::after,
-.bracket-match::before,
-.bracket-match::after,
-.t_match::before,
-.t_match::after {
-    border-color: #2196F3 !important;
+#bracket_container .t_item_container:hover,
+#bracket_container .t_item_container:hover .t_item {
+    background: #151515 !important;
+    background-color: #151515 !important;
+    background-image: none !important;
 }
 
 
 /* ------------------------------------------------------------
-   61.7 — JEŻELI ŁĄCZNIK JEST RYSOWANY JAKO BORDER
+   61.8 — KOLOR ZWYCIĘZCY
    ------------------------------------------------------------ */
 
-.bracket-item,
-.bracket-match,
-.t_match {
-    --bracket-line-color: #2196F3 !important;
-}
-
-
-/* ------------------------------------------------------------
-   61.8 — NIEBIESKIE LINIE NA ELEMENTACH ŁĄCZĄCYCH
-   ------------------------------------------------------------ */
-
-.bracket-item::before,
-.bracket-item::after,
-.bracket-match::before,
-.bracket-match::after,
-.t_match::before,
-.t_match::after {
-    border-top-color: #2196F3 !important;
-    border-right-color: #2196F3 !important;
-    border-bottom-color: #2196F3 !important;
-    border-left-color: #2196F3 !important;
-}
-
-
-/* ------------------------------------------------------------
-   61.9 — TEKST ZAWODNIKÓW — ZACHOWUJEMY NASZE KOLORY
-   ------------------------------------------------------------ */
-
-.t_item:not(.lose) .t_name,
-.t_item:not(.lose) .t_name a,
-.t_item:not(.lose) .t_result,
-.t_item:not(.lose) .t_score {
+#bracket_container .t_item:not(.lose) .t_name,
+#bracket_container .t_item:not(.lose) .t_name a,
+#bracket_container .t_item:not(.lose) .t_result,
+#bracket_container .t_item:not(.lose) .t_score {
     color: #D4AF37 !important;
     -webkit-text-fill-color: #D4AF37 !important;
 }
 
-.t_item.lose .t_name,
-.t_item.lose .t_name a,
-.t_item.lose .t_result,
-.t_item.lose .t_score {
+
+/* ------------------------------------------------------------
+   61.9 — KOLOR PRZEGRANEGO
+   ------------------------------------------------------------ */
+
+#bracket_container .t_item.lose .t_name,
+#bracket_container .t_item.lose .t_name a,
+#bracket_container .t_item.lose .t_result,
+#bracket_container .t_item.lose .t_score {
     color: #FFFFFF !important;
     -webkit-text-fill-color: #FFFFFF !important;
 }
