@@ -1342,32 +1342,45 @@ td.rr_result.match_button.rr_available .rr_idx {
    45.10 — POZOSTAŁO AKTYWNEGO GRACZA
    --------------------------------------------------------------
 
-   N01 oznacza aktywne pole:
-       .score_input.input_area
+   GŁÓWNA TABELA:
+   aktywne "Pozostało" ma normalne ciemne tło.
 
-   P1:
-       .p1score.input_area
-       odpowiada .p1left
-
-   P2:
-       .p2score.input_area
-       odpowiada .p2left
-
-   Tylko komórka "Pozostało" aktywnego gracza
-   otrzymuje jasnoniebieskie tło.
+   DOLNA TABELA:
+   aktywne "Pozostało" ma białe tło i czarną czcionkę.
    -------------------------------------------------------------- */
+
+
+/* GŁÓWNA TABELA — NORMALNE TŁO */
 
 #score_table tr:has(td.score_input.input_area.p1score)
     > td.score_left.p1left,
 
 #score_table tr:has(td.score_input.input_area.p2score)
     > td.score_left.p2left {
-    background: #DCEEFF !important;
-    background-color: #DCEEFF !important;
+    background: #181818 !important;
+    background-color: #181818 !important;
     background-image: none !important;
+
+    color: #F0D675 !important;
+    -webkit-text-fill-color: #F0D675 !important;
 }
 
 
+/* DOLNA TABELA — AKTYWNE "POZOSTAŁO" */
+
+#left_table td.score_left_big.focus_frame {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+
+    color: #080808 !important;
+    -webkit-text-fill-color: #080808 !important;
+}
+
+#left_table td.score_left_big.focus_frame div {
+    color: #080808 !important;
+    -webkit-text-fill-color: #080808 !important;
+}
 /* --------------------------------------------------------------
    45.11 — WYNIKI 100+
    -------------------------------------------------------------- */
