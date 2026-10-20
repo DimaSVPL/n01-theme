@@ -1153,9 +1153,10 @@ td.rr_result.match_button.rr_available .rr_idx {
 }
 
 
-/* --------------------------------------------------------------
-   45.2 TABELA WYNIKU
-   -------------------------------------------------------------- */
+/* ============================================================
+   45.2. N01 — TABELA WYNIKÓW
+   CIEMNE TŁO WSZYSTKICH KOMÓREK
+   ============================================================ */
 
 #score_table {
     background: #101010 !important;
@@ -1163,28 +1164,38 @@ td.rr_result.match_button.rr_available .rr_idx {
     border-spacing: 0 !important;
 }
 
+/* Wszystkie komórki tabeli */
 #score_table td,
 #score_table th {
     box-sizing: border-box !important;
     background: #181818 !important;
+    background-color: #181818 !important;
+    background-image: none !important;
     color: #F2F2F2 !important;
     border-color: #D8D8D8 !important;
 }
 
-/* Nagłówki Zdobyte / Pozostało */
-
-#score_table th {
+/* Nagłówki: Zdobyte / Pozostało / środek */
+#score_table th.score_input,
+#score_table th.score_left,
+#score_table th.score_round {
     background: #202020 !important;
-    color: #F0D675 !important;
-    -webkit-text-fill-color: #F0D675 !important;
+    background-color: #202020 !important;
+    background-image: none !important;
+}
+
+/* Puste komórki początkowe */
+#score_table td.score_none {
+    background: #181818 !important;
+    background-color: #181818 !important;
+    background-image: none !important;
 }
 
 /* Numery kolejek */
-
 #score_table td.score_round {
-    background: #151515 !important;
-    color: #2196F3 !important;
-    -webkit-text-fill-color: #2196F3 !important;
+    background: #181818 !important;
+    background-color: #181818 !important;
+    background-image: none !important;
 }
 /* --------------------------------------------------------------
    45.3 NAGŁÓWKI
