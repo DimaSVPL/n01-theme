@@ -1171,7 +1171,21 @@ td.rr_result.match_button.rr_available .rr_idx {
     border-color: #D8D8D8 !important;
 }
 
+/* Nagłówki Zdobyte / Pozostało */
 
+#score_table th {
+    background: #202020 !important;
+    color: #F0D675 !important;
+    -webkit-text-fill-color: #F0D675 !important;
+}
+
+/* Numery kolejek */
+
+#score_table td.score_round {
+    background: #151515 !important;
+    color: #2196F3 !important;
+    -webkit-text-fill-color: #2196F3 !important;
+}
 /* --------------------------------------------------------------
    45.3 NAGŁÓWKI
    -------------------------------------------------------------- */
